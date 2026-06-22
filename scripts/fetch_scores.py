@@ -12,6 +12,7 @@ from pathlib import Path
 
 # ── Config ──────────────────────────────────────────────────────────────────
 API_KEY     = os.environ["FOOTBALL_API_KEY"]   # set in GitHub secrets
+ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")  # The Odds API key for AU bookmaker odds
 API_BASE    = "https://api.football-data.org/v4"
 WC_COMP_ID  = 2000   # football-data.org competition ID for FIFA World Cup
 DATA_FILE   = Path(__file__).parent.parent / "data" / "data.json"
@@ -259,6 +260,119 @@ def build_upcoming(matches):
 
     return upcoming
 
+
+def fetch_au_odds():
+    """
+    Fetch World Cup winner outright odds from Australian bookmakers
+    via The Odds API (the-odds-api.com).
+    Returns list of {team, owner, prev, now, now_decimal, direction, source} dicts.
+    """
+    if not ODDS_API_KEY:
+        print("  No ODDS_API_KEY set, skipping odds update")
+        return None
+
+    OWNER_MAP = {
+        "Spain":"Kenna","Senegal":"Kenna","South Korea":"Kenna","Egypt":"Kenna",
+        "Jordan":"Kenna","New Zealand":"Kenna","Curaçao":"Kenna","Curacao":"Kenna","Haiti":"Kenna",
+        "France":"Cronan","Austria":"Cronan","Australia":"Cronan","Panama":"Cronan",
+        "England":"Silk","United States":"Silk","Algeria":"Silk","Qatar":"Silk",
+        "Portugal":"Same","Colombia":"Same","Paraguay":"Same","Cape Verde":"Same",
+        "Argentina":"Galbraith","Morocco":"Galbraith","Turkey":"Galbraith","South Africa":"Galbraith",
+        "Brazil":"Morris","Uruguay":"Morris","Scotland":"Morris","Iran":"Morris",
+        "Germany":"P Rankin","Czech Republic":"P Rankin","Iraq":"P Rankin","Sweden":"P Rankin",
+        "Netherlands":"T Rankin","Croatia":"T Rankin","Ghana":"T Rankin","Tunisia":"T Rankin",
+        "Norway":"Hankin","Mexico":"Hankin","Ivory Coast":"Hankin","Côte d'Ivoire":"Hankin","Saudi Arabia":"Hankin",
+        "Japan":"Varcoe","Switzerland":"Varcoe","DR Congo":"Varcoe","Congo DR":"Varcoe","Canada":"Varcoe",
+        "Belgium":"Crowle","Ecuador":"Crowle","Bosnia and Herzegovina":"Crowle","Bosnia":"Crowle","Uzbekistan":"Crowle",
+    }
+
+    try:
+        resp = requests.get(
+            "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup_winner/odds/",
+            params={
+                "apiKey": ODDS_API_KEY,
+                "regions": "au",
+                "markets": "outrights",
+                "oddsFormat": "decimal"
+            },
+            timeout=15
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        remaining = resp.headers.get("x-requests-remaining", "?")
+        print(f"  Odds API requests remaining: {remaining}")
+
+        if not data:
+            print("  No odds data returned")
+            return None
+
+        event = data[0]
+        # Get best price per team across all AU bookmakers
+        best = {}
+        for bm in event.get("bookmakers", []):
+            bm_name = bm["title"]
+            for o in bm.get("markets", [{}])[0].get("outcomes", []):
+                team = o["name"]
+                price = o["price"]
+                if team not in best or price > best[team]["price"]:
+                    best[team] = {"price": price, "bookmaker": bm_name}
+
+        return best, OWNER_MAP
+
+    except Exception as e:
+        print(f"  Odds fetch error: {e}")
+        return None
+
+
+def update_odds(existing_data, best_odds, owner_map):
+    """Merge fresh AU odds into existing data, tracking price movement."""
+    if not best_odds:
+        return existing_data
+
+    best, OWNER_MAP = best_odds
+    old_odds_map = {o["team"]: o for o in existing_data.get("odds", [])}
+
+    new_odds = []
+    for team, curr in best.items():
+        owner = OWNER_MAP.get(team)
+        if not owner:
+            continue  # skip teams not in sweepstake
+
+        curr_price = curr["price"]
+        bm = curr["bookmaker"]
+        old = old_odds_map.get(team, {})
+
+        try:
+            old_price = float(str(old.get("now_decimal", curr_price)))
+            if curr_price < old_price - 0.05:
+                direction = "shortened"
+            elif curr_price > old_price + 0.05:
+                direction = "drifted"
+            else:
+                direction = "unchanged"
+            prev_display = f"${old_price:.1f}"
+        except:
+            direction = "unchanged"
+            prev_display = f"${curr_price:.1f}"
+
+        new_odds.append({
+            "team": team,
+            "owner": owner,
+            "prev": prev_display,
+            "now": f"${curr_price:.1f}",
+            "now_decimal": curr_price,
+            "direction": direction,
+            "source": bm
+        })
+
+    new_odds.sort(key=lambda x: x["now_decimal"])
+    existing_data["odds"] = new_odds
+    existing_data["meta"]["odds_format"] = "decimal (Australian)"
+    existing_data["meta"]["odds_source"] = "The Odds API — Unibet, TAB, Betfair AU"
+    existing_data["meta"]["odds_last_updated"] = datetime.now(AEST).strftime("%-d %b %Y %-I:%Mam AEST").replace("am","am").replace("pm","pm")
+    print(f"  Odds updated: {len(new_odds)} teams, best AU prices")
+    return existing_data
+
 def main():
     print("Fetching WC2026 matches...")
     matches = fetch_matches()
@@ -309,6 +423,11 @@ def main():
         if not f.get("context") and key in existing_fixture_map:
             f["context"] = existing_fixture_map[key]
 
+    # Fetch and update AU odds
+    best_odds = fetch_au_odds()
+    if best_odds:
+        existing = update_odds(existing, best_odds, {})
+
     # Write back
     existing["standings"] = merged_standings
     existing["recent_results"] = new_results
@@ -325,3 +444,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+SKIP
