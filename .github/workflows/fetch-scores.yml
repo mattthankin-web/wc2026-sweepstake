@@ -1,4 +1,44 @@
-name: Fetch scores
+name: Fetch Scores
+
+on:
+  schedule:
+    # Every 30 minutes
+    - cron: '*/30 * * * *'
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch scores
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: scripts/fetch_scores.py
+        run: python scripts/fetch_scores.py
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/data.json
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to data.json"
+          else
+            git commit -m "chore: update scores $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Pushed updated data.json"
+          fi
