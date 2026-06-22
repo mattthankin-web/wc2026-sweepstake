@@ -1,4 +1,4 @@
 name: Fetch scores
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: python scripts/fetch_scores.py
+        run: scripts/fetch_scores.py
