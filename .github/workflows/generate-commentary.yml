@@ -26,18 +26,22 @@ jobs:
       - name: Fetch latest scores first
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: python scripts/fetch_scores.py
+        run: |
+          cd wc2026-sweepstake
+          python scripts/fetch_scores.py
 
       - name: Generate commentary
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
-        run: python scripts/generate_commentary.py
+        run: |
+          cd wc2026-sweepstake
+          python scripts/generate_commentary.py
 
       - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/data.json
+          git add -A
           git diff --staged --quiet || git commit -m "chore: daily commentary $(date -u '+%Y-%m-%d')"
           git push
