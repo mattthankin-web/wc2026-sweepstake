@@ -505,70 +505,80 @@
       "owner": "Cronan",
       "prev": "+400",
       "now": "+370",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
       "prev": "+600",
       "now": "+550",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "England",
       "owner": "Silk",
       "prev": "+700",
       "now": "+600",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
       "prev": "+1000",
       "now": "+800",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "Netherlands",
       "owner": "T Rankin",
       "prev": "+2000",
       "now": "+1500",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "USA",
       "owner": "Silk",
       "prev": "+6000",
       "now": "+3300",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "Morocco",
       "owner": "Galbraith",
       "prev": "+5000",
       "now": "+3500",
-      "direction": "shortened"
+      "direction": "shortened",
+      "source": "FanDuel"
     },
     {
       "team": "Sweden",
       "owner": "P Rankin",
       "prev": "+12000",
       "now": "+20000",
-      "direction": "drifted"
+      "direction": "drifted",
+      "source": "Oddschecker"
     },
     {
       "team": "Uruguay",
       "owner": "Morris",
       "prev": "+6500",
       "now": "+7000",
-      "direction": "drifted"
+      "direction": "drifted",
+      "source": "FanDuel"
     },
     {
       "team": "Belgium",
       "owner": "Crowle",
       "prev": "+4000",
       "now": "+3500",
-      "direction": "drifted"
+      "direction": "drifted",
+      "source": "FanDuel"
     }
   ],
   "exec_summary": {
