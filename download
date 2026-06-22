@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "last_updated": "2026-06-22T11:45:00Z",
+    "last_updated_aest": "Mon 22 Jun 2026, 9:45pm AEST",
+    "edition": 7,
+    "coverage_from": "2026-06-19",
+    "coverage_to": "2026-06-22",
+    "next_update": "2026-06-23T04:00:00Z"
+  },
+  "participants": {
+    "Kenna":    { "color": "#EA580C", "teams": ["Spain","Senegal","South Korea","Egypt","Jordan","New Zealand","Curaçao","Haiti"] },
+    "Cronan":   { "color": "#1D4ED8", "teams": ["France","Austria","Australia","Panama"] },
+    "Silk":     { "color": "#BE185D", "teams": ["England","USA","Algeria","Qatar"] },
+    "Same":     { "color": "#15803D", "teams": ["Portugal","Colombia","Paraguay","Cape Verde"] },
+    "Galbraith":{ "color": "#7C3AED", "teams": ["Argentina","Morocco","Turkey","South Africa"] },
+    "Morris":   { "color": "#0891B2", "teams": ["Brazil","Uruguay","Scotland","Iran"] },
+    "P Rankin": { "color": "#C2410C", "teams": ["Germany","Czech Republic","Iraq","Sweden"] },
+    "T Rankin": { "color": "#4338CA", "teams": ["Netherlands","Croatia","Ghana","Tunisia"] },
+    "Hankin":   { "color": "#166534", "teams": ["Norway","Mexico","Ivory Coast","Saudi Arabia"] },
+    "Varcoe":   { "color": "#92400E", "teams": ["Japan","Switzerland","DR Congo","Canada"] },
+    "Crowle":   { "color": "#0369A1", "teams": ["Belgium","Ecuador","Bosnia","Uzbekistan"] }
+  },
+  "standings": [
+    { "rank": 1,  "name": "Cronan",    "pld": 6,  "w": 4, "d": 0, "l": 2, "pts": 12, "gd": 4,   "left": 6, "win_pct": 17.74, "move": "up",   "move_note": "France +370, clear leader" },
+    { "rank": 2,  "name": "Silk",      "pld": 6,  "w": 3, "d": 1, "l": 2, "pts": 10, "gd": -2,  "left": 6, "win_pct": 14.05, "move": "up",   "move_note": "USA through, England tomorrow" },
+    { "rank": 3,  "name": "Kenna",     "pld": 14, "w": 3, "d": 4, "l": 7, "pts": 13, "gd": -8,  "left": 10,"win_pct": 13.78, "move": "up",   "move_note": "Spain 4-0 Saudi, Yamal back" },
+    { "rank": 4,  "name": "Galbraith", "pld": 8,  "w": 2, "d": 2, "l": 4, "pts": 8,  "gd": -5,  "left": 4, "win_pct": 12.06, "move": "same", "move_note": "Morocco through, Arg. tonight" },
+    { "rank": 5,  "name": "Same",      "pld": 6,  "w": 2, "d": 3, "l": 1, "pts": 9,  "gd": -1,  "left": 6, "win_pct": 9.56,  "move": "same", "move_note": "Colombia 3-1, Portugal draws" },
+    { "rank": 6,  "name": "Morris",    "pld": 8,  "w": 2, "d": 5, "l": 1, "pts": 11, "gd": 3,   "left": 4, "win_pct": 7.78,  "move": "same", "move_note": "Brazil through, Uruguay 2-2 CPV" },
+    { "rank": 7,  "name": "P Rankin",  "pld": 7,  "w": 3, "d": 1, "l": 3, "pts": 10, "gd": 3,   "left": 5, "win_pct": 7.18,  "move": "same", "move_note": "Germany through to R32" },
+    { "rank": 8,  "name": "T Rankin",  "pld": 6,  "w": 2, "d": 1, "l": 3, "pts": 7,  "gd": -4,  "left": 6, "win_pct": 6.30,  "move": "up",   "move_note": "Netherlands 5-1 Sweden" },
+    { "rank": 9,  "name": "Hankin",    "pld": 7,  "w": 4, "d": 1, "l": 2, "pts": 13, "gd": 1,   "left": 5, "win_pct": 4.54,  "move": "down", "move_note": "Saudi eliminated" },
+    { "rank": 10, "name": "Varcoe",    "pld": 7,  "w": 3, "d": 4, "l": 0, "pts": 13, "gd": 13,  "left": 5, "win_pct": 3.59,  "move": "up",   "move_note": "Japan 4-0 Tunisia, unbeaten" },
+    { "rank": 11, "name": "Crowle",    "pld": 7,  "w": 0, "d": 4, "l": 3, "pts": 4,  "gd": -6,  "left": 5, "win_pct": 3.42,  "move": "down", "move_note": "Belgium 0-0 Iran, still no wins" }
+  ],
+  "recent_results": [
+    { "date": "21 Jun", "group": "H", "home": "Spain",       "home_owner": "Kenna",    "away": "Saudi Arabia", "away_owner": "Hankin",   "home_score": 4, "away_score": 0, "status": "FT", "badge": "STATEMENT WIN" },
+    { "date": "21 Jun", "group": "H", "home": "Uruguay",     "home_owner": "Morris",   "away": "Cape Verde",   "away_owner": "Same",     "home_score": 2, "away_score": 2, "status": "FT", "badge": "" },
+    { "date": "21 Jun", "group": "G", "home": "Belgium",     "home_owner": "Crowle",   "away": "Iran",         "away_owner": "Morris",   "home_score": 0, "away_score": 0, "status": "FT", "badge": "SHOCK RESULT" },
+    { "date": "21 Jun", "group": "G", "home": "Egypt",       "home_owner": "Kenna",    "away": "New Zealand",  "away_owner": "Kenna",    "home_score": 3, "away_score": 1, "status": "FT", "badge": "" },
+    { "date": "20 Jun", "group": "F", "home": "Netherlands", "home_owner": "T Rankin", "away": "Sweden",       "away_owner": "P Rankin", "home_score": 5, "away_score": 1, "status": "FT", "badge": "" },
+    { "date": "20 Jun", "group": "E", "home": "Germany",     "home_owner": "P Rankin", "away": "Ivory Coast",  "away_owner": "Hankin",   "home_score": 2, "away_score": 1, "status": "FT", "badge": "" },
+    { "date": "20 Jun", "group": "F", "home": "Japan",       "home_owner": "Varcoe",   "away": "Tunisia",      "away_owner": "T Rankin", "home_score": 4, "away_score": 0, "status": "FT", "badge": "" },
+    { "date": "20 Jun", "group": "E", "home": "Ecuador",     "home_owner": "Crowle",   "away": "Curaçao",      "away_owner": "Kenna",    "home_score": 0, "away_score": 0, "status": "FT", "badge": "" },
+    { "date": "19 Jun", "group": "D", "home": "USA",         "home_owner": "Silk",     "away": "Australia",    "away_owner": "Cronan",   "home_score": 2, "away_score": 0, "status": "FT", "badge": "" },
+    { "date": "19 Jun", "group": "C", "home": "Scotland",    "home_owner": "Morris",   "away": "Morocco",      "away_owner": "Galbraith","home_score": 0, "away_score": 1, "status": "FT", "badge": "" },
+    { "date": "19 Jun", "group": "C", "home": "Brazil",      "home_owner": "Morris",   "away": "Haiti",        "away_owner": "Kenna",    "home_score": 3, "away_score": 0, "status": "FT", "badge": "" },
+    { "date": "19 Jun", "group": "D", "home": "Turkey",      "home_owner": "Galbraith","away": "Paraguay",     "away_owner": "Same",     "home_score": 0, "away_score": 1, "status": "FT", "badge": "" }
+  ],
+  "upcoming_fixtures": [
+    { "aest_time": "Tue 3:00am",  "group": "J", "home": "Argentina", "home_owner": "Galbraith", "away": "Austria",     "away_owner": "Cronan",   "context": "Winner through to R32. Galbraith vs Cronan head-to-head." },
+    { "aest_time": "Tue 7:00am",  "group": "I", "home": "France",    "home_owner": "Cronan",    "away": "Iraq",        "away_owner": "P Rankin", "context": "France to confirm Group I top spot." },
+    { "aest_time": "Tue 10:00am", "group": "I", "home": "Norway",    "home_owner": "Hankin",    "away": "Senegal",     "away_owner": "Kenna",    "context": "Haaland vs Kenna's best live asset. Group I second spot on the line." },
+    { "aest_time": "Tue 1:00pm",  "group": "J", "home": "Jordan",    "home_owner": "Kenna",     "away": "Algeria",     "away_owner": "Silk",     "context": "Both beaten once. Dead rubber unless Argentina-Austria produces a surprise." },
+    { "aest_time": "Wed 3:00am",  "group": "K", "home": "Portugal",  "home_owner": "Same",      "away": "Uzbekistan",  "away_owner": "Crowle",   "context": "Ronaldo needs goals and a statement after the DR Congo draw." },
+    { "aest_time": "Wed 6:00am",  "group": "L", "home": "England",   "home_owner": "Silk",      "away": "Ghana",       "away_owner": "T Rankin", "context": "Silk vs T Rankin. England need a win to confirm R32 place." },
+    { "aest_time": "Wed 12:00pm", "group": "K", "home": "Colombia",  "home_owner": "Same",      "away": "DR Congo",    "away_owner": "Varcoe",   "context": "Same vs Varcoe — winner likely tops Group K." }
+  ],
+  "commentary": [
+    {
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: Everything Changed Overnight, But One Question Remains",
+      "body": "Three games into this tournament, Turkey and South Africa were eliminated and Morocco had a solitary point. Galbraith's portfolio had all the hallmarks of a Melbourne Demons performance — leading at every checkpoint, statistically respectable, somehow still losing. Then Messi happened. Argentina's 3–0 demolition of Algeria, hat-trick, tied with Klose's all-time record, rescued the entire campaign in ninety minutes. Morocco have since won Group C outright. The turnaround has been extraordinary.\n\nThe recovery should not obscure what surrounds it. Argentina is doing what Max Gawn does every week — dominant, load-bearing, and completely undone the moment Riley Thilthorpe decides to take a mark in the forward pocket and kick the one goal that actually matters. All that control, all that influence, rendered irrelevant by a forward who showed up for thirty seconds at the right time. Turkey, meanwhile, is South Africa — a team that turns up, loses narrowly, and is quietly written off as a finals chance somewhere around round twelve. The question for Galbraith is the same one Melbourne supporters ask themselves every September: outstanding individual, reasonable portfolio, but does any of it actually go anywhere when it counts?\n\nTonight, Argentina face Austria. One more result and the rescue is complete."
+    },
+    {
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Spain Remembered Who They Are",
+      "body": "The Cape Verde draw looked like a campaign-defining catastrophe. The 4–0 demolition of Saudi Arabia — with Lamine Yamal back in the starting eleven and immediately decisive — looks like a course correction. Spain created chance after chance and the finishing was clinical. Kenna's most important asset is back to looking like a genuine tournament contender. The problem remains the other seven: Senegal lost to France and is effectively out, Haiti are eliminated, Jordan and Curaçao have one point between them. Six of Kenna's eight teams are passengers. Spain has to do everything."
+    },
+    {
+      "participant": "Morris",
+      "color": "#0891B2",
+      "title": "Morris: Unbeaten in Eight, Still Waiting for Traction",
+      "body": "Brazil qualified with a 3–0 win over Haiti — the kind of result that looks straightforward and raises no flags. Scotland beat Haiti in the opener and then lost 0–1 to Morocco, meaning Morris's Group C campaign is split: Brazil through as runners-up to Morocco, Scotland in third with a genuine shot at one of the best third-place spots. Iran drew their second game 0–0 with Belgium. Uruguay drew 2–2 with Cape Verde, dropping two points to a team ranked 90th in the world when a win was desperately needed. Eight games across four teams. Not a single defeat. Five of those eight are draws. The 7.78% probability figure undersells the sheer amount of time Morris has spent staring at a stalemate."
+    }
+  ],
+  "odds": [
+    { "team": "France",      "owner": "Cronan",   "prev": "+400",  "now": "+370",  "direction": "shortened" },
+    { "team": "Spain",       "owner": "Kenna",    "prev": "+600",  "now": "+550",  "direction": "shortened" },
+    { "team": "England",     "owner": "Silk",     "prev": "+700",  "now": "+600",  "direction": "shortened" },
+    { "team": "Argentina",   "owner": "Galbraith","prev": "+1000", "now": "+800",  "direction": "shortened" },
+    { "team": "Netherlands", "owner": "T Rankin", "prev": "+2000", "now": "+1500", "direction": "shortened" },
+    { "team": "USA",         "owner": "Silk",     "prev": "+6000", "now": "+3300", "direction": "shortened" },
+    { "team": "Morocco",     "owner": "Galbraith","prev": "+5000", "now": "+3500", "direction": "shortened" },
+    { "team": "Sweden",      "owner": "P Rankin", "prev": "+12000","now": "+20000","direction": "drifted" },
+    { "team": "Uruguay",     "owner": "Morris",   "prev": "+6500", "now": "+7000", "direction": "drifted" },
+    { "team": "Belgium",     "owner": "Crowle",   "prev": "+4000", "now": "+3500", "direction": "drifted" }
+  ]
+}
