@@ -355,6 +355,36 @@
     letter-spacing: 0.04em;
   }
 
+  /* ── Executive Summary ───────────────────────────────────── */
+  .exec-summary {
+    background: var(--navy);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 16px;
+  }
+  .exec-pull-quote {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.4;
+    border-left: 3px solid var(--amber);
+    padding-left: 12px;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+  .exec-attribution {
+    font-size: 0.68rem;
+    color: var(--slate);
+    padding-left: 15px;
+    margin-bottom: 12px;
+  }
+  .exec-body {
+    font-size: 0.8rem;
+    color: #94A3B8;
+    line-height: 1.7;
+  }
+  .exec-body p + p { margin-top: 10px; }
+
   /* ── Commentary ───────────────────────────────────────────── */
   .commentary-card {
     border: 1px solid var(--border);
@@ -586,10 +616,15 @@
   <!-- ── Analysis panel ─────────────────────────────────────────────────────── -->
   <section class="panel" id="panel-analysis">
     <div class="section-head">
-      <h2>Analytical Commentary</h2>
+      <h2>Executive Summary</h2>
     </div>
-    <p class="small muted" style="margin-bottom:12px;">Generated daily at 2pm AEST. 3 participants covered per edition, rotating across all 11.</p>
-    <div id="commentary-content"><div class="loading">Loading commentary...</div></div>
+    <div id="exec-summary-content"><div class="loading">Loading...</div></div>
+
+    <div style="margin-top:20px;">
+      <div class="section-head"><h2>Analytical Commentary</h2></div>
+      <p class="small muted" style="margin-bottom:12px;">Generated daily at 2pm AEST. 3 participants covered per edition, rotating across all 11.</p>
+      <div id="commentary-content"><div class="loading">Loading commentary...</div></div>
+    </div>
 
     <div style="margin-top:20px;">
       <div class="section-head"><h2>Participant Guide</h2></div>
@@ -638,7 +673,7 @@ async function loadData() {
         <br><br>
         <button onclick="loadData()" style="background:var(--red);color:white;border:none;padding:6px 14px;border-radius:4px;font-weight:700;cursor:pointer;">Retry</button>
       </div>`;
-    ['standings','results','fixtures','odds','commentary','owner-key'].forEach(id => {
+    ['standings','results','fixtures','odds','exec-summary','commentary','owner-key'].forEach(id => {
       const el = document.getElementById(`${id}-content`);
       if (el) el.innerHTML = msg;
     });
@@ -685,7 +720,7 @@ function gd(val) {
 function render() {
   if (!state) return;
   const { meta, participants, standings, recent_results,
-          upcoming_fixtures, commentary, odds } = state;
+          upcoming_fixtures, commentary, odds, exec_summary } = state;
 
   // Header meta
   const hasLive = (upcoming_fixtures || []).some(f => f.status === 'IN_PLAY' || f.aest_time === '🔴 LIVE');
@@ -697,6 +732,7 @@ function render() {
   renderResults(recent_results, participants);
   renderFixtures(upcoming_fixtures, participants);
   renderOdds(odds, participants);
+  renderExecSummary(exec_summary);
   renderCommentary(commentary);
   renderOwnerKey(participants);
 }
@@ -888,6 +924,27 @@ function renderOdds(odds, participants) {
   document.getElementById('odds-content').innerHTML = html;
 }
 
+// ── Executive Summary ─────────────────────────────────────────────────────────
+function renderExecSummary(exec_summary) {
+  const el = document.getElementById('exec-summary-content');
+  if (!el) return;
+  if (!exec_summary) {
+    el.innerHTML = '<p class="small muted">Executive summary generates daily at 2pm AEST.</p>';
+    return;
+  }
+  const now_aest = state?.meta?.last_updated_aest || '';
+  const paras = [exec_summary.paragraph_1, exec_summary.paragraph_2]
+    .filter(Boolean)
+    .map(p => `<p>${esc(p)}</p>`)
+    .join('');
+  el.innerHTML = `
+  <div class="exec-summary">
+    <div class="exec-pull-quote">"${esc(exec_summary.pull_quote || '')}"</div>
+    <div class="exec-attribution">— Senior Analyst, WC2026 Sweepstake Intelligence Unit · ${esc(now_aest)}</div>
+    <div class="exec-body">${paras}</div>
+  </div>`;
+}
+
 // ── Commentary ────────────────────────────────────────────────────────────────
 function renderCommentary(commentary) {
   if (!commentary?.length) {
@@ -941,3 +998,4 @@ loadData();
 </script>
 </body>
 </html>
+
