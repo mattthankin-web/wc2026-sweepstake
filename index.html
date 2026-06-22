@@ -577,14 +577,14 @@
 
   <!-- ── Tabs ──────────────────────────────────────────────────────────────── -->
   <nav class="tabs" role="tablist">
-    <button class="tab active" onclick="showTab('standings')" role="tab">Table</button>
+    <button class="tab active" onclick="showTab('analysis')" role="tab">Analysis</button>
+    <button class="tab" onclick="showTab('standings')" role="tab">Table</button>
     <button class="tab" onclick="showTab('results')"  role="tab">Results</button>
     <button class="tab" onclick="showTab('fixtures')" role="tab">Fixtures</button>
-    <button class="tab" onclick="showTab('analysis')" role="tab">Analysis</button>
   </nav>
 
   <!-- ── Standings panel ────────────────────────────────────────────────────── -->
-  <section class="panel active" id="panel-standings">
+  <section class="panel" id="panel-standings">
     <div class="section-head">
       <h2>Participant Standings</h2>
     </div>
@@ -609,12 +609,13 @@
 
     <div style="margin-top:20px;">
       <div class="section-head"><h2>Odds Movement</h2></div>
+      <p class="small muted" style="margin-bottom:8px;">American odds. Source: BetMGM / FanDuel / Oddschecker. Updated each commentary run.</p>
       <div id="odds-content"><div class="loading">Loading odds...</div></div>
     </div>
   </section>
 
   <!-- ── Analysis panel ─────────────────────────────────────────────────────── -->
-  <section class="panel" id="panel-analysis">
+  <section class="panel active" id="panel-analysis">
     <div class="section-head">
       <h2>Executive Summary</h2>
     </div>
@@ -683,7 +684,7 @@ async function loadData() {
 // ── Tab switching ─────────────────────────────────────────────────────────────
 function showTab(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
-    const panels = ['standings','results','fixtures','analysis'];
+    const panels = ['analysis','standings','results','fixtures'];
     t.classList.toggle('active', panels[i] === name);
   });
   document.querySelectorAll('.panel').forEach(p => {
@@ -898,7 +899,8 @@ function renderOdds(odds, participants) {
         <th>Owner</th>
         <th>Prev</th>
         <th>Now</th>
-        <th>Direction</th>
+        <th>Move</th>
+        <th style="font-size:0.6rem;color:var(--slate);font-weight:400;">Source</th>
       </tr>
     </thead>
     <tbody>`;
@@ -917,10 +919,12 @@ function renderOdds(odds, participants) {
         <td><span class="odds-prev">${esc(o.prev)}</span></td>
         <td><span class="odds-now ${nowClass}">${esc(o.now)}</span></td>
         <td><span class="direction-badge ${dirClass}">${dirLabel}</span></td>
+        <td class="muted" style="font-size:0.65rem;white-space:nowrap;">${esc(o.source || 'FanDuel')}</td>
       </tr>`;
   });
 
   html += '</tbody></table>';
+  html += '<p class="small muted" style="margin-top:6px;">Odds: BetMGM / FanDuel / Oddschecker &nbsp;·&nbsp; American format &nbsp;·&nbsp; Updated daily at 2pm AEST</p>';
   document.getElementById('odds-content').innerHTML = html;
 }
 
@@ -998,4 +1002,5 @@ loadData();
 </script>
 </body>
 </html>
+
 
