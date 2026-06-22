@@ -1,12 +1,12 @@
 {
   "meta": {
-    "last_updated": "2026-06-22T11:45:00Z",
-    "last_updated_aest": "Mon 22 Jun 2026, 9:45pm AEST",
+    "last_updated": "2026-06-22T20:51:19.088251+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 6:51am AEST",
     "edition": 7,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "2026-06-23",
+    "odds_last_updated": "23 Jun 2026 6:51am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU"
   },
@@ -117,21 +117,20 @@
   },
   "standings": [
     {
-      "rank": 1,
       "name": "Cronan",
       "pld": 6,
-      "w": 4,
+      "w": 3,
       "d": 0,
-      "l": 2,
-      "pts": 12,
-      "gd": 4,
+      "l": 3,
+      "pts": 9,
+      "gd": 1,
+      "rank": 1,
       "left": 6,
       "win_pct": 17.74,
       "move": "up",
       "move_note": "France +370, clear leader"
     },
     {
-      "rank": 2,
       "name": "Silk",
       "pld": 6,
       "w": 3,
@@ -139,55 +138,55 @@
       "l": 2,
       "pts": 10,
       "gd": -2,
+      "rank": 2,
       "left": 6,
       "win_pct": 14.05,
       "move": "up",
       "move_note": "USA through, England tomorrow"
     },
     {
-      "rank": 3,
       "name": "Kenna",
-      "pld": 14,
-      "w": 3,
+      "pld": 12,
+      "w": 2,
       "d": 4,
-      "l": 7,
-      "pts": 13,
-      "gd": -8,
+      "l": 6,
+      "pts": 10,
+      "gd": -10,
+      "rank": 3,
       "left": 10,
       "win_pct": 13.78,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back"
     },
     {
-      "rank": 4,
       "name": "Galbraith",
       "pld": 8,
-      "w": 2,
+      "w": 3,
       "d": 2,
-      "l": 4,
-      "pts": 8,
-      "gd": -5,
+      "l": 3,
+      "pts": 11,
+      "gd": 1,
+      "rank": 4,
       "left": 4,
       "win_pct": 12.06,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight"
     },
     {
-      "rank": 5,
       "name": "Same",
-      "pld": 6,
+      "pld": 4,
       "w": 2,
-      "d": 3,
+      "d": 1,
       "l": 1,
-      "pts": 9,
-      "gd": -1,
+      "pts": 7,
+      "gd": 0,
+      "rank": 5,
       "left": 6,
       "win_pct": 9.56,
       "move": "same",
       "move_note": "Colombia 3-1, Portugal draws"
     },
     {
-      "rank": 6,
       "name": "Morris",
       "pld": 8,
       "w": 2,
@@ -195,13 +194,13 @@
       "l": 1,
       "pts": 11,
       "gd": 3,
+      "rank": 6,
       "left": 4,
       "win_pct": 7.78,
       "move": "same",
       "move_note": "Brazil through, Uruguay 2-2 CPV"
     },
     {
-      "rank": 7,
       "name": "P Rankin",
       "pld": 7,
       "w": 3,
@@ -209,41 +208,41 @@
       "l": 3,
       "pts": 10,
       "gd": 3,
+      "rank": 7,
       "left": 5,
       "win_pct": 7.18,
       "move": "same",
       "move_note": "Germany through to R32"
     },
     {
-      "rank": 8,
       "name": "T Rankin",
       "pld": 6,
       "w": 2,
       "d": 1,
       "l": 3,
       "pts": 7,
-      "gd": -4,
+      "gd": -5,
+      "rank": 8,
       "left": 6,
       "win_pct": 6.3,
       "move": "up",
       "move_note": "Netherlands 5-1 Sweden"
     },
     {
-      "rank": 9,
       "name": "Hankin",
       "pld": 7,
       "w": 4,
       "d": 1,
       "l": 2,
       "pts": 13,
-      "gd": 1,
+      "gd": 2,
+      "rank": 9,
       "left": 5,
       "win_pct": 4.54,
       "move": "down",
       "move_note": "Saudi eliminated"
     },
     {
-      "rank": 10,
       "name": "Varcoe",
       "pld": 7,
       "w": 3,
@@ -251,20 +250,21 @@
       "l": 0,
       "pts": 13,
       "gd": 13,
+      "rank": 10,
       "left": 5,
       "win_pct": 3.59,
       "move": "up",
       "move_note": "Japan 4-0 Tunisia, unbeaten"
     },
     {
-      "rank": 11,
       "name": "Crowle",
-      "pld": 7,
+      "pld": 5,
       "w": 0,
-      "d": 4,
-      "l": 3,
-      "pts": 4,
-      "gd": -6,
+      "d": 3,
+      "l": 2,
+      "pts": 3,
+      "gd": -3,
+      "rank": 11,
       "left": 5,
       "win_pct": 3.42,
       "move": "down",
@@ -273,140 +273,99 @@
   ],
   "recent_results": [
     {
-      "date": "21 Jun",
-      "group": "H",
-      "home": "Spain",
-      "home_owner": "Kenna",
-      "away": "Saudi Arabia",
-      "away_owner": "Hankin",
-      "home_score": 4,
-      "away_score": 0,
-      "status": "FT",
-      "badge": "STATEMENT WIN"
-    },
-    {
-      "date": "21 Jun",
-      "group": "H",
-      "home": "Uruguay",
-      "home_owner": "Morris",
-      "away": "Cape Verde",
-      "away_owner": "Same",
-      "home_score": 2,
-      "away_score": 2,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "21 Jun",
-      "group": "G",
-      "home": "Belgium",
+      "date": "18 Jun",
+      "group": "Group K",
+      "home": "Uzbekistan",
       "home_owner": "Crowle",
-      "away": "Iran",
-      "away_owner": "Morris",
-      "home_score": 0,
+      "away": "Colombia",
+      "away_owner": "Same",
+      "home_score": 1,
+      "away_score": 3,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "18 Jun",
+      "group": "Group L",
+      "home": "Ghana",
+      "home_owner": "T Rankin",
+      "away": "Panama",
+      "away_owner": "Cronan",
+      "home_score": 1,
       "away_score": 0,
       "status": "FT",
-      "badge": "SHOCK RESULT"
+      "badge": "",
+      "sweepstake_relevant": true
     },
     {
-      "date": "21 Jun",
-      "group": "G",
-      "home": "Egypt",
-      "home_owner": "Kenna",
-      "away": "New Zealand",
-      "away_owner": "Kenna",
-      "home_score": 3,
-      "away_score": 1,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "20 Jun",
-      "group": "F",
-      "home": "Netherlands",
-      "home_owner": "T Rankin",
-      "away": "Sweden",
-      "away_owner": "P Rankin",
-      "home_score": 5,
-      "away_score": 1,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "20 Jun",
-      "group": "E",
-      "home": "Germany",
-      "home_owner": "P Rankin",
-      "away": "Ivory Coast",
-      "away_owner": "Hankin",
-      "home_score": 2,
-      "away_score": 1,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "20 Jun",
-      "group": "F",
-      "home": "Japan",
-      "home_owner": "Varcoe",
-      "away": "Tunisia",
+      "date": "18 Jun",
+      "group": "Group L",
+      "home": "England",
+      "home_owner": "Silk",
+      "away": "Croatia",
       "away_owner": "T Rankin",
       "home_score": 4,
+      "away_score": 2,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "19 Jun",
+      "group": "Group A",
+      "home": "Mexico",
+      "home_owner": "Hankin",
+      "away": "South Korea",
+      "away_owner": "?",
+      "home_score": 1,
       "away_score": 0,
       "status": "FT",
-      "badge": ""
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "19 Jun",
+      "group": "Group B",
+      "home": "Canada",
+      "home_owner": "Varcoe",
+      "away": "Qatar",
+      "away_owner": "Silk",
+      "home_score": 6,
+      "away_score": 0,
+      "status": "FT",
+      "badge": "STATEMENT WIN",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "19 Jun",
+      "group": "Group B",
+      "home": "Switzerland",
+      "home_owner": "Varcoe",
+      "away": "Bosnia-Herzegovina",
+      "away_owner": "?",
+      "home_score": 4,
+      "away_score": 1,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "19 Jun",
+      "group": "Group A",
+      "home": "Czech Republic",
+      "home_owner": "P Rankin",
+      "away": "South Africa",
+      "away_owner": "Galbraith",
+      "home_score": 1,
+      "away_score": 1,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
     },
     {
       "date": "20 Jun",
-      "group": "E",
-      "home": "Ecuador",
-      "home_owner": "Crowle",
-      "away": "Curaçao",
-      "away_owner": "Kenna",
-      "home_score": 0,
-      "away_score": 0,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "19 Jun",
-      "group": "D",
-      "home": "USA",
-      "home_owner": "Silk",
-      "away": "Australia",
-      "away_owner": "Cronan",
-      "home_score": 2,
-      "away_score": 0,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "19 Jun",
-      "group": "C",
-      "home": "Scotland",
-      "home_owner": "Morris",
-      "away": "Morocco",
-      "away_owner": "Galbraith",
-      "home_score": 0,
-      "away_score": 1,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "19 Jun",
-      "group": "C",
-      "home": "Brazil",
-      "home_owner": "Morris",
-      "away": "Haiti",
-      "away_owner": "Kenna",
-      "home_score": 3,
-      "away_score": 0,
-      "status": "FT",
-      "badge": ""
-    },
-    {
-      "date": "19 Jun",
-      "group": "D",
+      "group": "Group D",
       "home": "Turkey",
       "home_owner": "Galbraith",
       "away": "Paraguay",
@@ -414,19 +373,63 @@
       "home_score": 0,
       "away_score": 1,
       "status": "FT",
-      "badge": ""
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "20 Jun",
+      "group": "Group C",
+      "home": "Brazil",
+      "home_owner": "Morris",
+      "away": "Haiti",
+      "away_owner": "Kenna",
+      "home_score": 3,
+      "away_score": 0,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "20 Jun",
+      "group": "Group C",
+      "home": "Scotland",
+      "home_owner": "Morris",
+      "away": "Morocco",
+      "away_owner": "Galbraith",
+      "home_score": 0,
+      "away_score": 1,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "20 Jun",
+      "group": "Group D",
+      "home": "USA",
+      "home_owner": "Silk",
+      "away": "Australia",
+      "away_owner": "Cronan",
+      "home_score": 2,
+      "away_score": 0,
+      "status": "FT",
+      "badge": "",
+      "sweepstake_relevant": true
+    },
+    {
+      "date": "21 Jun",
+      "group": "Group F",
+      "home": "Tunisia",
+      "home_owner": "T Rankin",
+      "away": "Japan",
+      "away_owner": "Varcoe",
+      "home_score": 0,
+      "away_score": 4,
+      "status": "FT",
+      "badge": "STATEMENT WIN",
+      "sweepstake_relevant": true
     }
   ],
   "upcoming_fixtures": [
-    {
-      "aest_time": "Tue 3:00am",
-      "group": "J",
-      "home": "Argentina",
-      "home_owner": "Galbraith",
-      "away": "Austria",
-      "away_owner": "Cronan",
-      "context": "Winner through to R32. Galbraith vs Cronan head-to-head."
-    },
     {
       "aest_time": "Tue 7:00am",
       "group": "I",
@@ -434,6 +437,7 @@
       "home_owner": "Cronan",
       "away": "Iraq",
       "away_owner": "P Rankin",
+      "status": "TIMED",
       "context": "France to confirm Group I top spot."
     },
     {
@@ -443,6 +447,7 @@
       "home_owner": "Hankin",
       "away": "Senegal",
       "away_owner": "Kenna",
+      "status": "TIMED",
       "context": "Haaland vs Kenna's best live asset. Group I second spot on the line."
     },
     {
@@ -452,6 +457,7 @@
       "home_owner": "Kenna",
       "away": "Algeria",
       "away_owner": "Silk",
+      "status": "TIMED",
       "context": "Both beaten once. Dead rubber unless Argentina-Austria produces a surprise."
     },
     {
@@ -461,6 +467,7 @@
       "home_owner": "Same",
       "away": "Uzbekistan",
       "away_owner": "Crowle",
+      "status": "TIMED",
       "context": "Ronaldo needs goals and a statement after the DR Congo draw."
     },
     {
@@ -470,7 +477,18 @@
       "home_owner": "Silk",
       "away": "Ghana",
       "away_owner": "T Rankin",
+      "status": "TIMED",
       "context": "Silk vs T Rankin. England need a win to confirm R32 place."
+    },
+    {
+      "aest_time": "Wed 9:00am",
+      "group": "L",
+      "home": "Panama",
+      "home_owner": "Cronan",
+      "away": "Croatia",
+      "away_owner": "T Rankin",
+      "status": "TIMED",
+      "context": ""
     },
     {
       "aest_time": "Wed 12:00pm",
@@ -479,7 +497,28 @@
       "home_owner": "Same",
       "away": "DR Congo",
       "away_owner": "Varcoe",
+      "status": "TIMED",
       "context": "Same vs Varcoe — winner likely tops Group K."
+    },
+    {
+      "aest_time": "Thu 5:00am",
+      "group": "B",
+      "home": "Switzerland",
+      "home_owner": "Varcoe",
+      "away": "Canada",
+      "away_owner": "Varcoe",
+      "status": "TIMED",
+      "context": ""
+    },
+    {
+      "aest_time": "Thu 5:00am",
+      "group": "B",
+      "home": "Bosnia-Herzegovina",
+      "home_owner": "?",
+      "away": "Qatar",
+      "away_owner": "Silk",
+      "status": "TIMED",
+      "context": ""
     }
   ],
   "commentary": [
@@ -506,37 +545,37 @@
     {
       "team": "France",
       "owner": "Cronan",
-      "prev": "$370.0",
+      "prev": "$5.1",
       "now": "$5.1",
       "now_decimal": 5.1,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$550.0",
+      "prev": "$7.0",
       "now": "$7.0",
       "now_decimal": 7.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$600.0",
+      "prev": "$7.5",
       "now": "$7.5",
       "now_decimal": 7.5,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Unibet"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$800.0",
+      "prev": "$7.8",
       "now": "$7.8",
       "now_decimal": 7.8,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -569,28 +608,19 @@
     {
       "team": "Netherlands",
       "owner": "T Rankin",
-      "prev": "$1500.0",
+      "prev": "$19.0",
       "now": "$19.0",
       "now_decimal": 19.0,
-      "direction": "shortened",
-      "source": "Betfair"
-    },
-    {
-      "team": "USA",
-      "owner": "Silk",
-      "prev": "$3300.0",
-      "now": "$36.0",
-      "now_decimal": 36.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Morocco",
       "owner": "Galbraith",
-      "prev": "$3500.0",
+      "prev": "$46.0",
       "now": "$46.0",
       "now_decimal": 46.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -614,10 +644,10 @@
     {
       "team": "Belgium",
       "owner": "Crowle",
-      "prev": "$3500.0",
+      "prev": "$65.0",
       "now": "$65.0",
       "now_decimal": 65.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -704,10 +734,10 @@
     {
       "team": "Sweden",
       "owner": "P Rankin",
-      "prev": "$20000.0",
+      "prev": "$350.0",
       "now": "$350.0",
       "now_decimal": 350.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -722,10 +752,10 @@
     {
       "team": "Uruguay",
       "owner": "Morris",
-      "prev": "$7000.0",
+      "prev": "$460.0",
       "now": "$460.0",
       "now_decimal": 460.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -801,24 +831,6 @@
       "source": "Betfair"
     },
     {
-      "team": "New Zealand",
-      "owner": "Kenna",
-      "prev": "$1001.0",
-      "now": "$1001.0",
-      "now_decimal": 1001.0,
-      "direction": "unchanged",
-      "source": "Unibet"
-    },
-    {
-      "team": "Cape Verde",
-      "owner": "Same",
-      "prev": "$1001.0",
-      "now": "$1001.0",
-      "now_decimal": 1001.0,
-      "direction": "unchanged",
-      "source": "TAB"
-    },
-    {
       "team": "Czech Republic",
       "owner": "P Rankin",
       "prev": "$1001.0",
@@ -835,6 +847,24 @@
       "now_decimal": 1001.0,
       "direction": "unchanged",
       "source": "TAB"
+    },
+    {
+      "team": "Cape Verde",
+      "owner": "Same",
+      "prev": "$1001.0",
+      "now": "$1001.0",
+      "now_decimal": 1001.0,
+      "direction": "unchanged",
+      "source": "TAB"
+    },
+    {
+      "team": "New Zealand",
+      "owner": "Kenna",
+      "prev": "$1001.0",
+      "now": "$1001.0",
+      "now_decimal": 1001.0,
+      "direction": "unchanged",
+      "source": "Unibet"
     },
     {
       "team": "South Africa",
@@ -873,8 +903,8 @@
       "source": "Unibet"
     },
     {
-      "team": "Jordan",
-      "owner": "Kenna",
+      "team": "Qatar",
+      "owner": "Silk",
       "prev": "$2501.0",
       "now": "$2501.0",
       "now_decimal": 2501.0,
@@ -891,8 +921,8 @@
       "source": "Unibet"
     },
     {
-      "team": "Qatar",
-      "owner": "Silk",
+      "team": "Jordan",
+      "owner": "Kenna",
       "prev": "$2501.0",
       "now": "$2501.0",
       "now_decimal": 2501.0,
