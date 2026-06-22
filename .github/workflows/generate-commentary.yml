@@ -1,0 +1,225 @@
+name: Generate Commentary
+
+on:
+  schedule:
+    # 04:00 UTC = 2:00pm AEST
+    - cron: '0 4 * * *'
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+
+jobs:
+  commentary:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch latest scores first
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/fetch_scores.py
+
+      - name: Generate commentary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/generate_commentary.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/data.json
+          git diff --staged --quiet || git commit -m "chore: daily commentary $(date -u '+%Y-%m-%d')"
+          git push
+Done
+Step 6: Commit that file too.
+
+Step 7: Go to Actions tab — you should now see both workflows listed on the left sidebar. Click Fetch Scores → Run workflow → Run workflow to test it manually.
+
+The key thing is typing the path with slashes directly into the filename box — GitHub creates folders that way. The .github folder will never appear correctly when uploading via drag-and-drop because most operating systems hide dotfiles.
+
+Once those two files are in, the workflows appear, and after the first successful Fetch Scores run the site will start showing live data.
+
+1782131112051_image.png
+22:25
+I can see exactly what happened. Look at lines 1-5 in the workflow file — it shows:
+
+bash
+cat /home/claude/wc2026-sweepstake/.github/workflows/generate-commentary.yml
+Output
+name: Generate Commentary
+You accidentally pasted the bash command output from my previous message (including bash, cat ..., Output) before the actual YAML content. GitHub then tried to parse that as YAML and failed on line 6 where the real content starts.
+
+Fix — edit the file directly in GitHub:
+
+Go to your repo → .github/workflows/generate-commentary.yml
+Click the pencil icon (Edit)
+Select all and delete everything
+Paste only this — nothing before the name: line:
+yaml
+name: Generate Commentary
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  commentary:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch latest scores first
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/fetch_scores.py
+
+      - name: Generate commentary
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/generate_commentary.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/data.json
+          git diff --staged --quiet || git commit -m "chore: daily commentary $(date -u '+%Y-%m-%d')"
+          git push
+Click Commit changes
+Do the same check on fetch-scores.yml — open it and make sure it also starts cleanly with name: Fetch Scores on line 1 with nothing above it.
+
+give me the clean code for fetch scores
+
+22:28
+yaml
+name: Fetch Scores
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch scores
+        env:
+          FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+        run: python scripts/fetch_scores.py
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/data.json
+          if git diff --staged --quiet; then
+            echo "No changes to data.json"
+          else
+            git commit -m "chore: update scores $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+Start with name: on line 1, nothing above it.
+
+now what?
+
+22:32
+Check what the Actions tab looks like now — do you see both workflows listed?
+
+Q: What do you see in the Actions tab now?
+A: Both 'Fetch Scores' and 'Generate Commentary' workflows are listed
+
+Q: Have you added your API keys as GitHub secrets yet?
+A: Yes, both FOOTBALL_API_KEY and ANTHROPIC_API_KEY are added
+
+22:32
+Perfect — you're ready to test. Do this now:
+
+Click Fetch Scores in the left sidebar of Actions
+Click the Run workflow button (top right, grey dropdown)
+Click the green Run workflow button
+Watch it run — takes about 30 seconds
+Send me a screenshot of the result (green tick or red cross) and I'll take it from there.
+
+1782131640520_image.png
+same error for both
+
+22:34
+"Process completed with exit code 2" means the Python script is crashing. I need to see the actual error. Click the red fetch job box in the middle of the screen to expand the logs — it'll show exactly which line failed and why. Most likely it's either a bad API key or the football-data.org API returning an unexpected response.
+
+Can you click on that fetch box and send me a screenshot of the expanded logs?
+
+1782131729642_image.png
+22:35
+Line 13 tells us exactly what's wrong:
+
+/home/runner/work/wc2026-sweepstake/wc2026-sweepstake/scripts/fetch_scores.py: No such file or directory
+The path is doubled — wc2026-sweepstake/wc2026-sweepstake/scripts/.... This means when you uploaded the zip, it created a folder inside a folder. Your repo structure looks like this:
+
+wc2026-sweepstake/        ← extra outer folder
+  wc2026-sweepstake/      ← the actual files are in here
+    scripts/
+    data/
+    index.html
+When GitHub Actions checks out the repo, it expects scripts/fetch_scores.py at the root level, not inside a subfolder.
+
+Fix — two options:
+
+Option A (easiest) — move the files up in GitHub:
+
+Go to your repo on GitHub
+Click into the inner wc2026-sweepstake folder
+For each file (index.html, data/, scripts/, _config.yml, .nojekyll, README.md), open it, click the pencil to edit, then in the filename box at the top backspace to remove the wc2026-sweepstake/ prefix and commit
+Option B (fastest) — delete the repo and re-upload correctly:
+
+Settings → scroll to bottom → Delete repository
+Create a new repo called wc2026-sweepstake
+This time when uploading, go inside the zip first, then upload the contents directly — not the outer folder itself
+Option B is quicker. The root of your repo should show index.html, data/, scripts/, .github/ directly — not another wc2026-sweepstake/ folder.
+
+
+
+
+
+
+
