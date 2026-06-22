@@ -1,327 +1,943 @@
-"""
-fetch_scores.py
-Pulls live WC2026 results from football-data.org and updates data/data.json
-Runs every 30 minutes via GitHub Actions.
-"""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0F172A">
+<title>WC2026 Sweepstake</title>
+<style>
+  /* ── Reset & Base ─────────────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-import os
-import json
-import requests
-from datetime import datetime, timezone, timedelta
-from pathlib import Path
+  :root {
+    --navy:    #0F172A;
+    --amber:   #D97706;
+    --slate:   #64748B;
+    --light:   #F1F5F9;
+    --white:   #FFFFFF;
+    --border:  #E2E8F0;
+    --green:   #16A34A;
+    --red:     #DC2626;
+    --text:    #1E293B;
+    --radius:  6px;
+    --gap:     16px;
+  }
 
-# ── Config ──────────────────────────────────────────────────────────────────
-API_KEY     = os.environ["FOOTBALL_API_KEY"]   # set in GitHub secrets
-API_BASE    = "https://api.football-data.org/v4"
-WC_COMP_ID  = 2000   # football-data.org competition ID for FIFA World Cup
-DATA_FILE   = Path(__file__).parent.parent / "data" / "data.json"
-AEST        = timezone(timedelta(hours=10))
+  html { font-size: 15px; }
 
-HEADERS = {
-    "X-Auth-Token": API_KEY,
-    "Accept": "application/json"
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.5;
+  }
+
+  /* ── Layout ───────────────────────────────────────────────── */
+  .site-header {
+    background: var(--navy);
+    padding: 14px 16px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid var(--amber);
+  }
+
+  .site-header h1 {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -0.02em;
+  }
+
+  .site-header h1 span { color: var(--amber); }
+
+  .header-meta {
+    font-size: 0.72rem;
+    color: var(--slate);
+    margin-top: 2px;
+  }
+
+  .live-badge {
+    display: inline-block;
+    background: var(--red);
+    color: white;
+    font-size: 0.62rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+    vertical-align: middle;
+    margin-left: 6px;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0;
+    background: var(--white);
+    min-height: calc(100vh - 56px);
+  }
+
+  /* ── Tabs ─────────────────────────────────────────────────── */
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--navy);
+    position: sticky;
+    top: 56px;
+    z-index: 99;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .tab {
+    padding: 10px 4px;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--slate);
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    transition: color 0.15s;
+  }
+
+  .tab.active {
+    color: var(--amber);
+    border-bottom: 2px solid var(--amber);
+  }
+
+  .tab:hover { color: #94A3B8; }
+
+  /* ── Panels ───────────────────────────────────────────────── */
+  .panel { display: none; padding: 16px; }
+  .panel.active { display: block; }
+
+  /* ── Section headers ──────────────────────────────────────── */
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--navy);
+  }
+
+  .section-head h2 {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--navy);
+  }
+
+  /* ── Standings ────────────────────────────────────────────── */
+  .standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  .standings-table thead th {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--slate);
+    text-transform: uppercase;
+    padding: 6px 4px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .standings-table thead th:first-child,
+  .standings-table thead th:nth-child(2) { text-align: left; }
+
+  .standings-table tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.1s;
+  }
+
+  .standings-table tbody tr:last-child { border-bottom: 2px solid var(--navy); }
+  .standings-table tbody tr:active { background: var(--light); }
+
+  .standings-table td {
+    padding: 9px 4px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .standings-table td:first-child { text-align: center; font-weight: 700; padding-left: 0; width: 24px; }
+  .standings-table td:nth-child(2) { text-align: left; padding-left: 2px; }
+
+  .rank-cell { font-size: 0.85rem; }
+  .rank-1 { color: #B45309; }
+
+  .participant-name {
+    font-weight: 800;
+    font-size: 0.82rem;
+  }
+
+  .win-pct {
+    font-weight: 800;
+    font-size: 0.88rem;
+  }
+
+  .pts-cell {
+    font-weight: 800;
+    font-size: 0.9rem;
+  }
+
+  .move-cell {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .move-up   { color: var(--green); }
+  .move-down { color: var(--red); }
+  .move-same { color: var(--slate); }
+
+  /* ── Teams row ────────────────────────────────────────────── */
+  .teams-row {
+    font-size: 0.65rem;
+    color: var(--slate);
+    padding: 0 4px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── Result cards ─────────────────────────────────────────── */
+  .result-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .result-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 5px 12px;
+    background: var(--light);
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--slate);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .result-badge {
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.06em;
+  }
+
+  .badge-shock     { background: var(--red); color: white; }
+  .badge-statement { background: var(--green); color: white; }
+  .badge-live      { background: var(--red); color: white; animation: pulse 2s infinite; }
+
+  .result-body {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .result-team { }
+  .result-team.home { text-align: left; }
+  .result-team.away { text-align: right; }
+
+  .team-name {
+    font-weight: 800;
+    font-size: 0.88rem;
+    color: var(--navy);
+  }
+
+  .team-owner {
+    font-size: 0.68rem;
+    font-style: italic;
+    margin-top: 1px;
+  }
+
+  .result-score {
+    text-align: center;
+  }
+
+  .score-line {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--navy);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  .score-status {
+    font-size: 0.65rem;
+    color: var(--slate);
+    font-weight: 700;
+    margin-top: 2px;
+    letter-spacing: 0.04em;
+  }
+
+  .score-live {
+    color: var(--red);
+  }
+
+  .result-left-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+  }
+
+  /* ── Fixture rows ─────────────────────────────────────────── */
+  .fixture-row {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 8px;
+    align-items: start;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .fixture-row:last-child { border-bottom: none; }
+
+  .fixture-time {
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding-top: 1px;
+  }
+
+  .fixture-time.highlight { color: var(--amber); }
+  .fixture-time.dimmed    { color: var(--slate); }
+  .fixture-time.live      { color: var(--red); }
+
+  .fixture-match-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.3;
+  }
+
+  .fixture-meta {
+    font-size: 0.68rem;
+    color: var(--slate);
+    margin-top: 2px;
+  }
+
+  .fixture-owners {
+    font-size: 0.72rem;
+    margin-top: 3px;
+    font-weight: 600;
+  }
+
+  .fixture-group-tag {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-right: 4px;
+    letter-spacing: 0.04em;
+  }
+
+  /* ── Commentary ───────────────────────────────────────────── */
+  .commentary-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .commentary-card-inner {
+    padding: 12px 12px 12px 16px;
+    position: relative;
+  }
+
+  .commentary-left-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+  }
+
+  .commentary-title {
+    font-weight: 800;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .commentary-body {
+    font-size: 0.82rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+
+  .commentary-body p + p { margin-top: 10px; }
+
+  /* ── Odds table ───────────────────────────────────────────── */
+  .odds-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+  }
+
+  .odds-table thead th {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--slate);
+    text-transform: uppercase;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+  }
+
+  .odds-table thead th:nth-child(3),
+  .odds-table thead th:nth-child(4) { text-align: right; }
+  .odds-table thead th:last-child { text-align: center; }
+
+  .odds-table tbody tr { border-bottom: 1px solid var(--border); }
+  .odds-table tbody tr:last-child { border-bottom: 2px solid var(--navy); }
+
+  .odds-table td {
+    padding: 9px 8px;
+    vertical-align: middle;
+  }
+
+  .odds-table td:nth-child(3),
+  .odds-table td:nth-child(4) { text-align: right; }
+  .odds-table td:last-child { text-align: center; }
+
+  .odds-team { font-weight: 700; }
+  .odds-owner { font-size: 0.72rem; font-weight: 700; }
+  .odds-prev { color: var(--slate); text-decoration: line-through; font-size: 0.75rem; }
+  .odds-now { font-weight: 800; font-size: 0.88rem; }
+  .odds-shortened { color: var(--green); }
+  .odds-drifted   { color: var(--red); }
+
+  .direction-badge {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 3px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+
+  .direction-badge.shortened { background: #DCFCE7; color: var(--green); }
+  .direction-badge.drifted   { background: #FEE2E2; color: var(--red); }
+  .direction-badge.unchanged { background: var(--light); color: var(--slate); }
+
+  /* ── Info panel ───────────────────────────────────────────── */
+  .info-section { margin-bottom: 20px; }
+  .info-section h3 {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .owner-key {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .owner-key-item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.8rem;
+    padding: 6px 8px;
+    background: var(--light);
+    border-radius: 4px;
+  }
+
+  .owner-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .owner-name { font-weight: 700; }
+  .owner-teams {
+    font-size: 0.62rem;
+    color: var(--slate);
+    margin-top: 1px;
+    line-height: 1.4;
+  }
+
+  /* ── Loading / error ──────────────────────────────────────── */
+  .loading {
+    text-align: center;
+    padding: 48px 24px;
+    color: var(--slate);
+    font-size: 0.85rem;
+  }
+
+  .error-msg {
+    background: #FEE2E2;
+    color: var(--red);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    font-size: 0.82rem;
+    margin-bottom: 16px;
+  }
+
+  /* ── Footer ───────────────────────────────────────────────── */
+  .site-footer {
+    background: var(--navy);
+    color: var(--slate);
+    font-size: 0.7rem;
+    padding: 14px 16px;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .site-footer a { color: var(--amber); text-decoration: none; }
+
+  /* ── Utility ──────────────────────────────────────────────── */
+  .spacer { height: 8px; }
+  .text-right { text-align: right; }
+  .text-center { text-align: center; }
+  .muted { color: var(--slate); }
+  .small { font-size: 0.72rem; }
+  .bold { font-weight: 700; }
+
+  @media (min-width: 480px) {
+    .owner-key { grid-template-columns: repeat(3, 1fr); }
+    html { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── Header ──────────────────────────────────────────────────────────────── -->
+<header class="site-header">
+  <h1>WC2026 <span>Sweepstake</span></h1>
+  <div class="header-meta" id="header-meta">Loading...</div>
+</header>
+
+<!-- ── Main container ──────────────────────────────────────────────────────── -->
+<div class="container">
+
+  <!-- ── Tabs ──────────────────────────────────────────────────────────────── -->
+  <nav class="tabs" role="tablist">
+    <button class="tab active" onclick="showTab('standings')" role="tab">Table</button>
+    <button class="tab" onclick="showTab('results')"  role="tab">Results</button>
+    <button class="tab" onclick="showTab('fixtures')" role="tab">Fixtures</button>
+    <button class="tab" onclick="showTab('analysis')" role="tab">Analysis</button>
+  </nav>
+
+  <!-- ── Standings panel ────────────────────────────────────────────────────── -->
+  <section class="panel active" id="panel-standings">
+    <div class="section-head">
+      <h2>Participant Standings</h2>
+    </div>
+    <p class="small muted" style="margin-bottom:12px;">Ranked by Win% — Kalshi implied probability across surviving teams. Tap a row to expand teams.</p>
+    <div id="standings-content"><div class="loading">Loading standings...</div></div>
+  </section>
+
+  <!-- ── Results panel ──────────────────────────────────────────────────────── -->
+  <section class="panel" id="panel-results">
+    <div class="section-head">
+      <h2>Recent Results</h2>
+    </div>
+    <div id="results-content"><div class="loading">Loading results...</div></div>
+  </section>
+
+  <!-- ── Fixtures panel ─────────────────────────────────────────────────────── -->
+  <section class="panel" id="panel-fixtures">
+    <div class="section-head">
+      <h2>Next 48 Hours <span class="small muted">AEST</span></h2>
+    </div>
+    <div id="fixtures-content"><div class="loading">Loading fixtures...</div></div>
+
+    <div style="margin-top:20px;">
+      <div class="section-head"><h2>Odds Movement</h2></div>
+      <div id="odds-content"><div class="loading">Loading odds...</div></div>
+    </div>
+  </section>
+
+  <!-- ── Analysis panel ─────────────────────────────────────────────────────── -->
+  <section class="panel" id="panel-analysis">
+    <div class="section-head">
+      <h2>Analytical Commentary</h2>
+    </div>
+    <p class="small muted" style="margin-bottom:12px;">Generated daily at 2pm AEST. 3 participants covered per edition, rotating across all 11.</p>
+    <div id="commentary-content"><div class="loading">Loading commentary...</div></div>
+
+    <div style="margin-top:20px;">
+      <div class="section-head"><h2>Participant Guide</h2></div>
+      <div id="owner-key-content"><div class="loading">Loading...</div></div>
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<footer class="site-footer">
+  <div>Winner takes all &nbsp;·&nbsp; Win% = Kalshi implied probability &nbsp;·&nbsp; Odds: BetMGM / FanDuel</div>
+  <div style="margin-top:4px;">Scores refresh every 30 min &nbsp;·&nbsp; Commentary daily 2pm AEST</div>
+</footer>
+
+<script>
+// ── Data loading ──────────────────────────────────────────────────────────────
+const DATA_URL = './data/data.json';
+let state = null;
+
+async function loadData() {
+  try {
+    const resp = await fetch(`${DATA_URL}?t=${Date.now()}`);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status} — data.json not found. Check that data/data.json exists in your GitHub repo.`);
+    const text = await resp.text();
+    try {
+      state = JSON.parse(text);
+    } catch(parseErr) {
+      throw new Error(`data.json is not valid JSON: ${parseErr.message}`);
+    }
+    // Clear any previous error
+    const errEl = document.getElementById('load-error');
+    if (errEl) errEl.style.display = 'none';
+    render();
+    // Auto-refresh every 5 minutes
+    setTimeout(loadData, 5 * 60 * 1000);
+  } catch (err) {
+    console.error('Failed to load data:', err);
+    document.getElementById('header-meta').textContent = 'Failed to load data';
+    // Show visible error in all panels
+    const msg = `
+      <div class="error-msg">
+        <strong>Could not load data.json</strong><br>
+        ${err.message}<br><br>
+        <strong>To fix:</strong> Make sure <code>data/data.json</code> exists in your GitHub repo
+        and GitHub Pages has finished deploying (check the Actions tab).
+        <br><br>
+        <button onclick="loadData()" style="background:var(--red);color:white;border:none;padding:6px 14px;border-radius:4px;font-weight:700;cursor:pointer;">Retry</button>
+      </div>`;
+    ['standings','results','fixtures','odds','commentary','owner-key'].forEach(id => {
+      const el = document.getElementById(`${id}-content`);
+      if (el) el.innerHTML = msg;
+    });
+  }
 }
 
-# ── Participant map ───────────────────────────────────────────────────────────
-# Maps football-data.org team names → our sweepstake participant
-TEAM_TO_OWNER = {
-    # Kenna
-    "Spain": "Kenna", "Senegal": "Kenna", "Korea Republic": "Kenna",
-    "Egypt": "Kenna", "Jordan": "Kenna", "New Zealand": "Kenna",
-    "Curaçao": "Kenna", "Haiti": "Kenna",
-    # Cronan
-    "France": "Cronan", "Austria": "Cronan", "Australia": "Cronan", "Panama": "Cronan",
-    # Silk
-    "England": "Silk", "USA": "Silk", "United States": "Silk",
-    "Algeria": "Silk", "Qatar": "Silk",
-    # Same
-    "Portugal": "Same", "Colombia": "Same", "Paraguay": "Same", "Cape Verde": "Same",
-    # Galbraith
-    "Argentina": "Galbraith", "Morocco": "Galbraith",
-    "Türkiye": "Galbraith", "Turkey": "Galbraith", "South Africa": "Galbraith",
-    # Morris
-    "Brazil": "Morris", "Uruguay": "Morris", "Scotland": "Morris", "Iran": "Morris",
-    # P Rankin
-    "Germany": "P Rankin", "Czech Republic": "P Rankin", "Czechia": "P Rankin",
-    "Iraq": "P Rankin", "Sweden": "P Rankin",
-    # T Rankin
-    "Netherlands": "T Rankin", "Croatia": "T Rankin",
-    "Ghana": "T Rankin", "Tunisia": "T Rankin",
-    # Hankin
-    "Norway": "Hankin", "Mexico": "Hankin",
-    "Côte d'Ivoire": "Hankin", "Ivory Coast": "Hankin", "Saudi Arabia": "Hankin",
-    # Varcoe
-    "Japan": "Varcoe", "Switzerland": "Varcoe",
-    "DR Congo": "Varcoe", "Congo DR": "Varcoe",
-    "Democratic Republic of Congo": "Varcoe", "Canada": "Varcoe",
-    # Crowle
-    "Belgium": "Crowle", "Ecuador": "Crowle",
-    "Bosnia and Herzegovina": "Crowle", "Bosnia": "Crowle", "Uzbekistan": "Crowle",
+// ── Tab switching ─────────────────────────────────────────────────────────────
+function showTab(name) {
+  document.querySelectorAll('.tab').forEach((t, i) => {
+    const panels = ['standings','results','fixtures','analysis'];
+    t.classList.toggle('active', panels[i] === name);
+  });
+  document.querySelectorAll('.panel').forEach(p => {
+    p.classList.toggle('active', p.id === `panel-${name}`);
+  });
 }
 
-DISPLAY_NAMES = {
-    "Korea Republic": "South Korea", "Türkiye": "Turkey",
-    "Côte d'Ivoire": "Ivory Coast", "Congo DR": "DR Congo",
-    "Democratic Republic of Congo": "DR Congo",
-    "United States": "USA", "Bosnia and Herzegovina": "Bosnia",
-    "Czechia": "Czech Republic",
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function esc(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-def get_display_name(api_name):
-    return DISPLAY_NAMES.get(api_name, api_name)
+function ownerSpan(owner, participants) {
+  const color = participants[owner]?.color || '#64748B';
+  return `<span class="owner" style="color:${color}; font-weight:700;">${esc(owner)}</span>`;
+}
 
-def get_owner(api_name):
-    return TEAM_TO_OWNER.get(api_name, TEAM_TO_OWNER.get(get_display_name(api_name), "?"))
+function moveArrow(move) {
+  if (move === 'up')   return '<span class="move-up">▲</span>';
+  if (move === 'down') return '<span class="move-down">▼</span>';
+  return '<span class="move-same">—</span>';
+}
 
-def get_badge(match):
-    """Assign a badge based on match context."""
-    home = match["homeTeam"]["name"]
-    away = match["awayTeam"]["name"]
-    hs = match["score"]["fullTime"]["home"]
-    as_ = match["score"]["fullTime"]["away"]
-    if hs is None or as_ is None:
-        return ""
-    diff = abs(hs - as_)
-    home_owner = get_owner(home)
-    away_owner = get_owner(away)
-    # High-profile favourites losing or drawing
-    big_teams = {"Spain", "France", "Argentina", "Brazil", "England", "Germany",
-                 "Netherlands", "Portugal"}
-    home_disp = get_display_name(home)
-    away_disp = get_display_name(away)
-    if home_disp in big_teams and as_ > hs:
-        return "SHOCK RESULT"
-    if away_disp in big_teams and hs > as_:
-        return "SHOCK RESULT"
-    if diff >= 4:
-        return "STATEMENT WIN"
-    return ""
+function gd(val) {
+  if (val > 0) return `<span style="color:var(--green);font-weight:700;">+${val}</span>`;
+  if (val < 0) return `<span style="color:var(--red);font-weight:700;">${val}</span>`;
+  return `<span style="color:var(--slate);">0</span>`;
+}
 
-def fetch_matches():
-    """Fetch all WC2026 matches from football-data.org."""
-    url = f"{API_BASE}/competitions/{WC_COMP_ID}/matches"
-    resp = requests.get(url, headers=HEADERS, timeout=15)
-    resp.raise_for_status()
-    return resp.json().get("matches", [])
+// ── Render all ────────────────────────────────────────────────────────────────
+function render() {
+  if (!state) return;
+  const { meta, participants, standings, recent_results,
+          upcoming_fixtures, commentary, odds } = state;
 
-def format_aest(utc_str):
-    """Convert UTC ISO string to AEST display string."""
-    if not utc_str:
-        return ""
-    dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
-    dt_aest = dt.astimezone(AEST)
-    day_names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-    day = day_names[dt_aest.weekday()]
-    hour = dt_aest.strftime("%-I:%M%p").lower().replace("am", "am").replace("pm", "pm")
-    return f"{day} {hour}"
+  // Header meta
+  const hasLive = (upcoming_fixtures || []).some(f => f.status === 'IN_PLAY' || f.aest_time === '🔴 LIVE');
+  document.getElementById('header-meta').innerHTML =
+    `Updated ${esc(meta.last_updated_aest)} · Edition ${meta.edition}`
+    + (hasLive ? '<span class="live-badge">LIVE</span>' : '');
 
-def format_date_short(utc_str):
-    """Format as '22 Jun'."""
-    if not utc_str:
-        return ""
-    dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
-    dt_aest = dt.astimezone(AEST)
-    return dt_aest.strftime("%-d %b")
+  renderStandings(standings, participants);
+  renderResults(recent_results, participants);
+  renderFixtures(upcoming_fixtures, participants);
+  renderOdds(odds, participants);
+  renderCommentary(commentary);
+  renderOwnerKey(participants);
+}
 
-def build_standings(matches):
-    """
-    Build participant standings from match results.
-    Win% is NOT calculated here (needs odds API) — preserved from existing data.
-    """
-    stats = {}
-    for name in TEAM_TO_OWNER.values():
-        if name not in stats:
-            stats[name] = {"w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pld": 0}
+// ── Standings ─────────────────────────────────────────────────────────────────
+function renderStandings(standings, participants) {
+  if (!standings?.length) return;
 
-    for m in matches:
-        if m["status"] != "FINISHED":
-            continue
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
-        hs = m["score"]["fullTime"]["home"]
-        as_ = m["score"]["fullTime"]["away"]
-        if hs is None or as_ is None:
-            continue
+  const medals = ['🥇','🥈','🥉'];
 
-        home_owner = get_owner(home_name)
-        away_owner = get_owner(away_name)
+  let html = `
+  <table class="standings-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Participant</th>
+        <th>W%</th>
+        <th>Pts</th>
+        <th>GD</th>
+        <th>P</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>`;
 
-        for owner, gf, ga in [(home_owner, hs, as_), (away_owner, as_, hs)]:
-            if owner == "?":
-                continue
-            stats[owner]["pld"] += 1
-            stats[owner]["gf"] += gf
-            stats[owner]["ga"] += ga
-            if gf > ga:
-                stats[owner]["w"] += 1
-            elif gf == ga:
-                stats[owner]["d"] += 1
-            else:
-                stats[owner]["l"] += 1
+  standings.forEach((s, i) => {
+    const color = participants[s.name]?.color || '#64748B';
+    const rank = medals[i] || s.rank;
+    const ptsColor = s.pts >= 12 ? 'var(--green)' : s.pts >= 6 ? '#1D4ED8' : 'var(--slate)';
+    const bg = i === 0 ? '#FFFBEB' : i % 2 === 0 ? 'white' : '#F8FAFC';
+    const winPctColor = color;
 
-    result = []
-    for name, s in stats.items():
-        pts = s["w"] * 3 + s["d"]
-        gd = s["gf"] - s["ga"]
-        result.append({
-            "name": name,
-            "pld": s["pld"],
-            "w": s["w"],
-            "d": s["d"],
-            "l": s["l"],
-            "pts": pts,
-            "gd": gd,
-        })
+    const teamsStr = (participants[s.name]?.teams || []).join(' · ');
+    const rowId = `row-${i}`;
+    const teamsRowId = `teams-${i}`;
 
-    # Sort by pts desc, then gd desc
-    result.sort(key=lambda x: (-x["pts"], -x["gd"]))
-    for i, r in enumerate(result):
-        r["rank"] = i + 1
-    return result
+    html += `
+      <tr style="background:${bg}; border-left:3px solid ${color};" onclick="toggleTeams('${teamsRowId}')">
+        <td class="rank-cell ${i===0?'rank-1':''}">${rank}</td>
+        <td><span class="participant-name" style="color:${color};">${esc(s.name)}</span></td>
+        <td><span class="win-pct" style="color:${winPctColor};">${s.win_pct.toFixed(2)}%</span></td>
+        <td><span class="pts-cell" style="color:${ptsColor};">${s.pts}</span></td>
+        <td>${gd(s.gd)}</td>
+        <td class="muted small">${s.pld}</td>
+        <td class="move-cell">${moveArrow(s.move)}</td>
+      </tr>
+      <tr id="${teamsRowId}" class="teams-row" style="display:none; background:${bg};">
+        <td></td>
+        <td colspan="6" style="padding:0 4px 8px; font-size:0.68rem; color:var(--slate);">${esc(teamsStr)}</td>
+      </tr>`;
+  });
 
-def build_results(matches):
-    """Build recent results list (last 12 finished matches, sweepstake-relevant first)."""
-    finished = [m for m in matches if m["status"] == "FINISHED"]
-    # Sort by date descending
-    finished.sort(key=lambda m: m.get("utcDate", ""), reverse=True)
+  html += '</tbody></table>';
+  document.getElementById('standings-content').innerHTML = html;
+}
 
-    results = []
-    for m in finished[:20]:  # look at last 20, pick best 12
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
-        home_owner = get_owner(home_name)
-        away_owner = get_owner(away_name)
-        hs = m["score"]["fullTime"]["home"]
-        as_ = m["score"]["fullTime"]["away"]
-        group = m.get("group", "").replace("GROUP_", "Group ").replace("_", " ")
+function toggleTeams(id) {
+  const row = document.getElementById(id);
+  if (!row) return;
+  row.style.display = row.style.display === 'none' ? 'table-row' : 'none';
+}
 
-        results.append({
-            "date": format_date_short(m.get("utcDate")),
-            "group": group,
-            "home": get_display_name(home_name),
-            "home_owner": home_owner,
-            "away": get_display_name(away_name),
-            "away_owner": away_owner,
-            "home_score": hs,
-            "away_score": as_,
-            "status": "FT",
-            "badge": get_badge(m),
-            "sweepstake_relevant": home_owner != "?" or away_owner != "?"
-        })
+// ── Results ───────────────────────────────────────────────────────────────────
+function renderResults(results, participants) {
+  if (!results?.length) {
+    document.getElementById('results-content').innerHTML = '<p class="muted small">No results yet.</p>';
+    return;
+  }
 
-    # Sort: sweepstake relevant first, then by date
-    results.sort(key=lambda r: (not r["sweepstake_relevant"], r["date"]))
-    return results[:12]
+  let html = '';
+  results.forEach(r => {
+    const homeColor = participants[r.home_owner]?.color || '#64748B';
+    const awayColor = participants[r.away_owner]?.color || '#64748B';
+    const isLive = r.status === 'IN_PLAY' || r.status === 'PAUSED';
 
-def build_upcoming(matches):
-    """Build upcoming fixtures for the next 48 hours."""
-    now_utc = datetime.now(timezone.utc)
-    cutoff = now_utc + timedelta(hours=48)
+    let badgeHtml = '';
+    if (r.badge === 'SHOCK RESULT')    badgeHtml = `<span class="result-badge badge-shock">SHOCK</span>`;
+    if (r.badge === 'STATEMENT WIN')   badgeHtml = `<span class="result-badge badge-statement">STATEMENT WIN</span>`;
+    if (isLive)                        badgeHtml = `<span class="result-badge badge-live">LIVE</span>`;
 
-    upcoming = []
-    scheduled = [m for m in matches if m["status"] in ("SCHEDULED", "TIMED", "IN_PLAY", "PAUSED")]
-    scheduled.sort(key=lambda m: m.get("utcDate", ""))
+    const scoreDisplay = isLive && r.live_score
+      ? `<div class="score-line score-live">${esc(r.live_score)}</div><div class="score-status score-live">LIVE</div>`
+      : `<div class="score-line">${r.home_score}&nbsp;–&nbsp;${r.away_score}</div><div class="score-status">FT</div>`;
 
-    for m in scheduled:
-        utc_str = m.get("utcDate", "")
-        if not utc_str:
-            continue
-        dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
-        if dt > cutoff:
-            continue
+    html += `
+    <div class="result-card">
+      <div class="result-left-bar" style="background:${homeColor};"></div>
+      <div class="result-card-header">
+        <span>Group ${esc(r.group)} · ${esc(r.date)}</span>
+        ${badgeHtml}
+      </div>
+      <div class="result-body">
+        <div class="result-team home">
+          <div class="team-name">${esc(r.home)}</div>
+          <div class="team-owner" style="color:${homeColor};">${esc(r.home_owner)}</div>
+        </div>
+        <div class="result-score">${scoreDisplay}</div>
+        <div class="result-team away">
+          <div class="team-name">${esc(r.away)}</div>
+          <div class="team-owner" style="color:${awayColor};">${esc(r.away_owner)}</div>
+        </div>
+      </div>
+    </div>`;
+  });
 
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
-        home_owner = get_owner(home_name)
-        away_owner = get_owner(away_name)
-        group = m.get("group", "").replace("GROUP_", "").replace("_", " ").strip()
-        status = m["status"]
+  document.getElementById('results-content').innerHTML = html;
+}
 
-        entry = {
-            "aest_time": format_aest(utc_str),
-            "group": group,
-            "home": get_display_name(home_name),
-            "home_owner": home_owner,
-            "away": get_display_name(away_name),
-            "away_owner": away_owner,
-            "status": status,
-            "context": ""
-        }
+// ── Fixtures ──────────────────────────────────────────────────────────────────
+function renderFixtures(fixtures, participants) {
+  if (!fixtures?.length) {
+    document.getElementById('fixtures-content').innerHTML = '<p class="muted small">No upcoming fixtures in the next 48 hours.</p>';
+    return;
+  }
 
-        # Add live score if in play
-        if status in ("IN_PLAY", "PAUSED"):
-            hs = m["score"].get("fullTime", {}).get("home") or m["score"].get("halfTime", {}).get("home", 0)
-            as_ = m["score"].get("fullTime", {}).get("away") or m["score"].get("halfTime", {}).get("away", 0)
-            entry["live_score"] = f"{hs}–{as_}"
-            entry["aest_time"] = "🔴 LIVE"
+  let html = '';
+  fixtures.forEach(f => {
+    const isLive = f.aest_time === '🔴 LIVE' || f.status === 'IN_PLAY';
+    const isHighlight = !isLive && (
+      participants[f.home_owner] !== undefined ||
+      participants[f.away_owner] !== undefined
+    );
+    const timeClass = isLive ? 'live' : isHighlight ? 'highlight' : 'dimmed';
+    const homeColor = participants[f.home_owner]?.color || '#64748B';
+    const awayColor = participants[f.away_owner]?.color || '#64748B';
 
-        upcoming.append(entry)
+    const liveScore = f.live_score
+      ? `<span style="font-weight:900; color:var(--red); margin:0 4px;">${esc(f.live_score)}</span>`
+      : '<span style="color:var(--slate); margin:0 4px;">vs</span>';
 
-    return upcoming
+    html += `
+    <div class="fixture-row">
+      <div class="fixture-time ${timeClass}">${esc(f.aest_time)}</div>
+      <div>
+        <div class="fixture-match-name">
+          <span class="fixture-group-tag">${esc(f.group)}</span>
+          <span style="color:${homeColor}; font-weight:800;">${esc(f.home)}</span>
+          ${liveScore}
+          <span style="color:${awayColor}; font-weight:800;">${esc(f.away)}</span>
+        </div>
+        <div class="fixture-owners">
+          ${ownerSpan(f.home_owner, participants)}
+          <span class="muted"> vs </span>
+          ${ownerSpan(f.away_owner, participants)}
+        </div>
+        ${f.context ? `<div class="fixture-meta">${esc(f.context)}</div>` : ''}
+      </div>
+    </div>`;
+  });
 
-def main():
-    print("Fetching WC2026 matches...")
-    matches = fetch_matches()
-    print(f"  Got {len(matches)} matches total")
+  document.getElementById('fixtures-content').innerHTML = html;
+}
 
-    # Load existing data to preserve win_pct, commentary, odds
-    with open(DATA_FILE) as f:
-        existing = json.load(f)
+// ── Odds ──────────────────────────────────────────────────────────────────────
+function renderOdds(odds, participants) {
+  if (!odds?.length) return;
 
-    # Build fresh data
-    new_standings_raw = build_standings(matches)
-    new_results = build_results(matches)
-    new_upcoming = build_upcoming(matches)
+  let html = `
+  <table class="odds-table">
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>Owner</th>
+        <th>Prev</th>
+        <th>Now</th>
+        <th>Direction</th>
+      </tr>
+    </thead>
+    <tbody>`;
 
-    # Merge standings: update on-pitch stats, preserve win_pct/move from existing
-    existing_standing_map = {s["name"]: s for s in existing.get("standings", [])}
-    merged_standings = []
-    for s in new_standings_raw:
-        ex = existing_standing_map.get(s["name"], {})
-        merged_standings.append({
-            **s,
-            "left": ex.get("left", 0),
-            "win_pct": ex.get("win_pct", 0.0),
-            "move": ex.get("move", "same"),
-            "move_note": ex.get("move_note", ""),
-        })
-    # Re-sort by win_pct (primary sweepstake metric)
-    merged_standings.sort(key=lambda x: -x["win_pct"])
-    for i, s in enumerate(merged_standings):
-        s["rank"] = i + 1
+  odds.forEach((o, i) => {
+    const color = participants[o.owner]?.color || '#64748B';
+    const bg = i % 2 === 0 ? 'white' : '#F8FAFC';
+    const dirClass = o.direction === 'shortened' ? 'shortened' : o.direction === 'drifted' ? 'drifted' : 'unchanged';
+    const dirLabel = o.direction === 'shortened' ? '▲ Shortened' : o.direction === 'drifted' ? '▼ Drifted' : '— Unchanged';
+    const nowClass = o.direction === 'shortened' ? 'odds-shortened' : o.direction === 'drifted' ? 'odds-drifted' : '';
 
-    # Update meta
-    now_aest = datetime.now(AEST)
-    day_names = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    day = day_names[now_aest.weekday()]
-    existing["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
-    existing["meta"]["last_updated_aest"] = now_aest.strftime(
-        f"{day} %-d %b %Y, %-I:%M%p AEST"
-    ).replace("AM","am").replace("PM","pm")
+    html += `
+      <tr style="background:${bg};">
+        <td><span class="odds-team">${esc(o.team)}</span></td>
+        <td><span class="odds-owner" style="color:${color};">${esc(o.owner)}</span></td>
+        <td><span class="odds-prev">${esc(o.prev)}</span></td>
+        <td><span class="odds-now ${nowClass}">${esc(o.now)}</span></td>
+        <td><span class="direction-badge ${dirClass}">${dirLabel}</span></td>
+      </tr>`;
+  });
 
-    # Merge upcoming: preserve context notes where we have them
-    existing_fixture_map = {}
-    for f in existing.get("upcoming_fixtures", []):
-        key = f"{f['home']}_{f['away']}"
-        existing_fixture_map[key] = f.get("context", "")
-    for f in new_upcoming:
-        key = f"{f['home']}_{f['away']}"
-        if not f.get("context") and key in existing_fixture_map:
-            f["context"] = existing_fixture_map[key]
+  html += '</tbody></table>';
+  document.getElementById('odds-content').innerHTML = html;
+}
 
-    # Write back
-    existing["standings"] = merged_standings
-    existing["recent_results"] = new_results
-    existing["upcoming_fixtures"] = new_upcoming
+// ── Commentary ────────────────────────────────────────────────────────────────
+function renderCommentary(commentary) {
+  if (!commentary?.length) {
+    document.getElementById('commentary-content').innerHTML =
+      '<p class="muted small">Commentary generates daily at 2pm AEST.</p>';
+    return;
+  }
 
-    with open(DATA_FILE, "w") as f:
-        json.dump(existing, f, indent=2, ensure_ascii=False)
+  let html = '';
+  commentary.forEach(c => {
+    const color = c.color || '#64748B';
+    // Convert \n\n to paragraph breaks
+    const paragraphs = c.body.split('\n\n').map(p =>
+      `<p>${esc(p).replace(/\n/g, '<br>')}</p>`
+    ).join('');
 
-    finished_count = len([m for m in matches if m["status"] == "FINISHED"])
-    live_count = len([m for m in matches if m["status"] in ("IN_PLAY", "PAUSED")])
-    print(f"  Finished: {finished_count}, Live: {live_count}")
-    print(f"  Updated {DATA_FILE}")
-    print(f"  Last updated: {existing['meta']['last_updated_aest']}")
+    html += `
+    <div class="commentary-card">
+      <div class="commentary-left-bar" style="background:${color};"></div>
+      <div class="commentary-card-inner">
+        <div class="commentary-title" style="color:${color};">${esc(c.title)}</div>
+        <div class="commentary-body">${paragraphs}</div>
+      </div>
+    </div>`;
+  });
 
-if __name__ == "__main__":
-    main()
+  document.getElementById('commentary-content').innerHTML = html;
+}
+
+// ── Owner key ─────────────────────────────────────────────────────────────────
+function renderOwnerKey(participants) {
+  let html = '<div class="owner-key">';
+  Object.entries(participants).forEach(([name, data]) => {
+    const teams = (data.teams || []).slice(0, 4).join(', ');
+    const more = data.teams?.length > 4 ? ` +${data.teams.length - 4}` : '';
+    html += `
+    <div class="owner-key-item">
+      <div class="owner-dot" style="background:${data.color};"></div>
+      <div>
+        <div class="owner-name">${esc(name)}</div>
+        <div class="owner-teams">${esc(teams)}${more}</div>
+      </div>
+    </div>`;
+  });
+  html += '</div>';
+  document.getElementById('owner-key-content').innerHTML = html;
+}
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
