@@ -181,23 +181,92 @@ def build_standings(matches):
     return result
 
 def build_results(matches):
-    """Build recent results list (last 12 finished matches, sweepstake-relevant first)."""
-    finished = [m for m in matches if m["status"] == "FINISHED"]
-    # Sort by date descending
-    finished.sort(key=lambda m: m.get("utcDate", ""), reverse=True)
+    """
+    Build results list:
+    - IN_PLAY / PAUSED games always shown first with live score + match minute
+    - FINISHED games from the last 24 hours only
+    - Sorted by kick-off time descending (most recent first)
+    """
+    now_utc = datetime.now(timezone.utc)
+    cutoff_24h = now_utc - timedelta(hours=24)
 
     results = []
-    for m in finished[:20]:  # look at last 20, pick best 12
+
+    # 1. Live / in-progress games first
+    for m in matches:
+        if m["status"] not in ("IN_PLAY", "PAUSED"):
+            continue
         home_name = m["homeTeam"]["name"]
         away_name = m["awayTeam"]["name"]
         home_owner = get_owner(home_name)
         away_owner = get_owner(away_name)
-        hs = m["score"]["fullTime"]["home"]
-        as_ = m["score"]["fullTime"]["away"]
+        group = m.get("group", "").replace("GROUP_", "Group ").replace("_", " ")
+
+        # Score — try fullTime first, fallback to currentPeriodStartScore then 0
+        score = m.get("score", {})
+        hs = (score.get("fullTime") or {}).get("home")
+        as_ = (score.get("fullTime") or {}).get("away")
+        if hs is None:
+            hs = (score.get("halfTime") or {}).get("home", 0)
+            as_ = (score.get("halfTime") or {}).get("away", 0)
+
+        # Match minute — football-data.org doesn't always provide this,
+        # so we estimate from kick-off time
+        utc_str = m.get("utcDate", "")
+        match_minute = ""
+        if utc_str:
+            try:
+                ko = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
+                elapsed = int((now_utc - ko).total_seconds() / 60)
+                if 0 <= elapsed <= 90:
+                    match_minute = f"{elapsed}'"
+                elif elapsed > 90:
+                    match_minute = "90+'"
+            except:
+                pass
+
+        results.append({
+            "date": format_date_short(utc_str),
+            "aest_time": format_aest(utc_str),
+            "group": group,
+            "home": get_display_name(home_name),
+            "home_owner": home_owner,
+            "away": get_display_name(away_name),
+            "away_owner": away_owner,
+            "home_score": hs,
+            "away_score": as_,
+            "status": "LIVE",
+            "match_minute": match_minute,
+            "badge": "LIVE",
+            "sweepstake_relevant": home_owner != "?" or away_owner != "?",
+            "sort_key": "0_live"
+        })
+
+    # 2. Finished games from last 24 hours
+    finished = [m for m in matches if m["status"] == "FINISHED"]
+    finished.sort(key=lambda m: m.get("utcDate", ""), reverse=True)
+
+    for m in finished:
+        utc_str = m.get("utcDate", "")
+        if utc_str:
+            try:
+                dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
+                if dt < cutoff_24h:
+                    continue  # older than 24 hours — skip
+            except:
+                pass
+
+        home_name = m["homeTeam"]["name"]
+        away_name = m["awayTeam"]["name"]
+        home_owner = get_owner(home_name)
+        away_owner = get_owner(away_name)
+        hs = (m["score"].get("fullTime") or {}).get("home")
+        as_ = (m["score"].get("fullTime") or {}).get("away")
         group = m.get("group", "").replace("GROUP_", "Group ").replace("_", " ")
 
         results.append({
-            "date": format_date_short(m.get("utcDate")),
+            "date": format_date_short(utc_str),
+            "aest_time": format_aest(utc_str),
             "group": group,
             "home": get_display_name(home_name),
             "home_owner": home_owner,
@@ -206,13 +275,15 @@ def build_results(matches):
             "home_score": hs,
             "away_score": as_,
             "status": "FT",
+            "match_minute": "",
             "badge": get_badge(m),
-            "sweepstake_relevant": home_owner != "?" or away_owner != "?"
+            "sweepstake_relevant": home_owner != "?" or away_owner != "?",
+            "sort_key": "1_" + utc_str
         })
 
-    # Sort: sweepstake relevant first, then by date
-    results.sort(key=lambda r: (not r["sweepstake_relevant"], r["date"]))
-    return results[:12]
+    # Sort: live first, then finished by kick-off descending
+    results.sort(key=lambda r: r["sort_key"])
+    return results
 
 def build_upcoming(matches):
     """Build upcoming fixtures for the next 48 hours."""
@@ -444,5 +515,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
