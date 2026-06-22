@@ -595,7 +595,7 @@
   <!-- ── Results panel ──────────────────────────────────────────────────────── -->
   <section class="panel" id="panel-results">
     <div class="section-head">
-      <h2>Recent Results</h2>
+      <h2>Results <span class="small muted" style="font-weight:400;text-transform:none;letter-spacing:0;">— last 24hrs</span></h2>
     </div>
     <div id="results-content"><div class="loading">Loading results...</div></div>
   </section>
@@ -724,7 +724,7 @@ function render() {
           upcoming_fixtures, commentary, odds, exec_summary } = state;
 
   // Header meta
-  const hasLive = (upcoming_fixtures || []).some(f => f.status === 'IN_PLAY' || f.aest_time === '🔴 LIVE');
+  const hasLive = (upcoming_fixtures || []).some(f => f.status === 'IN_PLAY' || f.aest_time === '🔴 LIVE') || (recent_results || []).some(r => r.status === 'LIVE');
   document.getElementById('header-meta').innerHTML =
     `Updated ${esc(meta.last_updated_aest)} · Edition ${meta.edition}`
     + (hasLive ? '<span class="live-badge">LIVE</span>' : '');
@@ -798,31 +798,71 @@ function toggleTeams(id) {
 
 // ── Results ───────────────────────────────────────────────────────────────────
 function renderResults(results, participants) {
+  const el = document.getElementById('results-content');
   if (!results?.length) {
-    document.getElementById('results-content').innerHTML = '<p class="muted small">No results yet.</p>';
+    el.innerHTML = '<p class="muted small">No results in the last 24 hours.</p>';
     return;
   }
 
+  // Separate live from finished
+  const live = results.filter(r => r.status === 'LIVE');
+  const finished = results.filter(r => r.status !== 'LIVE');
+
   let html = '';
-  results.forEach(r => {
+
+  // Live games section
+  if (live.length) {
+    html += `<div class="section-head" style="margin-bottom:10px;"><h2 style="color:var(--red);">🔴 In Progress</h2></div>`;
+    live.forEach(r => {
+      const homeColor = participants[r.home_owner]?.color || '#64748B';
+      const awayColor = participants[r.away_owner]?.color || '#64748B';
+      const minute = r.match_minute ? `<span style="color:var(--red);font-weight:800;font-size:0.75rem;">${esc(r.match_minute)}</span>` : '';
+      const scoreVal = (r.home_score !== null && r.home_score !== undefined) ? `${r.home_score}&nbsp;–&nbsp;${r.away_score}` : '– –';
+      html += `
+      <div class="result-card" style="border-color:#FCA5A5;">
+        <div class="result-left-bar" style="background:${homeColor};"></div>
+        <div class="result-card-header" style="background:#FEE2E2;">
+          <span style="color:#991B1B;">Group ${esc(r.group)} · ${esc(r.aest_time || r.date)}</span>
+          <span class="result-badge badge-live">IN PROGRESS ${r.match_minute ? '· ' + esc(r.match_minute) : ''}</span>
+        </div>
+        <div class="result-body">
+          <div class="result-team home">
+            <div class="team-name">${esc(r.home)}</div>
+            <div class="team-owner" style="color:${homeColor};">${esc(r.home_owner)}</div>
+          </div>
+          <div class="result-score">
+            <div class="score-line score-live">${scoreVal}</div>
+            <div class="score-status score-live">LIVE</div>
+          </div>
+          <div class="result-team away">
+            <div class="team-name">${esc(r.away)}</div>
+            <div class="team-owner" style="color:${awayColor};">${esc(r.away_owner)}</div>
+          </div>
+        </div>
+      </div>`;
+    });
+    if (finished.length) {
+      html += `<div class="section-head" style="margin:16px 0 10px;"><h2>Completed</h2></div>`;
+    }
+  }
+
+  // Finished games
+  finished.forEach(r => {
     const homeColor = participants[r.home_owner]?.color || '#64748B';
     const awayColor = participants[r.away_owner]?.color || '#64748B';
-    const isLive = r.status === 'IN_PLAY' || r.status === 'PAUSED';
 
     let badgeHtml = '';
-    if (r.badge === 'SHOCK RESULT')    badgeHtml = `<span class="result-badge badge-shock">SHOCK</span>`;
-    if (r.badge === 'STATEMENT WIN')   badgeHtml = `<span class="result-badge badge-statement">STATEMENT WIN</span>`;
-    if (isLive)                        badgeHtml = `<span class="result-badge badge-live">LIVE</span>`;
+    if (r.badge === 'SHOCK RESULT')  badgeHtml = `<span class="result-badge badge-shock">SHOCK</span>`;
+    if (r.badge === 'STATEMENT WIN') badgeHtml = `<span class="result-badge badge-statement">STATEMENT WIN</span>`;
 
-    const scoreDisplay = isLive && r.live_score
-      ? `<div class="score-line score-live">${esc(r.live_score)}</div><div class="score-status score-live">LIVE</div>`
-      : `<div class="score-line">${r.home_score}&nbsp;–&nbsp;${r.away_score}</div><div class="score-status">FT</div>`;
+    const scoreVal = (r.home_score !== null && r.home_score !== undefined)
+      ? `${r.home_score}&nbsp;–&nbsp;${r.away_score}` : '– –';
 
     html += `
     <div class="result-card">
       <div class="result-left-bar" style="background:${homeColor};"></div>
       <div class="result-card-header">
-        <span>Group ${esc(r.group)} · ${esc(r.date)}</span>
+        <span>Group ${esc(r.group)} · ${esc(r.aest_time || r.date)}</span>
         ${badgeHtml}
       </div>
       <div class="result-body">
@@ -830,7 +870,10 @@ function renderResults(results, participants) {
           <div class="team-name">${esc(r.home)}</div>
           <div class="team-owner" style="color:${homeColor};">${esc(r.home_owner)}</div>
         </div>
-        <div class="result-score">${scoreDisplay}</div>
+        <div class="result-score">
+          <div class="score-line">${scoreVal}</div>
+          <div class="score-status">FT</div>
+        </div>
         <div class="result-team away">
           <div class="team-name">${esc(r.away)}</div>
           <div class="team-owner" style="color:${awayColor};">${esc(r.away_owner)}</div>
@@ -839,7 +882,11 @@ function renderResults(results, participants) {
     </div>`;
   });
 
-  document.getElementById('results-content').innerHTML = html;
+  if (!html) {
+    html = '<p class="muted small">No results in the last 24 hours.</p>';
+  }
+
+  el.innerHTML = html;
 }
 
 // ── Fixtures ──────────────────────────────────────────────────────────────────
@@ -1002,6 +1049,7 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
 
