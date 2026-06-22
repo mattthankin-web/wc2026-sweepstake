@@ -24,10 +24,12 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Fetch scores
+      - name: Fetch scores and odds
         env:
           FOOTBALL_API_KEY: ${{ secrets.FOOTBALL_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python scripts/fetch_scores.py
+
 
       - name: Commit and push if data changed
         run: |
