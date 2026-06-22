@@ -609,7 +609,7 @@
 
     <div style="margin-top:20px;">
       <div class="section-head"><h2>Odds Movement</h2></div>
-      <p class="small muted" style="margin-bottom:8px;">American odds. Source: BetMGM / FanDuel / Oddschecker. Updated each commentary run.</p>
+      <p class="small muted" style="margin-bottom:8px;">Decimal odds (Australian format). Best price across Unibet, TAB &amp; Betfair AU. Auto-updated every 30 minutes.</p>
       <div id="odds-content"><div class="loading">Loading odds...</div></div>
     </div>
   </section>
@@ -636,7 +636,7 @@
 </div><!-- /container -->
 
 <footer class="site-footer">
-  <div>Winner takes all &nbsp;·&nbsp; Win% = Kalshi implied probability &nbsp;·&nbsp; Odds: BetMGM / FanDuel</div>
+  <div>Winner takes all &nbsp;·&nbsp; Odds: best AU price (Unibet / TAB / Betfair)</div>
   <div style="margin-top:4px;">Scores refresh every 30 min &nbsp;·&nbsp; Commentary daily 2pm AEST</div>
 </footer>
 
@@ -924,7 +924,7 @@ function renderOdds(odds, participants) {
   });
 
   html += '</tbody></table>';
-  html += '<p class="small muted" style="margin-top:6px;">Odds: BetMGM / FanDuel / Oddschecker &nbsp;·&nbsp; American format &nbsp;·&nbsp; Updated daily at 2pm AEST</p>';
+  html += '<p class="small muted" style="margin-top:6px;">Decimal odds · Best AU price across Unibet, TAB &amp; Betfair · Updated every 30 min</p>';
   document.getElementById('odds-content').innerHTML = html;
 }
 
@@ -1002,5 +1002,6 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
