@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T04:33:51.804053+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 2:33pm AEST",
+    "last_updated": "2026-06-23T04:37:12.026208+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 2:37pm AEST",
     "edition": 9,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "23 Jun 2026 2:33am AEST",
+    "odds_last_updated": "23 Jun 2026 2:37am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-23T04:09:19.548955+00:00",
-    "last_score_refresh": "23 Jun 2026 2:33pm AEST",
+    "last_score_refresh": "23 Jun 2026 2:37pm AEST",
     "last_commentary_participants": [
       "Silk",
       "Same",
@@ -744,9 +744,9 @@
       "team": "Algeria",
       "owner": "Silk",
       "prev": "$1000.0",
-      "now": "$1000.0",
-      "now_decimal": 1000.0,
-      "direction": "unchanged",
+      "now": "$960.0",
+      "now_decimal": 960.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
