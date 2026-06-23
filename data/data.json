@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T21:12:42.044657+00:00",
-    "last_updated_aest": "Wednesday 24 Jun 2026, 7:12am AEST",
-    "edition": 10,
+    "last_updated": "2026-06-23T21:13:53.606751+00:00",
+    "last_updated_aest": "Wednesday 24 Jun 2026, 7:13am AEST",
+    "edition": 11,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "24 Jun 2026 7:12am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-23T13:47:40.043551+00:00",
-    "last_score_refresh": "24 Jun 2026 7:12am AEST",
+    "trivia_schedule_generated": "2026-06-23T21:14:18.897890+00:00",
+    "last_score_refresh": "24 Jun 2026 7:13am AEST",
     "last_commentary_participants": [
-      "P Rankin",
-      "T Rankin",
-      "Hankin"
+      "Varcoe",
+      "Crowle",
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-06-23T13:47:40.043268+00:00"
+    "last_commentary_generated": "2026-06-23T21:14:18.897759+00:00"
   },
   "participants": {
     "Kenna": {
@@ -291,7 +291,7 @@
       "home_score": 0,
       "away_score": 0,
       "status": "LIVE",
-      "match_minute": "72'",
+      "match_minute": "73'",
       "badge": "LIVE",
       "sweepstake_relevant": true,
       "sort_key": "0_live"
@@ -460,22 +460,22 @@
   ],
   "commentary": [
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: Germany Carries the Weight of Three Dead Horses",
-      "body": "France 3–0 Iraq is the kind of result that arrives less as a surprise than as a formality. Iraq, P Rankin's third-string asset, has now conceded freely enough to render itself a statistical footnote. Germany, however, remains the genuine article — performing well in Group I and providing the structural backbone that keeps P Rankin from a more precipitous slide. Without Germany, this portfolio is Czech Republic and Sweden dressed up as a football team.\n\nAt 7.18%, P Rankin sits seventh — respectable enough that panic is unwarranted, concerning enough that complacency isn't either. Germany's knockout trajectory will determine everything. The supporting cast has done its job, which is to say: it has largely stayed out of the way."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: Unbeaten, Unnoticed, Underestimated",
+      "body": "There is a particular kind of sweepstake participant who accumulates points quietly, avoids catastrophe entirely, and gets no credit for either. Varcoe is that participant. Thirteen points, no losses, a goal difference of +13 — the best in the sweepstake — and yet a win probability of 3.59% that places him tenth. The market, apparently, has opinions about ceilings.\n\nThe structural problem is not form but futures. Japan and Switzerland can go deep; Canada and DR Congo are serviceable. But none of them is lifting a trophy. Varcoe is building a very tidy portfolio with no obvious route to the winner-takes-all prize. Impeccable execution, limited upside. The sweepstake equivalent of a well-maintained mid-table side."
     },
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: One Good Team, One Gone, and the Arithmetic of Hope",
-      "body": "Croatia are eliminated. This is not breaking news so much as a belated administrative confirmation of what the bracket already implied. T Rankin's portfolio now rests on three teams, of which Netherlands is the load-bearing wall, Ghana is the decorative architrave, and Tunisia is structural ambiguity in boot form. At 6.30% and rank eight, the Win% reflects a squad that has underdelivered relative to its headline asset.\n\nNetherlands remain one of the more credible knockout sides in this sweepstake, which matters considerably when one's other options are Ghana and Tunisia. T Rankin's ceiling is entirely Netherlands-dependent — a position that requires elite tournament football from one team and, essentially, a miracle from the rest."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: Three Draws, Three Losses, Zero Excuses",
+      "body": "Portugal 5–0 Uzbekistan. That is how Tuesday ended for Crowle, whose Uzbekistan side conceded five to Same's Portugal in a result that managed to simultaneously damage Crowle's goal difference and boost a rival's. Three points from six games — all draws, none of them remotely exciting — and a goal difference of -8 that tells its own story. Belgium continue their commitment to the 0–0 as a philosophical position. Ecuador and Bosnia have offered little more.\n\nAt 3.42%, Crowle sits last in the sweepstake. The win probability is not so much a number as a courtesy. With Uzbekistan likely eliminated and Belgium constitutionally opposed to winning football matches, the realistic question is no longer 'can Crowle win' but 'can Crowle avoid the wooden spoon'."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: Record Points, Negligible Odds, and the Cruelty of Kalshi",
-      "body": "Sixteen points. Five wins. One draw. By any sensible measure of on-pitch performance, Hankin is running one of the tighter operations in this sweepstake. Norway's 3–2 victory over Senegal today was precisely the kind of result that reinforces the case: this is a team producing outcomes, not merely possessing them. Mexico and Ivory Coast are contributing. Saudi Arabia, admittedly, are not contributing anything any more, having been eliminated with quiet efficiency.\n\nAnd yet: 4.54%. Ninth place. The Win% market, cold and indifferent, values tournament pedigree over recent form, and Norway, Mexico and Ivory Coast are not the names it associates with lifting trophies. Hankin is the sweepstake's most productive underdog — a position that is either the setup for a remarkable story or a very efficient way to finish ninth."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Eight Teams, One Hope, a Worsening Spreadsheet",
+      "body": "Quantity was always Kenna's theory. Eight teams — the largest portfolio in the sweepstake — on the assumption that volume would eventually produce value. The results disagree. Two wins, four draws, eight losses. Jordan fell 2–1 to Silk's Algeria on the 23rd. Hankin's Norway beat Kenna's Senegal 3–2 the same day. The losses are accumulating with a kind of grim regularity that suggests not bad luck but structural deficiency.\n\nSpain, at 13.78% implied probability, is doing the heavy lifting for the entire portfolio. Without Spain, Kenna's win percentage would be a rounding error. The remaining seven teams — Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao, Haiti — exist in various states of irrelevance. Kenna is not running a sweepstake portfolio so much as a support act with one headliner and seven opening bands nobody came to see."
     }
   ],
   "odds": [
@@ -859,9 +859,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan's Austria conceded two to Cronan's Argentina, a scheduling irony the standings cannot ignore.",
-    "paragraph_1": "The day's results did as much damage within portfolios as between rivals. Cronan watched his Argentina (Galbraith) dismantle his Austria 2-0, a net wash that nonetheless kept him atop the standings at 17.74%. France's 3-0 over Iraq padded his points further. Silk's Algeria beat Kenna's Jordan 2-1, widening the gap between second and third. Kenna absorbed a third loss in four days as Norway edged Senegal, leaving him with eight defeats and a top-three position that looks increasingly borrowed.",
-    "paragraph_2": "The next 48 hours offer both consolidation and exposure. Same's double header — Portugal against Uzbekistan, then Colombia against DR Congo — gives him the clearest path to close the gap on the top three, provided both deliver. Silk's England face Ghana, a fixture that could extend his unbeaten run and tighten his pursuit of Cronan. Cronan's Panama meet T Rankin's Croatia at 9am Wednesday; a loss there would trim his lead at precisely the moment Same and Silk are positioned to capitalise."
+    "pull_quote": "Portugal put five past Uzbekistan; England, meanwhile, managed nothing against Ghana.",
+    "paragraph_1": "The defining image of this window is the contrast between Same's Portugal dismantling Uzbekistan 5–0 and Silk's England drawing a blank against T Rankin's Ghana. Silk retains second place on 13 points, but the England stalemate is precisely the kind of result that flatters the standings while delivering nothing. Kenna endured a bruising 24 hours: Senegal fell 3–2 to Hankin's Norway, then Jordan lost 1–2 to Silk's Algeria — two defeats in two days for the third-placed participant.",
+    "paragraph_2": "The next 48 hours offer Cronan, currently leading on win percentage, the chance to consolidate via Panama against T Rankin's Croatia on Wednesday. Same will look to extend momentum when Colombia face Varcoe's DR Congo at noon. Most curiously, Varcoe has both Switzerland and Canada in Group B on Thursday, guaranteeing himself points regardless of outcome — a structural absurdity that the sweepstake's architects presumably did not anticipate."
   },
   "trivia_schedule": {
     "2026-06-23": [
