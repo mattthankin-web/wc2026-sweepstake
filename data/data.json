@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T02:04:39.454675+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 12:04pm AEST",
+    "last_updated": "2026-06-23T02:07:11.424072+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 12:07pm AEST",
     "edition": 8,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "23 Jun 2026 12:04am AEST",
+    "odds_last_updated": "23 Jun 2026 12:07am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-23T01:52:18.062454+00:00",
-    "last_score_refresh": "23 Jun 2026 12:04pm AEST",
+    "last_score_refresh": "23 Jun 2026 12:07pm AEST",
     "last_commentary_participants": [
       "Crowle",
       "Kenna",
@@ -154,12 +154,12 @@
     },
     {
       "name": "Kenna",
-      "pld": 12,
+      "pld": 13,
       "w": 2,
       "d": 4,
-      "l": 6,
+      "l": 7,
       "pts": 10,
-      "gd": -10,
+      "gd": -11,
       "rank": 3,
       "left": 10,
       "win_pct": 13.78,
@@ -238,12 +238,12 @@
     },
     {
       "name": "Hankin",
-      "pld": 7,
-      "w": 4,
+      "pld": 8,
+      "w": 5,
       "d": 1,
       "l": 2,
-      "pts": 13,
-      "gd": 2,
+      "pts": 16,
+      "gd": 3,
       "rank": 9,
       "left": 5,
       "win_pct": 4.54,
@@ -282,22 +282,6 @@
   "recent_results": [
     {
       "date": "23 Jun",
-      "aest_time": "Tue 10:00am",
-      "group": "Group I",
-      "home": "Norway",
-      "home_owner": "Hankin",
-      "away": "Senegal",
-      "away_owner": "Kenna",
-      "home_score": 3,
-      "away_score": 2,
-      "status": "LIVE",
-      "match_minute": "90+'",
-      "badge": "LIVE",
-      "sweepstake_relevant": true,
-      "sort_key": "0_live"
-    },
-    {
-      "date": "23 Jun",
       "aest_time": "Tue 3:00am",
       "group": "Group J",
       "home": "Argentina",
@@ -327,20 +311,25 @@
       "badge": "",
       "sweepstake_relevant": true,
       "sort_key": "1_2026-06-22T21:00:00Z"
-    }
-  ],
-  "upcoming_fixtures": [
+    },
     {
-      "aest_time": "🔴 LIVE",
-      "group": "I",
+      "date": "23 Jun",
+      "aest_time": "Tue 10:00am",
+      "group": "Group I",
       "home": "Norway",
       "home_owner": "Hankin",
       "away": "Senegal",
       "away_owner": "Kenna",
-      "status": "IN_PLAY",
-      "context": "Haaland vs Kenna's best live asset. Group I second spot on the line.",
-      "live_score": "3–2"
-    },
+      "home_score": 3,
+      "away_score": 2,
+      "status": "FT",
+      "match_minute": "",
+      "badge": "",
+      "sweepstake_relevant": true,
+      "sort_key": "1_2026-06-23T00:00:00Z"
+    }
+  ],
+  "upcoming_fixtures": [
     {
       "aest_time": "Tue 1:00pm",
       "group": "J",
@@ -548,9 +537,9 @@
     {
       "team": "Norway",
       "owner": "Hankin",
-      "prev": "$36.0",
-      "now": "$38.0",
-      "now_decimal": 38.0,
+      "prev": "$38.0",
+      "now": "$40.0",
+      "now_decimal": 40.0,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -603,9 +592,9 @@
       "team": "Switzerland",
       "owner": "Varcoe",
       "prev": "$130.0",
-      "now": "$130.0",
-      "now_decimal": 130.0,
-      "direction": "unchanged",
+      "now": "$120.0",
+      "now_decimal": 120.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
@@ -666,9 +655,9 @@
       "team": "Sweden",
       "owner": "P Rankin",
       "prev": "$340.0",
-      "now": "$340.0",
-      "now_decimal": 340.0,
-      "direction": "unchanged",
+      "now": "$350.0",
+      "now_decimal": 350.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
