@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T04:30:30.582116+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 2:30pm AEST",
+    "last_updated": "2026-06-23T04:33:51.804053+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 2:33pm AEST",
     "edition": 9,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "23 Jun 2026 2:30am AEST",
+    "odds_last_updated": "23 Jun 2026 2:33am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-23T04:09:19.548955+00:00",
-    "last_score_refresh": "23 Jun 2026 2:30pm AEST",
+    "last_score_refresh": "23 Jun 2026 2:33pm AEST",
     "last_commentary_participants": [
       "Silk",
       "Same",
@@ -291,7 +291,7 @@
       "home_score": 1,
       "away_score": 0,
       "status": "LIVE",
-      "match_minute": "90'",
+      "match_minute": "90+'",
       "badge": "LIVE",
       "sweepstake_relevant": true,
       "sort_key": "0_live"
@@ -500,10 +500,10 @@
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$7.5",
+      "prev": "$7.6",
       "now": "$7.6",
       "now_decimal": 7.6,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -545,10 +545,10 @@
     {
       "team": "Netherlands",
       "owner": "T Rankin",
-      "prev": "$18.5",
+      "prev": "$19.0",
       "now": "$19.0",
       "now_decimal": 19.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -590,10 +590,10 @@
     {
       "team": "Colombia",
       "owner": "Same",
-      "prev": "$65.0",
+      "prev": "$70.0",
       "now": "$70.0",
       "now_decimal": 70.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -626,10 +626,10 @@
     {
       "team": "Ivory Coast",
       "owner": "Hankin",
-      "prev": "$240.0",
+      "prev": "$250.0",
       "now": "$250.0",
       "now_decimal": 250.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -644,19 +644,19 @@
     {
       "team": "Australia",
       "owner": "Cronan",
-      "prev": "$260.0",
+      "prev": "$270.0",
       "now": "$270.0",
       "now_decimal": 270.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Canada",
       "owner": "Varcoe",
-      "prev": "$280.0",
+      "prev": "$300.0",
       "now": "$300.0",
       "now_decimal": 300.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -680,10 +680,10 @@
     {
       "team": "Austria",
       "owner": "Cronan",
-      "prev": "$370.0",
+      "prev": "$380.0",
       "now": "$380.0",
       "now_decimal": 380.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -698,37 +698,37 @@
     {
       "team": "Ecuador",
       "owner": "Crowle",
-      "prev": "$420.0",
+      "prev": "$500.0",
       "now": "$500.0",
       "now_decimal": 500.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "South Korea",
       "owner": "Kenna",
-      "prev": "$490.0",
+      "prev": "$500.0",
       "now": "$500.0",
       "now_decimal": 500.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Paraguay",
       "owner": "Same",
-      "prev": "$740.0",
+      "prev": "$760.0",
       "now": "$760.0",
       "now_decimal": 760.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Scotland",
       "owner": "Morris",
-      "prev": "$820.0",
+      "prev": "$770.0",
       "now": "$770.0",
       "now_decimal": 770.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
