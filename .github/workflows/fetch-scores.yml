@@ -4,6 +4,10 @@ on:
   schedule:
     # Every 30 minutes
     - cron: '*/30 * * * *'
+      push:
+    branches: [main]
+    paths-ignore:
+      - 'data/data.json'
   workflow_dispatch:  # allows manual trigger from GitHub UI
 
 jobs:
