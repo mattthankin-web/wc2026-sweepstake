@@ -764,14 +764,25 @@
   <!-- ── Trivia Panel ──────────────────────────────────────────────────────── -->
   <section class="panel" id="panel-trivia">
 
-    <!-- Name selector -->
-    <div style="background:var(--navy);border-radius:8px;padding:14px;margin-bottom:14px;">
-      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.06em;color:var(--amber);text-transform:uppercase;margin-bottom:8px;">Who are you?</div>
-      <div class="trivia-name-grid" id="trivia-name-grid"></div>
+    <!-- LEADERBOARD — always visible at top -->
+    <div style="background:var(--navy);border-radius:8px;padding:12px 14px;margin-bottom:14px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:0.72rem;font-weight:800;letter-spacing:0.06em;color:var(--amber);text-transform:uppercase;">🏆 Leaderboard</span>
+        <span id="trivia-lb-status" style="font-size:0.65rem;color:#475569;"></span>
+      </div>
+      <div id="trivia-lb-always" style="min-height:20px;">
+        <div style="text-align:center;padding:8px;color:#475569;font-size:0.78rem;">Loading scores...</div>
+      </div>
     </div>
 
     <!-- Days remaining badge -->
     <div class="days-left-badge" id="trivia-days-badge" style="display:none;"></div>
+
+    <!-- Name selector -->
+    <div style="background:var(--light);border-radius:8px;padding:12px 14px;margin-bottom:14px;border:1px solid var(--border);">
+      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.06em;color:var(--navy);text-transform:uppercase;margin-bottom:8px;">Who are you?</div>
+      <div class="trivia-name-grid" id="trivia-name-grid"></div>
+    </div>
 
     <!-- Already played -->
     <div id="trivia-played" style="display:none;background:#DCFCE7;border:1px solid #16A34A;border-radius:8px;padding:14px;margin-bottom:14px;text-align:center;font-size:0.85rem;color:#166534;font-weight:600;"></div>
@@ -783,7 +794,6 @@
         <span id="trivia-score-badge" style="background:var(--navy);color:var(--amber);font-size:0.72rem;font-weight:800;padding:3px 10px;border-radius:20px;"></span>
       </div>
       <div class="trivia-progress"><div class="trivia-progress-fill" id="trivia-prog-fill" style="width:0%"></div></div>
-
       <div class="trivia-q-card">
         <div class="trivia-q-meta">
           <span class="trivia-q-cat" id="trivia-q-cat"></span>
@@ -791,11 +801,9 @@
         </div>
         <div class="trivia-q-text" id="trivia-q-text"></div>
       </div>
-
       <div class="trivia-options" id="trivia-opts"></div>
       <div class="trivia-feedback" id="trivia-fb"></div>
       <div class="trivia-explain" id="trivia-exp"></div>
-
       <button onclick="triviaNext()" id="trivia-next-btn" style="display:none;width:100%;padding:13px;border:none;border-radius:8px;background:var(--amber);color:var(--navy);font-size:0.9rem;font-weight:800;cursor:pointer;">Next Question →</button>
     </div>
 
@@ -807,24 +815,11 @@
       </div>
       <div style="font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:4px;" id="trivia-final-msg"></div>
       <div style="font-size:0.8rem;color:var(--slate);margin-bottom:20px;" id="trivia-final-sub"></div>
-      <button onclick="showTriviaTab('leaderboard')" style="width:100%;max-width:280px;padding:12px;border:none;border-radius:8px;background:var(--navy);color:var(--amber);font-size:0.88rem;font-weight:800;cursor:pointer;margin-bottom:8px;">View Leaderboard</button>
-      <br>
       <button onclick="triviaReset()" style="width:100%;max-width:280px;padding:12px;border:none;border-radius:8px;background:var(--light);color:var(--navy);font-size:0.88rem;font-weight:700;cursor:pointer;">Play as someone else</button>
     </div>
 
     <!-- Select prompt -->
-    <div id="trivia-prompt" style="text-align:center;padding:32px 16px;color:var(--slate);font-size:0.85rem;">Select your name above to start today's quiz.</div>
-
-    <!-- Leaderboard sub-tab -->
-    <div id="trivia-lb-section" style="display:none;margin-top:4px;">
-      <div style="display:flex;gap:8px;margin-bottom:16px;">
-        <button onclick="showTriviaTab('quiz')" style="flex:1;padding:9px;border:1.5px solid var(--border);border-radius:6px;background:var(--light);font-size:0.78rem;font-weight:700;cursor:pointer;color:var(--navy);">← Back to Quiz</button>
-      </div>
-      <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--navy);">🏆 All-Time Leaderboard</div>
-      <div id="trivia-lb-all"></div>
-      <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin:20px 0 10px;padding-bottom:8px;border-bottom:2px solid var(--navy);">Today's Scores</div>
-      <div id="trivia-lb-today"></div>
-    </div>
+    <div id="trivia-prompt" style="text-align:center;padding:20px 16px;color:var(--slate);font-size:0.85rem;">Select your name above to start today's quiz.</div>
 
   </section>
 
@@ -1259,6 +1254,9 @@ function renderOwnerKey(participants) {
 }
 
 // ── Trivia ────────────────────────────────────────────────────────────────────
+const SUPABASE_URL = 'https://gqfsuhjvcawceuhblndw.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdxZnN1aGp2Y2F3Y2V1aGJsbmR3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxOTM1NTUsImV4cCI6MjA5Nzc2OTU1NX0.Fj8t28MmE2T7-gFUHPnHmmahkQC1btnBcGPVGJBOpw8';
+
 const TRIVIA_PLAYERS = [
   'Kenna','Cronan','Silk','Same','Galbraith',
   'Morris','P Rankin','T Rankin','Hankin','Varcoe','Crowle'
@@ -1269,23 +1267,150 @@ const PLAYER_COLORS = {
   'T Rankin':'#4338CA','Hankin':'#166534','Varcoe':'#92400E','Crowle':'#0369A1'
 };
 
-let triviaState = {
-  player: null, questions: [], currentQ: 0, score: 0, answered: false
-};
-
+const MAX_QUESTIONS = 130;
+let triviaState = { player: null, questions: [], currentQ: 0, score: 0, answered: false };
 let triviaSchedule = null;
 let triviaQuestions = null;
-let triviaScores = {};  // shared scores loaded from data.json
+let triviaAllScores = {};  // { player: { date: score } } — loaded from Supabase
 
+// ── Supabase helpers ──────────────────────────────────────────────────────────
+async function supabaseFetch(path, options = {}) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
+    headers: {
+      'apikey': SUPABASE_KEY,
+      'Authorization': `Bearer ${SUPABASE_KEY}`,
+      'Content-Type': 'application/json',
+      'Prefer': options.prefer || 'return=representation',
+      ...options.headers
+    },
+    ...options
+  });
+  if (!res.ok) throw new Error(`Supabase error: ${res.status}`);
+  return res.status === 204 ? null : res.json();
+}
+
+async function loadScoresFromSupabase() {
+  try {
+    const rows = await supabaseFetch('trivia_scores?select=player,date,score&order=date.asc');
+    triviaAllScores = {};
+    for (const row of rows) {
+      if (!triviaAllScores[row.player]) triviaAllScores[row.player] = {};
+      triviaAllScores[row.player][row.date] = row.score;
+    }
+    renderAlwaysOnLeaderboard();
+    const el = document.getElementById('trivia-lb-status');
+    if (el) el.textContent = `Updated just now`;
+    return true;
+  } catch(e) {
+    console.error('Score load failed:', e);
+    const el = document.getElementById('trivia-lb-status');
+    if (el) el.textContent = 'Offline — showing cached scores';
+    // Fall back to localStorage
+    try {
+      const stored = localStorage.getItem('wc2026_trivia_scores');
+      if (stored) triviaAllScores = JSON.parse(stored);
+      renderAlwaysOnLeaderboard();
+    } catch(e2) {}
+    return false;
+  }
+}
+
+async function saveScoreToSupabase(player, date, score) {
+  try {
+    await supabaseFetch('trivia_scores', {
+      method: 'POST',
+      prefer: 'resolution=merge-duplicates',
+      headers: { 'Prefer': 'resolution=merge-duplicates,return=minimal' },
+      body: JSON.stringify({ player, date, score })
+    });
+    // Update local cache
+    if (!triviaAllScores[player]) triviaAllScores[player] = {};
+    triviaAllScores[player][date] = score;
+    // Also cache locally as fallback
+    try { localStorage.setItem('wc2026_trivia_scores', JSON.stringify(triviaAllScores)); } catch(e) {}
+    renderAlwaysOnLeaderboard();
+    return true;
+  } catch(e) {
+    console.error('Score save failed:', e);
+    // Still update local
+    if (!triviaAllScores[player]) triviaAllScores[player] = {};
+    triviaAllScores[player][date] = score;
+    try { localStorage.setItem('wc2026_trivia_scores', JSON.stringify(triviaAllScores)); } catch(e2) {}
+    renderAlwaysOnLeaderboard();
+    return false;
+  }
+}
+
+// ── Always-on leaderboard ─────────────────────────────────────────────────────
+function renderAlwaysOnLeaderboard() {
+  const el = document.getElementById('trivia-lb-always');
+  if (!el) return;
+  const today = getTodayKey();
+  const medals = ['🥇','🥈','🥉'];
+
+  const rows = TRIVIA_PLAYERS.map(name => {
+    const scores = triviaAllScores[name] || {};
+    const totalCorrect = Object.values(scores).reduce((a,b) => a+b, 0);
+    const daysPlayed = Object.keys(scores).length;
+    const totalAnswered = daysPlayed * 5;
+    const pct = totalAnswered > 0 ? Math.round((totalCorrect / totalAnswered) * 100) : 0;
+    const todayScore = scores[today];
+    const playedToday = todayScore !== undefined;
+    return { name, totalCorrect, daysPlayed, totalAnswered, pct, todayScore, playedToday };
+  }).sort((a, b) => b.totalCorrect - a.totalCorrect || b.pct - a.pct);
+
+  // Build compact leaderboard table
+  let html = `
+  <div style="display:grid;grid-template-columns:22px 1fr 48px 48px 36px;gap:4px;margin-bottom:4px;padding:0 2px;">
+    <span style="font-size:0.6rem;font-weight:700;color:#475569;text-align:center;">#</span>
+    <span style="font-size:0.6rem;font-weight:700;color:#475569;">Player</span>
+    <span style="font-size:0.6rem;font-weight:700;color:#475569;text-align:center;">Total</span>
+    <span style="font-size:0.6rem;font-weight:700;color:#475569;text-align:center;">/ ${MAX_QUESTIONS}</span>
+    <span style="font-size:0.6rem;font-weight:700;color:#475569;text-align:center;">Today</span>
+  </div>`;
+
+  rows.forEach((p, i) => {
+    const color = PLAYER_COLORS[p.name];
+    const isLeader = i === 0 && p.totalCorrect > 0;
+    const bg = isLeader ? 'rgba(217,119,6,0.15)' : i % 2 === 0 ? 'rgba(255,255,255,0.05)' : 'transparent';
+    const rank = medals[i] || (i + 1);
+    const pctColor = p.pct >= 80 ? '#4ade80' : p.pct >= 60 ? '#fbbf24' : '#94A3B8';
+    const totalColor = p.totalCorrect > 0 ? 'white' : '#475569';
+
+    // Progress bar width
+    const barPct = Math.round((p.totalCorrect / MAX_QUESTIONS) * 100);
+
+    let todayCell = '<span style="color:#475569;font-size:0.7rem;">—</span>';
+    if (p.playedToday) {
+      const tc = p.todayScore >= 4 ? '#4ade80' : p.todayScore >= 2 ? '#fbbf24' : '#f87171';
+      todayCell = `<span style="color:${tc};font-weight:800;font-size:0.8rem;">${p.todayScore}/5</span>`;
+    }
+
+    html += `
+    <div style="display:grid;grid-template-columns:22px 1fr 48px 48px 36px;gap:4px;align-items:center;padding:5px 2px;background:${bg};border-radius:4px;">
+      <span style="font-size:0.75rem;font-weight:800;color:${i<3?['#D97706','#94A3B8','#92400E'][i]:'#64748B'};text-align:center;">${rank}</span>
+      <div>
+        <div style="font-size:0.78rem;font-weight:800;color:${color};">${esc(p.name)}</div>
+        <div style="height:3px;background:rgba(255,255,255,0.1);border-radius:2px;margin-top:2px;">
+          <div style="height:100%;width:${barPct}%;background:${color};border-radius:2px;"></div>
+        </div>
+      </div>
+      <span style="text-align:center;font-size:0.82rem;font-weight:800;color:${totalColor};">${p.totalCorrect}</span>
+      <span style="text-align:center;font-size:0.7rem;color:#475569;">${MAX_QUESTIONS}</span>
+      <div style="text-align:center;">${todayCell}</div>
+    </div>`;
+  });
+
+  el.innerHTML = html;
+}
+
+// ── Trivia schedule & player ──────────────────────────────────────────────────
 function renderTrivia(schedule, questions) {
   triviaSchedule = schedule;
   triviaQuestions = questions;
-  // Also load shared scores if embedded in data
-  if (state && state.trivia_scores) {
-    triviaScores = state.trivia_scores;
-  }
   buildTriviaNameGrid();
   updateDaysBadge();
+  loadScoresFromSupabase();
 }
 
 function buildTriviaNameGrid() {
@@ -1304,8 +1429,7 @@ function updateDaysBadge() {
   const badge = document.getElementById('trivia-days-badge');
   if (!badge || !triviaSchedule) return;
   const remaining = Object.keys(triviaSchedule).length;
-  const total = remaining * 5;
-  badge.innerHTML = `<strong>${remaining} days left</strong> · ${total} questions remaining in the tournament · 5 new questions each day`;
+  badge.innerHTML = `<strong>${remaining} days left</strong> · ${remaining * 5} questions remaining · 5 new questions each day`;
   badge.style.display = 'block';
 }
 
@@ -1316,32 +1440,27 @@ function getTodayKey() {
 
 function getTodayQuestions() {
   if (!triviaSchedule || !triviaQuestions) return [];
-  const today = getTodayKey();
-  const ids = triviaSchedule[today] || [];
+  const ids = triviaSchedule[getTodayKey()] || [];
   return ids.map(id => triviaQuestions.find(q => q.id === id)).filter(Boolean);
 }
 
 function triviaSelectPlayer(player) {
   triviaState.player = player;
   buildTriviaNameGrid();
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'trivia_player_select', { player_name: player });
-  }
-
-  // Check if already played today using shared scores
-  const today = getTodayKey();
-  const playerScores = triviaScores[player] || {};
-  const todayResult = playerScores[today];
+  if (typeof gtag !== 'undefined') gtag('event', 'trivia_player_select', { player_name: player });
 
   document.getElementById('trivia-prompt').style.display = 'none';
   document.getElementById('trivia-final').style.display = 'none';
   document.getElementById('trivia-quiz').style.display = 'none';
-  document.getElementById('trivia-lb-section').style.display = 'none';
+
+  const today = getTodayKey();
+  const playerScores = triviaAllScores[player] || {};
+  const todayResult = playerScores[today];
 
   if (todayResult !== undefined) {
-    const playedEl = document.getElementById('trivia-played');
-    playedEl.style.display = 'block';
-    playedEl.innerHTML = `✅ You scored <strong>${todayResult} / 5</strong> today — come back tomorrow for 5 new questions!`;
+    const el = document.getElementById('trivia-played');
+    el.style.display = 'block';
+    el.innerHTML = `✅ You scored <strong>${todayResult} / 5</strong> today — come back tomorrow for 5 new questions!`;
   } else {
     document.getElementById('trivia-played').style.display = 'none';
     triviaStartQuiz();
@@ -1353,17 +1472,16 @@ function triviaStartQuiz() {
   triviaState.currentQ = 0;
   triviaState.score = 0;
   triviaState.answered = false;
-  if (typeof gtag !== 'undefined') {
-    gtag('event', 'trivia_quiz_start', { player_name: triviaState.player });
-  }
 
   if (!triviaState.questions.length) {
-    document.getElementById('trivia-prompt').style.display = 'block';
-    document.getElementById('trivia-prompt').textContent = 'No questions scheduled for today — check back tomorrow!';
+    const el = document.getElementById('trivia-prompt');
+    el.style.display = 'block';
+    el.textContent = 'No questions scheduled for today — check back tomorrow!';
     return;
   }
 
   document.getElementById('trivia-quiz').style.display = 'block';
+  if (typeof gtag !== 'undefined') gtag('event', 'trivia_quiz_start', { player_name: triviaState.player });
   triviaRenderQ();
 }
 
@@ -1408,6 +1526,7 @@ function triviaAnswer(idx) {
   const correct = q.correct;
   const right = idx === correct;
   if (right) triviaState.score++;
+
   if (typeof gtag !== 'undefined') {
     gtag('event', 'trivia_answer', {
       player_name: triviaState.player,
@@ -1452,10 +1571,20 @@ function triviaNext() {
   }
 }
 
-function triviaFinish() {
+async function triviaFinish() {
   document.getElementById('trivia-quiz').style.display = 'none';
 
   const score = triviaState.score;
+  const today = getTodayKey();
+
+  // Save to Supabase
+  await saveScoreToSupabase(triviaState.player, today, score);
+
+  // Calculate totals from all scores
+  const allPlayerScores = triviaAllScores[triviaState.player] || {};
+  const totalCorrect = Object.values(allPlayerScores).reduce((a,b) => a+b, 0);
+  const daysPlayed = Object.keys(allPlayerScores).length;
+
   const msgs = [
     [5,'⚽ Perfect score! World Cup genius!'],
     [4,'🌟 Excellent — you know your football!'],
@@ -1467,124 +1596,21 @@ function triviaFinish() {
 
   document.getElementById('trivia-final-num').textContent = score;
   document.getElementById('trivia-final-msg').textContent = msg[1];
-
-  // Save to shared scores
-  saveTriviaScore(triviaState.player, score);
-
-  // Calculate total correct from shared scores
-  const playerData = triviaScores[triviaState.player] || {};
-  const totalCorrect = Object.values(playerData).reduce((a, b) => a + b, 0);
   document.getElementById('trivia-final-sub').textContent =
-    `${Math.round((score/5)*100)}% correct today · ${totalCorrect} total correct all-time`;
+    `${Math.round((score/5)*100)}% today · ${totalCorrect} / ${MAX_QUESTIONS} correct all-time (${daysPlayed} day${daysPlayed !== 1 ? 's' : ''} played)`;
 
   document.getElementById('trivia-final').style.display = 'block';
 
   if (typeof gtag !== 'undefined') {
     gtag('event', 'trivia_complete', {
       player_name: triviaState.player,
-      score: score,
+      score,
       out_of: 5,
       score_pct: Math.round((score/5)*100),
-      date: getTodayKey()
+      total_correct: totalCorrect,
+      date: today
     });
   }
-}
-
-function saveTriviaScore(player, score) {
-  const today = getTodayKey();
-  if (!triviaScores[player]) triviaScores[player] = {};
-  triviaScores[player][today] = score;
-
-  // Push to GitHub via API to share across devices
-  pushTriviaScores();
-}
-
-async function pushTriviaScores() {
-  // We push the updated trivia_scores back to data.json via a serverless proxy
-  // For now, store in localStorage as fallback — shared scores require the
-  // generate_commentary workflow to pick up localStorage-stored results
-  // The proper shared solution uses the data.json trivia_scores field updated
-  // by the 2pm commentary run reading a scores endpoint.
-  // Simple approach: use a public Jsonbin or similar — or just use localStorage
-  // cross-device sharing requires a backend write endpoint.
-  try {
-    localStorage.setItem('wc2026_trivia_scores', JSON.stringify(triviaScores));
-  } catch(e) {}
-}
-
-function showTriviaTab(tab) {
-  document.getElementById('trivia-quiz').style.display = 'none';
-  document.getElementById('trivia-final').style.display = 'none';
-  document.getElementById('trivia-lb-section').style.display = 'none';
-  document.getElementById('trivia-played').style.display = 'none';
-  if (tab === 'leaderboard') {
-    document.getElementById('trivia-lb-section').style.display = 'block';
-    renderTriviaLeaderboard();
-    if (typeof gtag !== 'undefined') {
-      gtag('event', 'trivia_leaderboard_view', { player_name: triviaState.player || 'unknown' });
-    }
-  }
-}
-
-function renderTriviaLeaderboard() {
-  const today = getTodayKey();
-  const medals = ['🥇','🥈','🥉'];
-
-  // All-time
-  const allTime = TRIVIA_PLAYERS.map(name => {
-    const scores = triviaScores[name] || {};
-    const total = Object.values(scores).reduce((a,b) => a+b, 0);
-    const played = Object.keys(scores).length * 5;
-    const pct = played > 0 ? Math.round((total/played)*100) : 0;
-    return { name, total, played, pct };
-  }).filter(p => p.played > 0).sort((a,b) => b.total - a.total || b.pct - a.pct);
-
-  let html = '';
-  if (!allTime.length) {
-    html = '<div style="text-align:center;padding:20px;color:var(--slate);font-size:0.82rem;">No scores yet — play today\'s quiz!</div>';
-  } else {
-    html += `<div class="trivia-lb-row" style="background:var(--light);font-size:0.68rem;font-weight:700;color:var(--slate);text-transform:uppercase;letter-spacing:0.04em;">
-      <span>#</span><span>Player</span><span style="text-align:center">Correct</span><span style="text-align:center">Played</span><span style="text-align:center">%</span></div>`;
-    allTime.forEach((p, i) => {
-      const color = PLAYER_COLORS[p.name];
-      const pctColor = p.pct >= 80 ? '#16A34A' : p.pct >= 60 ? '#D97706' : '#64748B';
-      html += `<div class="trivia-lb-row ${i<3?'gold':''}">
-        <span style="font-weight:800;text-align:center;">${medals[i]||i+1}</span>
-        <span style="font-weight:800;color:${color};">${esc(p.name)}</span>
-        <span style="text-align:center;font-weight:800;">${p.total}</span>
-        <span style="text-align:center;color:var(--slate);">${p.played}</span>
-        <span style="text-align:center;color:${pctColor};font-weight:700;">${p.pct}%</span>
-      </div>`;
-    });
-  }
-  document.getElementById('trivia-lb-all').innerHTML = html;
-
-  // Today
-  const todayScores = TRIVIA_PLAYERS.map(name => {
-    const scores = triviaScores[name] || {};
-    const score = scores[today];
-    if (score === undefined) return null;
-    return { name, score };
-  }).filter(Boolean).sort((a,b) => b.score - a.score);
-
-  let todayHtml = '';
-  if (!todayScores.length) {
-    todayHtml = '<div style="text-align:center;padding:16px;color:var(--slate);font-size:0.82rem;">Nobody has played today yet!</div>';
-  } else {
-    todayScores.forEach((p, i) => {
-      const color = PLAYER_COLORS[p.name];
-      const pct = Math.round((p.score/5)*100);
-      const pctColor = pct >= 80 ? '#16A34A' : pct >= 60 ? '#D97706' : '#64748B';
-      todayHtml += `<div class="trivia-lb-row ${i<3?'gold':''}">
-        <span style="font-weight:800;text-align:center;">${medals[i]||i+1}</span>
-        <span style="font-weight:800;color:${color};">${esc(p.name)}</span>
-        <span style="text-align:center;font-weight:800;">${p.score} / 5</span>
-        <span style="text-align:center;color:var(--slate);">—</span>
-        <span style="text-align:center;color:${pctColor};font-weight:700;">${pct}%</span>
-      </div>`;
-    });
-  }
-  document.getElementById('trivia-lb-today').innerHTML = todayHtml;
 }
 
 function triviaReset() {
@@ -1595,13 +1621,17 @@ function triviaReset() {
   buildTriviaNameGrid();
 }
 
-// Load any existing scores from localStorage on startup
+// Load scores on startup (before player selects name)
 (function() {
   try {
     const stored = localStorage.getItem('wc2026_trivia_scores');
-    if (stored) triviaScores = JSON.parse(stored);
+    if (stored) {
+      triviaAllScores = JSON.parse(stored);
+      renderAlwaysOnLeaderboard();
+    }
   } catch(e) {}
 })();
+
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
 loadData();
