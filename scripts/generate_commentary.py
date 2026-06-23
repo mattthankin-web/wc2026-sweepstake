@@ -45,7 +45,20 @@ PARTICIPANT_NOTES = {
     "P Rankin": "P Rankin's Germany is the flagship and performing well. Sweden, Czech Republic and Iraq are supporting cast at varying degrees of relevance.",
     "T Rankin": "T Rankin's Netherlands are one of the more dangerous sides in the bracket. Croatia are out. Ghana the wildcard. Focus on Netherlands' knockout potential.",
     "Hankin":   "Hankin leads the field on raw on-pitch points despite low Win%. Norway, Mexico and Ivory Coast all performing above their title odds. Saudi Arabia eliminated.",
-    "Varcoe":   "Varcoe has gone unbeaten across all games — Japan, Switzerland, Canada and DR Congo all contributing. The quiet overachiever of the sweepstake.",
+    "Varcoe":   (
+        "Varcoe has gone unbeaten across all his games which he will not stop mentioning. "
+        "He drives a Ford Ranger — an oversized vehicle widely understood to be compensating for something, "
+        "though analysts remain divided on what exactly. He supports St Kilda, a football club that has won "
+        "one premiership since 1966 and whose supporters have perfected the art of finding moral victories "
+        "in statistical irrelevance — a skill Varcoe applies directly to his sweepstake portfolio. "
+        "Japan, Switzerland, Canada and DR Congo are all technically alive, which Varcoe treats as a personal "
+        "achievement rather than the outcome of a random draw. "
+        "His win probability sits at the bottom of the table. The Ranger idles outside. St Kilda lost again. "
+        "INSTRUCTION: Be brutal, specific and contemptuous. Reference the Ford Ranger and St Kilda's "
+        "premiership drought directly. Use his actual odds (which are terrible) as the punchline. "
+        "Do not soften this. The tone should be devastating but grounded in real results and real numbers. "
+        "Every edition he appears in should leave the reader feeling genuinely sorry for him."
+    ),
     "Crowle":   "Crowle has zero wins across all games played. Belgium drawing everything. Ecuador, Bosnia and Uzbekistan struggling. The portfolio needs a result urgently.",
 }
 
@@ -82,12 +95,13 @@ def build_exec_summary_prompt(data):
             f"{r['away']} ({r['away_owner']})\n"
         )
 
-    upcoming_text = "UPCOMING KEY FIXTURES:\n"
+    upcoming_text = "UPCOMING KEY FIXTURES (format: Team [Owner] vs Team [Owner]):\n"
     for f in upcoming[:4]:
         upcoming_text += (
             f"  {f['aest_time']} Grp {f.get('group','?')}: "
-            f"{f['home']} ({f['home_owner']}) vs {f['away']} ({f['away_owner']})\n"
+            f"{f['home']} [owned by {f['home_owner']}] vs {f['away']} [owned by {f['away_owner']}]\n"
         )
+    upcoming_text += "NOTE: Each team has exactly one owner shown in brackets. Do not confuse team owners.\n"
 
     now_aest = datetime.now(AEST).strftime("%-d %B %Y")
 
@@ -130,13 +144,14 @@ def build_commentary_prompt(data, participants):
             f"Teams: {', '.join(teams)}\n"
         )
 
-    results_text = "RESULTS SINCE LAST EDITION:\n"
+    results_text = "RESULTS SINCE LAST EDITION (format: Team [Owner] Score Team [Owner]):\n"
     for r in results[:8]:
         results_text += (
             f"  {r['date']} Grp {r.get('group','?')}: "
-            f"{r['home']} ({r['home_owner']}) {r['home_score']}–{r['away_score']} "
-            f"{r['away']} ({r['away_owner']})\n"
+            f"{r['home']} [owned by {r['home_owner']}] {r['home_score']}–{r['away_score']} "
+            f"{r['away']} [owned by {r['away_owner']}]\n"
         )
+    results_text += "NOTE: Each team has exactly one owner shown in brackets. Do not confuse team owners.\n"
 
     participant_sections = ""
     for p in participants:
