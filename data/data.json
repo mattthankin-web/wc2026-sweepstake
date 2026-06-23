@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T04:02:20.595327+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 2:02pm AEST",
-    "edition": 8,
+    "last_updated": "2026-06-23T04:08:51.092245+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 2:08pm AEST",
+    "edition": 9,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "23 Jun 2026 2:02am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-23T01:52:18.062454+00:00",
-    "last_score_refresh": "23 Jun 2026 2:02pm AEST",
+    "trivia_schedule_generated": "2026-06-23T04:09:19.548955+00:00",
+    "last_score_refresh": "23 Jun 2026 2:08pm AEST",
     "last_commentary_participants": [
-      "Crowle",
-      "Kenna",
-      "Cronan"
+      "Silk",
+      "Same",
+      "Galbraith"
     ],
-    "last_commentary_generated": "2026-06-23T01:52:18.062169+00:00"
+    "last_commentary_generated": "2026-06-23T04:09:19.548658+00:00"
   },
   "participants": {
     "Kenna": {
@@ -291,7 +291,7 @@
       "home_score": 1,
       "away_score": 0,
       "status": "LIVE",
-      "match_minute": "62'",
+      "match_minute": "68'",
       "badge": "LIVE",
       "sweepstake_relevant": true,
       "sort_key": "0_live"
@@ -460,22 +460,22 @@
   ],
   "commentary": [
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: A Portfolio That Has Forgotten What Winning Looks Like",
-      "body": "Zero wins from five games. Three draws, two losses, three points. Crowle's record reads less like a World Cup sweepstake entry and more like a parliamentary inquiry into institutional underperformance. Belgium, the nominal headline act, have drawn every match they have played with the quiet persistence of a team that has decided mere elimination would be too dramatic. Ecuador, Bosnia and Uzbekistan have contributed little beyond confirmation that they exist.\n\nAt 3.42% Win%, Crowle occupies last place with a margin of separation from Varcoe that feels less like a gap and more like a philosophical chasm. There are no obvious catalysts for recovery. The portfolio requires wins, and there is no current evidence that anyone involved has been briefed on this."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: Algeria Departs, England Must Now Do the Heavy Lifting",
+      "body": "Jordan's 1-0 victory over Algeria today confirms what the group stage had been politely suggesting for some time: Algeria are gone, and Qatar — already a decorative presence — will follow shortly. Silk's portfolio is now functionally a two-team operation, which is either a focused hand or a thin one depending on your disposition. The sweepstake mathematics are straightforward: England and the USA must both progress deep into the knockout rounds, or Silk's 14.05% begins its quiet descent.\n\nThe encouraging news is that England and the USA remain among the more credible tournament prospects in the field. Cronan's France have looked sharp, and Galbraith's Argentina beat Austria today, so the competition at the top is tightening. Silk needs clean knockout runs from both live assets — not an unreasonable ask, but one that leaves precisely zero margin for early exits."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Eight Teams, One Point of Relevance",
-      "body": "Norway 3–1 Senegal is exactly the kind of result that turns a large portfolio from an asset into a liability. Kenna holds eight teams — more than any other participant — yet the loss of Senegal is a reminder that quantity and quality are, in the main, unrelated concepts. Spain remains the sole serious instrument in this ensemble. South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti are doing nothing that a reasonable observer would describe as threatening to anyone.\n\nKenna sits third at 13.78%, which flatters the portfolio considerably. The Win% reflects Spain almost entirely. Were Spain to be removed from the calculation, Kenna's position would look considerably closer to Crowle's than to Cronan's, which is not a sentence that rewards dwelling upon."
+      "participant": "Same",
+      "color": "#15803D",
+      "title": "Same: Portugal Disappoint While Colombia Quietly Accumulate",
+      "body": "Same sits fifth on 9.56% with only four teams, but the portfolio is more coherent than the ranking implies. Portugal have been underwhelming — the kind of performances that prompt tactical hand-wringing and column inches about generational transition — while Colombia have been the more convincing asset, building points and momentum with considerably less fuss. Cape Verde and Paraguay provide the usual sweepstake ballast: present on paper, irrelevant in practice.\n\nThe path upward for Same runs almost entirely through the knockout rounds. At 9.56%, there is ground to recover on Silk and Galbraith, but Colombia peaking at the right moment combined with a Portugal who remember they have Ronaldo could produce a late-tournament surge. The concern is that Portugal appear to be running on reputation rather than form, which historically ends in a quarter-final and a post-match interview about not giving up."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: Leading the Field, Carried by One Team",
-      "body": "France 3–0 Iraq is the sort of result that reminds the sweepstake that Cronan's position atop the standings is not accidental. France are performing with the measured efficiency of a team that knows they are the primary reason their owner is winning. The 17.74% Win% is the highest in the competition, and Argentina's 2–0 defeat of Austria — while a blow to one corner of the portfolio — does nothing to dislodge France from the role of tournament favourite.\n\nNevertheless, Austria is struggling, Australia and Panama are decorative, and the architecture here is stark: this is a one-team portfolio dressed in four. France advance, Cronan leads. France stumble, and the distance between first place and mid-table collapses with uncomfortable speed."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: Argentina Win, Turkey and South Africa Irrelevant, Morocco the Quiet Co-Pilot",
+      "body": "Today's 2-0 win for Argentina over Cronan's Austria was precisely the result Galbraith required — consolidating points, asserting group authority, and applying gentle pressure on the table leader in the process. Turkey and South Africa are already departed, which means Galbraith's effective portfolio is now Argentina and Morocco, a pairing that on paper represents genuine knockout-round firepower. Morocco won their group. Argentina are Argentina.\n\nThe structural question for Galbraith is whether two strong teams is enough to close the gap on Cronan, who leads with 17.74% and still has France looking ominous. Galbraith at 12.06% is well-positioned but not yet threatening. If Argentina advance to the latter stages and Morocco continue their recent tournament pedigree of making serious teams uncomfortable, the purple corner of this sweepstake becomes considerably more interesting. For now: watchful, not yet worried."
     }
   ],
   "odds": [
@@ -868,9 +868,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan leads the sweepstake with France and loses Argentina in the same afternoon.",
-    "paragraph_1": "The day's defining irony belonged to Cronan: France dismantled Iraq 3–0 to consolidate top spot, only for Argentina to hand Galbraith a 2–0 win at Cronan's direct expense. Galbraith climbs to fourth on 11 points, narrowing the gap at the summit. Kenna, already stretched across an improbable squad, watched Hankin's Norway put three past Senegal — a result that compounds a record of W2-D4-L6 and raises pointed questions about portfolio quality over quantity.",
-    "paragraph_2": "The next 48 hours offer selective relief and selective pain. Kenna's Jordan face Silk's Algeria on Tuesday — a fixture that could simultaneously wound one of the sweepstake's most decorated rosters and hand Silk a platform to close on Cronan. Wednesday brings Portugal into view for Same, a potentially straightforward three points against Uzbekistan. Silk's England then face T Rankin's Ghana in what amounts to a routine expectation management exercise — with the emphasis on expectation."
+    "pull_quote": "Cronan leads the table despite watching his own team lose 2-0 to Argentina.",
+    "paragraph_1": "The June 23 window produced the sweepstake's defining absurdity: Cronan sits atop the standings at 17.74% on the strength of France's 3-0 demolition of Iraq, while simultaneously absorbing a 2-0 defeat courtesy of Austria's loss to Galbraith's Argentina. Galbraith climbs to fourth on the back of that same result. Kenna's Jordan edged Silk's Algeria 1-0 in Group J, a narrow gain offset almost immediately by Senegal's 3-2 loss to Hankin's Norway, leaving Kenna's portfolio decidedly mixed across a single afternoon.",
+    "paragraph_2": "The next 48 hours offer meaningful redistribution opportunities. Same's Portugal face Crowle's Uzbekistan at 3am Wednesday — a fixture Portugal are expected to manage without incident, which would consolidate Same's fifth-place position. More consequential is England versus Ghana at 6am: Silk needs points to close on Cronan, while T Rankin will be hoping Ghana can complicate matters. Panama versus Croatia at 9am pits Cronan directly against T Rankin, a result that could either extend the leader's advantage or introduce some long-overdue jeopardy at the top."
   },
   "trivia_schedule": {
     "2026-06-23": [
