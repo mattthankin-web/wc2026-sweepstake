@@ -885,6 +885,10 @@ function showTab(name) {
   document.querySelectorAll('.panel').forEach(p => {
     p.classList.toggle('active', p.id === `panel-${name}`);
   });
+  // Track tab view in Google Analytics
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'tab_view', { tab_name: name });
+  }
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -1309,6 +1313,10 @@ function getTodayQuestions() {
 function triviaSelectPlayer(player) {
   triviaState.player = player;
   buildTriviaNameGrid();
+  // Track player selection in GA
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'trivia_player_select', { player_name: player });
+  }
 
   // Check if already played today using shared scores
   const today = getTodayKey();
@@ -1447,6 +1455,15 @@ function triviaFinish() {
     `${Math.round((score/5)*100)}% correct today · ${totalCorrect} total correct all-time`;
 
   document.getElementById('trivia-final').style.display = 'block';
+
+  // Track trivia completion in GA
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'trivia_complete', {
+      player_name: triviaState.player,
+      score: score,
+      score_pct: Math.round((score/5)*100)
+    });
+  }
 }
 
 function saveTriviaScore(player, score) {
