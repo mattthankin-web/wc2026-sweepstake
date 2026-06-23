@@ -912,10 +912,11 @@ function render() {
 
   // Header meta
   const hasLive = (upcoming_fixtures || []).some(f => f.status === 'IN_PLAY' || f.aest_time === '🔴 LIVE') || (recent_results || []).some(r => r.status === 'LIVE');
+  const refreshTime = meta?.last_score_refresh || '';
+  const refreshNote = refreshTime ? ` · Scores: ${refreshTime}` : '';
   document.getElementById('header-meta').innerHTML =
-    `Updated ${esc(meta.last_updated_aest)} · Edition ${meta.edition}`
-    + (hasLive ? '<span class="live-badge">LIVE</span>' : '')
-    + `<span style="font-size:0.65rem;color:#475569;margin-left:4px;">${refreshNote}</span>`;
+    `Updated ${esc(meta.last_updated_aest)} · Edition ${meta.edition}${refreshNote}`
+    + (hasLive ? '<span class="live-badge">LIVE</span>' : '');
 
   renderStandings(standings, participants);
   renderResults(recent_results, participants);
@@ -1554,6 +1555,7 @@ loadData();
 </script>
 </body>
 </html>
+
 
 
 
