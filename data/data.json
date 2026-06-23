@@ -1,16 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T01:45:21.874033+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 11:45am AEST",
-    "edition": 7,
+    "last_updated": "2026-06-23T01:51:51.706181+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 11:51am AEST",
+    "edition": 8,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "23 Jun 2026 11:45am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-23T01:44:43.251517+00:00",
-    "last_score_refresh": "23 Jun 2026 11:45am AEST"
+    "trivia_schedule_generated": "2026-06-23T01:52:18.062454+00:00",
+    "last_score_refresh": "23 Jun 2026 11:51am AEST",
+    "last_commentary_participants": [
+      "Crowle",
+      "Kenna",
+      "Cronan"
+    ],
+    "last_commentary_generated": "2026-06-23T01:52:18.062169+00:00"
   },
   "participants": {
     "Kenna": {
@@ -448,22 +454,22 @@
   ],
   "commentary": [
     {
-      "participant": "Galbraith",
-      "color": "#7C3AED",
-      "title": "Galbraith: Everything Changed Overnight, But One Question Remains",
-      "body": "Three games into this tournament, Turkey and South Africa were eliminated and Morocco had a solitary point. Galbraith's portfolio had all the hallmarks of a Melbourne Demons performance — leading at every checkpoint, statistically respectable, somehow still losing. Then Messi happened. Argentina's 3–0 demolition of Algeria, hat-trick, tied with Klose's all-time record, rescued the entire campaign in ninety minutes. Morocco have since won Group C outright. The turnaround has been extraordinary.\n\nThe recovery should not obscure what surrounds it. Argentina is doing what Max Gawn does every week — dominant, load-bearing, and completely undone the moment Riley Thilthorpe decides to take a mark in the forward pocket and kick the one goal that actually matters. All that control, all that influence, rendered irrelevant by a forward who showed up for thirty seconds at the right time. Turkey, meanwhile, is South Africa — a team that turns up, loses narrowly, and is quietly written off as a finals chance somewhere around round twelve. The question for Galbraith is the same one Melbourne supporters ask themselves every September: outstanding individual, reasonable portfolio, but does any of it actually go anywhere when it counts?\n\nTonight, Argentina face Austria. One more result and the rescue is complete."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: A Portfolio That Has Forgotten What Winning Looks Like",
+      "body": "Zero wins from five games. Three draws, two losses, three points. Crowle's record reads less like a World Cup sweepstake entry and more like a parliamentary inquiry into institutional underperformance. Belgium, the nominal headline act, have drawn every match they have played with the quiet persistence of a team that has decided mere elimination would be too dramatic. Ecuador, Bosnia and Uzbekistan have contributed little beyond confirmation that they exist.\n\nAt 3.42% Win%, Crowle occupies last place with a margin of separation from Varcoe that feels less like a gap and more like a philosophical chasm. There are no obvious catalysts for recovery. The portfolio requires wins, and there is no current evidence that anyone involved has been briefed on this."
     },
     {
       "participant": "Kenna",
       "color": "#EA580C",
-      "title": "Kenna: Spain Remembered Who They Are",
-      "body": "The Cape Verde draw looked like a campaign-defining catastrophe. The 4–0 demolition of Saudi Arabia — with Lamine Yamal back in the starting eleven and immediately decisive — looks like a course correction. Spain created chance after chance and the finishing was clinical. Kenna's most important asset is back to looking like a genuine tournament contender. The problem remains the other seven: Senegal lost to France and is effectively out, Haiti are eliminated, Jordan and Curaçao have one point between them. Six of Kenna's eight teams are passengers. Spain has to do everything."
+      "title": "Kenna: Eight Teams, One Point of Relevance",
+      "body": "Norway 3–1 Senegal is exactly the kind of result that turns a large portfolio from an asset into a liability. Kenna holds eight teams — more than any other participant — yet the loss of Senegal is a reminder that quantity and quality are, in the main, unrelated concepts. Spain remains the sole serious instrument in this ensemble. South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti are doing nothing that a reasonable observer would describe as threatening to anyone.\n\nKenna sits third at 13.78%, which flatters the portfolio considerably. The Win% reflects Spain almost entirely. Were Spain to be removed from the calculation, Kenna's position would look considerably closer to Crowle's than to Cronan's, which is not a sentence that rewards dwelling upon."
     },
     {
-      "participant": "Morris",
-      "color": "#0891B2",
-      "title": "Morris: Unbeaten in Eight, Still Waiting for Traction",
-      "body": "Brazil qualified with a 3–0 win over Haiti — the kind of result that looks straightforward and raises no flags. Scotland beat Haiti in the opener and then lost 0–1 to Morocco, meaning Morris's Group C campaign is split: Brazil through as runners-up to Morocco, Scotland in third with a genuine shot at one of the best third-place spots. Iran drew their second game 0–0 with Belgium. Uruguay drew 2–2 with Cape Verde, dropping two points to a team ranked 90th in the world when a win was desperately needed. Eight games across four teams. Not a single defeat. Five of those eight are draws. The 7.78% probability figure undersells the sheer amount of time Morris has spent staring at a stalemate."
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: Leading the Field, Carried by One Team",
+      "body": "France 3–0 Iraq is the sort of result that reminds the sweepstake that Cronan's position atop the standings is not accidental. France are performing with the measured efficiency of a team that knows they are the primary reason their owner is winning. The 17.74% Win% is the highest in the competition, and Argentina's 2–0 defeat of Austria — while a blow to one corner of the portfolio — does nothing to dislodge France from the role of tournament favourite.\n\nNevertheless, Austria is struggling, Australia and Panama are decorative, and the architecture here is stark: this is a one-team portfolio dressed in four. France advance, Cronan leads. France stumble, and the distance between first place and mid-table collapses with uncomfortable speed."
     }
   ],
   "odds": [
@@ -856,9 +862,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Varcoe's four teams have played seven games and not lost once. In a sweepstake where everyone's premium assets are underperforming, Japan, Switzerland, Canada and DR Congo have quietly gone unbeaten.",
-    "paragraph_1": "Twelve matches since the last report, and the picture is sharpening fast. Spain 4–0 over Saudi Arabia with Yamal back was the statement result of the window, pulling Kenna's marquee asset back into genuine contention. The Netherlands demolished Sweden 5–1, Germany ground past Ivory Coast, and USA won Group D outright. Brazil through, Morocco topped Group C. Varcoe remains the story nobody's telling — unbeaten across all seven games played.",
-    "paragraph_2": "The next 48 hours are the most consequential of the group stage. Argentina face Austria tonight (Galbraith vs Cronan head-to-head), France play Iraq, Norway face Senegal. Tuesday brings England vs Ghana (Silk vs T Rankin) and Colombia vs DR Congo (Same vs Varcoe). By Wednesday morning, the Round of 32 field will be almost completely set."
+    "pull_quote": "Cronan leads the sweepstake with France and loses Argentina in the same afternoon.",
+    "paragraph_1": "The day's defining irony belonged to Cronan: France dismantled Iraq 3–0 to consolidate top spot, only for Argentina to hand Galbraith a 2–0 win at Cronan's direct expense. Galbraith climbs to fourth on 11 points, narrowing the gap at the summit. Kenna, already stretched across an improbable squad, watched Hankin's Norway put three past Senegal — a result that compounds a record of W2-D4-L6 and raises pointed questions about portfolio quality over quantity.",
+    "paragraph_2": "The next 48 hours offer selective relief and selective pain. Kenna's Jordan face Silk's Algeria on Tuesday — a fixture that could simultaneously wound one of the sweepstake's most decorated rosters and hand Silk a platform to close on Cronan. Wednesday brings Portugal into view for Same, a potentially straightforward three points against Uzbekistan. Silk's England then face T Rankin's Ghana in what amounts to a routine expectation management exercise — with the emphasis on expectation."
   },
   "trivia_schedule": {
     "2026-06-23": [
@@ -1069,7 +1075,7 @@
         "Lionel Messi"
       ],
       "correct": 1,
-      "explanation": "Miroslav Klose scored 16 goals across four World Cups (2002–2014). Messi equalled that record with his hat-trick vs Algeria at WC2026.",
+      "explanation": "Miroslav Klose scored 16 goals across four World Cups (2002–2014). Messi equalled that record at WC2026.",
       "category": "records",
       "difficulty": "easy"
     },
@@ -1125,7 +1131,7 @@
         "France"
       ],
       "correct": 2,
-      "explanation": "Co-host Canada demolished Qatar 6-0 with Jonathan David scoring a hat-trick — Canada's biggest ever World Cup win.",
+      "explanation": "Co-host Canada demolished Qatar 6-0 with Jonathan David scoring a hat-trick.",
       "category": "2026",
       "difficulty": "medium"
     },
@@ -1167,7 +1173,7 @@
         "4-4"
       ],
       "correct": 1,
-      "explanation": "The 2022 final finished 3-3 after extra time, with Argentina winning 4-2 on penalties. Mbappé scored a hat-trick in a losing cause.",
+      "explanation": "The 2022 final finished 3-3 after extra time, with Argentina winning 4-2 on penalties.",
       "category": "history",
       "difficulty": "medium"
     },
@@ -1181,7 +1187,7 @@
         "Ferran Torres"
       ],
       "correct": 2,
-      "explanation": "Lamine Yamal, aged 17, was one of Spain's key players and among the most talked-about at the 2026 tournament.",
+      "explanation": "Lamine Yamal, aged 17, was one of Spain's key players at the 2026 tournament.",
       "category": "2026",
       "difficulty": "easy"
     },
@@ -1209,7 +1215,7 @@
         "Group B"
       ],
       "correct": 2,
-      "explanation": "The USA were in Group D alongside Paraguay, Australia and Turkey, winning it with two straight wins.",
+      "explanation": "The USA were in Group D alongside Paraguay, Australia and Turkey.",
       "category": "2026",
       "difficulty": "medium"
     },
@@ -1223,7 +1229,7 @@
         "Argentina"
       ],
       "correct": 0,
-      "explanation": "Brazil won back-to-back World Cups in 1958 and 1962, the only nation to win consecutive tournaments.",
+      "explanation": "Brazil won back-to-back World Cups in 1958 and 1962.",
       "category": "history",
       "difficulty": "medium"
     },
@@ -1237,7 +1243,7 @@
         "Zinedine Zidane"
       ],
       "correct": 1,
-      "explanation": "Diego Maradona scored the 'Hand of God' goal against England in the 1986 quarter-final, punching the ball into the net.",
+      "explanation": "Diego Maradona scored the 'Hand of God' goal against England in the 1986 quarter-final.",
       "category": "history",
       "difficulty": "easy"
     },
@@ -1251,7 +1257,7 @@
         "12-0"
       ],
       "correct": 2,
-      "explanation": "Hungary beat El Salvador 10-1 in the 1982 World Cup — the highest-scoring match in World Cup history.",
+      "explanation": "Hungary beat El Salvador 10-1 in the 1982 World Cup.",
       "category": "records",
       "difficulty": "hard"
     },
@@ -1279,7 +1285,7 @@
         "6"
       ],
       "correct": 2,
-      "explanation": "The Netherlands beat Sweden 5-1 in a commanding Group F performance.",
+      "explanation": "The Netherlands beat Sweden 5-1 in Group F.",
       "category": "2026",
       "difficulty": "medium"
     },
@@ -1307,7 +1313,7 @@
         "Julian Alvarez"
       ],
       "correct": 1,
-      "explanation": "Kylian Mbappé won the Golden Boot at Qatar 2022 with 8 goals, including a hat-trick in the final.",
+      "explanation": "Kylian Mbappé won the Golden Boot at Qatar 2022 with 8 goals.",
       "category": "history",
       "difficulty": "medium"
     },
@@ -1335,7 +1341,7 @@
         "South Korea"
       ],
       "correct": 3,
-      "explanation": "South Korea beat Germany 2-0 in the final group game, eliminating the defending champions.",
+      "explanation": "South Korea beat Germany 2-0, eliminating the defending champions.",
       "category": "history",
       "difficulty": "medium"
     },
@@ -1349,7 +1355,7 @@
         "Marcus Thuram"
       ],
       "correct": 2,
-      "explanation": "Kylian Mbappé scored twice against Senegal, becoming France's all-time leading scorer in the process.",
+      "explanation": "Kylian Mbappé scored twice against Senegal, becoming France's all-time leading scorer.",
       "category": "2026",
       "difficulty": "hard"
     },
@@ -1377,7 +1383,7 @@
         "Morocco"
       ],
       "correct": 2,
-      "explanation": "South Africa hosted the 2010 World Cup, the first tournament held on the African continent.",
+      "explanation": "South Africa hosted the 2010 World Cup, the first tournament on African soil.",
       "category": "history",
       "difficulty": "easy"
     },
@@ -1391,7 +1397,7 @@
         "Group K"
       ],
       "correct": 2,
-      "explanation": "Argentina were drawn in Group J alongside Austria, Algeria and Jordan.",
+      "explanation": "Argentina were in Group J alongside Austria, Algeria and Jordan.",
       "category": "2026",
       "difficulty": "hard"
     },
@@ -1405,7 +1411,7 @@
         "Franco Armani"
       ],
       "correct": 1,
-      "explanation": "Emiliano 'Dibu' Martínez made two saves in the 2022 final shootout, becoming a national hero.",
+      "explanation": "Emiliano 'Dibu' Martínez made two saves in the 2022 final shootout.",
       "category": "history",
       "difficulty": "medium"
     },
@@ -1419,7 +1425,7 @@
         "BC Place, Vancouver"
       ],
       "correct": 2,
-      "explanation": "The 2026 World Cup opened at the Estadio Azteca in Mexico City — a venue that hosted the 1970 and 1986 World Cup finals.",
+      "explanation": "The 2026 World Cup opened at the Estadio Azteca in Mexico City.",
       "category": "2026",
       "difficulty": "medium"
     },
@@ -1461,7 +1467,7 @@
         "France"
       ],
       "correct": 1,
-      "explanation": "Germany's 7-1 destruction of host Brazil in 2014 — the 'Mineirazo' — is one of the most shocking results in World Cup history.",
+      "explanation": "Germany's 7-1 destruction of host Brazil in 2014 — the 'Mineirazo' — is legendary.",
       "category": "history",
       "difficulty": "easy"
     },
@@ -1475,13 +1481,13 @@
         "Morocco"
       ],
       "correct": 2,
-      "explanation": "Argentina won their third World Cup in Qatar 2022, with Lionel Messi finally lifting the trophy.",
+      "explanation": "Argentina won their third World Cup in Qatar 2022, with Lionel Messi lifting the trophy.",
       "category": "history",
       "difficulty": "easy"
     },
     {
       "id": 32,
-      "question": "How many World Cups has Lionel Messi participated in throughout his career?",
+      "question": "How many World Cups did Lionel Messi participate in throughout his career?",
       "options": [
         "4",
         "5",
@@ -1489,27 +1495,13 @@
         "3"
       ],
       "correct": 1,
-      "explanation": "Messi played in five World Cups: 2006, 2010, 2014, 2018 and 2022, finally winning in Qatar.",
+      "explanation": "Messi played in five World Cups: 2006, 2010, 2014, 2018 and 2022.",
       "category": "players",
       "difficulty": "medium"
     },
     {
       "id": 33,
-      "question": "Which player scored a bicycle kick goal against Sweden at the 2018 World Cup?",
-      "options": [
-        "Cristiano Ronaldo",
-        "Gareth Bale",
-        "Neymar",
-        "Edinson Cavani"
-      ],
-      "correct": 1,
-      "explanation": "Gareth Bale scored a stunning overhead kick for Wales against Russia — but Cristiano Ronaldo scored a famous bicycle kick against Spain. The answer is Gareth Bale for Wales vs Russia... actually Ronaldo vs Spain. Correct: Ronaldo — but the question targets Bale's goal. The correct answer marked here is Gareth Bale vs Russia.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 34,
-      "question": "Which nation made a surprise run to the 2022 World Cup semi-finals — the first African team to do so?",
+      "question": "Which nation made a surprise run to the 2022 World Cup semi-finals — the first African team ever to do so?",
       "options": [
         "Senegal",
         "Cameroon",
@@ -1517,12 +1509,12 @@
         "Ghana"
       ],
       "correct": 2,
-      "explanation": "Morocco made history by reaching the 2022 World Cup semi-finals, the first African nation ever to do so.",
+      "explanation": "Morocco made history by reaching the 2022 World Cup semi-finals.",
       "category": "history",
       "difficulty": "easy"
     },
     {
-      "id": 35,
+      "id": 34,
       "question": "Which player won the Golden Ball (best player) at the 2022 World Cup?",
       "options": [
         "Kylian Mbappé",
@@ -1531,12 +1523,12 @@
         "Julian Alvarez"
       ],
       "correct": 2,
-      "explanation": "Lionel Messi won the Golden Ball award at Qatar 2022, capping a tournament-winning performance.",
+      "explanation": "Lionel Messi won the Golden Ball award at Qatar 2022.",
       "category": "history",
       "difficulty": "easy"
     },
     {
-      "id": 36,
+      "id": 35,
       "question": "How many times has Germany won the World Cup?",
       "options": [
         "3",
@@ -1545,40 +1537,12 @@
         "2"
       ],
       "correct": 1,
-      "explanation": "Germany (including West Germany) have won the World Cup four times: 1954, 1974, 1990 and 2014.",
+      "explanation": "Germany (including West Germany) have won four World Cups: 1954, 1974, 1990 and 2014.",
       "category": "history",
       "difficulty": "easy"
     },
     {
-      "id": 37,
-      "question": "The 2026 World Cup was the first to feature how many group stage games per team?",
-      "options": [
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "correct": 1,
-      "explanation": "With 48 teams in 12 groups of 4, each team still plays 3 group stage games — but with the expanded format allowing more third-placed teams to qualify.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 38,
-      "question": "Which player scored twice in the 2026 World Cup opening match for the host nation?",
-      "options": [
-        "Christian Pulisic",
-        "Timothy Weah",
-        "Erling Haaland",
-        "Jonathan David"
-      ],
-      "correct": 0,
-      "explanation": "Christian Pulisic scored twice for the USA in the tournament opener.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 39,
+      "id": 36,
       "question": "Which country lost the 2010 World Cup final to Spain?",
       "options": [
         "Germany",
@@ -1587,12 +1551,12 @@
         "Argentina"
       ],
       "correct": 2,
-      "explanation": "The Netherlands lost 1-0 to Spain in the 2010 final in Johannesburg, with Andres Iniesta scoring the winner in extra time.",
+      "explanation": "The Netherlands lost 1-0 to Spain in the 2010 final, with Andres Iniesta scoring the winner.",
       "category": "history",
       "difficulty": "easy"
     },
     {
-      "id": 40,
+      "id": 37,
       "question": "Who scored the winning goal for Spain in the 2010 World Cup final?",
       "options": [
         "David Villa",
@@ -1606,8 +1570,8 @@
       "difficulty": "medium"
     },
     {
-      "id": 41,
-      "question": "Which goalkeeper made the famous 'saves of his life' for Cape Verde against Spain in the 2026 World Cup?",
+      "id": 38,
+      "question": "Which goalkeeper famously saved penalties to make Cape Verde's 0-0 draw with Spain at WC2026 possible?",
       "options": [
         "Edvandro",
         "Vozinha",
@@ -1615,40 +1579,12 @@
         "Dibu"
       ],
       "correct": 1,
-      "explanation": "Vozinha, a 40-year-old goalkeeper playing in the Portuguese second division, made a series of stunning saves to hold Spain to a 0-0 draw.",
+      "explanation": "Vozinha, a 40-year-old keeper playing in the Portuguese second division, made extraordinary saves to hold Spain scoreless.",
       "category": "2026",
       "difficulty": "hard"
     },
     {
-      "id": 42,
-      "question": "How old was the Cape Verde goalkeeper Vozinha during the famous 0-0 draw with Spain at the 2026 World Cup?",
-      "options": [
-        "36",
-        "38",
-        "40",
-        "42"
-      ],
-      "correct": 2,
-      "explanation": "Vozinha was 40 years old when he helped Cape Verde hold Spain to a goalless draw in one of the tournament's early shock results.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 43,
-      "question": "Which World Cup saw Italy win for the fourth time, beating France on penalties in the final?",
-      "options": [
-        "1990",
-        "1994",
-        "2006",
-        "2002"
-      ],
-      "correct": 2,
-      "explanation": "Italy beat France on penalties in the 2006 final in Berlin. The match was infamous for Zinedine Zidane headbutting Marco Materazzi.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 44,
+      "id": 39,
       "question": "What did Zinedine Zidane do in the 2006 World Cup final that made global headlines?",
       "options": [
         "Scored with his knee",
@@ -1657,12 +1593,12 @@
         "Refused to shake hands"
       ],
       "correct": 1,
-      "explanation": "Zidane was sent off for headbutting Marco Materazzi in extra time of the 2006 final — his last ever game of professional football.",
+      "explanation": "Zidane was sent off for headbutting Marco Materazzi in extra time of the 2006 final — his last ever professional game.",
       "category": "history",
       "difficulty": "easy"
     },
     {
-      "id": 45,
+      "id": 40,
       "question": "Which country hosted the 2014 World Cup?",
       "options": [
         "Argentina",
@@ -1671,12 +1607,12 @@
         "Colombia"
       ],
       "correct": 2,
-      "explanation": "Brazil hosted the 2014 World Cup and was famously beaten 7-1 by Germany in the semi-final — the 'Mineirazo'.",
+      "explanation": "Brazil hosted the 2014 World Cup and was famously beaten 7-1 by Germany in the semi-final.",
       "category": "history",
       "difficulty": "easy"
     },
     {
-      "id": 46,
+      "id": 41,
       "question": "Which player is known by the nickname 'O Fenômeno' (The Phenomenon)?",
       "options": [
         "Pelé",
@@ -1685,12 +1621,12 @@
         "Romario"
       ],
       "correct": 1,
-      "explanation": "Ronaldo Nazário — the Brazilian striker — was nicknamed 'O Fenômeno'. He scored 15 World Cup goals across 1994, 1998, 2002 and 2006.",
+      "explanation": "Ronaldo Nazário — the Brazilian striker — was nicknamed 'O Fenômeno'.",
       "category": "players",
       "difficulty": "medium"
     },
     {
-      "id": 47,
+      "id": 42,
       "question": "How many goals did Ronaldo (Brazil) score in the 2002 World Cup final against Germany?",
       "options": [
         "1",
@@ -1699,26 +1635,12 @@
         "0"
       ],
       "correct": 1,
-      "explanation": "Ronaldo scored twice in the 2002 final as Brazil beat Germany 2-0 in Yokohama to win their fifth World Cup.",
+      "explanation": "Ronaldo scored twice in the 2002 final as Brazil beat Germany 2-0.",
       "category": "history",
       "difficulty": "medium"
     },
     {
-      "id": 48,
-      "question": "Which English player was sent off in the 2006 World Cup quarter-final against Portugal?",
-      "options": [
-        "Steven Gerrard",
-        "Frank Lampard",
-        "Wayne Rooney",
-        "John Terry"
-      ],
-      "correct": 2,
-      "explanation": "Wayne Rooney was sent off for stamping on Ricardo Carvalho, leaving England with 10 men in their quarter-final loss to Portugal.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 49,
+      "id": 43,
       "question": "Which team did Italy beat in the 1982 World Cup final?",
       "options": [
         "West Germany",
@@ -1727,12 +1649,12 @@
         "Argentina"
       ],
       "correct": 0,
-      "explanation": "Italy beat West Germany 3-1 in the 1982 final in Madrid. Paolo Rossi was the tournament's top scorer with 6 goals.",
+      "explanation": "Italy beat West Germany 3-1 in the 1982 final. Paolo Rossi was top scorer with 6 goals.",
       "category": "history",
       "difficulty": "medium"
     },
     {
-      "id": 50,
+      "id": 44,
       "question": "Which player scored a hat-trick in the 1966 World Cup final for England?",
       "options": [
         "Bobby Moore",
@@ -1741,96 +1663,96 @@
         "Bobby Charlton"
       ],
       "correct": 1,
-      "explanation": "Geoff Hurst scored a hat-trick in the 1966 final against West Germany at Wembley — the only hat-trick in a World Cup final.",
+      "explanation": "Geoff Hurst scored a hat-trick in the 1966 final against West Germany — the only hat-trick in a World Cup final.",
+      "category": "records",
+      "difficulty": "medium"
+    },
+    {
+      "id": 45,
+      "question": "Which team scored the fastest goal in World Cup history, in just 11 seconds?",
+      "options": [
+        "Turkey",
+        "Mexico",
+        "Czech Republic",
+        "Spain"
+      ],
+      "correct": 0,
+      "explanation": "Hakan Şükür scored for Turkey after just 11 seconds against South Korea in the 2002 third-place playoff.",
+      "category": "records",
+      "difficulty": "hard"
+    },
+    {
+      "id": 46,
+      "question": "Which player has appeared in the most World Cup finals across their career?",
+      "options": [
+        "Cafu",
+        "Pelé",
+        "Franz Beckenbauer",
+        "Lothar Matthäus"
+      ],
+      "correct": 0,
+      "explanation": "Cafu of Brazil appeared in three World Cup finals (1994, 1998, 2002), winning twice.",
+      "category": "records",
+      "difficulty": "hard"
+    },
+    {
+      "id": 47,
+      "question": "Just Fontaine holds the record for most goals scored at a single World Cup. How many did he score?",
+      "options": [
+        "11",
+        "13",
+        "15",
+        "9"
+      ],
+      "correct": 1,
+      "explanation": "Just Fontaine of France scored 13 goals at the 1958 World Cup — a record that still stands.",
+      "category": "records",
+      "difficulty": "hard"
+    },
+    {
+      "id": 48,
+      "question": "Which nation won the World Cup without losing a single game across the entire tournament in 1970?",
+      "options": [
+        "West Germany",
+        "Italy",
+        "England",
+        "Brazil"
+      ],
+      "correct": 3,
+      "explanation": "Brazil won the 1970 World Cup winning all six matches — widely regarded as the greatest World Cup team ever.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 49,
+      "question": "England won their only World Cup in which year?",
+      "options": [
+        "1962",
+        "1966",
+        "1970",
+        "1974"
+      ],
+      "correct": 1,
+      "explanation": "England won their only World Cup in 1966, beating West Germany 4-2 in the final at Wembley.",
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "id": 50,
+      "question": "Which team has never missed a World Cup since they first qualified?",
+      "options": [
+        "Brazil",
+        "Germany",
+        "Argentina",
+        "France"
+      ],
+      "correct": 0,
+      "explanation": "Brazil are the only team to have qualified for every single FIFA World Cup since 1930.",
       "category": "records",
       "difficulty": "medium"
     },
     {
       "id": 51,
-      "question": "Which stadium hosted the 2022 World Cup final?",
-      "options": [
-        "Khalifa International Stadium",
-        "Al Bayt Stadium",
-        "Lusail Stadium",
-        "Education City Stadium"
-      ],
-      "correct": 2,
-      "explanation": "The 2022 World Cup final between Argentina and France was played at Lusail Stadium in Qatar.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 52,
-      "question": "How many yellow cards does a player need to accumulate to be suspended for the next World Cup match?",
-      "options": [
-        "2",
-        "3",
-        "4",
-        "1"
-      ],
-      "correct": 0,
-      "explanation": "A player receives a one-match suspension after accumulating two yellow cards in a World Cup tournament.",
-      "category": "rules",
-      "difficulty": "easy"
-    },
-    {
-      "id": 53,
-      "question": "Which country was the first African nation to reach a World Cup semi-final — in 1990?",
-      "options": [
-        "Nigeria",
-        "Cameroon",
-        "Senegal",
-        "Egypt"
-      ],
-      "correct": 1,
-      "explanation": "Cameroon reached the 1990 World Cup quarter-finals (not semi-finals) — the furthest an African team had gone at that point. Morocco in 2022 were the first to reach the semis.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 54,
-      "question": "The 2026 World Cup Group A was topped by which team?",
-      "options": [
-        "South Africa",
-        "South Korea",
-        "Mexico",
-        "Czechia"
-      ],
-      "correct": 2,
-      "explanation": "Mexico topped Group A at the 2026 World Cup, winning both their group games against South Africa and South Korea.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 55,
-      "question": "Which player scored for both teams in the 2022 World Cup during the group stage — putting one in his own net and one at the other end?",
-      "options": [
-        "Adrien Rabiot",
-        "Richarlison",
-        "Aziz Bouhaddouz",
-        "Sead Kolašinac"
-      ],
-      "correct": 2,
-      "explanation": "Aziz Bouhaddouz of Morocco infamously scored an own goal against Iran in the 2018 World Cup. In 2022 many own goals featured — this is a tricky one.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 56,
-      "question": "Which team did Erling Haaland score twice against at the 2026 World Cup for Norway?",
-      "options": [
-        "Senegal",
-        "France",
-        "Iraq",
-        "Algeria"
-      ],
-      "correct": 2,
-      "explanation": "Erling Haaland scored twice for Norway in their group stage win over Iraq.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 57,
       "question": "How many times has Argentina won the World Cup?",
       "options": [
         "2",
@@ -1844,609 +1766,7 @@
       "difficulty": "easy"
     },
     {
-      "id": 58,
-      "question": "Which English goalkeeper famously dropped the ball for a Ronaldo goal at the 2006 World Cup?",
-      "options": [
-        "Paul Robinson",
-        "David James",
-        "Scott Carson",
-        "Joe Hart"
-      ],
-      "correct": 2,
-      "explanation": "Scott Carson dropped a shot from Simão to gift Portugal an early goal in England's 2006 qualifier — but in the World Cup it was Paul Robinson who had the famous blunder. The actual 2006 WC blunder was Robinson's.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 59,
-      "question": "Which team scored the fastest goal in World Cup history, in just 11 seconds?",
-      "options": [
-        "Turkey",
-        "Mexico",
-        "Czech Republic",
-        "Spain"
-      ],
-      "correct": 0,
-      "explanation": "Hakan Şükür scored for Turkey after just 11 seconds against South Korea in the 2002 third-place playoff — the fastest goal in World Cup history.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 60,
-      "question": "The 2026 World Cup introduced a new Round of 32. How many teams advanced from the group stage?",
-      "options": [
-        "24",
-        "32",
-        "36",
-        "16"
-      ],
-      "correct": 1,
-      "explanation": "With 48 teams in 12 groups, the top 2 from each group plus the 8 best third-placed teams (32 total) advanced to the Round of 32.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 61,
-      "question": "Which country hosted the very first World Cup in 1930?",
-      "options": [
-        "Brazil",
-        "Argentina",
-        "Uruguay",
-        "Chile"
-      ],
-      "correct": 2,
-      "explanation": "Uruguay hosted the inaugural 1930 World Cup, winning it on home soil.",
-      "category": "history",
-      "difficulty": "easy"
-    },
-    {
-      "id": 62,
-      "question": "Spain beat Saudi Arabia 4-0 at the 2026 World Cup. Who set up several goals with incisive play?",
-      "options": [
-        "Pedri",
-        "Gavi",
-        "Lamine Yamal",
-        "Dani Olmo"
-      ],
-      "correct": 2,
-      "explanation": "Lamine Yamal returned to the starting lineup and was immediately influential in Spain's 4-0 win over Saudi Arabia.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 63,
-      "question": "What was notable about the 2022 World Cup in Qatar regarding scheduling?",
-      "options": [
-        "It was played in winter",
-        "It had 64 teams",
-        "It had no VAR",
-        "It was the first with 48 teams"
-      ],
-      "correct": 0,
-      "explanation": "Due to Qatar's extreme summer heat, the 2022 World Cup was moved to November-December — the only winter World Cup in history.",
-      "category": "history",
-      "difficulty": "easy"
-    },
-    {
-      "id": 64,
-      "question": "Which team won the inaugural women's World Cup in 1991?",
-      "options": [
-        "USA",
-        "Norway",
-        "Germany",
-        "Sweden"
-      ],
-      "correct": 0,
-      "explanation": "The USA won the first Women's World Cup in 1991, held in China. They have won it a record four times.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 65,
-      "question": "How many penalties did Cristiano Ronaldo score at the 2022 World Cup before Portugal were eliminated?",
-      "options": [
-        "0",
-        "1",
-        "2",
-        "3"
-      ],
-      "correct": 1,
-      "explanation": "Ronaldo scored one penalty against Ghana in the group stage. Portugal were knocked out in the quarter-finals by Morocco.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 66,
-      "question": "Which Japanese player scored a stunning volley against Spain at the 2022 World Cup group stage?",
-      "options": [
-        "Kaoru Mitoma",
-        "Ritsu Doan",
-        "Ao Tanaka",
-        "Takuma Asano"
-      ],
-      "correct": 3,
-      "explanation": "Takuma Asano scored a brilliant near-post finish to complete Japan's comeback win over Germany — but Ritsu Doan scored the equaliser against Spain.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 67,
-      "question": "Which nation did Uruguay beat in the very first World Cup final in 1930?",
-      "options": [
-        "Brazil",
-        "Argentina",
-        "Chile",
-        "Peru"
-      ],
-      "correct": 1,
-      "explanation": "Uruguay beat Argentina 4-2 in the 1930 World Cup final, played in Montevideo.",
-      "category": "history",
-      "difficulty": "easy"
-    },
-    {
-      "id": 68,
-      "question": "Which 2026 World Cup match produced the result 'USA 2-0 Australia'?",
-      "options": [
-        "Group stage",
-        "Round of 32",
-        "Quarter-final",
-        "Semi-final"
-      ],
-      "correct": 0,
-      "explanation": "USA beat Australia 2-0 in the Group D stage of the 2026 World Cup, topping their group in the process.",
-      "category": "2026",
-      "difficulty": "easy"
-    },
-    {
-      "id": 69,
-      "question": "How many World Cup editions had been held before the 2026 tournament?",
-      "options": [
-        "21",
-        "22",
-        "20",
-        "23"
-      ],
-      "correct": 0,
-      "explanation": "The 2026 edition was the 23rd FIFA World Cup — but only the 22nd that was actually held, as the 1942 and 1946 editions were cancelled due to World War II. There have been 22 previous completed tournaments.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 70,
-      "question": "Which country's national team plays at home in a kit primarily featuring black?",
-      "options": [
-        "Germany",
-        "New Zealand",
-        "Uruguay",
-        "Bolivia"
-      ],
-      "correct": 1,
-      "explanation": "New Zealand's All Whites are nicknamed for their kit, but they also have an all-black change kit. However, 'The All Blacks' name belongs to the rugby team — the football team wears white primarily.",
-      "category": "players",
-      "difficulty": "hard"
-    },
-    {
-      "id": 71,
-      "question": "Which player was awarded the Young Player Award at the 2022 World Cup?",
-      "options": [
-        "Gavi",
-        "Pedri",
-        "Enzo Fernández",
-        "Eduardo Camavinga"
-      ],
-      "correct": 2,
-      "explanation": "Enzo Fernández of Argentina won the Young Player Award at the 2022 World Cup, after starring in their title-winning campaign.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 72,
-      "question": "Brazil beat Haiti 3-0 at the 2026 World Cup. Who scored twice for Brazil?",
-      "options": [
-        "Vinicius Jr.",
-        "Rodrygo",
-        "Richarlison",
-        "Neymar"
-      ],
-      "correct": 0,
-      "explanation": "Vinicius Jr. scored twice as Brazil beat Haiti 3-0 in their Group C game.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 73,
-      "question": "Which World Cup had the famous 'Disgrace of Gijon' — where two teams played out a result that suited them both?",
-      "options": [
-        "1978",
-        "1982",
-        "1986",
-        "1974"
-      ],
-      "correct": 1,
-      "explanation": "At the 1982 World Cup, West Germany and Austria played out a 1-0 win for West Germany that conveniently saw both teams advance — sparking outrage and leading to simultaneous group finishes.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 74,
-      "question": "How many World Cups did Diego Maradona play in?",
-      "options": [
-        "3",
-        "4",
-        "2",
-        "5"
-      ],
-      "correct": 1,
-      "explanation": "Maradona played in four World Cups: 1982, 1986, 1990 and 1994. He led Argentina to the title in 1986.",
-      "category": "players",
-      "difficulty": "medium"
-    },
-    {
-      "id": 75,
-      "question": "Which country beat Scotland 1-0 at the 2026 World Cup to win Group C?",
-      "options": [
-        "Brazil",
-        "Haiti",
-        "Japan",
-        "Morocco"
-      ],
-      "correct": 3,
-      "explanation": "Morocco beat Scotland 1-0 in their Group C clash, helping them top the group.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 76,
-      "question": "Which team knocked out the holders Brazil at the 2010 World Cup quarter-finals?",
-      "options": [
-        "Spain",
-        "Germany",
-        "Argentina",
-        "Netherlands"
-      ],
-      "correct": 3,
-      "explanation": "The Netherlands eliminated Brazil 2-1 in the 2010 quarter-finals. Wesley Sneijder scored twice.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 77,
-      "question": "Japan beat Tunisia 4-0 at the 2026 World Cup. Which Japanese player scored twice?",
-      "options": [
-        "Kaoru Mitoma",
-        "Junya Ito",
-        "Daichi Kamada",
-        "Takumi Nakamura"
-      ],
-      "correct": 3,
-      "explanation": "Nakamura scored twice as Japan beat Tunisia 4-0 in their Group F match at the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 78,
-      "question": "Which former World Cup winner managed the Argentine national team at the 2026 World Cup?",
-      "options": [
-        "Jorge Sampaoli",
-        "Lionel Scaloni",
-        "Marcelo Gallardo",
-        "Diego Simeone"
-      ],
-      "correct": 1,
-      "explanation": "Lionel Scaloni continued as Argentina manager at the 2026 World Cup, having led them to glory in 2022.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 79,
-      "question": "Which country scored an own goal in the opening seconds of their 2022 World Cup group game?",
-      "options": [
-        "Qatar",
-        "Wales",
-        "Ecuador",
-        "Senegal"
-      ],
-      "correct": 0,
-      "explanation": "Qatar gave away a penalty and were somewhat fortunate with timing of goals, but Ecuador actually scored first in the opening game — this is a tricky question about the atmosphere of the opener.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 80,
-      "question": "The 2026 World Cup final is scheduled to be played at which venue?",
-      "options": [
-        "Rose Bowl",
-        "MetLife Stadium",
-        "Estadio Azteca",
-        "AT&T Stadium"
-      ],
-      "correct": 1,
-      "explanation": "The 2026 World Cup final is scheduled to take place at MetLife Stadium in East Rutherford, New Jersey.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 81,
-      "question": "Which team did Belgium fail to beat in both their 2026 World Cup group games, collecting only draws?",
-      "options": [
-        "Egypt and France",
-        "Iran and Egypt",
-        "Iran and New Zealand",
-        "Egypt and New Zealand"
-      ],
-      "correct": 1,
-      "explanation": "Belgium drew 1-1 with Egypt and 0-0 with Iran in their Group G games at the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 82,
-      "question": "How many own goals were scored at the 2022 World Cup in Qatar — a new record?",
-      "options": [
-        "5",
-        "7",
-        "9",
-        "11"
-      ],
-      "correct": 2,
-      "explanation": "There were 9 own goals at the 2022 World Cup, a new record for a single tournament.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 83,
-      "question": "Which player scored the fastest hat-trick in World Cup history?",
-      "options": [
-        "Laszlo Kiss",
-        "Just Fontaine",
-        "Sándor Kocsis",
-        "Emile Heskey"
-      ],
-      "correct": 0,
-      "explanation": "Laszlo Kiss of Hungary scored the fastest hat-trick in World Cup history, netting three times in 7 minutes against El Salvador in 1982.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 84,
-      "question": "At the 2026 World Cup, which team topped Group B ahead of Switzerland?",
-      "options": [
-        "Qatar",
-        "Bosnia",
-        "Canada",
-        "Uzbekistan"
-      ],
-      "correct": 2,
-      "explanation": "Canada topped Group B with Canada and Switzerland both advancing ahead of Bosnia and Qatar.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 85,
-      "question": "Which nation won the World Cup without losing a single game across the entire tournament in 1970?",
-      "options": [
-        "West Germany",
-        "Italy",
-        "England",
-        "Brazil"
-      ],
-      "correct": 3,
-      "explanation": "Brazil won the 1970 World Cup in Mexico without losing a single game, winning all six matches and being widely regarded as the greatest World Cup team ever assembled.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 86,
-      "question": "Egypt beat New Zealand 3-1 at the 2026 World Cup. Which group were they in?",
-      "options": [
-        "Group F",
-        "Group G",
-        "Group H",
-        "Group E"
-      ],
-      "correct": 1,
-      "explanation": "Egypt and New Zealand were both in Group G at the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 87,
-      "question": "Which South American nation went unbeaten through the entire 2026 World Cup group stage across their four teams in one participant's portfolio?",
-      "options": [
-        "Argentina",
-        "Brazil",
-        "Uruguay",
-        "Colombia"
-      ],
-      "correct": 3,
-      "explanation": "Colombia won their group game 3-1 against Uzbekistan in the 2026 group stage and were unbeaten.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 88,
-      "question": "Just Fontaine holds the record for most goals scored at a single World Cup. How many did he score?",
-      "options": [
-        "11",
-        "13",
-        "15",
-        "9"
-      ],
-      "correct": 1,
-      "explanation": "Just Fontaine of France scored 13 goals at the 1958 World Cup in Sweden — a record that still stands today.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 89,
-      "question": "Scotland beat Haiti 1-0 at the 2026 World Cup. What was significant about this result?",
-      "options": [
-        "It was Scotland's first WC win in 24 years",
-        "It was Scotland's first WC win ever",
-        "It qualified Scotland for the knockouts",
-        "It eliminated Haiti"
-      ],
-      "correct": 0,
-      "explanation": "Scotland beat Haiti 1-0 — their first World Cup win in 24 years, ending a long winless run in the tournament.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 90,
-      "question": "Which goalkeeper has kept the most clean sheets in World Cup history?",
-      "options": [
-        "Gianluigi Buffon",
-        "Sepp Maier",
-        "Peter Shilton",
-        "Emiliano Martínez"
-      ],
-      "correct": 0,
-      "explanation": "Gianluigi Buffon kept the most clean sheets in World Cup history across his career with Italy.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 91,
-      "question": "Which team did Paraguay beat at the 2026 World Cup to earn a crucial group stage win?",
-      "options": [
-        "USA",
-        "Australia",
-        "Turkey",
-        "Jordan"
-      ],
-      "correct": 2,
-      "explanation": "Paraguay beat Turkey 1-0 in a crucial Group D clash at the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 92,
-      "question": "Which player has appeared in the most World Cup finals across their career?",
-      "options": [
-        "Cafu",
-        "Pelé",
-        "Franz Beckenbauer",
-        "Lothar Matthäus"
-      ],
-      "correct": 0,
-      "explanation": "Cafu of Brazil appeared in three World Cup finals (1994, 1998, 2002), winning twice — the most final appearances by an outfield player.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 93,
-      "question": "Which African team beat Argentina 2-1 in a famous 1990 World Cup group stage upset?",
-      "options": [
-        "Nigeria",
-        "Cameroon",
-        "Morocco",
-        "Algeria"
-      ],
-      "correct": 1,
-      "explanation": "Cameroon beat defending champions Argentina 1-0 (not 2-1) in the 1990 opening match — one of the biggest upsets in World Cup history.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 94,
-      "question": "Germany beat Ivory Coast 2-1 at the 2026 World Cup in which city?",
-      "options": [
-        "New York",
-        "Toronto",
-        "Los Angeles",
-        "Miami"
-      ],
-      "correct": 1,
-      "explanation": "Germany beat Ivory Coast 2-1 in Toronto at the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 95,
-      "question": "Which team has scored the most goals in a single World Cup tournament?",
-      "options": [
-        "Brazil (1970)",
-        "West Germany (1954)",
-        "Hungary (1954)",
-        "France (1958)"
-      ],
-      "correct": 2,
-      "explanation": "Hungary scored 27 goals in just 5 matches at the 1954 World Cup — the most goals ever scored by a team in a single tournament.",
-      "category": "records",
-      "difficulty": "hard"
-    },
-    {
-      "id": 96,
-      "question": "Uruguay drew 2-2 with Cape Verde at the 2026 World Cup. What made this result surprising?",
-      "options": [
-        "Uruguay were 2-0 up",
-        "Cape Verde were already eliminated",
-        "It was Uruguay's first ever draw",
-        "Uruguay had won 10 straight games"
-      ],
-      "correct": 0,
-      "explanation": "Uruguay led 2-0 but Cape Verde came back to equalise 2-2 — dropping two points Uruguay badly needed.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 97,
-      "question": "Which 2026 World Cup group was nicknamed 'the Group of Death' by media before the tournament?",
-      "options": [
-        "Group B",
-        "Group D",
-        "Group I",
-        "Group J"
-      ],
-      "correct": 3,
-      "explanation": "Group J — containing Argentina, Austria, Algeria and Jordan — was widely considered one of the toughest groups at the 2026 tournament.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 98,
-      "question": "England won their only World Cup in which year?",
-      "options": [
-        "1962",
-        "1966",
-        "1970",
-        "1974"
-      ],
-      "correct": 1,
-      "explanation": "England won their only World Cup in 1966, beating West Germany 4-2 in the final at Wembley, with Geoff Hurst's famous hat-trick.",
-      "category": "history",
-      "difficulty": "easy"
-    },
-    {
-      "id": 99,
-      "question": "Which keeper made a crucial save in the 2026 World Cup for Canada against Qatar?",
-      "options": [
-        "Maxime Crépeau",
-        "Milan Borjan",
-        "Dayne St. Clair",
-        "Sean Johnson"
-      ],
-      "correct": 2,
-      "explanation": "Dayne St. Clair was Canada's first-choice goalkeeper at the 2026 World Cup, keeping a clean sheet in their 6-0 win over Qatar.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 100,
-      "question": "Which player scored the latest goal in a World Cup final — deep into extra time — to win the 2022 trophy for Argentina?",
-      "options": [
-        "Lionel Messi",
-        "Lautaro Martinez",
-        "Gonzalo Montiel",
-        "Angel Di Maria"
-      ],
-      "correct": 0,
-      "explanation": "Lionel Messi scored his second goal of the 2022 final in extra time to make it 3-2, before France equalised again through Kolo Muani to make it 3-3.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 101,
+      "id": 52,
       "question": "Which player was voted the best goalkeeper (Golden Glove) at the 2022 World Cup?",
       "options": [
         "Yassine Bounou",
@@ -2455,82 +1775,138 @@
         "Dominik Livakovic"
       ],
       "correct": 1,
-      "explanation": "Emiliano Martínez won the Golden Glove at the 2022 World Cup after his crucial saves in the semi-final and final shootout.",
+      "explanation": "Emiliano Martínez won the Golden Glove at the 2022 World Cup.",
       "category": "history",
       "difficulty": "medium"
     },
     {
-      "id": 102,
-      "question": "What was the score when Netherlands beat Sweden 5-1 at the 2026 World Cup?",
+      "id": 53,
+      "question": "Which player is known as 'La Pulga' (The Flea)?",
       "options": [
-        "3-1 at half time",
-        "2-0 at half time",
-        "1-0 at half time",
-        "0-0 at half time"
+        "Neymar",
+        "Lionel Messi",
+        "Luis Suárez",
+        "David Silva"
       ],
       "correct": 1,
-      "explanation": "The Netherlands led 2-0 at half time before running out 5-1 winners over Sweden in Group F.",
+      "explanation": "Lionel Messi is nicknamed 'La Pulga' due to his small stature and quick, agile playing style.",
+      "category": "players",
+      "difficulty": "easy"
+    },
+    {
+      "id": 54,
+      "question": "Which player scored the most goals at the 2026 World Cup group stage?",
+      "options": [
+        "Jonathan David",
+        "Erling Haaland",
+        "Lionel Messi",
+        "Kylian Mbappé"
+      ],
+      "correct": 2,
+      "explanation": "Lionel Messi led the group stage scoring charts with his hat-trick against Algeria plus a goal against Austria.",
       "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 55,
+      "question": "Which World Cup was the first to be held outside Europe or the Americas?",
+      "options": [
+        "1966 England",
+        "1994 USA",
+        "2002 Japan & South Korea",
+        "2010 South Africa"
+      ],
+      "correct": 2,
+      "explanation": "The 2002 World Cup in Japan and South Korea was the first held in Asia.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 56,
+      "question": "Which player scored in the 2022 World Cup semi-final AND the final for Argentina?",
+      "options": [
+        "Angel Di Maria",
+        "Julian Alvarez",
+        "Enzo Fernández",
+        "Lautaro Martinez"
+      ],
+      "correct": 1,
+      "explanation": "Julian Alvarez scored twice vs Croatia in the semi-final and once in the final.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 57,
+      "question": "Mexico co-hosted the 2026 World Cup. They also hosted the World Cup in which two previous years?",
+      "options": [
+        "1970 and 1994",
+        "1970 and 1986",
+        "1986 and 1994",
+        "1978 and 1986"
+      ],
+      "correct": 1,
+      "explanation": "Mexico hosted the World Cup in 1970 and 1986, making 2026 their third time hosting.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 58,
+      "question": "Which country qualified for the 2026 World Cup knockouts by topping Group E?",
+      "options": [
+        "Ecuador",
+        "Ivory Coast",
+        "Germany",
+        "Curaçao"
+      ],
+      "correct": 2,
+      "explanation": "Germany topped Group E with wins including their famous 7-1 win over Curaçao.",
+      "category": "2026",
+      "difficulty": "easy"
+    },
+    {
+      "id": 59,
+      "question": "Which player won the Young Player Award at the 2022 World Cup?",
+      "options": [
+        "Gavi",
+        "Pedri",
+        "Enzo Fernández",
+        "Eduardo Camavinga"
+      ],
+      "correct": 2,
+      "explanation": "Enzo Fernández of Argentina won the Young Player Award at Qatar 2022.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 60,
+      "question": "How many own goals were scored at the 2022 World Cup in Qatar — a new record?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "correct": 2,
+      "explanation": "There were 9 own goals at the 2022 World Cup in Qatar, a new tournament record.",
+      "category": "records",
       "difficulty": "hard"
     },
     {
-      "id": 103,
-      "question": "Which player is the youngest ever to score at a World Cup?",
+      "id": 61,
+      "question": "Which player scored the fastest hat-trick in World Cup history?",
       "options": [
-        "Pelé",
-        "Cesc Fàbregas",
-        "Lamine Yamal",
-        "Norman Whiteside"
+        "Laszlo Kiss",
+        "Just Fontaine",
+        "Sándor Kocsis",
+        "Gerd Müller"
       ],
       "correct": 0,
-      "explanation": "Pelé scored at 17 years and 239 days old at the 1958 World Cup, making him the youngest scorer in World Cup history.",
+      "explanation": "Laszlo Kiss of Hungary scored three times in 7 minutes against El Salvador in 1982.",
       "category": "records",
-      "difficulty": "medium"
-    },
-    {
-      "id": 104,
-      "question": "Which team did Scotland draw with in their second Group C game at the 2026 World Cup?",
-      "options": [
-        "Haiti",
-        "Brazil",
-        "Morocco",
-        "Jordan"
-      ],
-      "correct": 1,
-      "explanation": "Scotland drew with Brazil — both teams were in Group C at the 2026 World Cup.",
-      "category": "2026",
       "difficulty": "hard"
     },
     {
-      "id": 105,
-      "question": "At the 2006 World Cup in Germany, which player was the overall top scorer?",
-      "options": [
-        "Ronaldo",
-        "Miroslav Klose",
-        "Fernando Torres",
-        "Thierry Henry"
-      ],
-      "correct": 1,
-      "explanation": "Miroslav Klose scored 5 goals at the 2006 World Cup, winning the Golden Boot and beginning his march to the all-time record.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 106,
-      "question": "The Netherlands 5-1 win over Sweden at the 2026 World Cup — who scored twice for the Dutch?",
-      "options": [
-        "Memphis Depay",
-        "Cody Gakpo",
-        "Donyell Malen",
-        "Wout Weghorst"
-      ],
-      "correct": 1,
-      "explanation": "Cody Gakpo scored twice as the Netherlands beat Sweden 5-1 in their Group F clash.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 107,
+      "id": 62,
       "question": "Which Italian player headbutted Zidane in the 2006 World Cup final?",
       "options": [
         "Fabio Cannavaro",
@@ -2539,26 +1915,194 @@
         "Alessandro Del Piero"
       ],
       "correct": 1,
-      "explanation": "Marco Materazzi provoked Zinedine Zidane into a headbutt in the 2006 final. Materazzi later claimed he responded to what Zidane said to him.",
+      "explanation": "Marco Materazzi provoked Zinedine Zidane into a headbutt in the 2006 final.",
       "category": "history",
       "difficulty": "medium"
     },
     {
-      "id": 108,
-      "question": "Which group did Belgium and Iran both play in at the 2026 World Cup?",
+      "id": 63,
+      "question": "Which team has scored the most goals in a single World Cup tournament?",
       "options": [
-        "Group F",
-        "Group G",
-        "Group H",
-        "Group E"
+        "Brazil (1970)",
+        "West Germany (1954)",
+        "Hungary (1954)",
+        "France (1958)"
+      ],
+      "correct": 2,
+      "explanation": "Hungary scored 27 goals in just 5 matches at the 1954 World Cup.",
+      "category": "records",
+      "difficulty": "hard"
+    },
+    {
+      "id": 64,
+      "question": "Belgium drew both their 2026 World Cup group games. Who did they draw with?",
+      "options": [
+        "Egypt and France",
+        "Iran and Egypt",
+        "Iran and New Zealand",
+        "Egypt and New Zealand"
       ],
       "correct": 1,
-      "explanation": "Belgium and Iran were both in Group G at the 2026 World Cup, drawing 0-0 with each other.",
+      "explanation": "Belgium drew 1-1 with Egypt and 0-0 with Iran in their Group G games.",
       "category": "2026",
       "difficulty": "medium"
     },
     {
-      "id": 109,
+      "id": 65,
+      "question": "Which player scored twice for Cody Gakpo's Netherlands in the 5-1 win over Sweden at WC2026?",
+      "options": [
+        "Memphis Depay",
+        "Cody Gakpo",
+        "Donyell Malen",
+        "Wout Weghorst"
+      ],
+      "correct": 1,
+      "explanation": "Cody Gakpo scored twice in the Netherlands' 5-1 demolition of Sweden.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 66,
+      "question": "Japan beat Tunisia 4-0 at the 2026 World Cup. Which player scored twice for Japan?",
+      "options": [
+        "Kaoru Mitoma",
+        "Junya Ito",
+        "Daichi Kamada",
+        "Takumi Nakamura"
+      ],
+      "correct": 3,
+      "explanation": "Nakamura scored twice as Japan beat Tunisia 4-0 in Group F.",
+      "category": "2026",
+      "difficulty": "hard"
+    },
+    {
+      "id": 67,
+      "question": "Scotland beat Haiti 1-0 at the 2026 World Cup. What was significant about this?",
+      "options": [
+        "It was Scotland's first WC win in 24 years",
+        "It was Scotland's first WC win ever",
+        "It qualified Scotland for the knockouts",
+        "It eliminated Haiti immediately"
+      ],
+      "correct": 0,
+      "explanation": "Scotland beat Haiti 1-0 — their first World Cup win in 24 years.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 68,
+      "question": "Erling Haaland scored twice for Norway against which team at the 2026 World Cup?",
+      "options": [
+        "Senegal",
+        "France",
+        "Iraq",
+        "Algeria"
+      ],
+      "correct": 2,
+      "explanation": "Erling Haaland scored twice for Norway in their group stage win over Iraq.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 69,
+      "question": "Which African nation beat Argentina 1-0 in a famous 1990 World Cup group stage upset?",
+      "options": [
+        "Nigeria",
+        "Cameroon",
+        "Morocco",
+        "Algeria"
+      ],
+      "correct": 1,
+      "explanation": "Cameroon beat defending champions Argentina 1-0 in the 1990 opening match.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 70,
+      "question": "Which player is the youngest ever to score at a World Cup?",
+      "options": [
+        "Pelé",
+        "Cesc Fàbregas",
+        "Lamine Yamal",
+        "Norman Whiteside"
+      ],
+      "correct": 0,
+      "explanation": "Pelé scored at 17 years and 239 days old at the 1958 World Cup.",
+      "category": "records",
+      "difficulty": "medium"
+    },
+    {
+      "id": 71,
+      "question": "Uruguay drew 2-2 with Cape Verde at the 2026 World Cup. What was surprising about this result?",
+      "options": [
+        "Uruguay were 2-0 up at half time",
+        "Cape Verde were already eliminated",
+        "It was Uruguay's first draw ever",
+        "Uruguay had won 10 straight games"
+      ],
+      "correct": 0,
+      "explanation": "Uruguay led 2-0 but Cape Verde equalised — dropping two crucial points.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 72,
+      "question": "How many goals did Germany score across their two 2026 World Cup group stage games?",
+      "options": [
+        "7",
+        "9",
+        "8",
+        "6"
+      ],
+      "correct": 1,
+      "explanation": "Germany scored 9 goals: 7-1 vs Curaçao and 2-1 vs Ivory Coast.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 73,
+      "question": "Which player scored twice for Brazil against Haiti at the 2026 World Cup?",
+      "options": [
+        "Vinicius Jr.",
+        "Rodrygo",
+        "Richarlison",
+        "Neymar"
+      ],
+      "correct": 0,
+      "explanation": "Vinicius Jr. scored twice as Brazil beat Haiti 3-0.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 74,
+      "question": "Which team did Morocco beat 1-0 to win 2026 World Cup Group C?",
+      "options": [
+        "Brazil",
+        "Haiti",
+        "Scotland",
+        "Jordan"
+      ],
+      "correct": 2,
+      "explanation": "Morocco beat Scotland 1-0 in their Group C clash, helping them top the group.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 75,
+      "question": "Which player scored a stunning bicycle kick at the 2018 World Cup that was voted goal of the tournament?",
+      "options": [
+        "Gareth Bale",
+        "Benjamin Pavard",
+        "Cristiano Ronaldo",
+        "Neymar"
+      ],
+      "correct": 1,
+      "explanation": "Benjamin Pavard scored a stunning right-foot volley for France against Argentina in 2018 — voted goal of the tournament.",
+      "category": "history",
+      "difficulty": "hard"
+    },
+    {
+      "id": 76,
       "question": "How many red cards were shown at the 2022 World Cup?",
       "options": [
         "3",
@@ -2572,36 +2116,78 @@
       "difficulty": "hard"
     },
     {
-      "id": 110,
-      "question": "Which 2026 World Cup Group I side was ranked outside the top 30 in FIFA rankings before the tournament?",
+      "id": 77,
+      "question": "Which team knocked out the holders Brazil at the 2010 World Cup quarter-finals?",
       "options": [
-        "France",
-        "Norway",
-        "Senegal",
-        "Iraq"
+        "Spain",
+        "Germany",
+        "Argentina",
+        "Netherlands"
       ],
       "correct": 3,
-      "explanation": "Iraq were ranked significantly lower than their Group I opponents France, Norway and Senegal going into the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 111,
-      "question": "Which player scored in the World Cup semi-final AND the final for Argentina in 2022?",
-      "options": [
-        "Angel Di Maria",
-        "Julian Alvarez",
-        "Enzo Fernández",
-        "Lautaro Martinez"
-      ],
-      "correct": 1,
-      "explanation": "Julian Alvarez scored twice in the semi-final against Croatia (4-3) and once in the final against France, making him crucial to Argentina's triumph.",
+      "explanation": "The Netherlands eliminated Brazil 2-1 in the 2010 quarter-finals.",
       "category": "history",
       "difficulty": "medium"
     },
     {
-      "id": 112,
-      "question": "Which team did Australia beat at the 2022 World Cup in the Round of 16 — their best ever World Cup result at the time?",
+      "id": 78,
+      "question": "Which team was in the same 2026 World Cup group as Netherlands, Japan and Sweden?",
+      "options": [
+        "South Korea",
+        "Ivory Coast",
+        "Tunisia",
+        "Qatar"
+      ],
+      "correct": 2,
+      "explanation": "Tunisia were in Group F at the 2026 World Cup alongside Netherlands, Japan and Sweden.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 79,
+      "question": "Ecuador drew 0-0 with which team at the 2026 World Cup?",
+      "options": [
+        "Qatar",
+        "Bosnia",
+        "Curaçao",
+        "Uzbekistan"
+      ],
+      "correct": 2,
+      "explanation": "Ecuador drew 0-0 with Curaçao in Group E of the 2026 World Cup.",
+      "category": "2026",
+      "difficulty": "hard"
+    },
+    {
+      "id": 80,
+      "question": "Which country's goalkeeper Dayne St. Clair kept a clean sheet in a 6-0 win at the 2026 World Cup?",
+      "options": [
+        "USA",
+        "Mexico",
+        "Canada",
+        "France"
+      ],
+      "correct": 2,
+      "explanation": "Dayne St. Clair was Canada's first-choice goalkeeper in their 6-0 win over Qatar.",
+      "category": "2026",
+      "difficulty": "hard"
+    },
+    {
+      "id": 81,
+      "question": "Which player won the 2022 World Cup's best goalkeeper award after saving two penalties in the final shootout?",
+      "options": [
+        "Yassine Bounou",
+        "Emiliano Martínez",
+        "Hugo Lloris",
+        "Dominik Livakovic"
+      ],
+      "correct": 1,
+      "explanation": "Emiliano 'Dibu' Martínez won the Golden Glove after saving two penalties in the final shootout.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 82,
+      "question": "Which team did Australia beat in the 2022 World Cup Round of 16 — their best World Cup result at the time?",
       "options": [
         "Argentina",
         "France",
@@ -2609,111 +2195,41 @@
         "Tunisia"
       ],
       "correct": 2,
-      "explanation": "Australia beat Denmark 1-0 in the 2022 Round of 16, before losing to Argentina in the quarter-finals — their best World Cup run.",
+      "explanation": "Australia beat Denmark 1-0 in the 2022 Round of 16.",
       "category": "history",
       "difficulty": "medium"
     },
     {
-      "id": 113,
-      "question": "Mexico co-hosted the 2026 World Cup. They also hosted the World Cup in which two previous years?",
+      "id": 83,
+      "question": "Germany beat Ivory Coast 2-1 at the 2026 World Cup. In which Canadian city was this match played?",
       "options": [
-        "1970 and 1994",
-        "1970 and 1986",
-        "1986 and 1994",
-        "1978 and 1986"
-      ],
-      "correct": 1,
-      "explanation": "Mexico hosted the World Cup in 1970 (stepping in for Argentina) and 1986 (stepping in for Colombia), making 2026 their third time hosting.",
-      "category": "history",
-      "difficulty": "medium"
-    },
-    {
-      "id": 114,
-      "question": "Ecuador drew 0-0 with Curaçao at the 2026 World Cup. Which group was this in?",
-      "options": [
-        "Group D",
-        "Group E",
-        "Group F",
-        "Group G"
-      ],
-      "correct": 1,
-      "explanation": "Ecuador and Curaçao were both in Group E at the 2026 World Cup, drawing 0-0 in their group stage clash.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 115,
-      "question": "Which team has never missed a World Cup since they first qualified?",
-      "options": [
-        "Brazil",
-        "Germany",
-        "Argentina",
-        "France"
-      ],
-      "correct": 0,
-      "explanation": "Brazil are the only team to have qualified for every single FIFA World Cup since the tournament began in 1930.",
-      "category": "records",
-      "difficulty": "medium"
-    },
-    {
-      "id": 116,
-      "question": "Which country won Group I at the 2026 World Cup ahead of Norway?",
-      "options": [
-        "Senegal",
-        "France",
-        "Iraq",
-        "Norway (they won)"
-      ],
-      "correct": 1,
-      "explanation": "France won Group I at the 2026 World Cup, with Norway finishing as runners-up.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 117,
-      "question": "At the 2022 World Cup, which team came back from 2-0 down to draw with Japan 2-2 in the group stage?",
-      "options": [
-        "Germany",
-        "Costa Rica",
-        "Spain",
-        "Belgium"
-      ],
-      "correct": 0,
-      "explanation": "Japan led Germany 2-0 before Germany scored twice to draw — but Japan still topped the group on the final day.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 118,
-      "question": "Which World Cup was the first to be held outside Europe or the Americas?",
-      "options": [
-        "1966 England",
-        "1994 USA",
-        "2002 Japan & South Korea",
-        "2010 South Africa"
+        "Montreal",
+        "Vancouver",
+        "Toronto",
+        "Calgary"
       ],
       "correct": 2,
-      "explanation": "The 2002 World Cup in Japan and South Korea was the first to be held in Asia, and the first co-hosted World Cup.",
-      "category": "history",
-      "difficulty": "medium"
+      "explanation": "Germany beat Ivory Coast 2-1 in Toronto at the 2026 World Cup.",
+      "category": "2026",
+      "difficulty": "hard"
     },
     {
-      "id": 119,
-      "question": "Which player scored the most goals at the 2026 World Cup group stage?",
+      "id": 84,
+      "question": "What was the score of the 2022 World Cup final after 90 minutes?",
       "options": [
-        "Lionel Messi",
-        "Jonathan David",
-        "Erling Haaland",
-        "Kylian Mbappé"
+        "2-0 Argentina",
+        "1-0 France",
+        "2-2",
+        "1-1"
       ],
       "correct": 0,
-      "explanation": "Lionel Messi led the group stage scoring charts with his hat-trick against Algeria and a goal against Austria.",
-      "category": "2026",
-      "difficulty": "medium"
+      "explanation": "Argentina led 2-0 after 90 minutes before Mbappé scored twice in two minutes to equalise, making it 2-2.",
+      "category": "history",
+      "difficulty": "hard"
     },
     {
-      "id": 120,
-      "question": "Norway beat Iraq 4-1 in the 2026 World Cup group stage. Which city hosted this match?",
+      "id": 85,
+      "question": "Norway beat Iraq 4-1 at the 2026 World Cup. In which US city?",
       "options": [
         "Dallas",
         "Seattle",
@@ -2721,149 +2237,639 @@
         "Vancouver"
       ],
       "correct": 1,
-      "explanation": "Norway's emphatic 4-1 win over Iraq was played in Seattle at the 2026 World Cup.",
+      "explanation": "Norway's 4-1 win over Iraq was played in Seattle.",
       "category": "2026",
       "difficulty": "hard"
     },
     {
-      "id": 121,
-      "question": "Which country qualified for the 2026 World Cup knockouts from Group E by topping the group?",
+      "id": 86,
+      "question": "Which player scored the most goals at a single Women's World Cup?",
       "options": [
-        "Ecuador",
-        "Ivory Coast",
-        "Germany",
-        "Curaçao"
+        "Marta",
+        "Birgit Prinz",
+        "Abby Wambach",
+        "Michelle Akers"
+      ],
+      "correct": 0,
+      "explanation": "Marta scored 17 goals across multiple World Cups, with her best single tournament being 2007 (7 goals).",
+      "category": "records",
+      "difficulty": "hard"
+    },
+    {
+      "id": 87,
+      "question": "Which 2026 World Cup group was known as the toughest, with Argentina, Austria, Algeria and Jordan?",
+      "options": [
+        "Group H",
+        "Group I",
+        "Group J",
+        "Group K"
       ],
       "correct": 2,
-      "explanation": "Germany topped Group E with two wins including a 7-1 opening demolition of Curaçao.",
-      "category": "2026",
-      "difficulty": "easy"
-    },
-    {
-      "id": 122,
-      "question": "What was the attendance capacity of the MetLife Stadium, host of the 2026 World Cup final?",
-      "options": [
-        "75,000",
-        "82,500",
-        "92,000",
-        "65,000"
-      ],
-      "correct": 1,
-      "explanation": "MetLife Stadium in New Jersey has a capacity of approximately 82,500, making it one of the largest venues used in the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "hard"
-    },
-    {
-      "id": 123,
-      "question": "Which player scored the 2018 World Cup's goal of the tournament against England?",
-      "options": [
-        "Nacho",
-        "Ivan Perišić",
-        "Benjamin Pavard",
-        "Daley Blind"
-      ],
-      "correct": 2,
-      "explanation": "Benjamin Pavard scored a stunning right-foot volley for France against Argentina in the Round of 16 — voted goal of the tournament at Russia 2018.",
-      "category": "history",
-      "difficulty": "hard"
-    },
-    {
-      "id": 124,
-      "question": "How many goals did Germany score across their two group stage games at the 2026 World Cup?",
-      "options": [
-        "7",
-        "9",
-        "8",
-        "6"
-      ],
-      "correct": 1,
-      "explanation": "Germany scored 9 goals in their group stage: 7-1 vs Curaçao and 2-1 vs Ivory Coast.",
+      "explanation": "Group J — containing Argentina, Austria, Algeria and Jordan — was considered one of the tournament's toughest groups.",
       "category": "2026",
       "difficulty": "medium"
     },
     {
-      "id": 125,
-      "question": "Which country's national anthem is played before kick-off at the World Cup final?",
+      "id": 88,
+      "question": "Egypt beat New Zealand 3-1 in the 2026 World Cup. Which group did they play in?",
       "options": [
-        "Only the winning team's anthem after the game",
-        "Both teams' anthems before the game",
-        "Only the host country's anthem",
-        "Both teams' anthems plus FIFA's hymn"
+        "Group F",
+        "Group G",
+        "Group H",
+        "Group E"
       ],
       "correct": 1,
-      "explanation": "Both teams' national anthems are played before kick-off at World Cup finals, as they are at all World Cup matches.",
-      "category": "rules",
-      "difficulty": "easy"
+      "explanation": "Egypt and New Zealand were in Group G at the 2026 World Cup.",
+      "category": "2026",
+      "difficulty": "medium"
     },
     {
-      "id": 126,
-      "question": "Which player is known as 'La Pulga' (The Flea)?",
+      "id": 89,
+      "question": "Paraguay beat Turkey 1-0 at the 2026 World Cup in which group?",
       "options": [
-        "Neymar",
-        "Lionel Messi",
-        "Luis Suárez",
-        "David Silva"
+        "Group C",
+        "Group D",
+        "Group E",
+        "Group F"
       ],
       "correct": 1,
-      "explanation": "Lionel Messi is nicknamed 'La Pulga' (The Flea) due to his small stature and quick, agile playing style.",
+      "explanation": "Paraguay beat Turkey 1-0 in Group D of the 2026 World Cup.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 90,
+      "question": "Spain beat Saudi Arabia 4-0 at the 2026 World Cup. After a disappointing opening result, what was Spain's first game result?",
+      "options": [
+        "1-0 win",
+        "2-1 win",
+        "0-0 draw",
+        "1-1 draw"
+      ],
+      "correct": 2,
+      "explanation": "Spain drew 0-0 with Cape Verde in their opening game before bouncing back to beat Saudi Arabia 4-0.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 91,
+      "question": "Which legendary striker scored 15 World Cup goals across three tournaments for Brazil before Ronaldo broke his record?",
+      "options": [
+        "Pelé",
+        "Ronaldinho",
+        "Romario",
+        "Zico"
+      ],
+      "correct": 0,
+      "explanation": "Pelé scored 12 World Cup goals across 1958, 1962 and 1966 — not 15. Ronaldo held the record with 15 before Klose broke it.",
+      "category": "records",
+      "difficulty": "hard"
+    },
+    {
+      "id": 92,
+      "question": "Which country qualified from 2026 World Cup Group B alongside Canada?",
+      "options": [
+        "Qatar",
+        "Bosnia",
+        "Switzerland",
+        "Uzbekistan"
+      ],
+      "correct": 2,
+      "explanation": "Switzerland qualified from Group B alongside Canada, with both teams advancing.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 93,
+      "question": "France's Kylian Mbappé became his country's all-time leading scorer at the 2026 World Cup against which team?",
+      "options": [
+        "Iraq",
+        "Senegal",
+        "Algeria",
+        "Norway"
+      ],
+      "correct": 1,
+      "explanation": "Mbappé scored twice against Senegal to become France's all-time leading scorer.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 94,
+      "question": "Which African team surprisingly beat Spain 2-1 in the 2022 World Cup Round of 16?",
+      "options": [
+        "Senegal",
+        "Cameroon",
+        "Morocco",
+        "Tunisia"
+      ],
+      "correct": 2,
+      "explanation": "Morocco beat Spain on penalties in the 2022 Round of 16 after a 0-0 draw — one of the biggest shocks of the tournament.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 95,
+      "question": "Scotland lost to Morocco in the 2026 World Cup. What was the final score?",
+      "options": [
+        "1-0",
+        "2-0",
+        "2-1",
+        "0-0"
+      ],
+      "correct": 0,
+      "explanation": "Morocco beat Scotland 1-0 in their Group C clash.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 96,
+      "question": "Which country's team plays their home games at the Maracanã stadium in Rio de Janeiro?",
+      "options": [
+        "Argentina",
+        "Uruguay",
+        "Brazil",
+        "Colombia"
+      ],
+      "correct": 2,
+      "explanation": "The Maracanã is Brazil's most famous football stadium, home to the Brazilian national team.",
       "category": "players",
       "difficulty": "easy"
     },
     {
+      "id": 97,
+      "question": "At the 2026 World Cup, which group had Belgium, Egypt, Iran and New Zealand?",
+      "options": [
+        "Group F",
+        "Group G",
+        "Group H",
+        "Group E"
+      ],
+      "correct": 1,
+      "explanation": "Belgium, Egypt, Iran and New Zealand were all in Group G.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 98,
+      "question": "Which 2022 World Cup star scored against both Japan in the group stage and Brazil in the quarter-final for South Korea?",
+      "options": [
+        "Heung-min Son",
+        "Cho Gue-sung",
+        "Hwang Hee-chan",
+        "Lee Jae-sung"
+      ],
+      "correct": 2,
+      "explanation": "Hwang Hee-chan scored the winner against Portugal and a crucial goal against Brazil for South Korea in 2022.",
+      "category": "history",
+      "difficulty": "hard"
+    },
+    {
+      "id": 99,
+      "question": "Brazil beat which team 3-0 to qualify from Group C at the 2026 World Cup?",
+      "options": [
+        "Scotland",
+        "Morocco",
+        "Haiti",
+        "Jordan"
+      ],
+      "correct": 2,
+      "explanation": "Brazil beat Haiti 3-0 in their Group C game to advance to the knockout rounds.",
+      "category": "2026",
+      "difficulty": "easy"
+    },
+    {
+      "id": 100,
+      "question": "Which World Cup final venue is in East Rutherford, New Jersey, USA?",
+      "options": [
+        "Rose Bowl",
+        "MetLife Stadium",
+        "Allegiant Stadium",
+        "AT&T Stadium"
+      ],
+      "correct": 1,
+      "explanation": "MetLife Stadium in East Rutherford, NJ, is scheduled to host the 2026 World Cup final.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 101,
+      "question": "Spain won the 2010 World Cup — the first time they had won it. True or false?",
+      "options": [
+        "True",
+        "False",
+        "They won it in 2008 too",
+        "They won it in 1982"
+      ],
+      "correct": 0,
+      "explanation": "Spain's 2010 triumph was their first and only World Cup victory.",
+      "category": "history",
+      "difficulty": "easy"
+    },
+    {
+      "id": 102,
+      "question": "Which 2026 World Cup group had USA, Paraguay, Australia and Turkey?",
+      "options": [
+        "Group C",
+        "Group D",
+        "Group E",
+        "Group F"
+      ],
+      "correct": 1,
+      "explanation": "The USA, Paraguay, Australia and Turkey were in Group D.",
+      "category": "2026",
+      "difficulty": "easy"
+    },
+    {
+      "id": 103,
+      "question": "Norway qualified from the 2026 World Cup group stage ahead of which team in their group?",
+      "options": [
+        "France",
+        "Senegal",
+        "Iraq",
+        "All of them"
+      ],
+      "correct": 1,
+      "explanation": "Norway finished second in Group I behind France, with Senegal third and Iraq eliminated.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 104,
+      "question": "Which French player became their all-time top scorer at the 2026 World Cup?",
+      "options": [
+        "Antoine Griezmann",
+        "Olivier Giroud",
+        "Kylian Mbappé",
+        "Thierry Henry"
+      ],
+      "correct": 2,
+      "explanation": "Kylian Mbappé surpassed Olivier Giroud to become France's all-time top scorer during the 2026 World Cup.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 105,
+      "question": "In what year was FIFA founded?",
+      "options": [
+        "1900",
+        "1904",
+        "1910",
+        "1920"
+      ],
+      "correct": 1,
+      "explanation": "FIFA (Fédération Internationale de Football Association) was founded in Paris on 21 May 1904.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 106,
+      "question": "Which World Cup had the infamous 'Battle of Santiago' — one of the most violent matches ever played?",
+      "options": [
+        "1950",
+        "1958",
+        "1962",
+        "1966"
+      ],
+      "correct": 2,
+      "explanation": "The 'Battle of Santiago' between Chile and Italy at the 1962 World Cup saw two sendings-off and multiple fights in a notorious match.",
+      "category": "history",
+      "difficulty": "hard"
+    },
+    {
+      "id": 107,
+      "question": "Which team won the inaugural FIFA World Cup in 1930 without a single defeat?",
+      "options": [
+        "Argentina",
+        "Brazil",
+        "Uruguay",
+        "Chile"
+      ],
+      "correct": 2,
+      "explanation": "Uruguay went unbeaten through the 1930 World Cup, winning all four of their matches.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 108,
+      "question": "Which Australian city would have fans watching the 2026 World Cup final at 6am local time?",
+      "options": [
+        "Perth",
+        "Sydney",
+        "Brisbane",
+        "Darwin"
+      ],
+      "correct": 1,
+      "explanation": "Sydney (AEDT) is UTC+10 in winter, so a 4pm New York kickoff would be 6am the following morning in Sydney.",
+      "category": "2026",
+      "difficulty": "hard"
+    },
+    {
+      "id": 109,
+      "question": "Which player scored an extraordinary chip goal for Nigeria against Spain at the 1998 World Cup?",
+      "options": [
+        "Jay-Jay Okocha",
+        "Nwankwo Kanu",
+        "Rashidi Yekini",
+        "Finidi George"
+      ],
+      "correct": 0,
+      "explanation": "Jay-Jay Okocha scored a stunning chip against Spain at France '98 in a classic moment.",
+      "category": "history",
+      "difficulty": "hard"
+    },
+    {
+      "id": 110,
+      "question": "How many goals did Spain score in the 2026 World Cup group stage?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "explanation": "Spain scored 4 goals in the group stage: 0 vs Cape Verde, 4 vs Saudi Arabia.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 111,
+      "question": "At the 2026 World Cup, Group K had Portugal, Colombia, DR Congo and which other team?",
+      "options": [
+        "Jordan",
+        "Uzbekistan",
+        "Bosnia",
+        "Algeria"
+      ],
+      "correct": 1,
+      "explanation": "Group K consisted of Portugal, Colombia, DR Congo and Uzbekistan.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 112,
+      "question": "Which country has hosted the most World Cups?",
+      "options": [
+        "Brazil",
+        "Germany",
+        "France",
+        "Mexico"
+      ],
+      "correct": 3,
+      "explanation": "Mexico hosted the World Cup in 1970, 1986 and 2026 — more times than any other country.",
+      "category": "history",
+      "difficulty": "medium"
+    },
+    {
+      "id": 113,
+      "question": "Ecuador drew 0-0 with Curaçao at WC2026. Which sweepstake participant owns Ecuador?",
+      "options": [
+        "Crowle",
+        "Morris",
+        "T Rankin",
+        "Silk"
+      ],
+      "correct": 0,
+      "explanation": "Crowle holds Ecuador in the WC2026 sweepstake.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 114,
+      "question": "In the sweepstake, which participant owns both Brazil and Uruguay?",
+      "options": [
+        "Galbraith",
+        "Morris",
+        "Cronan",
+        "Kenna"
+      ],
+      "correct": 1,
+      "explanation": "Morris owns both Brazil and Uruguay in the WC2026 sweepstake.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 115,
+      "question": "Which sweepstake participant owns France — the tournament favourite?",
+      "options": [
+        "Silk",
+        "Cronan",
+        "Galbraith",
+        "Hankin"
+      ],
+      "correct": 1,
+      "explanation": "Cronan owns France, giving them the highest win probability in the sweepstake.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 116,
+      "question": "Which participant owns Argentina AND Morocco in the sweepstake?",
+      "options": [
+        "Same",
+        "Cronan",
+        "Galbraith",
+        "T Rankin"
+      ],
+      "correct": 2,
+      "explanation": "Galbraith owns Argentina and Morocco — two teams who performed well in the group stage.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 117,
+      "question": "Which sweepstake participant owns the most teams?",
+      "options": [
+        "Same",
+        "Kenna",
+        "Galbraith",
+        "Cronan"
+      ],
+      "correct": 1,
+      "explanation": "Kenna owns 8 teams — Spain, Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 118,
+      "question": "Varcoe owns Japan, Switzerland, DR Congo and which other team?",
+      "options": [
+        "Mexico",
+        "Australia",
+        "Canada",
+        "Belgium"
+      ],
+      "correct": 2,
+      "explanation": "Varcoe owns Canada, who famously beat Qatar 6-0 at the 2026 World Cup.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 119,
+      "question": "Which participant owns Germany — their flagship asset who qualified from Group E?",
+      "options": [
+        "T Rankin",
+        "P Rankin",
+        "Hankin",
+        "Crowle"
+      ],
+      "correct": 1,
+      "explanation": "P Rankin owns Germany in the WC2026 sweepstake.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 120,
+      "question": "Which sweepstake participant owns the Netherlands, who beat Sweden 5-1?",
+      "options": [
+        "T Rankin",
+        "P Rankin",
+        "Silk",
+        "Morris"
+      ],
+      "correct": 0,
+      "explanation": "T Rankin owns the Netherlands in the WC2026 sweepstake.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 121,
+      "question": "Hankin owns Norway, Mexico, Ivory Coast and which other team?",
+      "options": [
+        "Iran",
+        "Belgium",
+        "Saudi Arabia",
+        "Scotland"
+      ],
+      "correct": 2,
+      "explanation": "Hankin owns Saudi Arabia — though they were eliminated in the group stage after Spain beat them 4-0.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 122,
+      "question": "Which sweepstake participant owns England and the USA?",
+      "options": [
+        "Cronan",
+        "Galbraith",
+        "Silk",
+        "Same"
+      ],
+      "correct": 2,
+      "explanation": "Silk owns England and USA — both strong performers at the 2026 World Cup.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 123,
+      "question": "Same owns Portugal, Colombia, Paraguay and which other team?",
+      "options": [
+        "Jordan",
+        "Cape Verde",
+        "New Zealand",
+        "Tunisia"
+      ],
+      "correct": 1,
+      "explanation": "Same owns Cape Verde — the team that famously drew 0-0 with Spain despite heavy pressure.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 124,
+      "question": "Which participant owns Belgium, Ecuador, Bosnia and Uzbekistan?",
+      "options": [
+        "Morris",
+        "Crowle",
+        "T Rankin",
+        "Same"
+      ],
+      "correct": 1,
+      "explanation": "Crowle owns Belgium, Ecuador, Bosnia and Uzbekistan — currently winless in the group stage.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 125,
+      "question": "In the sweepstake, which participant owns Norway — the team shortening in the odds?",
+      "options": [
+        "Galbraith",
+        "Hankin",
+        "P Rankin",
+        "Morris"
+      ],
+      "correct": 1,
+      "explanation": "Hankin owns Norway, who impressed with a 4-1 win over Iraq at the 2026 World Cup.",
+      "category": "sweepstake",
+      "difficulty": "easy"
+    },
+    {
+      "id": 126,
+      "question": "Which 2026 World Cup group had Spain, Saudi Arabia, Cape Verde and Uruguay?",
+      "options": [
+        "Group G",
+        "Group H",
+        "Group I",
+        "Group J"
+      ],
+      "correct": 1,
+      "explanation": "Spain, Saudi Arabia, Cape Verde and Uruguay were all in Group H.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
       "id": 127,
-      "question": "Which World Cup group did Netherlands, Japan, Sweden and Tunisia play in at the 2026 World Cup?",
+      "question": "Which 2026 World Cup group had Belgium, Egypt, Iran and New Zealand?",
+      "options": [
+        "Group E",
+        "Group F",
+        "Group G",
+        "Group H"
+      ],
+      "correct": 2,
+      "explanation": "Belgium, Egypt, Iran and New Zealand were all in Group G.",
+      "category": "2026",
+      "difficulty": "medium"
+    },
+    {
+      "id": 128,
+      "question": "Which 2026 World Cup group had Germany, Curaçao, Ivory Coast and Ecuador?",
       "options": [
         "Group D",
         "Group E",
         "Group F",
         "Group G"
       ],
-      "correct": 2,
-      "explanation": "Netherlands, Japan, Sweden and Tunisia were all in Group F at the 2026 World Cup.",
-      "category": "2026",
-      "difficulty": "medium"
-    },
-    {
-      "id": 128,
-      "question": "The 2026 World Cup marked the return of which legendary footballer as the Argentine head coach?",
-      "options": [
-        "Hernán Crespo",
-        "Javier Mascherano",
-        "Lionel Scaloni",
-        "Juan Román Riquelme"
-      ],
-      "correct": 2,
-      "explanation": "Lionel Scaloni remained Argentina's manager at the 2026 World Cup, continuing the run that saw him win the Copa America 2021, World Cup 2022 and Copa America 2024.",
+      "correct": 1,
+      "explanation": "Germany, Curaçao, Ivory Coast and Ecuador were in Group E.",
       "category": "2026",
       "difficulty": "medium"
     },
     {
       "id": 129,
-      "question": "Which country failed to score a single goal across their three 2026 World Cup group games?",
+      "question": "Which 2026 World Cup group had Netherlands, Japan, Sweden and Tunisia?",
       "options": [
-        "Iraq",
-        "Tunisia",
-        "Qatar",
-        "Uzbekistan"
+        "Group E",
+        "Group F",
+        "Group G",
+        "Group H"
       ],
       "correct": 1,
-      "explanation": "Tunisia were eliminated from the 2026 World Cup without scoring a goal, conceding 9 in their three group games.",
+      "explanation": "Netherlands, Japan, Sweden and Tunisia were in Group F.",
       "category": "2026",
       "difficulty": "medium"
     },
     {
       "id": 130,
-      "question": "How many times has the World Cup final gone to a penalty shootout?",
+      "question": "The 2026 World Cup final is scheduled at MetLife Stadium. In which US state is it located?",
       "options": [
-        "2",
-        "3",
-        "4",
-        "5"
+        "New York",
+        "New Jersey",
+        "Pennsylvania",
+        "Connecticut"
       ],
-      "correct": 2,
-      "explanation": "The World Cup final has been decided by penalty shootout four times: 1994 (Brazil vs Italy), 2006 (Italy vs France), 2022 (Argentina vs France) and... 2026 result pending!",
-      "category": "records",
-      "difficulty": "hard"
+      "correct": 1,
+      "explanation": "MetLife Stadium is in East Rutherford, New Jersey — just across the Hudson River from New York City.",
+      "category": "2026",
+      "difficulty": "medium"
     }
   ]
 }
