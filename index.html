@@ -885,9 +885,20 @@ function showTab(name) {
   document.querySelectorAll('.panel').forEach(p => {
     p.classList.toggle('active', p.id === `panel-${name}`);
   });
-  // Track tab view in Google Analytics
+  // GA: track every tab click as a page_view so it appears in GA reports
   if (typeof gtag !== 'undefined') {
-    gtag('event', 'tab_view', { tab_name: name });
+    const tabLabels = {
+      analysis:  'Analysis — Executive Summary & Commentary',
+      standings: 'Table — Participant Standings',
+      results:   'Results — Last 24 Hours',
+      fixtures:  'Fixtures & Odds',
+      trivia:    'Trivia — Daily Quiz'
+    };
+    gtag('event', 'page_view', {
+      page_title: tabLabels[name] || name,
+      page_location: window.location.href + '#' + name
+    });
+    gtag('event', 'tab_click', { tab_name: name });
   }
 }
 
@@ -1313,7 +1324,6 @@ function getTodayQuestions() {
 function triviaSelectPlayer(player) {
   triviaState.player = player;
   buildTriviaNameGrid();
-  // Track player selection in GA
   if (typeof gtag !== 'undefined') {
     gtag('event', 'trivia_player_select', { player_name: player });
   }
@@ -1343,6 +1353,9 @@ function triviaStartQuiz() {
   triviaState.currentQ = 0;
   triviaState.score = 0;
   triviaState.answered = false;
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'trivia_quiz_start', { player_name: triviaState.player });
+  }
 
   if (!triviaState.questions.length) {
     document.getElementById('trivia-prompt').style.display = 'block';
@@ -1395,6 +1408,16 @@ function triviaAnswer(idx) {
   const correct = q.correct;
   const right = idx === correct;
   if (right) triviaState.score++;
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'trivia_answer', {
+      player_name: triviaState.player,
+      question_id: q.id,
+      question_num: triviaState.currentQ + 1,
+      correct: right,
+      category: q.category,
+      difficulty: q.difficulty
+    });
+  }
 
   for (let i = 0; i < 4; i++) {
     const btn = document.getElementById(`topt-${i}`);
@@ -1456,12 +1479,13 @@ function triviaFinish() {
 
   document.getElementById('trivia-final').style.display = 'block';
 
-  // Track trivia completion in GA
   if (typeof gtag !== 'undefined') {
     gtag('event', 'trivia_complete', {
       player_name: triviaState.player,
       score: score,
-      score_pct: Math.round((score/5)*100)
+      out_of: 5,
+      score_pct: Math.round((score/5)*100),
+      date: getTodayKey()
     });
   }
 }
@@ -1496,6 +1520,9 @@ function showTriviaTab(tab) {
   if (tab === 'leaderboard') {
     document.getElementById('trivia-lb-section').style.display = 'block';
     renderTriviaLeaderboard();
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'trivia_leaderboard_view', { player_name: triviaState.player || 'unknown' });
+    }
   }
 }
 
@@ -1578,6 +1605,13 @@ function triviaReset() {
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
 loadData();
+// GA: track initial load as Analysis tab (default landing tab)
+if (typeof gtag !== 'undefined') {
+  gtag('event', 'page_view', {
+    page_title: 'Analysis — Executive Summary & Commentary',
+    page_location: window.location.href + '#analysis'
+  });
+}
 </script>
 </body>
 </html>
