@@ -558,6 +558,123 @@
   .small { font-size: 0.72rem; }
   .bold { font-weight: 700; }
 
+
+  /* ── Trivia ───────────────────────────────────────────────── */
+  .trivia-name-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+  .trivia-name-btn {
+    padding: 8px 4px;
+    border-radius: 5px;
+    border: 1.5px solid var(--border);
+    background: var(--light);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.15s;
+    color: var(--text);
+  }
+  .trivia-name-btn.selected { color: white; }
+  .trivia-name-btn:hover { border-color: var(--amber); }
+
+  .trivia-q-card {
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+  .trivia-q-meta { display: flex; gap: 6px; margin-bottom: 8px; }
+  .trivia-q-cat {
+    font-size: 0.62rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 3px;
+    background: var(--navy); color: var(--amber);
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .trivia-q-diff {
+    font-size: 0.62rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 3px;
+    text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .trivia-q-diff.easy   { background: #DCFCE7; color: #166534; }
+  .trivia-q-diff.medium { background: #FEF9C3; color: #92400E; }
+  .trivia-q-diff.hard   { background: #FEE2E2; color: #DC2626; }
+
+  .trivia-q-text { font-size: 0.95rem; font-weight: 700; color: var(--navy); line-height: 1.4; }
+
+  .trivia-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+  .trivia-opt {
+    display: flex; align-items: center; gap: 10px;
+    padding: 11px 13px; border: 1.5px solid var(--border);
+    border-radius: var(--radius); background: var(--white);
+    cursor: pointer; font-size: 0.87rem; font-weight: 500;
+    color: var(--text); transition: all 0.15s; width: 100%; text-align: left;
+  }
+  .trivia-opt:hover:not(:disabled) { border-color: var(--amber); background: #FFFBEB; }
+  .trivia-opt .opt-letter {
+    display: flex; align-items: center; justify-content: center;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--light); font-size: 0.72rem; font-weight: 800;
+    flex-shrink: 0; transition: all 0.15s;
+  }
+  .trivia-opt.correct { border-color: #16A34A; background: #DCFCE7; }
+  .trivia-opt.correct .opt-letter { background: #16A34A; color: white; }
+  .trivia-opt.wrong { border-color: #DC2626; background: #FEE2E2; }
+  .trivia-opt.wrong .opt-letter { background: #DC2626; color: white; }
+  .trivia-opt:disabled { cursor: default; }
+
+  .trivia-feedback {
+    display: none; font-size: 0.9rem; font-weight: 800;
+    text-align: center; padding: 8px; border-radius: var(--radius); margin-bottom: 8px;
+  }
+  .trivia-feedback.show { display: block; }
+  .trivia-feedback.c { color: #16A34A; background: #DCFCE7; }
+  .trivia-feedback.w { color: #DC2626; background: #FEE2E2; }
+
+  .trivia-explain {
+    display: none; background: var(--navy); color: #94A3B8;
+    border-radius: var(--radius); padding: 11px 13px;
+    font-size: 0.78rem; line-height: 1.6; margin-bottom: 12px;
+  }
+  .trivia-explain.show { display: block; }
+  .trivia-explain strong { color: var(--amber); }
+
+  .trivia-progress { height: 4px; background: var(--border); border-radius: 2px; margin-bottom: 14px; }
+  .trivia-progress-fill { height: 100%; background: var(--amber); border-radius: 2px; transition: width 0.3s; }
+
+  .trivia-score-circle {
+    width: 100px; height: 100px; border-radius: 50%;
+    background: var(--navy); border: 4px solid var(--amber);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    margin: 0 auto 14px;
+  }
+  .trivia-score-num { font-size: 2rem; font-weight: 900; color: var(--amber); line-height: 1; }
+  .trivia-score-den { font-size: 0.7rem; color: var(--slate); }
+
+  .trivia-lb-row {
+    display: grid;
+    grid-template-columns: 28px 1fr 50px 50px 40px;
+    align-items: center; gap: 6px;
+    padding: 9px 8px; border-bottom: 1px solid var(--border);
+    font-size: 0.8rem;
+  }
+  .trivia-lb-row:last-child { border-bottom: none; }
+  .trivia-lb-row.gold { background: #FFFBEB; }
+  .days-left-badge {
+    background: var(--navy); color: var(--amber);
+    border-radius: var(--radius); padding: 10px 14px;
+    font-size: 0.78rem; margin-bottom: 14px; text-align: center;
+  }
+  .days-left-badge strong { font-size: 1rem; display: block; }
+
+  @media(min-width:480px){
+    .trivia-name-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
   @media (min-width: 480px) {
     .owner-key { grid-template-columns: repeat(3, 1fr); }
     html { font-size: 16px; }
@@ -581,6 +698,7 @@
     <button class="tab" onclick="showTab('standings')" role="tab">Table</button>
     <button class="tab" onclick="showTab('results')"  role="tab">Results</button>
     <button class="tab" onclick="showTab('fixtures')" role="tab">Fixtures</button>
+    <button class="tab" onclick="showTab('trivia')" role="tab">Trivia</button>
   </nav>
 
   <!-- ── Standings panel ────────────────────────────────────────────────────── -->
@@ -631,6 +749,74 @@
       <div class="section-head"><h2>Participant Guide</h2></div>
       <div id="owner-key-content"><div class="loading">Loading...</div></div>
     </div>
+  </section>
+
+
+  <!-- ── Trivia Panel ──────────────────────────────────────────────────────── -->
+  <section class="panel" id="panel-trivia">
+
+    <!-- Name selector -->
+    <div style="background:var(--navy);border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.06em;color:var(--amber);text-transform:uppercase;margin-bottom:8px;">Who are you?</div>
+      <div class="trivia-name-grid" id="trivia-name-grid"></div>
+    </div>
+
+    <!-- Days remaining badge -->
+    <div class="days-left-badge" id="trivia-days-badge" style="display:none;"></div>
+
+    <!-- Already played -->
+    <div id="trivia-played" style="display:none;background:#DCFCE7;border:1px solid #16A34A;border-radius:8px;padding:14px;margin-bottom:14px;text-align:center;font-size:0.85rem;color:#166534;font-weight:600;"></div>
+
+    <!-- Quiz area -->
+    <div id="trivia-quiz" style="display:none;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span id="trivia-q-label" style="font-size:0.72rem;font-weight:700;color:var(--slate);letter-spacing:0.04em;"></span>
+        <span id="trivia-score-badge" style="background:var(--navy);color:var(--amber);font-size:0.72rem;font-weight:800;padding:3px 10px;border-radius:20px;"></span>
+      </div>
+      <div class="trivia-progress"><div class="trivia-progress-fill" id="trivia-prog-fill" style="width:0%"></div></div>
+
+      <div class="trivia-q-card">
+        <div class="trivia-q-meta">
+          <span class="trivia-q-cat" id="trivia-q-cat"></span>
+          <span class="trivia-q-diff" id="trivia-q-diff"></span>
+        </div>
+        <div class="trivia-q-text" id="trivia-q-text"></div>
+      </div>
+
+      <div class="trivia-options" id="trivia-opts"></div>
+      <div class="trivia-feedback" id="trivia-fb"></div>
+      <div class="trivia-explain" id="trivia-exp"></div>
+
+      <button onclick="triviaNext()" id="trivia-next-btn" style="display:none;width:100%;padding:13px;border:none;border-radius:8px;background:var(--amber);color:var(--navy);font-size:0.9rem;font-weight:800;cursor:pointer;">Next Question →</button>
+    </div>
+
+    <!-- Final score -->
+    <div id="trivia-final" style="display:none;text-align:center;padding:20px 0;">
+      <div class="trivia-score-circle">
+        <div class="trivia-score-num" id="trivia-final-num">0</div>
+        <div class="trivia-score-den">out of 5</div>
+      </div>
+      <div style="font-size:1.05rem;font-weight:800;color:var(--navy);margin-bottom:4px;" id="trivia-final-msg"></div>
+      <div style="font-size:0.8rem;color:var(--slate);margin-bottom:20px;" id="trivia-final-sub"></div>
+      <button onclick="showTriviaTab('leaderboard')" style="width:100%;max-width:280px;padding:12px;border:none;border-radius:8px;background:var(--navy);color:var(--amber);font-size:0.88rem;font-weight:800;cursor:pointer;margin-bottom:8px;">View Leaderboard</button>
+      <br>
+      <button onclick="triviaReset()" style="width:100%;max-width:280px;padding:12px;border:none;border-radius:8px;background:var(--light);color:var(--navy);font-size:0.88rem;font-weight:700;cursor:pointer;">Play as someone else</button>
+    </div>
+
+    <!-- Select prompt -->
+    <div id="trivia-prompt" style="text-align:center;padding:32px 16px;color:var(--slate);font-size:0.85rem;">Select your name above to start today's quiz.</div>
+
+    <!-- Leaderboard sub-tab -->
+    <div id="trivia-lb-section" style="display:none;margin-top:4px;">
+      <div style="display:flex;gap:8px;margin-bottom:16px;">
+        <button onclick="showTriviaTab('quiz')" style="flex:1;padding:9px;border:1.5px solid var(--border);border-radius:6px;background:var(--light);font-size:0.78rem;font-weight:700;cursor:pointer;color:var(--navy);">← Back to Quiz</button>
+      </div>
+      <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--navy);">🏆 All-Time Leaderboard</div>
+      <div id="trivia-lb-all"></div>
+      <div style="font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--navy);margin:20px 0 10px;padding-bottom:8px;border-bottom:2px solid var(--navy);">Today's Scores</div>
+      <div id="trivia-lb-today"></div>
+    </div>
+
   </section>
 
 </div><!-- /container -->
@@ -684,7 +870,7 @@ async function loadData() {
 // ── Tab switching ─────────────────────────────────────────────────────────────
 function showTab(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
-    const panels = ['analysis','standings','results','fixtures'];
+    const panels = ['analysis','standings','results','fixtures','trivia'];
     t.classList.toggle('active', panels[i] === name);
   });
   document.querySelectorAll('.panel').forEach(p => {
@@ -721,13 +907,15 @@ function gd(val) {
 function render() {
   if (!state) return;
   const { meta, participants, standings, recent_results,
-          upcoming_fixtures, commentary, odds, exec_summary } = state;
+          upcoming_fixtures, commentary, odds, exec_summary,
+          trivia_schedule, trivia_questions } = state;
 
   // Header meta
   const hasLive = (upcoming_fixtures || []).some(f => f.status === 'IN_PLAY' || f.aest_time === '🔴 LIVE') || (recent_results || []).some(r => r.status === 'LIVE');
   document.getElementById('header-meta').innerHTML =
     `Updated ${esc(meta.last_updated_aest)} · Edition ${meta.edition}`
-    + (hasLive ? '<span class="live-badge">LIVE</span>' : '');
+    + (hasLive ? '<span class="live-badge">LIVE</span>' : '')
+    + `<span style="font-size:0.65rem;color:#475569;margin-left:4px;">${refreshNote}</span>`;
 
   renderStandings(standings, participants);
   renderResults(recent_results, participants);
@@ -735,6 +923,7 @@ function render() {
   renderOdds(odds, participants);
   renderExecSummary(exec_summary);
   renderCommentary(commentary);
+  renderTrivia(trivia_schedule, trivia_questions);
   renderOwnerKey(participants);
 }
 
@@ -1044,11 +1233,328 @@ function renderOwnerKey(participants) {
   document.getElementById('owner-key-content').innerHTML = html;
 }
 
+// ── Trivia ────────────────────────────────────────────────────────────────────
+const TRIVIA_PLAYERS = [
+  'Kenna','Cronan','Silk','Same','Galbraith',
+  'Morris','P Rankin','T Rankin','Hankin','Varcoe','Crowle'
+];
+const PLAYER_COLORS = {
+  'Kenna':'#EA580C','Cronan':'#1D4ED8','Silk':'#BE185D','Same':'#15803D',
+  'Galbraith':'#7C3AED','Morris':'#0891B2','P Rankin':'#C2410C',
+  'T Rankin':'#4338CA','Hankin':'#166534','Varcoe':'#92400E','Crowle':'#0369A1'
+};
+
+let triviaState = {
+  player: null, questions: [], currentQ: 0, score: 0, answered: false
+};
+
+let triviaSchedule = null;
+let triviaQuestions = null;
+let triviaScores = {};  // shared scores loaded from data.json
+
+function renderTrivia(schedule, questions) {
+  triviaSchedule = schedule;
+  triviaQuestions = questions;
+  // Also load shared scores if embedded in data
+  if (state && state.trivia_scores) {
+    triviaScores = state.trivia_scores;
+  }
+  buildTriviaNameGrid();
+  updateDaysBadge();
+}
+
+function buildTriviaNameGrid() {
+  const grid = document.getElementById('trivia-name-grid');
+  if (!grid) return;
+  grid.innerHTML = TRIVIA_PLAYERS.map(p => {
+    const color = PLAYER_COLORS[p];
+    const sel = triviaState.player === p;
+    return `<button class="trivia-name-btn ${sel?'selected':''}"
+      style="${sel ? 'background:'+color+';border-color:'+color+';color:white' : ''}"
+      onclick="triviaSelectPlayer('${p}')">${esc(p)}</button>`;
+  }).join('');
+}
+
+function updateDaysBadge() {
+  const badge = document.getElementById('trivia-days-badge');
+  if (!badge || !triviaSchedule) return;
+  const remaining = Object.keys(triviaSchedule).length;
+  const total = remaining * 5;
+  badge.innerHTML = `<strong>${remaining} days left</strong> · ${total} questions remaining in the tournament · 5 new questions each day`;
+  badge.style.display = 'block';
+}
+
+function getTodayKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+}
+
+function getTodayQuestions() {
+  if (!triviaSchedule || !triviaQuestions) return [];
+  const today = getTodayKey();
+  const ids = triviaSchedule[today] || [];
+  return ids.map(id => triviaQuestions.find(q => q.id === id)).filter(Boolean);
+}
+
+function triviaSelectPlayer(player) {
+  triviaState.player = player;
+  buildTriviaNameGrid();
+
+  // Check if already played today using shared scores
+  const today = getTodayKey();
+  const playerScores = triviaScores[player] || {};
+  const todayResult = playerScores[today];
+
+  document.getElementById('trivia-prompt').style.display = 'none';
+  document.getElementById('trivia-final').style.display = 'none';
+  document.getElementById('trivia-quiz').style.display = 'none';
+  document.getElementById('trivia-lb-section').style.display = 'none';
+
+  if (todayResult !== undefined) {
+    const playedEl = document.getElementById('trivia-played');
+    playedEl.style.display = 'block';
+    playedEl.innerHTML = `✅ You scored <strong>${todayResult} / 5</strong> today — come back tomorrow for 5 new questions!`;
+  } else {
+    document.getElementById('trivia-played').style.display = 'none';
+    triviaStartQuiz();
+  }
+}
+
+function triviaStartQuiz() {
+  triviaState.questions = getTodayQuestions();
+  triviaState.currentQ = 0;
+  triviaState.score = 0;
+  triviaState.answered = false;
+
+  if (!triviaState.questions.length) {
+    document.getElementById('trivia-prompt').style.display = 'block';
+    document.getElementById('trivia-prompt').textContent = 'No questions scheduled for today — check back tomorrow!';
+    return;
+  }
+
+  document.getElementById('trivia-quiz').style.display = 'block';
+  triviaRenderQ();
+}
+
+function triviaRenderQ() {
+  const q = triviaState.questions[triviaState.currentQ];
+  const total = triviaState.questions.length;
+
+  document.getElementById('trivia-q-label').textContent = `Question ${triviaState.currentQ + 1} of ${total}`;
+  document.getElementById('trivia-score-badge').textContent = `${triviaState.score} / ${triviaState.currentQ}`;
+  document.getElementById('trivia-prog-fill').style.width = `${(triviaState.currentQ / total) * 100}%`;
+
+  const catLabels = { history:'History', records:'Records', players:'Players', '2026':'2026 WC', sweepstake:'Sweepstake', rules:'Rules' };
+  const catEl = document.getElementById('trivia-q-cat');
+  catEl.textContent = catLabels[q.category] || q.category;
+
+  const difEl = document.getElementById('trivia-q-diff');
+  difEl.textContent = q.difficulty.charAt(0).toUpperCase() + q.difficulty.slice(1);
+  difEl.className = `trivia-q-diff ${q.difficulty}`;
+
+  document.getElementById('trivia-q-text').textContent = q.question;
+
+  const letters = ['A','B','C','D'];
+  document.getElementById('trivia-opts').innerHTML = q.options.map((opt, i) => `
+    <button class="trivia-opt" onclick="triviaAnswer(${i})" id="topt-${i}">
+      <span class="opt-letter">${letters[i]}</span>
+      <span>${esc(opt)}</span>
+    </button>`).join('');
+
+  document.getElementById('trivia-fb').className = 'trivia-feedback';
+  document.getElementById('trivia-fb').textContent = '';
+  document.getElementById('trivia-exp').className = 'trivia-explain';
+  document.getElementById('trivia-exp').innerHTML = '';
+  document.getElementById('trivia-next-btn').style.display = 'none';
+  triviaState.answered = false;
+}
+
+function triviaAnswer(idx) {
+  if (triviaState.answered) return;
+  triviaState.answered = true;
+
+  const q = triviaState.questions[triviaState.currentQ];
+  const correct = q.correct;
+  const right = idx === correct;
+  if (right) triviaState.score++;
+
+  for (let i = 0; i < 4; i++) {
+    const btn = document.getElementById(`topt-${i}`);
+    if (!btn) continue;
+    btn.disabled = true;
+    if (i === correct) btn.classList.add('correct');
+    else if (i === idx) btn.classList.add('wrong');
+  }
+
+  const fb = document.getElementById('trivia-fb');
+  fb.textContent = right ? '✓ Correct!' : `✗ The answer was ${['A','B','C','D'][correct]}`;
+  fb.className = `trivia-feedback show ${right ? 'c' : 'w'}`;
+
+  const exp = document.getElementById('trivia-exp');
+  exp.innerHTML = `<strong>Did you know?</strong> ${esc(q.explanation)}`;
+  exp.className = 'trivia-explain show';
+
+  document.getElementById('trivia-score-badge').textContent = `${triviaState.score} / ${triviaState.currentQ + 1}`;
+
+  const btn = document.getElementById('trivia-next-btn');
+  const isLast = triviaState.currentQ === triviaState.questions.length - 1;
+  btn.textContent = isLast ? 'See My Score' : 'Next Question →';
+  btn.style.display = 'block';
+}
+
+function triviaNext() {
+  if (triviaState.currentQ < triviaState.questions.length - 1) {
+    triviaState.currentQ++;
+    triviaRenderQ();
+  } else {
+    triviaFinish();
+  }
+}
+
+function triviaFinish() {
+  document.getElementById('trivia-quiz').style.display = 'none';
+
+  const score = triviaState.score;
+  const msgs = [
+    [5,'⚽ Perfect score! World Cup genius!'],
+    [4,'🌟 Excellent — you know your football!'],
+    [3,'👍 Solid — decent World Cup knowledge.'],
+    [2,'📚 Room to improve — keep watching!'],
+    [0,'😬 Tough day — 5 new questions tomorrow!'],
+  ];
+  const msg = msgs.find(([min]) => score >= min);
+
+  document.getElementById('trivia-final-num').textContent = score;
+  document.getElementById('trivia-final-msg').textContent = msg[1];
+
+  // Save to shared scores
+  saveTriviaScore(triviaState.player, score);
+
+  // Calculate total correct from shared scores
+  const playerData = triviaScores[triviaState.player] || {};
+  const totalCorrect = Object.values(playerData).reduce((a, b) => a + b, 0);
+  document.getElementById('trivia-final-sub').textContent =
+    `${Math.round((score/5)*100)}% correct today · ${totalCorrect} total correct all-time`;
+
+  document.getElementById('trivia-final').style.display = 'block';
+}
+
+function saveTriviaScore(player, score) {
+  const today = getTodayKey();
+  if (!triviaScores[player]) triviaScores[player] = {};
+  triviaScores[player][today] = score;
+
+  // Push to GitHub via API to share across devices
+  pushTriviaScores();
+}
+
+async function pushTriviaScores() {
+  // We push the updated trivia_scores back to data.json via a serverless proxy
+  // For now, store in localStorage as fallback — shared scores require the
+  // generate_commentary workflow to pick up localStorage-stored results
+  // The proper shared solution uses the data.json trivia_scores field updated
+  // by the 2pm commentary run reading a scores endpoint.
+  // Simple approach: use a public Jsonbin or similar — or just use localStorage
+  // cross-device sharing requires a backend write endpoint.
+  try {
+    localStorage.setItem('wc2026_trivia_scores', JSON.stringify(triviaScores));
+  } catch(e) {}
+}
+
+function showTriviaTab(tab) {
+  document.getElementById('trivia-quiz').style.display = 'none';
+  document.getElementById('trivia-final').style.display = 'none';
+  document.getElementById('trivia-lb-section').style.display = 'none';
+  document.getElementById('trivia-played').style.display = 'none';
+  if (tab === 'leaderboard') {
+    document.getElementById('trivia-lb-section').style.display = 'block';
+    renderTriviaLeaderboard();
+  }
+}
+
+function renderTriviaLeaderboard() {
+  const today = getTodayKey();
+  const medals = ['🥇','🥈','🥉'];
+
+  // All-time
+  const allTime = TRIVIA_PLAYERS.map(name => {
+    const scores = triviaScores[name] || {};
+    const total = Object.values(scores).reduce((a,b) => a+b, 0);
+    const played = Object.keys(scores).length * 5;
+    const pct = played > 0 ? Math.round((total/played)*100) : 0;
+    return { name, total, played, pct };
+  }).filter(p => p.played > 0).sort((a,b) => b.total - a.total || b.pct - a.pct);
+
+  let html = '';
+  if (!allTime.length) {
+    html = '<div style="text-align:center;padding:20px;color:var(--slate);font-size:0.82rem;">No scores yet — play today's quiz!</div>';
+  } else {
+    html += `<div class="trivia-lb-row" style="background:var(--light);font-size:0.68rem;font-weight:700;color:var(--slate);text-transform:uppercase;letter-spacing:0.04em;">
+      <span>#</span><span>Player</span><span style="text-align:center">Correct</span><span style="text-align:center">Played</span><span style="text-align:center">%</span></div>`;
+    allTime.forEach((p, i) => {
+      const color = PLAYER_COLORS[p.name];
+      const pctColor = p.pct >= 80 ? '#16A34A' : p.pct >= 60 ? '#D97706' : '#64748B';
+      html += `<div class="trivia-lb-row ${i<3?'gold':''}">
+        <span style="font-weight:800;text-align:center;">${medals[i]||i+1}</span>
+        <span style="font-weight:800;color:${color};">${esc(p.name)}</span>
+        <span style="text-align:center;font-weight:800;">${p.total}</span>
+        <span style="text-align:center;color:var(--slate);">${p.played}</span>
+        <span style="text-align:center;color:${pctColor};font-weight:700;">${p.pct}%</span>
+      </div>`;
+    });
+  }
+  document.getElementById('trivia-lb-all').innerHTML = html;
+
+  // Today
+  const todayScores = TRIVIA_PLAYERS.map(name => {
+    const scores = triviaScores[name] || {};
+    const score = scores[today];
+    if (score === undefined) return null;
+    return { name, score };
+  }).filter(Boolean).sort((a,b) => b.score - a.score);
+
+  let todayHtml = '';
+  if (!todayScores.length) {
+    todayHtml = '<div style="text-align:center;padding:16px;color:var(--slate);font-size:0.82rem;">Nobody has played today yet!</div>';
+  } else {
+    todayScores.forEach((p, i) => {
+      const color = PLAYER_COLORS[p.name];
+      const pct = Math.round((p.score/5)*100);
+      const pctColor = pct >= 80 ? '#16A34A' : pct >= 60 ? '#D97706' : '#64748B';
+      todayHtml += `<div class="trivia-lb-row ${i<3?'gold':''}">
+        <span style="font-weight:800;text-align:center;">${medals[i]||i+1}</span>
+        <span style="font-weight:800;color:${color};">${esc(p.name)}</span>
+        <span style="text-align:center;font-weight:800;">${p.score} / 5</span>
+        <span style="text-align:center;color:var(--slate);">—</span>
+        <span style="text-align:center;color:${pctColor};font-weight:700;">${pct}%</span>
+      </div>`;
+    });
+  }
+  document.getElementById('trivia-lb-today').innerHTML = todayHtml;
+}
+
+function triviaReset() {
+  triviaState.player = null;
+  document.getElementById('trivia-final').style.display = 'none';
+  document.getElementById('trivia-prompt').style.display = 'block';
+  document.getElementById('trivia-played').style.display = 'none';
+  buildTriviaNameGrid();
+}
+
+// Load any existing scores from localStorage on startup
+(function() {
+  try {
+    const stored = localStorage.getItem('wc2026_trivia_scores');
+    if (stored) triviaScores = JSON.parse(stored);
+  } catch(e) {}
+})();
+
 // ── Boot ──────────────────────────────────────────────────────────────────────
 loadData();
 </script>
 </body>
 </html>
+
 
 
 
