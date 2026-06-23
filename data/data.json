@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T02:07:11.424072+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 12:07pm AEST",
+    "last_updated": "2026-06-23T03:34:27.075386+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 1:34pm AEST",
     "edition": 8,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "23 Jun 2026 12:07am AEST",
+    "odds_last_updated": "23 Jun 2026 1:34am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-23T01:52:18.062454+00:00",
-    "last_score_refresh": "23 Jun 2026 12:07pm AEST",
+    "last_score_refresh": "23 Jun 2026 1:34pm AEST",
     "last_commentary_participants": [
       "Crowle",
       "Kenna",
@@ -282,6 +282,22 @@
   "recent_results": [
     {
       "date": "23 Jun",
+      "aest_time": "Tue 1:00pm",
+      "group": "Group J",
+      "home": "Jordan",
+      "home_owner": "Kenna",
+      "away": "Algeria",
+      "away_owner": "Silk",
+      "home_score": 0,
+      "away_score": 0,
+      "status": "LIVE",
+      "match_minute": "34'",
+      "badge": "LIVE",
+      "sweepstake_relevant": true,
+      "sort_key": "0_live"
+    },
+    {
+      "date": "23 Jun",
       "aest_time": "Tue 3:00am",
       "group": "Group J",
       "home": "Argentina",
@@ -331,14 +347,15 @@
   ],
   "upcoming_fixtures": [
     {
-      "aest_time": "Tue 1:00pm",
+      "aest_time": "🔴 LIVE",
       "group": "J",
       "home": "Jordan",
       "home_owner": "Kenna",
       "away": "Algeria",
       "away_owner": "Silk",
-      "status": "TIMED",
-      "context": "Both beaten once. Dead rubber unless Argentina-Austria produces a surprise."
+      "status": "IN_PLAY",
+      "context": "Both beaten once. Dead rubber unless Argentina-Austria produces a surprise.",
+      "live_score": "None–None"
     },
     {
       "aest_time": "Wed 3:00am",
@@ -484,10 +501,10 @@
       "team": "Argentina",
       "owner": "Galbraith",
       "prev": "$7.6",
-      "now": "$7.6",
-      "now_decimal": 7.6,
-      "direction": "unchanged",
-      "source": "Betfair"
+      "now": "$7.5",
+      "now_decimal": 7.5,
+      "direction": "shortened",
+      "source": "Unibet"
     },
     {
       "team": "England",
@@ -520,27 +537,27 @@
       "team": "Brazil",
       "owner": "Morris",
       "prev": "$18.0",
-      "now": "$18.0",
-      "now_decimal": 18.0,
-      "direction": "unchanged",
+      "now": "$18.5",
+      "now_decimal": 18.5,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Netherlands",
       "owner": "T Rankin",
       "prev": "$19.0",
-      "now": "$19.0",
-      "now_decimal": 19.0,
-      "direction": "unchanged",
+      "now": "$18.5",
+      "now_decimal": 18.5,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
-      "prev": "$38.0",
+      "prev": "$40.0",
       "now": "$40.0",
       "now_decimal": 40.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -591,18 +608,9 @@
     {
       "team": "Switzerland",
       "owner": "Varcoe",
-      "prev": "$130.0",
+      "prev": "$120.0",
       "now": "$120.0",
       "now_decimal": 120.0,
-      "direction": "shortened",
-      "source": "Betfair"
-    },
-    {
-      "team": "Senegal",
-      "owner": "Kenna",
-      "prev": "$170.0",
-      "now": "$170.0",
-      "now_decimal": 170.0,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -619,9 +627,18 @@
       "team": "Ivory Coast",
       "owner": "Hankin",
       "prev": "$220.0",
-      "now": "$220.0",
-      "now_decimal": 220.0,
-      "direction": "unchanged",
+      "now": "$240.0",
+      "now_decimal": 240.0,
+      "direction": "drifted",
+      "source": "Betfair"
+    },
+    {
+      "team": "Senegal",
+      "owner": "Kenna",
+      "prev": "$170.0",
+      "now": "$250.0",
+      "now_decimal": 250.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -637,27 +654,27 @@
       "team": "Canada",
       "owner": "Varcoe",
       "prev": "$300.0",
-      "now": "$300.0",
-      "now_decimal": 300.0,
-      "direction": "unchanged",
+      "now": "$280.0",
+      "now_decimal": 280.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Egypt",
       "owner": "Kenna",
       "prev": "$330.0",
-      "now": "$330.0",
-      "now_decimal": 330.0,
-      "direction": "unchanged",
+      "now": "$320.0",
+      "now_decimal": 320.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Sweden",
       "owner": "P Rankin",
-      "prev": "$340.0",
+      "prev": "$350.0",
       "now": "$350.0",
       "now_decimal": 350.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -667,6 +684,15 @@
       "now": "$370.0",
       "now_decimal": 370.0,
       "direction": "unchanged",
+      "source": "Betfair"
+    },
+    {
+      "team": "Ecuador",
+      "owner": "Crowle",
+      "prev": "$500.0",
+      "now": "$420.0",
+      "now_decimal": 420.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
@@ -681,15 +707,6 @@
     {
       "team": "Uruguay",
       "owner": "Morris",
-      "prev": "$500.0",
-      "now": "$500.0",
-      "now_decimal": 500.0,
-      "direction": "unchanged",
-      "source": "Betfair"
-    },
-    {
-      "team": "Ecuador",
-      "owner": "Crowle",
       "prev": "$500.0",
       "now": "$500.0",
       "now_decimal": 500.0,
@@ -799,10 +816,10 @@
       "team": "Iraq",
       "owner": "P Rankin",
       "prev": "$1501.0",
-      "now": "$1501.0",
-      "now_decimal": 1501.0,
-      "direction": "unchanged",
-      "source": "Unibet"
+      "now": "$2001.0",
+      "now_decimal": 2001.0,
+      "direction": "drifted",
+      "source": "TAB"
     },
     {
       "team": "Panama",
