@@ -212,44 +212,6 @@ def call_claude(prompt, max_tokens=2000):
     return json.loads(text.strip())
 
 
-def main():
-    print("Generating commentary...")
-
-    with open(DATA_FILE) as f:
-        data = json.load(f)
-
-    # 1. Executive summary
-    print("  Generating executive summary...")
-    exec_summary = call_claude(build_exec_summary_prompt(data), max_tokens=600)
-    print(f"  Quote: {exec_summary.get('pull_quote','')[:60]}...")
-
-    # 2. Participant commentary
-    participants = pick_participants(data)
-    print(f"  Covering: {', '.join(participants)}")
-    commentary = call_claude(build_commentary_prompt(data, participants), max_tokens=2000)
-    print(f"  Generated {len(commentary)} blocks")
-
-    # 3. Write back to data.json
-    data["exec_summary"] = exec_summary
-    data["commentary"]   = commentary
-    data["meta"]["last_commentary_participants"] = participants
-    data["meta"]["last_commentary_generated"]    = datetime.now(timezone.utc).isoformat()
-    data["meta"]["edition"] = data["meta"].get("edition", 1) + 1
-
-    # 3. Generate/update trivia schedule
-    data = generate_trivia_schedule(data)
-
-    with open(DATA_FILE, "w") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-    print(f"  Done. Written to {DATA_FILE}")
-    for c in commentary:
-        print(f"    → {c['title']}")
-
-
-if __name__ == "__main__":
-    main()
-
 
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -444,3 +406,42 @@ def generate_trivia_schedule(data):
     print(f"  Tournament days remaining: {remaining}")
     print(f"  Questions in bank: {len(ALL_QUESTIONS)}, questions scheduled: {sum(len(v) for v in existing.values())}")
     return data
+
+
+def main():
+    print("Generating commentary...")
+
+    with open(DATA_FILE) as f:
+        data = json.load(f)
+
+    # 1. Executive summary
+    print("  Generating executive summary...")
+    exec_summary = call_claude(build_exec_summary_prompt(data), max_tokens=600)
+    print(f"  Quote: {exec_summary.get('pull_quote','')[:60]}...")
+
+    # 2. Participant commentary
+    participants = pick_participants(data)
+    print(f"  Covering: {', '.join(participants)}")
+    commentary = call_claude(build_commentary_prompt(data, participants), max_tokens=2000)
+    print(f"  Generated {len(commentary)} blocks")
+
+    # 3. Write back to data.json
+    data["exec_summary"] = exec_summary
+    data["commentary"]   = commentary
+    data["meta"]["last_commentary_participants"] = participants
+    data["meta"]["last_commentary_generated"]    = datetime.now(timezone.utc).isoformat()
+    data["meta"]["edition"] = data["meta"].get("edition", 1) + 1
+
+    # 3. Generate/update trivia schedule
+    data = generate_trivia_schedule(data)
+
+    with open(DATA_FILE, "w") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+    print(f"  Done. Written to {DATA_FILE}")
+    for c in commentary:
+        print(f"    → {c['title']}")
+
+
+if __name__ == "__main__":
+    main()
