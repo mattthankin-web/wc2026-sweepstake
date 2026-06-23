@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T03:48:11.612708+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 1:48pm AEST",
+    "last_updated": "2026-06-23T03:52:00.339007+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 1:52pm AEST",
     "edition": 8,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "23 Jun 2026 1:48am AEST",
+    "odds_last_updated": "23 Jun 2026 1:52am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-23T01:52:18.062454+00:00",
-    "last_score_refresh": "23 Jun 2026 1:48pm AEST",
+    "last_score_refresh": "23 Jun 2026 1:52pm AEST",
     "last_commentary_participants": [
       "Crowle",
       "Kenna",
@@ -291,7 +291,7 @@
       "home_score": 1,
       "away_score": 0,
       "status": "LIVE",
-      "match_minute": "48'",
+      "match_minute": "52'",
       "badge": "LIVE",
       "sweepstake_relevant": true,
       "sort_key": "0_live"
