@@ -1272,6 +1272,7 @@ let triviaState = { player: null, questions: [], currentQ: 0, score: 0, answered
 let triviaSchedule = null;
 let triviaQuestions = null;
 let triviaAllScores = {};  // { player: { date: score } } — loaded from Supabase
+let triviaScoresLoaded = false;
 
 // ── Supabase helpers ──────────────────────────────────────────────────────────
 async function supabaseFetch(path, options = {}) {
@@ -1292,25 +1293,39 @@ async function supabaseFetch(path, options = {}) {
 async function loadScoresFromSupabase() {
   try {
     const rows = await supabaseFetch('trivia_scores?select=player,date,score&order=date.asc');
-    triviaAllScores = {};
+    // Merge into existing (don't wipe localStorage cache)
     for (const row of rows) {
       if (!triviaAllScores[row.player]) triviaAllScores[row.player] = {};
       triviaAllScores[row.player][row.date] = row.score;
     }
+    // Cache locally as backup
+    try { localStorage.setItem('wc2026_trivia_scores', JSON.stringify(triviaAllScores)); } catch(e) {}
+    triviaScoresLoaded = true;
     renderAlwaysOnLeaderboard();
     const el = document.getElementById('trivia-lb-status');
-    if (el) el.textContent = `Updated just now`;
+    if (el) el.textContent = 'Updated just now';
+    // Re-check current player — they may have already played today
+    if (triviaState.player) triviaSelectPlayer(triviaState.player);
     return true;
   } catch(e) {
     console.error('Score load failed:', e);
     const el = document.getElementById('trivia-lb-status');
     if (el) el.textContent = 'Offline — showing cached scores';
-    // Fall back to localStorage
+    // Fall back to localStorage cache
     try {
       const stored = localStorage.getItem('wc2026_trivia_scores');
-      if (stored) triviaAllScores = JSON.parse(stored);
-      renderAlwaysOnLeaderboard();
+      if (stored) {
+        const cached = JSON.parse(stored);
+        // Merge cache into triviaAllScores
+        for (const [player, dates] of Object.entries(cached)) {
+          if (!triviaAllScores[player]) triviaAllScores[player] = {};
+          Object.assign(triviaAllScores[player], dates);
+        }
+      }
     } catch(e2) {}
+    triviaScoresLoaded = true;
+    renderAlwaysOnLeaderboard();
+    if (triviaState.player) triviaSelectPlayer(triviaState.player);
     return false;
   }
 }
@@ -1449,9 +1464,20 @@ function triviaSelectPlayer(player) {
   buildTriviaNameGrid();
   if (typeof gtag !== 'undefined') gtag('event', 'trivia_player_select', { player_name: player });
 
+  // Hide all sections
   document.getElementById('trivia-prompt').style.display = 'none';
   document.getElementById('trivia-final').style.display = 'none';
   document.getElementById('trivia-quiz').style.display = 'none';
+  document.getElementById('trivia-played').style.display = 'none';
+
+  // If Supabase hasn't responded yet, show waiting state
+  // loadScoresFromSupabase() will call triviaSelectPlayer() again once loaded
+  if (!triviaScoresLoaded) {
+    const el = document.getElementById('trivia-prompt');
+    el.style.display = 'block';
+    el.innerHTML = '<span style="color:var(--amber);">⏳ Checking your scores...</span>';
+    return;
+  }
 
   const today = getTodayKey();
   const playerScores = triviaAllScores[player] || {};
@@ -1462,7 +1488,6 @@ function triviaSelectPlayer(player) {
     el.style.display = 'block';
     el.innerHTML = `✅ You scored <strong>${todayResult} / 5</strong> today — come back tomorrow for 5 new questions!`;
   } else {
-    document.getElementById('trivia-played').style.display = 'none';
     triviaStartQuiz();
   }
 }
@@ -1623,6 +1648,8 @@ function triviaReset() {
 
 // Load scores on startup (before player selects name)
 (function() {
+  // Seed triviaAllScores from localStorage immediately (before Supabase responds)
+  // This means the leaderboard shows cached data instantly on load
   try {
     const stored = localStorage.getItem('wc2026_trivia_scores');
     if (stored) {
@@ -1630,6 +1657,8 @@ function triviaReset() {
       renderAlwaysOnLeaderboard();
     }
   } catch(e) {}
+  // Note: triviaScoresLoaded stays false until Supabase confirms
+  // This ensures we always verify against the live DB before allowing play
 })();
 
 
