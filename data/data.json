@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-23T03:52:00.339007+00:00",
-    "last_updated_aest": "Tuesday 23 Jun 2026, 1:52pm AEST",
+    "last_updated": "2026-06-23T04:02:20.595327+00:00",
+    "last_updated_aest": "Tuesday 23 Jun 2026, 2:02pm AEST",
     "edition": 8,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "23 Jun 2026 1:52am AEST",
+    "odds_last_updated": "23 Jun 2026 2:02am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-23T01:52:18.062454+00:00",
-    "last_score_refresh": "23 Jun 2026 1:52pm AEST",
+    "last_score_refresh": "23 Jun 2026 2:02pm AEST",
     "last_commentary_participants": [
       "Crowle",
       "Kenna",
@@ -291,7 +291,7 @@
       "home_score": 1,
       "away_score": 0,
       "status": "LIVE",
-      "match_minute": "52'",
+      "match_minute": "62'",
       "badge": "LIVE",
       "sweepstake_relevant": true,
       "sort_key": "0_live"
@@ -353,9 +353,9 @@
       "home_owner": "Kenna",
       "away": "Algeria",
       "away_owner": "Silk",
-      "status": "IN_PLAY",
+      "status": "PAUSED",
       "context": "Both beaten once. Dead rubber unless Argentina-Austria produces a surprise.",
-      "live_score": "1–None"
+      "live_score": "1–0"
     },
     {
       "aest_time": "Wed 3:00am",
@@ -744,9 +744,9 @@
       "team": "Algeria",
       "owner": "Silk",
       "prev": "$960.0",
-      "now": "$960.0",
-      "now_decimal": 960.0,
-      "direction": "unchanged",
+      "now": "$1000.0",
+      "now_decimal": 1000.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
