@@ -479,7 +479,9 @@ def main():
     now_aest = datetime.now(AEST)
     day_names = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
     day = day_names[now_aest.weekday()]
+    refresh_aest = datetime.now(AEST)
     existing["meta"]["last_updated"] = datetime.now(timezone.utc).isoformat()
+    existing["meta"]["last_score_refresh"] = refresh_aest.strftime("%-d %b %Y %-I:%M%p AEST").replace("AM","am").replace("PM","pm")
     existing["meta"]["last_updated_aest"] = now_aest.strftime(
         f"{day} %-d %b %Y, %-I:%M%p AEST"
     ).replace("AM","am").replace("PM","pm")
