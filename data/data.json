@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-24T10:36:58.722092+00:00",
-    "last_updated_aest": "Wednesday 24 Jun 2026, 8:36pm AEST",
-    "edition": 11,
+    "last_updated": "2026-06-24T12:30:16.191619+00:00",
+    "last_updated_aest": "Wednesday 24 Jun 2026, 10:30pm AEST",
+    "edition": 12,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "24 Jun 2026 8:36am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-23T21:14:18.897890+00:00",
-    "last_score_refresh": "24 Jun 2026 8:36pm AEST",
+    "trivia_schedule_generated": "2026-06-24T12:30:45.353665+00:00",
+    "last_score_refresh": "24 Jun 2026 10:30pm AEST",
     "last_commentary_participants": [
-      "Varcoe",
-      "Crowle",
-      "Kenna"
+      "Silk",
+      "Same",
+      "Galbraith"
     ],
-    "last_commentary_generated": "2026-06-23T21:14:18.897759+00:00"
+    "last_commentary_generated": "2026-06-24T12:30:45.353391+00:00"
   },
   "participants": {
     "Kenna": {
@@ -469,22 +469,22 @@
   ],
   "commentary": [
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: Unbeaten, Unnoticed, Underestimated",
-      "body": "There is a particular kind of sweepstake participant who accumulates points quietly, avoids catastrophe entirely, and gets no credit for either. Varcoe is that participant. Thirteen points, no losses, a goal difference of +13 — the best in the sweepstake — and yet a win probability of 3.59% that places him tenth. The market, apparently, has opinions about ceilings.\n\nThe structural problem is not form but futures. Japan and Switzerland can go deep; Canada and DR Congo are serviceable. But none of them is lifting a trophy. Varcoe is building a very tidy portfolio with no obvious route to the winner-takes-all prize. Impeccable execution, limited upside. The sweepstake equivalent of a well-maintained mid-table side."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: England Fail to Turn Up; Silk Fails to Notice",
+      "body": "A goalless draw against Ghana is not, strictly speaking, a disaster. It is, however, a fairly accurate description of England's attacking ambition on the evening. Silk collects a point, watches USA presumably do something more productive elsewhere, and enters the knockout rounds at rank two on 14 points with a win percentage of 14.05%. Algeria and Qatar remain decorative. The sweepstake architecture here is sound: two live assets, both likely to progress, both capable of doing serious damage in the latter stages.\n\nThe problem is that England, specifically, continue to operate as though scoring goals is an optional feature of international football. Silk's portfolio survives on USA's relative competence and the mercy of an open draw. If both teams reach the quarterfinals, rank two starts to look like a launchpad. If England persist in treating the final third as a foreign country, it looks like a holding pattern with a pleasant view."
     },
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: Three Draws, Three Losses, Zero Excuses",
-      "body": "Portugal 5–0 Uzbekistan. That is how Tuesday ended for Crowle, whose Uzbekistan side conceded five to Same's Portugal in a result that managed to simultaneously damage Crowle's goal difference and boost a rival's. Three points from six games — all draws, none of them remotely exciting — and a goal difference of -8 that tells its own story. Belgium continue their commitment to the 0–0 as a philosophical position. Ecuador and Bosnia have offered little more.\n\nAt 3.42%, Crowle sits last in the sweepstake. The win probability is not so much a number as a courtesy. With Uzbekistan likely eliminated and Belgium constitutionally opposed to winning football matches, the realistic question is no longer 'can Crowle win' but 'can Crowle avoid the wooden spoon'."
+      "participant": "Same",
+      "color": "#15803D",
+      "title": "Same: Portugal Cannibalise Crowle; Colombia Quietly Pile On",
+      "body": "Five goals against Uzbekistan is the kind of result that flatters a portfolio enormously while telling you almost nothing about the team's actual quality. Portugal did what Portugal were always going to do against the weakest side in Group K, and Same collects the points with the detached satisfaction of someone watching a scheduled delivery arrive. The goal difference swings to plus-six. Colombia's 1–0 over DR Congo adds further ballast, and Varcoe takes a quiet bruising in the process.\n\nSame sits fifth on win percentage at 9.56%, which undersells the portfolio's actual shape. Portugal and Colombia are both through, both dangerous, and the secondary pair — Paraguay and Cape Verde — have done enough not to embarrass anyone. The nagging question is whether Portugal's five-goal evening represents a genuine gear shift or simply an appropriate response to opposition whose tournament is now mercifully over. Colombia, as noted previously, require no such caveats."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Eight Teams, One Hope, a Worsening Spreadsheet",
-      "body": "Quantity was always Kenna's theory. Eight teams — the largest portfolio in the sweepstake — on the assumption that volume would eventually produce value. The results disagree. Two wins, four draws, eight losses. Jordan fell 2–1 to Silk's Algeria on the 23rd. Hankin's Norway beat Kenna's Senegal 3–2 the same day. The losses are accumulating with a kind of grim regularity that suggests not bad luck but structural deficiency.\n\nSpain, at 13.78% implied probability, is doing the heavy lifting for the entire portfolio. Without Spain, Kenna's win percentage would be a rounding error. The remaining seven teams — Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao, Haiti — exist in various states of irrelevance. Kenna is not running a sweepstake portfolio so much as a support act with one headliner and seven opening bands nobody came to see."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: Turkey and South Africa Depart; Argentina and Morocco Remain, Which Is Rather the Point",
+      "body": "Galbraith's portfolio has shed its dead weight with the clinical efficiency of a fund manager trimming underperforming assets. Turkey and South Africa are eliminated, which is unfortunate arithmetically but largely irrelevant strategically. What remains is Argentina — reigning world champions, Kalshi's implied favourite — and Morocco, who won their group and have now demonstrated they are not merely a tournament novelty. At 12.06% and rank four, Galbraith is positioned better than the standings suggest.\n\nNo results directly affected Galbraith today, which for a participant of this standing is almost the ideal outcome: rivals accumulate points while the flagship assets rest. The knockout draw is everything from here. Argentina navigating the easier half of the bracket and Morocco continuing their characteristically stubborn defensive performances would turn a quietly promising position into something considerably more threatening. Galbraith needs neither luck nor drama — just competent football from two very good teams."
     }
   ],
   "odds": [
@@ -859,9 +859,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Portugal put five past Uzbekistan; England, meanwhile, managed nothing against Ghana.",
-    "paragraph_1": "The defining image of this window is the contrast between Same's Portugal dismantling Uzbekistan 5–0 and Silk's England drawing a blank against T Rankin's Ghana. Silk retains second place on 13 points, but the England stalemate is precisely the kind of result that flatters the standings while delivering nothing. Kenna endured a bruising 24 hours: Senegal fell 3–2 to Hankin's Norway, then Jordan lost 1–2 to Silk's Algeria — two defeats in two days for the third-placed participant.",
-    "paragraph_2": "The next 48 hours offer Cronan, currently leading on win percentage, the chance to consolidate via Panama against T Rankin's Croatia on Wednesday. Same will look to extend momentum when Colombia face Varcoe's DR Congo at noon. Most curiously, Varcoe has both Switzerland and Canada in Group B on Thursday, guaranteeing himself points regardless of outcome — a structural absurdity that the sweepstake's architects presumably did not anticipate."
+    "pull_quote": "Same's Portugal put five past Uzbekistan while Silk's England managed none against Ghana.",
+    "paragraph_1": "The day's defining contrast belonged to Same, whose Portugal dismantled Uzbekistan 5-0 before Colombia added a further point with a 1-0 win over DR Congo — a double haul that will do Same's title ambitions no harm at all. Silk's England, meanwhile, produced a goalless draw with Ghana, leaving T Rankin the unlikely beneficiary. Cronan's Panama lost 1-0 to Croatia, handing T Rankin another point and quietly complicating Cronan's knockout calculus.",
+    "paragraph_2": "Thursday brings two simultaneous group-stage conclusions of note. Varcoe faces the peculiar predicament of owning both Switzerland and Canada in Group B, guaranteeing one point regardless of outcome but precluding any sympathy from the table. Silk's Qatar faces Bosnia-Herzegovina, a result that could shore up or undermine a position currently resting on 14 points. Most consequential: Galbraith's Morocco meets Kenna's Haiti in Group C, a fixture that will settle something meaningful for both, while Morris holds the rarest of sweepstake assets — Scotland and Brazil simultaneously."
   },
   "trivia_schedule": {
     "2026-06-24": [
