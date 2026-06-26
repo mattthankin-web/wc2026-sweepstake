@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-26T01:29:49.070310+00:00",
-    "last_updated_aest": "Friday 26 Jun 2026, 11:29am AEST",
+    "last_updated": "2026-06-26T01:33:21.919860+00:00",
+    "last_updated_aest": "Friday 26 Jun 2026, 11:33am AEST",
     "edition": 13,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "26 Jun 2026 11:29am AEST",
+    "odds_last_updated": "26 Jun 2026 11:33am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-25T12:34:54.313267+00:00",
-    "last_score_refresh": "26 Jun 2026 11:29am AEST",
+    "last_score_refresh": "26 Jun 2026 11:33am AEST",
     "last_commentary_participants": [
       "T Rankin",
       "Hankin",
@@ -502,9 +502,9 @@
       "team": "Spain",
       "owner": "Kenna",
       "prev": "$7.0",
-      "now": "$7.0",
-      "now_decimal": 7.0,
-      "direction": "unchanged",
+      "now": "$7.2",
+      "now_decimal": 7.2,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -519,10 +519,10 @@
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$9.4",
+      "prev": "$9.2",
       "now": "$9.2",
       "now_decimal": 9.2,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -546,10 +546,10 @@
     {
       "team": "Netherlands",
       "owner": "T Rankin",
-      "prev": "$17.5",
+      "prev": "$17.0",
       "now": "$17.0",
       "now_decimal": 17.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -571,18 +571,18 @@
       "source": "Betfair"
     },
     {
-      "team": "Japan",
-      "owner": "Varcoe",
-      "prev": "$48.0",
-      "now": "$51.0",
-      "now_decimal": 51.0,
-      "direction": "drifted",
-      "source": "Unibet"
-    },
-    {
       "team": "Morocco",
       "owner": "Galbraith",
-      "prev": "$50.0",
+      "prev": "$55.0",
+      "now": "$55.0",
+      "now_decimal": 55.0,
+      "direction": "unchanged",
+      "source": "Betfair"
+    },
+    {
+      "team": "Japan",
+      "owner": "Varcoe",
+      "prev": "$51.0",
       "now": "$55.0",
       "now_decimal": 55.0,
       "direction": "drifted",
@@ -609,10 +609,10 @@
     {
       "team": "Mexico",
       "owner": "Hankin",
-      "prev": "$70.0",
+      "prev": "$75.0",
       "now": "$75.0",
       "now_decimal": 75.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -627,19 +627,19 @@
     {
       "team": "Ecuador",
       "owner": "Crowle",
-      "prev": "$150.0",
+      "prev": "$160.0",
       "now": "$160.0",
       "now_decimal": 160.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Croatia",
       "owner": "T Rankin",
-      "prev": "$230.0",
+      "prev": "$240.0",
       "now": "$240.0",
       "now_decimal": 240.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -654,37 +654,37 @@
     {
       "team": "Ivory Coast",
       "owner": "Hankin",
-      "prev": "$270.0",
+      "prev": "$260.0",
       "now": "$260.0",
       "now_decimal": 260.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Canada",
       "owner": "Varcoe",
-      "prev": "$290.0",
+      "prev": "$300.0",
       "now": "$300.0",
       "now_decimal": 300.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Australia",
       "owner": "Cronan",
-      "prev": "$430.0",
+      "prev": "$330.0",
       "now": "$330.0",
       "now_decimal": 330.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Sweden",
       "owner": "P Rankin",
-      "prev": "$260.0",
+      "prev": "$340.0",
       "now": "$340.0",
       "now_decimal": 340.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -726,19 +726,19 @@
     {
       "team": "Paraguay",
       "owner": "Same",
-      "prev": "$520.0",
+      "prev": "$710.0",
       "now": "$710.0",
       "now_decimal": 710.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Iran",
       "owner": "Morris",
-      "prev": "$1000.0",
+      "prev": "$751.0",
       "now": "$751.0",
       "now_decimal": 751.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Unibet"
     },
     {
@@ -2843,5 +2843,300 @@
       "difficulty": "medium"
     }
   ],
-  "knockout": []
+  "knockout": [
+    {
+      "stage": "LAST_16",
+      "label": "R16",
+      "matches": [
+        {
+          "id": 537376,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Sun 3:00am",
+          "date_short": "5 Jul",
+          "date_iso": "2026-07-05",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537375,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Sun 7:00am",
+          "date_short": "5 Jul",
+          "date_iso": "2026-07-05",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537377,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Mon 6:00am",
+          "date_short": "6 Jul",
+          "date_iso": "2026-07-06",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537378,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Mon 10:00am",
+          "date_short": "6 Jul",
+          "date_iso": "2026-07-06",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537379,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Tue 5:00am",
+          "date_short": "7 Jul",
+          "date_iso": "2026-07-07",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537380,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Tue 10:00am",
+          "date_short": "7 Jul",
+          "date_iso": "2026-07-07",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537381,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Wed 2:00am",
+          "date_short": "8 Jul",
+          "date_iso": "2026-07-08",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537382,
+          "stage": "LAST_16",
+          "stage_label": "R16",
+          "date_aest": "Wed 6:00am",
+          "date_short": "8 Jul",
+          "date_iso": "2026-07-08",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        }
+      ]
+    },
+    {
+      "stage": "QUARTER_FINALS",
+      "label": "QF",
+      "matches": [
+        {
+          "id": 537383,
+          "stage": "QUARTER_FINALS",
+          "stage_label": "QF",
+          "date_aest": "Fri 6:00am",
+          "date_short": "10 Jul",
+          "date_iso": "2026-07-10",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537384,
+          "stage": "QUARTER_FINALS",
+          "stage_label": "QF",
+          "date_aest": "Sat 5:00am",
+          "date_short": "11 Jul",
+          "date_iso": "2026-07-11",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537385,
+          "stage": "QUARTER_FINALS",
+          "stage_label": "QF",
+          "date_aest": "Sun 7:00am",
+          "date_short": "12 Jul",
+          "date_iso": "2026-07-12",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537386,
+          "stage": "QUARTER_FINALS",
+          "stage_label": "QF",
+          "date_aest": "Sun 11:00am",
+          "date_short": "12 Jul",
+          "date_iso": "2026-07-12",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        }
+      ]
+    },
+    {
+      "stage": "SEMI_FINALS",
+      "label": "SF",
+      "matches": [
+        {
+          "id": 537387,
+          "stage": "SEMI_FINALS",
+          "stage_label": "SF",
+          "date_aest": "Wed 5:00am",
+          "date_short": "15 Jul",
+          "date_iso": "2026-07-15",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        },
+        {
+          "id": 537388,
+          "stage": "SEMI_FINALS",
+          "stage_label": "SF",
+          "date_aest": "Thu 5:00am",
+          "date_short": "16 Jul",
+          "date_iso": "2026-07-16",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        }
+      ]
+    },
+    {
+      "stage": "FINAL",
+      "label": "F",
+      "matches": [
+        {
+          "id": 537390,
+          "stage": "FINAL",
+          "stage_label": "F",
+          "date_aest": "Mon 5:00am",
+          "date_short": "20 Jul",
+          "date_iso": "2026-07-20",
+          "home": null,
+          "home_owner": null,
+          "home_score": null,
+          "away": null,
+          "away_owner": null,
+          "away_score": null,
+          "score_note": "",
+          "status": "TIMED",
+          "winner": null,
+          "venue": ""
+        }
+      ]
+    }
+  ]
 }
