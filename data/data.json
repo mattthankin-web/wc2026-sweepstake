@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-26T10:39:15.787063+00:00",
-    "last_updated_aest": "Friday 26 Jun 2026, 8:39pm AEST",
-    "edition": 13,
+    "last_updated": "2026-06-26T12:27:01.563201+00:00",
+    "last_updated_aest": "Friday 26 Jun 2026, 10:27pm AEST",
+    "edition": 14,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "26 Jun 2026 8:39am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-25T12:34:54.313267+00:00",
-    "last_score_refresh": "26 Jun 2026 8:39pm AEST",
+    "trivia_schedule_generated": "2026-06-26T12:27:30.623226+00:00",
+    "last_score_refresh": "26 Jun 2026 10:27pm AEST",
     "last_commentary_participants": [
-      "T Rankin",
-      "Hankin",
-      "Varcoe"
+      "Crowle",
+      "Kenna",
+      "Cronan"
     ],
-    "last_commentary_generated": "2026-06-25T12:34:54.312973+00:00",
+    "last_commentary_generated": "2026-06-26T12:27:30.622947+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -502,22 +502,22 @@
   ],
   "commentary": [
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: The Netherlands Carry a Passenger Manifest",
-      "body": "Croatia are eliminated, which reduces T Rankin's portfolio to three functioning assets and one passenger. Ghana remain an intriguing if unreliable wildcard, Tunisia a side that has not yet distinguished itself from the tournament wallpaper. The Netherlands, however, are the story here — a genuinely dangerous knockout-round side capable of going deep into the bracket and dragging T Rankin's Win% with them. At 6.30%, the ranking undersells the Dutch.\n\nThe mathematics are unforgiving but not hopeless. Three teams still operating, one with genuine pedigree, and the knockout rounds are where Win% moves in lurches rather than increments. If the Netherlands advance with conviction, T Rankin's position at rank 8 could look considerably more embarrassing to those above them than it currently does to T Rankin."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: Ecuador's Win Is The Portfolio's First, And Possibly Last",
+      "body": "Ecuador's 2–1 victory over Germany was, by any measure, the most significant result Crowle has produced since the sweepstake began. It is also, at rank 11 with 3.42%, arriving approximately three weeks too late. One win from seven games, a goal difference of -7, and Belgium's apparent constitutional commitment to the draw have left this portfolio in a condition that a restructuring consultant would describe as \"terminal.\" The points tally of 6 suggests a group stage experience best characterised as educational.\n\nThe Ecuador result does at least confirm the portfolio is capable of motion. Belgium remain the nominally prestigious asset, though their draw-heavy record has the feel of a once-grand institution refusing to accept its own decline. Bosnia and Uzbekistan have offered nothing. Crowle's Win% of 3.42% is not a recovery story; it is a postscript."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: Most Points on the Board, Least Credit in the Room",
-      "body": "Nineteen points. Six wins. One draw. Two losses. By any conventional measure of footballing performance, Hankin's teams are the most productive collection in this sweepstake. Mexico dispatched Czech Republic 3-0 on 25 June with the sort of efficiency that suggests they intend to be inconvenient for some time yet. Norway, Ivory Coast, and Mexico are all performing well above the expectations baked into their market odds. Saudi Arabia are gone, but three teams punching above their weight is a better situation than most participants can claim.\n\nThe 4.54% Win% is the cruel arithmetic of sweepstake life — you can win every group game and still be priced like a side effect. The market does not reward group-stage industry; it rewards the narrow probability of lifting the thing. Hankin's case for the defence is strong. The verdict, unfortunately, is still being written by someone else's odds compiler."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Eight Teams, One Point, Zero Curaçao",
+      "body": "Curaçao's 0–2 defeat to Ivory Coast on the 26th was, in the grand sweep of Kenna's misfortunes, barely noticeable. The portfolio now sits at W2-D4-L10 — a record that, across eight teams, suggests not bad luck but a systematic failure of asset quality. Ten losses from sixteen games is the kind of statistical outcome that stops being coincidence and starts being character. Spain remains the sole holding of genuine consequence, carrying the entire 13.78% Win% on its back while seven other nations contribute little beyond fixture congestion.\n\nThe uncomfortable arithmetic is this: Kenna holds third place on Win% almost entirely because Spain exist. Remove Spain from the calculation and what remains is a collection of group-stage participants in varying states of exit. Jordan, New Zealand, Haiti, Egypt, Senegal, South Korea, and now Curaçao have collectively done what passengers do — occupied space while Spain drove. The portfolio is large. It is not deep."
     },
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: Unbeaten, Underrated, and Still Nobody's Favourite",
-      "body": "On 25 June, Varcoe achieved something genuinely unusual: Switzerland beat Canada 2-1, meaning Varcoe watched two of his own teams contest a match, collected the points from the winner, and absorbed the loss from the loser, finishing the afternoon precisely as conflicted as he started it. The net effect was positive — Switzerland are through, Canada less so — but the internal sweepstake accounting requires a composure most people reserve for divorce proceedings. Japan, Switzerland, and DR Congo remain active and have collectively produced an unbeaten record across all their games.\n\nAt 3.59% and rank 10, the market remains stubbornly unimpressed. A GD of plus-12 is the best in the sweepstake, which suggests Varcoe's teams are not merely surviving but doing so with a degree of contempt for the opposition. Japan in particular carry knockout credibility. The quiet overachiever label is accurate, though it will feel considerably less quiet if the odds begin to move."
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: First Place, France Dependent, And Aware Of Both",
+      "body": "Cronan leads the sweepstake at 17.74%, a position that invites congratulation and immediate qualification in roughly equal measure. The Paraguay draw handed Australia a 0–0 result that neither advanced nor embarrassed the portfolio, which is broadly the contribution Australia has made throughout. France remain the engine, the chassis, and the fuel of this operation. Austria and Panama exist in the standings the way a footnote exists in a treaty — present, technically relevant, unlikely to change anything.\n\nThe lead is real and should not be dismissed. Win% is what the market prices, and the market is pricing France's tournament run with sufficient respect to put Cronan clear of Silk, Kenna, and the rest. The concern is structural: a one-team portfolio at this stage of a winner-takes-all competition is a high-variance position dressed in respectable clothing. France advance, Cronan advances. France do not, and the remaining assets — Australia drawing in Group E, Austria doing whatever Austria does — will not cushion the landing."
     }
   ],
   "odds": [
@@ -865,9 +865,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Galbraith collects points on two continents while Silk watches Qatar concede three.",
-    "paragraph_1": "The defining results of June 25th cut in two directions. Galbraith's portfolio delivered on both fronts: Morocco's 4–2 dismantling of Kenna's Haiti and South Africa's narrow 1–0 over an unowned South Korea pushed Galbraith to 17 points, consolidating fourth place with genuine upward momentum. Morris enjoyed a frictionless afternoon, with Brazil routing his own Scotland 3–1 — a result that costs him nothing and earns him plenty. Silk, meanwhile, absorbed a punishing 3–1 defeat via Bosnia-Herzegovina, a team he does not own eliminating points he did.",
-    "paragraph_2": "Friday's early fixtures present the sharper edges. Kenna's Curaçao face Hankin's Ivory Coast in a Group E fixture where defeat would further depress a record already reading W2-D4-L9. P Rankin holds Germany and Sweden simultaneously, offering unusual insulation in Group E and F respectively, though Ecuador and Japan represent credible threats from Crowle and Varcoe. T Rankin's peculiar ownership of both Tunisia and the Netherlands means Group F's 9am kick-off is, for him, an exercise in hoping one half of his portfolio underperforms gracefully."
+    "pull_quote": "T Rankin's Tunisia lost to his own Netherlands, a self-inflicted wound that defies conventional analysis.",
+    "paragraph_1": "The day's defining result was Turkey's 3–2 victory over the USA, handing Galbraith three points at Silk's direct expense — a transfer of fortune as clean as it gets. Ecuador's 2–1 defeat of Germany compounds P Rankin's misery, while Kenna's Curaçao were eliminated quietly, 0–2 to Hankin's Ivory Coast. Paraguay and Australia played to a goalless draw, leaving both Same and Cronan exactly where they started. Cronan retains top spot on win percentage despite the stalemate.",
+    "paragraph_2": "Saturday's early fixture pits Hankin's Norway against Cronan's France in Group I — a result with direct implications for the leader. Simultaneously, Kenna's Senegal face P Rankin's Iraq, with Kenna needing points badly after Curaçao's exit. The 10am window offers Kenna a second bite via Spain against Morris's Uruguay, though relying on two separate squads to perform simultaneously is the kind of portfolio management that rarely ends well. Hankin's Saudi Arabia also feature, providing that owner with unusual Saturday coverage."
   },
   "trivia_schedule": {
     "2026-06-24": [
