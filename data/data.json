@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-26T01:33:21.919860+00:00",
-    "last_updated_aest": "Friday 26 Jun 2026, 11:33am AEST",
+    "last_updated": "2026-06-26T01:42:20.214497+00:00",
+    "last_updated_aest": "Friday 26 Jun 2026, 11:42am AEST",
     "edition": 13,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "26 Jun 2026 11:33am AEST",
+    "odds_last_updated": "26 Jun 2026 11:42am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-25T12:34:54.313267+00:00",
-    "last_score_refresh": "26 Jun 2026 11:33am AEST",
+    "last_score_refresh": "26 Jun 2026 11:42am AEST",
     "last_commentary_participants": [
       "T Rankin",
       "Hankin",
@@ -501,10 +501,10 @@
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$7.0",
+      "prev": "$7.2",
       "now": "$7.2",
       "now_decimal": 7.2,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -582,10 +582,10 @@
     {
       "team": "Japan",
       "owner": "Varcoe",
-      "prev": "$51.0",
+      "prev": "$55.0",
       "now": "$55.0",
       "now_decimal": 55.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
