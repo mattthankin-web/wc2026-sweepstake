@@ -78,8 +78,8 @@ def get_badge(match):
     """Assign a badge based on match context."""
     home = match["homeTeam"]["name"]
     away = match["awayTeam"]["name"]
-    hs = match["score"]["fullTime"]["home"]
-    as_ = match["score"]["fullTime"]["away"]
+    hs = (match["score"].get("fullTime") or {}).get("home")
+    as_ = (match["score"].get("fullTime") or {}).get("away")
     if hs is None or as_ is None:
         return ""
     diff = abs(hs - as_)
@@ -204,11 +204,12 @@ def build_results(matches):
     for m in matches:
         if m["status"] not in ("IN_PLAY", "PAUSED"):
             continue
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
-        home_owner = get_owner(home_name)
-        away_owner = get_owner(away_name)
-        group = m.get("group", "").replace("GROUP_", "Group ").replace("_", " ")
+        home_name = m["homeTeam"].get("name") or m["homeTeam"].get("shortName") or "TBD"
+        away_name = m["awayTeam"].get("name") or m["awayTeam"].get("shortName") or "TBD"
+        home_owner = get_owner(home_name) if home_name != "TBD" else "?"
+        away_owner = get_owner(away_name) if away_name != "TBD" else "?"
+        group_raw = m.get("group") or m.get("stage") or ""
+        group = group_raw.replace("GROUP_", "Group ").replace("ROUND_OF_32","Round of 32").replace("LAST_16","Round of 16").replace("QUARTER_FINALS","Quarter-Final").replace("SEMI_FINALS","Semi-Final").replace("FINAL","Final").replace("_", " ")
 
         # Score — try fullTime first, fallback to currentPeriodStartScore then 0
         score = m.get("score", {})
@@ -264,13 +265,14 @@ def build_results(matches):
             except:
                 pass
 
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
-        home_owner = get_owner(home_name)
-        away_owner = get_owner(away_name)
+        home_name = m["homeTeam"].get("name") or m["homeTeam"].get("shortName") or "TBD"
+        away_name = m["awayTeam"].get("name") or m["awayTeam"].get("shortName") or "TBD"
+        home_owner = get_owner(home_name) if home_name != "TBD" else "?"
+        away_owner = get_owner(away_name) if away_name != "TBD" else "?"
         hs = (m["score"].get("fullTime") or {}).get("home")
         as_ = (m["score"].get("fullTime") or {}).get("away")
-        group = m.get("group", "").replace("GROUP_", "Group ").replace("_", " ")
+        group_raw = m.get("group") or m.get("stage") or ""
+        group = group_raw.replace("GROUP_", "Group ").replace("ROUND_OF_32","Round of 32").replace("LAST_16","Round of 16").replace("QUARTER_FINALS","Quarter-Final").replace("SEMI_FINALS","Semi-Final").replace("FINAL","Final").replace("_", " ")
 
         results.append({
             "date": format_date_short(utc_str),
@@ -310,11 +312,12 @@ def build_upcoming(matches):
         if dt > cutoff:
             continue
 
-        home_name = m["homeTeam"]["name"]
-        away_name = m["awayTeam"]["name"]
-        home_owner = get_owner(home_name)
-        away_owner = get_owner(away_name)
-        group = m.get("group", "").replace("GROUP_", "").replace("_", " ").strip()
+        home_name = m["homeTeam"].get("name") or m["homeTeam"].get("shortName") or "TBD"
+        away_name = m["awayTeam"].get("name") or m["awayTeam"].get("shortName") or "TBD"
+        home_owner = get_owner(home_name) if home_name != "TBD" else "?"
+        away_owner = get_owner(away_name) if away_name != "TBD" else "?"
+        group_raw = m.get("group") or m.get("stage") or ""
+        group = group_raw.replace("GROUP_", "").replace("ROUND_OF_32","R32").replace("LAST_16","R16").replace("QUARTER_FINALS","QF").replace("SEMI_FINALS","SF").replace("FINAL","F").replace("_", " ").strip()
         status = m["status"]
 
         entry = {
