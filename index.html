@@ -97,7 +97,7 @@
   /* ── Tabs ─────────────────────────────────────────────────── */
   .tabs {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     background: var(--navy);
     position: sticky;
     top: 56px;
@@ -681,7 +681,7 @@
   .days-left-badge strong { font-size: 1rem; display: block; }
 
   @media(min-width:480px){
-    .trivia-name-grid { grid-template-columns: repeat(5, 1fr); }
+    .trivia-name-grid { grid-template-columns: repeat(4, 1fr); }
   }
 
   @media (min-width: 480px) {
@@ -694,7 +694,20 @@
   /* ── Knockout Bracket ─────────────────────────────────────────────────────── */
 
   /* ── Shared ── */
-  #panel-knockout { background: var(--navy); }
+  #panel-knockout { background: var(--navy); overflow-x: auto; }
+
+  /* On desktop, break the KO panel out of the 640px container constraint */
+  @media (min-width: 640px) {
+    #panel-knockout {
+      /* Allow the bracket to be wider than the container */
+      width: 100%;
+      overflow-x: auto;
+    }
+    /* When container holds KO panel, don't let it clip horizontally */
+    .container:has(#panel-knockout.active) {
+      overflow-x: visible;
+    }
+  }
 
   .ko-participants-strip {
     background: #111827;
@@ -722,7 +735,7 @@
   }
   .ko-p-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
   .ko-p-name { font-size: 0.72rem; font-weight: 700; color: #e2e8f0; flex: 1; }
-  .ko-p-name.out { opacity: 0.38; text-decoration: line-through; }
+  .ko-p-name.out { color: #64748b; text-decoration: line-through; }
   .ko-p-team { font-size: 0.62rem; color: #64748b; margin-right: 3px; }
   .ko-p-odds {
     font-size: 0.62rem; font-weight: 800;
@@ -753,7 +766,7 @@
     display: flex;
     align-items: stretch;
     gap: 0;
-    min-width: 680px;
+    min-width: 1100px;
   }
 
   .ko-round-col {
@@ -979,7 +992,6 @@
     <button class="tab" onclick="showTab('results')"  role="tab">Results</button>
     <button class="tab" onclick="showTab('fixtures')" role="tab">Fixtures</button>
     <button class="tab" onclick="showTab('trivia')" role="tab">Trivia (BETA)</button>
-    <button class="tab" onclick="showTab('knockout')" role="tab">Knock Out (BETA)</button>
   </nav>
 
   <!-- ── Standings panel ────────────────────────────────────────────────────── -->
@@ -2045,7 +2057,7 @@ function renderKnockout(knockoutData, participants, odds) {
     <div class="ko-p-row">
       <div class="ko-status-dot ${isAlive ? 'alive' : 'out'}"></div>
       <div class="ko-p-dot" style="background:${color};${isAlive?'':'opacity:0.3;'}"></div>
-      <div class="ko-p-name${isAlive ? '' : ' out'}">${esc(name)}</div>
+      <div class="ko-p-name${isAlive ? '' : ' out'}">${isAlive ? '' : '💀 '}${esc(name)}</div>
       <div class="ko-p-team">${esc(teamStr)}</div>
       <div class="ko-p-odds ${pillCls}">${esc(oddsStr)}</div>
     </div>`;
