@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-26T12:27:01.563201+00:00",
-    "last_updated_aest": "Friday 26 Jun 2026, 10:27pm AEST",
+    "last_updated": "2026-06-26T17:21:38.991451+00:00",
+    "last_updated_aest": "Saturday 27 Jun 2026, 3:21am AEST",
     "edition": 14,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "26 Jun 2026 8:39am AEST",
+    "odds_last_updated": "27 Jun 2026 3:21am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-26T12:27:30.623226+00:00",
-    "last_score_refresh": "26 Jun 2026 10:27pm AEST",
+    "last_score_refresh": "27 Jun 2026 3:21am AEST",
     "last_commentary_participants": [
       "Crowle",
       "Kenna",
@@ -533,10 +533,10 @@
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$7.2",
-      "now": "$7.0",
-      "now_decimal": 7.0,
-      "direction": "shortened",
+      "prev": "$7.0",
+      "now": "$7.2",
+      "now_decimal": 7.2,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -560,72 +560,54 @@
     {
       "team": "Portugal",
       "owner": "Same",
-      "prev": "$12.5",
-      "now": "$12.0",
-      "now_decimal": 12.0,
+      "prev": "$12.0",
+      "now": "$11.5",
+      "now_decimal": 11.5,
       "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Brazil",
       "owner": "Morris",
-      "prev": "$16.0",
-      "now": "$15.0",
-      "now_decimal": 15.0,
-      "direction": "shortened",
+      "prev": "$15.0",
+      "now": "$15.5",
+      "now_decimal": 15.5,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Netherlands",
       "owner": "T Rankin",
-      "prev": "$17.5",
-      "now": "$18.0",
-      "now_decimal": 18.0,
-      "direction": "drifted",
+      "prev": "$18.0",
+      "now": "$17.5",
+      "now_decimal": 17.5,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Germany",
       "owner": "P Rankin",
       "prev": "$19.5",
-      "now": "$19.5",
-      "now_decimal": 19.5,
-      "direction": "unchanged",
+      "now": "$20.0",
+      "now_decimal": 20.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
       "prev": "$36.0",
-      "now": "$36.0",
-      "now_decimal": 36.0,
-      "direction": "unchanged",
+      "now": "$38.0",
+      "now_decimal": 38.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Morocco",
       "owner": "Galbraith",
-      "prev": "$55.0",
-      "now": "$60.0",
-      "now_decimal": 60.0,
-      "direction": "drifted",
-      "source": "Betfair"
-    },
-    {
-      "team": "Colombia",
-      "owner": "Same",
-      "prev": "$65.0",
-      "now": "$65.0",
-      "now_decimal": 65.0,
-      "direction": "unchanged",
-      "source": "Betfair"
-    },
-    {
-      "team": "Mexico",
-      "owner": "Hankin",
-      "prev": "$75.0",
-      "now": "$70.0",
-      "now_decimal": 70.0,
+      "prev": "$60.0",
+      "now": "$55.0",
+      "now_decimal": 55.0,
       "direction": "shortened",
       "source": "Betfair"
     },
@@ -633,17 +615,35 @@
       "team": "Belgium",
       "owner": "Crowle",
       "prev": "$70.0",
+      "now": "$60.0",
+      "now_decimal": 60.0,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
+      "team": "Colombia",
+      "owner": "Same",
+      "prev": "$65.0",
+      "now": "$60.0",
+      "now_decimal": 60.0,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
+      "team": "Japan",
+      "owner": "Varcoe",
+      "prev": "$70.0",
       "now": "$70.0",
       "now_decimal": 70.0,
       "direction": "unchanged",
       "source": "Betfair"
     },
     {
-      "team": "Japan",
-      "owner": "Varcoe",
-      "prev": "$51.0",
-      "now": "$70.0",
-      "now_decimal": 70.0,
+      "team": "Mexico",
+      "owner": "Hankin",
+      "prev": "$70.0",
+      "now": "$75.0",
+      "now_decimal": 75.0,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -659,69 +659,51 @@
     {
       "team": "Ecuador",
       "owner": "Crowle",
-      "prev": "$160.0",
-      "now": "$150.0",
-      "now_decimal": 150.0,
+      "prev": "$150.0",
+      "now": "$140.0",
+      "now_decimal": 140.0,
       "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Croatia",
       "owner": "T Rankin",
-      "prev": "$240.0",
+      "prev": "$220.0",
       "now": "$220.0",
       "now_decimal": 220.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Senegal",
       "owner": "Kenna",
       "prev": "$260.0",
-      "now": "$260.0",
-      "now_decimal": 260.0,
-      "direction": "unchanged",
+      "now": "$230.0",
+      "now_decimal": 230.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Ivory Coast",
       "owner": "Hankin",
-      "prev": "$260.0",
-      "now": "$280.0",
-      "now_decimal": 280.0,
+      "prev": "$280.0",
+      "now": "$290.0",
+      "now_decimal": 290.0,
       "direction": "drifted",
       "source": "Betfair"
     },
     {
-      "team": "Australia",
-      "owner": "Cronan",
-      "prev": "$330.0",
+      "team": "Canada",
+      "owner": "Varcoe",
+      "prev": "$320.0",
       "now": "$300.0",
       "now_decimal": 300.0,
       "direction": "shortened",
       "source": "Betfair"
     },
     {
-      "team": "Canada",
-      "owner": "Varcoe",
-      "prev": "$300.0",
-      "now": "$320.0",
-      "now_decimal": 320.0,
-      "direction": "drifted",
-      "source": "Betfair"
-    },
-    {
       "team": "Austria",
       "owner": "Cronan",
-      "prev": "$360.0",
-      "now": "$340.0",
-      "now_decimal": 340.0,
-      "direction": "shortened",
-      "source": "Betfair"
-    },
-    {
-      "team": "Sweden",
-      "owner": "P Rankin",
       "prev": "$340.0",
       "now": "$340.0",
       "now_decimal": 340.0,
@@ -729,56 +711,65 @@
       "source": "Betfair"
     },
     {
-      "team": "Egypt",
-      "owner": "Kenna",
-      "prev": "$500.0",
-      "now": "$370.0",
-      "now_decimal": 370.0,
+      "team": "Uruguay",
+      "owner": "Morris",
+      "prev": "$470.0",
+      "now": "$350.0",
+      "now_decimal": 350.0,
       "direction": "shortened",
       "source": "Betfair"
     },
     {
-      "team": "Uruguay",
-      "owner": "Morris",
-      "prev": "$470.0",
-      "now": "$470.0",
-      "now_decimal": 470.0,
-      "direction": "unchanged",
+      "team": "Australia",
+      "owner": "Cronan",
+      "prev": "$300.0",
+      "now": "$360.0",
+      "now_decimal": 360.0,
+      "direction": "drifted",
+      "source": "Betfair"
+    },
+    {
+      "team": "Egypt",
+      "owner": "Kenna",
+      "prev": "$370.0",
+      "now": "$360.0",
+      "now_decimal": 360.0,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
+      "team": "Sweden",
+      "owner": "P Rankin",
+      "prev": "$340.0",
+      "now": "$370.0",
+      "now_decimal": 370.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Ghana",
       "owner": "T Rankin",
-      "prev": "$550.0",
-      "now": "$610.0",
-      "now_decimal": 610.0,
+      "prev": "$610.0",
+      "now": "$630.0",
+      "now_decimal": 630.0,
       "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Paraguay",
       "owner": "Same",
-      "prev": "$710.0",
-      "now": "$750.0",
-      "now_decimal": 750.0,
+      "prev": "$750.0",
+      "now": "$800.0",
+      "now_decimal": 800.0,
       "direction": "drifted",
       "source": "Betfair"
     },
     {
-      "team": "Iran",
-      "owner": "Morris",
-      "prev": "$1000.0",
-      "now": "$751.0",
-      "now_decimal": 751.0,
-      "direction": "shortened",
-      "source": "Unibet"
-    },
-    {
       "team": "South Korea",
       "owner": "Kenna",
-      "prev": "$751.0",
-      "now": "$810.0",
-      "now_decimal": 810.0,
+      "prev": "$810.0",
+      "now": "$860.0",
+      "now_decimal": 860.0,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -786,9 +777,9 @@
       "team": "Algeria",
       "owner": "Silk",
       "prev": "$1000.0",
-      "now": "$1000.0",
-      "now_decimal": 1000.0,
-      "direction": "unchanged",
+      "now": "$960.0",
+      "now_decimal": 960.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
@@ -807,6 +798,15 @@
       "now": "$1000.0",
       "now_decimal": 1000.0,
       "direction": "unchanged",
+      "source": "Betfair"
+    },
+    {
+      "team": "Iran",
+      "owner": "Morris",
+      "prev": "$751.0",
+      "now": "$1000.0",
+      "now_decimal": 1000.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -848,10 +848,10 @@
     {
       "team": "Scotland",
       "owner": "Morris",
-      "prev": "$1000.0",
+      "prev": "$2501.0",
       "now": "$2501.0",
       "now_decimal": 2501.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Unibet"
     },
     {
