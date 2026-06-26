@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-26T01:48:10.041975+00:00",
-    "last_updated_aest": "Friday 26 Jun 2026, 11:48am AEST",
+    "last_updated": "2026-06-26T01:49:45.095250+00:00",
+    "last_updated_aest": "Friday 26 Jun 2026, 11:49am AEST",
     "edition": 13,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "26 Jun 2026 11:48am AEST",
+    "odds_last_updated": "26 Jun 2026 11:49am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-25T12:34:54.313267+00:00",
-    "last_score_refresh": "26 Jun 2026 11:48am AEST",
+    "last_score_refresh": "26 Jun 2026 11:49am AEST",
     "last_commentary_participants": [
       "T Rankin",
       "Hankin",
@@ -155,12 +155,12 @@
     },
     {
       "name": "Kenna",
-      "pld": 16,
+      "pld": 15,
       "w": 2,
       "d": 4,
-      "l": 10,
+      "l": 9,
       "pts": 10,
-      "gd": -16,
+      "gd": -14,
       "rank": 3,
       "left": 10,
       "win_pct": 13.78,
@@ -211,12 +211,12 @@
     },
     {
       "name": "P Rankin",
-      "pld": 11,
+      "pld": 9,
       "w": 3,
-      "d": 2,
-      "l": 6,
-      "pts": 11,
-      "gd": -4,
+      "d": 1,
+      "l": 5,
+      "pts": 10,
+      "gd": -3,
       "rank": 7,
       "left": 5,
       "win_pct": 7.18,
@@ -225,11 +225,11 @@
     },
     {
       "name": "T Rankin",
-      "pld": 10,
-      "w": 4,
+      "pld": 8,
+      "w": 3,
       "d": 2,
-      "l": 4,
-      "pts": 14,
+      "l": 3,
+      "pts": 11,
       "gd": -4,
       "rank": 8,
       "left": 6,
@@ -239,12 +239,12 @@
     },
     {
       "name": "Hankin",
-      "pld": 10,
-      "w": 7,
+      "pld": 9,
+      "w": 6,
       "d": 1,
       "l": 2,
-      "pts": 22,
-      "gd": 8,
+      "pts": 19,
+      "gd": 6,
       "rank": 9,
       "left": 5,
       "win_pct": 4.54,
@@ -253,11 +253,11 @@
     },
     {
       "name": "Varcoe",
-      "pld": 11,
+      "pld": 10,
       "w": 4,
-      "d": 5,
+      "d": 4,
       "l": 2,
-      "pts": 17,
+      "pts": 16,
       "gd": 12,
       "rank": 10,
       "left": 5,
@@ -267,12 +267,12 @@
     },
     {
       "name": "Crowle",
-      "pld": 7,
-      "w": 1,
+      "pld": 6,
+      "w": 0,
       "d": 3,
       "l": 3,
-      "pts": 6,
-      "gd": -7,
+      "pts": 3,
+      "gd": -8,
       "rank": 11,
       "left": 5,
       "win_pct": 3.42,
@@ -280,73 +280,48 @@
       "move_note": "Belgium 0-0 Iran, still no wins"
     }
   ],
-  "recent_results": [
+  "recent_results": [],
+  "upcoming_fixtures": [
     {
-      "date": "26 Jun",
       "aest_time": "Fri 6:00am",
-      "group": "Group E",
+      "group": "E",
       "home": "Ecuador",
       "home_owner": "Crowle",
       "away": "Germany",
       "away_owner": "P Rankin",
-      "home_score": 2,
-      "away_score": 1,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "SHOCK RESULT",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-06-25T20:00:00Z"
+      "status": "TIMED",
+      "context": ""
     },
     {
-      "date": "26 Jun",
       "aest_time": "Fri 6:00am",
-      "group": "Group E",
+      "group": "E",
       "home": "Curaçao",
       "home_owner": "Kenna",
       "away": "Ivory Coast",
       "away_owner": "Hankin",
-      "home_score": 0,
-      "away_score": 2,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-06-25T20:00:00Z"
+      "status": "TIMED",
+      "context": ""
     },
     {
-      "date": "26 Jun",
       "aest_time": "Fri 9:00am",
-      "group": "Group F",
+      "group": "F",
       "home": "Tunisia",
       "home_owner": "T Rankin",
       "away": "Netherlands",
       "away_owner": "T Rankin",
-      "home_score": 1,
-      "away_score": 3,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-06-25T23:00:00Z"
+      "status": "TIMED",
+      "context": ""
     },
     {
-      "date": "26 Jun",
       "aest_time": "Fri 9:00am",
-      "group": "Group F",
+      "group": "F",
       "home": "Japan",
       "home_owner": "Varcoe",
       "away": "Sweden",
       "away_owner": "P Rankin",
-      "home_score": 1,
-      "away_score": 1,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-06-25T23:00:00Z"
-    }
-  ],
-  "upcoming_fixtures": [
+      "status": "TIMED",
+      "context": ""
+    },
     {
       "aest_time": "Fri 12:00pm",
       "group": "D",
@@ -537,19 +512,19 @@
     {
       "team": "Brazil",
       "owner": "Morris",
-      "prev": "$15.5",
+      "prev": "$16.0",
       "now": "$16.0",
       "now_decimal": 16.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Netherlands",
       "owner": "T Rankin",
-      "prev": "$17.0",
+      "prev": "$17.5",
       "now": "$17.5",
       "now_decimal": 17.5,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -573,10 +548,10 @@
     {
       "team": "Japan",
       "owner": "Varcoe",
-      "prev": "$55.0",
+      "prev": "$51.0",
       "now": "$51.0",
       "now_decimal": 51.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Unibet"
     },
     {
@@ -708,10 +683,10 @@
     {
       "team": "Egypt",
       "owner": "Kenna",
-      "prev": "$470.0",
+      "prev": "$500.0",
       "now": "$500.0",
       "now_decimal": 500.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -780,10 +755,10 @@
     {
       "team": "Iran",
       "owner": "Morris",
-      "prev": "$751.0",
+      "prev": "$1000.0",
       "now": "$1000.0",
       "now_decimal": 1000.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
