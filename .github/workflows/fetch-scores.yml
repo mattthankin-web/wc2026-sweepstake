@@ -7,6 +7,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'data/data.json'
+      - '.github/workflows/**'
   workflow_dispatch:
 
 jobs:
@@ -18,6 +19,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -41,6 +45,8 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to data.json"
           else
+            git pull --rebase origin main
             git commit -m "chore: scores + odds $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
+            echo "Pushed updated data.json"
           fi
