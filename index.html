@@ -689,210 +689,275 @@
     html { font-size: 16px; }
   }
 
+  
+
   /* ── Knockout Bracket ─────────────────────────────────────────────────────── */
-  .ko-stage-block {
-    margin-bottom: 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .ko-stage-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px 8px;
-    background: var(--navy);
-    position: sticky;
-    top: 97px;
-    z-index: 10;
-  }
-  .ko-stage-title {
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--white);
-  }
-  .ko-stage-badge {
-    font-size: 0.6rem;
-    font-weight: 700;
-    padding: 2px 7px;
-    border-radius: 3px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-  }
-  .ko-badge-r32 { background: #1e3a5f; color: #93c5fd; }
-  .ko-badge-r16 { background: #2e1a5f; color: #c4b5fd; }
-  .ko-badge-qf  { background: #3b1f1a; color: #fca5a5; }
-  .ko-badge-sf  { background: #1a2e1f; color: #86efac; }
-  .ko-badge-f   { background: #3b2f0a; color: #fcd34d; border: 1px solid #d97706; }
 
-  .ko-match-card {
-    display: grid;
-    grid-template-columns: 56px 1fr;
-    border-bottom: 1px solid var(--border);
-    transition: background 0.1s;
-    position: relative;
-  }
-  .ko-match-card:last-child { border-bottom: none; }
-  .ko-match-card:active { background: #f8fafc; }
+  /* ── Shared ── */
+  #panel-knockout { background: var(--navy); }
 
-  .ko-match-time {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 4px;
-    background: var(--light);
-    border-right: 1px solid var(--border);
+  .ko-participants-strip {
+    background: #111827;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 10px 12px 8px;
+  }
+  .ko-participants-title {
     font-size: 0.62rem;
-    font-weight: 700;
-    color: var(--slate);
-    text-align: center;
-    line-height: 1.3;
-    gap: 2px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: var(--amber);
+    text-transform: uppercase;
+    margin-bottom: 6px;
   }
-  .ko-match-time.live-time { color: var(--red); background: #fff1f1; }
-  .ko-match-time.done-time { color: var(--navy); }
-
-  .ko-teams {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8px 12px;
+  .ko-p-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 10px;
   }
-
-  .ko-team-row {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 4px 0;
-  }
-  .ko-team-row + .ko-team-row {
-    border-top: 1px dashed var(--border);
-    margin-top: 2px;
-    padding-top: 6px;
-  }
-
-  .ko-team-name {
-    flex: 1;
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: var(--navy);
-  }
-  .ko-team-name.tbd { color: #94A3B8; font-weight: 500; font-style: italic; }
-  .ko-team-name.eliminated { color: #94A3B8; }
-
-  .ko-owner-odds {
+  .ko-p-row {
     display: flex;
     align-items: center;
     gap: 5px;
+    padding: 3px 0;
   }
-  .ko-owner {
-    font-size: 0.65rem;
-    font-weight: 700;
-  }
-  .ko-odds-pill {
-    font-size: 0.6rem;
-    font-weight: 800;
-    padding: 1px 5px;
-    border-radius: 10px;
-    background: var(--light);
-    color: var(--slate);
+  .ko-p-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .ko-p-name { font-size: 0.72rem; font-weight: 700; color: #e2e8f0; flex: 1; }
+  .ko-p-name.out { opacity: 0.38; text-decoration: line-through; }
+  .ko-p-team { font-size: 0.62rem; color: #64748b; margin-right: 3px; }
+  .ko-p-odds {
+    font-size: 0.62rem; font-weight: 800;
+    padding: 1px 5px; border-radius: 8px;
     white-space: nowrap;
   }
-  .ko-odds-pill.fav { background: #DCFCE7; color: #166534; }
-  .ko-odds-pill.contender { background: #EFF6FF; color: #1D4ED8; }
-  .ko-odds-pill.outsider { background: #FEF9C3; color: #92400E; }
-
-  .ko-score {
-    font-size: 1rem;
-    font-weight: 900;
-    color: var(--navy);
-    min-width: 18px;
-    text-align: center;
-  }
-  .ko-score.winner { color: var(--green); }
-  .ko-score.loser  { color: #94A3B8; }
-  .ko-score.live   { color: var(--red); }
-  .ko-score.dash   { color: #CBD5E1; font-weight: 400; }
-
-  .ko-score-note {
-    font-size: 0.58rem;
-    color: var(--slate);
-    text-align: center;
-    padding-bottom: 3px;
-  }
-
-  .ko-left-bar {
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 3px;
-  }
-
-  .ko-participants-bar {
-    background: var(--navy);
-    padding: 12px 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-  .ko-participants-bar-title {
-    font-size: 0.62rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    color: var(--amber);
-    text-transform: uppercase;
-    margin-bottom: 8px;
-  }
-  .ko-participant-row {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
-  }
-  .ko-participant-row:last-child { border-bottom: none; }
-  .ko-participant-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .ko-participant-name {
-    flex: 1;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--white);
-  }
-  .ko-participant-team {
-    font-size: 0.68rem;
-    color: #94A3B8;
-  }
-  .ko-participant-odds-big {
-    font-size: 0.72rem;
-    font-weight: 800;
-    padding: 2px 7px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.08);
-    color: #94A3B8;
-  }
-  .ko-participant-odds-big.alive { color: var(--amber); background: rgba(217,119,6,0.18); }
-  .ko-participant-odds-big.out { text-decoration: line-through; opacity: 0.4; }
+  .ko-p-odds.fav   { background: rgba(34,197,94,0.18); color: #4ade80; }
+  .ko-p-odds.mid   { background: rgba(59,130,246,0.18); color: #93c5fd; }
+  .ko-p-odds.long  { background: rgba(251,191,36,0.18); color: #fbbf24; }
+  .ko-p-odds.out-o { background: rgba(100,116,139,0.15); color: #64748b; opacity: 0.5; }
+  .ko-status-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .ko-status-dot.alive { background: #22c55e; }
+  .ko-status-dot.out   { background: #ef4444; }
 
   .ko-refresh-note {
-    font-size: 0.65rem;
-    color: var(--slate);
-    text-align: center;
-    padding: 10px 16px 14px;
+    font-size: 0.6rem; color: #475569;
+    text-align: center; padding: 8px 0 10px;
   }
 
-  .ko-final-banner {
-    background: linear-gradient(135deg, var(--navy), #1a2040);
-    border: 1px solid var(--amber);
-    border-radius: 8px;
-    margin: 12px 16px;
-    padding: 16px;
-    text-align: center;
+  /* ─── DESKTOP: horizontal bracket tree ────────────────────────────────── */
+  .ko-desktop {
+    display: none; /* shown via media query */
+    padding: 12px 10px 6px;
+    overflow-x: auto;
   }
-  .ko-trophy { font-size: 2rem; margin-bottom: 6px; }
-  .ko-finalist-name { font-size: 1.1rem; font-weight: 900; color: var(--amber); }
-  .ko-finalist-owner { font-size: 0.75rem; color: #94A3B8; margin-top: 3px; }
+
+  .ko-bracket-wrap {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    min-width: 680px;
+  }
+
+  .ko-round-col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+  }
+  .ko-round-label {
+    text-align: center;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 2px 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    margin-bottom: 6px;
+  }
+  .b-r32 { color: #93c5fd; }
+  .b-r16 { color: #c4b5fd; }
+  .b-qf  { color: #f9a8d4; }
+  .b-sf  { color: #86efac; }
+  .b-f   { color: var(--amber); }
+
+  .ko-round-matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    gap: 4px;
+    padding: 0 3px;
+  }
+
+  .ko-card {
+    background: #1e293b;
+    border: 1px solid #2d3748;
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 58px;
+    max-height: 96px;
+    transition: border-color .15s;
+    position: relative;
+  }
+  .ko-card:hover { border-color: rgba(217,119,6,0.4); }
+  .ko-card.r-done  { border-left: 2px solid #22c55e; }
+  .ko-card.r-live  { border-left: 2px solid #ef4444; }
+  .ko-card.r-soon  { border-left: 2px solid #3b82f6; }
+  .ko-card.r-tbd   { border-left: 2px solid #2d3748; }
+
+  .ko-row {
+    display: flex; align-items: center;
+    padding: 5px 6px; gap: 4px;
+  }
+  .ko-row + .ko-row { border-top: 1px solid #2d3748; }
+  .ko-row.win { background: rgba(34,197,94,0.08); }
+  .ko-row.loss { opacity: 0.35; }
+  .ko-row.tbd { opacity: 0.28; }
+
+  .ko-team { flex: 1; min-width: 0; }
+  .ko-tname {
+    font-size: 0.7rem; font-weight: 700;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    color: #f1f5f9;
+  }
+  .ko-tname.tbd-name { color: #475569; font-style: italic; font-weight: 400; }
+  .ko-own-line {
+    font-size: 0.56rem; font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    margin-top: 1px;
+  }
+  .ko-sc {
+    font-size: 0.85rem; font-weight: 800;
+    min-width: 13px; text-align: center; flex-shrink: 0;
+  }
+  .ko-sc.win-s { color: #4ade80; }
+  .ko-sc.loss-s { color: #64748b; }
+  .ko-sc.live-s { color: #ef4444; }
+  .ko-sc.tbd-s { color: #334155; font-weight: 300; }
+  .ko-date { font-size: 0.52rem; color: #475569; text-align: center; padding: 2px 0; }
+
+  /* Champion column */
+  .ko-champ-col {
+    flex: 0 0 90px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 4px;
+  }
+  .ko-trophy-icon { font-size: 22px; margin-bottom: 4px; }
+  .ko-champ-label {
+    font-size: 0.52rem; font-weight: 800;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--amber); margin-bottom: 8px;
+  }
+  .ko-champ-card {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border: 1.5px solid var(--amber);
+    border-radius: 8px;
+    padding: 10px 6px;
+    text-align: center;
+    width: 82px;
+    box-shadow: 0 0 16px rgba(217,119,6,0.2);
+  }
+  .ko-champ-name { font-size: 0.7rem; font-weight: 800; color: var(--amber); }
+  .ko-champ-owner { font-size: 0.55rem; color: #64748b; margin-top: 2px; }
+  .ko-champ-date { font-size: 0.52rem; color: #475569; margin-top: 6px; }
+
+  .ko-gap { width: 10px; flex-shrink: 0; }
+
+  .ko-legend {
+    display: flex; gap: 12px; justify-content: center;
+    padding: 8px 10px 4px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    margin-top: 4px;
+  }
+  .ko-li { display: flex; align-items: center; gap: 4px; font-size: 0.58rem; color: #475569; }
+  .ko-ld { width: 7px; height: 7px; border-radius: 1px; }
+
+  /* ─── MOBILE: vertical stage list ──────────────────────────────────────── */
+  .ko-mobile {
+    display: block; /* default — overridden by media query */
+  }
+
+  .ko-stage-block { border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .ko-stage-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 9px 14px 7px;
+    background: #111827;
+    position: sticky; top: 97px; z-index: 9;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .ko-stage-name {
+    font-size: 0.68rem; font-weight: 800;
+    letter-spacing: 0.07em; text-transform: uppercase; color: #f1f5f9;
+  }
+  .ko-stage-pill {
+    font-size: 0.58rem; font-weight: 700;
+    padding: 2px 6px; border-radius: 3px;
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .sp-r32 { background: #1e3a5f; color: #93c5fd; }
+  .sp-r16 { background: #2e1a5f; color: #c4b5fd; }
+  .sp-qf  { background: #3b1220; color: #f9a8d4; }
+  .sp-sf  { background: #14291a; color: #86efac; }
+  .sp-f   { background: #3b2a06; color: #fbbf24; border: 1px solid rgba(217,119,6,0.3); }
+
+  .ko-mob-match {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    position: relative;
+  }
+  .ko-mob-time {
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 8px 4px;
+    background: rgba(255,255,255,0.03);
+    border-right: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.58rem; font-weight: 700;
+    color: #64748b; text-align: center; line-height: 1.3;
+    gap: 1px;
+  }
+  .ko-mob-time.live-t { color: #ef4444; background: rgba(239,68,68,0.06); }
+  .ko-mob-time.done-t { color: #94a3b8; }
+  .ko-mob-teams { padding: 8px 12px; }
+  .ko-mob-team {
+    display: flex; align-items: center; gap: 7px; padding: 3px 0;
+  }
+  .ko-mob-team + .ko-mob-team {
+    border-top: 1px dashed rgba(255,255,255,0.07);
+    margin-top: 2px; padding-top: 5px;
+  }
+  .ko-mob-tname {
+    flex: 1; font-size: 0.82rem; font-weight: 700; color: #f1f5f9;
+  }
+  .ko-mob-tname.tbd-m { color: #334155; font-weight: 400; font-style: italic; }
+  .ko-mob-tname.elim  { color: #475569; }
+  .ko-mob-owner { font-size: 0.62rem; font-weight: 600; }
+  .ko-mob-odds { font-size: 0.6rem; font-weight: 700; padding: 1px 5px; border-radius: 8px; }
+  .ko-mob-sc {
+    font-size: 0.95rem; font-weight: 800;
+    min-width: 16px; text-align: center;
+  }
+  .ko-mob-sc.w { color: #4ade80; }
+  .ko-mob-sc.l { color: #475569; }
+  .ko-mob-sc.lv { color: #ef4444; }
+  .ko-mob-sc.d { color: #334155; font-weight: 300; font-size: 0.8rem; }
+  .ko-mob-lbar { position: absolute; left:0; top:0; bottom:0; width: 2px; }
+
+  /* Champion mobile */
+  .ko-mob-champ {
+    text-align: center;
+    padding: 20px 16px;
+    border-top: 1px solid rgba(217,119,6,0.2);
+  }
+
+  @media (min-width: 640px) {
+    .ko-desktop { display: block; }
+    .ko-mobile  { display: none; }
+    .ko-p-grid  { grid-template-columns: repeat(3, 1fr); }
+  }
 
 </style>
 </head>
@@ -1905,194 +1970,304 @@ function triviaReset() {
 
 
 
-// ── Knockout Bracket ──────────────────────────────────────────────────────────
+
+
+// ── Knockout Bracket ─────────────────────────────────────────────────────────
+
+const STAGE_DISPLAY = {
+  'ROUND_OF_32': { label: 'R32', full: 'Round of 32',      pillCls: 'sp-r32', colCls: 'b-r32', cardCls: 'b-r32' },
+  'LAST_16':     { label: 'R16', full: 'Round of 16',      pillCls: 'sp-r16', colCls: 'b-r16', cardCls: 'b-r16' },
+  'QUARTER_FINALS':{ label: 'QF', full: 'Quarter-Finals',  pillCls: 'sp-qf',  colCls: 'b-qf',  cardCls: 'b-qf'  },
+  'SEMI_FINALS': { label: 'SF', full: 'Semi-Finals',       pillCls: 'sp-sf',  colCls: 'b-sf',  cardCls: 'b-sf'  },
+  'FINAL':       { label: 'F',  full: 'Final',             pillCls: 'sp-f',   colCls: 'b-f',   cardCls: 'b-f'   },
+};
+const STAGE_ORDER_KO = ['ROUND_OF_32','LAST_16','QUARTER_FINALS','SEMI_FINALS','FINAL'];
+
 function renderKnockout(knockoutData, participants, odds) {
   const el = document.getElementById('knockout-content');
   if (!el) return;
 
-  if (!knockoutData || !knockoutData.length) {
-    el.innerHTML = '<div class="loading" style="padding:32px 16px;color:var(--slate);">Knockout stage has not started yet — check back once the group stage is complete.</div>';
-    return;
-  }
-
-  // Build best odds map: team -> decimal odds
+  // Build odds lookup: team -> {now, decimal}
   const oddsMap = {};
-  if (odds) {
-    odds.forEach(o => { oddsMap[o.team] = { now: o.now, decimal: o.now_decimal, owner: o.owner }; });
-  }
+  (odds || []).forEach(o => { oddsMap[o.team] = { now: o.now, decimal: o.now_decimal }; });
 
-  // Build a per-participant "best remaining team + odds" map
-  // Best = lowest decimal odds (most likely to win)
-  const participantBest = {}; // owner -> { team, decimal, display }
-  Object.entries(oddsMap).forEach(([team, data]) => {
-    const owner = data.owner;
-    if (!owner) return;
-    if (!participantBest[owner] || data.decimal < participantBest[owner].decimal) {
-      participantBest[owner] = { team, decimal: data.decimal, display: data.now };
-    }
+  // Determine which teams are still in (have an odds entry = still alive in market)
+  // Fallback: treat any team with odds as alive
+  const aliveTeams = new Set(Object.keys(oddsMap));
+
+  // Per-participant: best remaining team by lowest decimal odds
+  const partBest = {}; // name -> { team, decimal, display }
+  const pnames = Object.keys(participants || {});
+  pnames.forEach(name => {
+    const teams = (participants[name] || {}).teams || [];
+    let best = null;
+    teams.forEach(t => {
+      const o = oddsMap[t];
+      if (o && (!best || o.decimal < best.decimal)) {
+        best = { team: t, decimal: o.decimal, display: o.now };
+      }
+    });
+    if (best) partBest[name] = best;
   });
 
-  // Build odds pill class based on decimal
   function oddsPillClass(decimal) {
+    if (!decimal) return 'out-o';
+    if (decimal <= 6)  return 'fav';
+    if (decimal <= 20) return 'mid';
+    return 'long';
+  }
+  function oddsMobClass(decimal) {
     if (!decimal) return '';
-    if (decimal <= 5) return 'fav';
-    if (decimal <= 15) return 'contender';
-    return 'outsider';
+    if (decimal <= 6)  return 'fav';
+    if (decimal <= 20) return 'mid';
+    return 'long';
   }
 
-  const stageBadgeClass = {
-    'ROUND_OF_32': 'ko-badge-r32',
-    'LAST_16': 'ko-badge-r16',
-    'QUARTER_FINALS': 'ko-badge-qf',
-    'SEMI_FINALS': 'ko-badge-sf',
-    'FINAL': 'ko-badge-f',
-  };
-  const stageFullName = {
-    'ROUND_OF_32': 'Round of 32',
-    'LAST_16': 'Round of 16',
-    'QUARTER_FINALS': 'Quarter-Finals',
-    'SEMI_FINALS': 'Semi-Finals',
-    'FINAL': '🏆 Final',
-  };
-
-  let html = '';
-
-  // ── Participants sidebar strip ──
-  html += '<div class="ko-participants-bar">';
-  html += '<div class="ko-participants-bar-title">🏅 Sweepstake Status</div>';
-
-  // Sort participants by best odds (alive first, then by decimal asc)
-  const allParticipants = Object.keys(participants || {});
-  const sorted = allParticipants.slice().sort((a, b) => {
-    const ao = participantBest[a]?.decimal || 9999;
-    const bo = participantBest[b]?.decimal || 9999;
+  // Sort participants: alive (by decimal asc) then eliminated
+  const sortedP = pnames.slice().sort((a, b) => {
+    const ao = partBest[a]?.decimal || 99999;
+    const bo = partBest[b]?.decimal || 99999;
     return ao - bo;
   });
 
-  sorted.forEach(name => {
-    const color = (participants[name] || {}).color || '#64748B';
-    const best = participantBest[name];
+  // ── Participant strip (shared top, both views) ──────────────────────────
+  let pHtml = '<div class="ko-participants-strip">';
+  pHtml += '<div class="ko-participants-title">🏅 Sweepstake — Best Odds</div>';
+  pHtml += '<div class="ko-p-grid">';
+  sortedP.forEach(name => {
+    const color = (participants[name] || {}).color || '#64748b';
+    const best = partBest[name];
     const isAlive = !!best;
-    const oddsDisplay = best ? best.display : '—';
-    const teamDisplay = best ? best.team : 'All teams eliminated';
-    html += `
-    <div class="ko-participant-row">
-      <div class="ko-participant-dot" style="background:${color};${isAlive ? '' : 'opacity:0.3;'}"></div>
-      <div class="ko-participant-name" style="${isAlive ? '' : 'opacity:0.4;'}">${esc(name)}</div>
-      <div class="ko-participant-team">${esc(teamDisplay)}</div>
-      <div class="ko-participant-odds-big ${isAlive ? 'alive' : 'out'}">${esc(oddsDisplay)}</div>
+    const pillCls = isAlive ? oddsPillClass(best.decimal) : 'out-o';
+    const oddsStr = isAlive ? best.display : '—';
+    const teamStr = isAlive ? best.team : 'Eliminated';
+    pHtml += `
+    <div class="ko-p-row">
+      <div class="ko-status-dot ${isAlive ? 'alive' : 'out'}"></div>
+      <div class="ko-p-dot" style="background:${color};${isAlive?'':'opacity:0.3;'}"></div>
+      <div class="ko-p-name${isAlive ? '' : ' out'}">${esc(name)}</div>
+      <div class="ko-p-team">${esc(teamStr)}</div>
+      <div class="ko-p-odds ${pillCls}">${esc(oddsStr)}</div>
     </div>`;
   });
-  html += '</div>';
+  pHtml += '</div></div>';
 
-  // ── Stage blocks ──
-  knockoutData.forEach(stageData => {
-    const { stage, label, matches } = stageData;
-    const badgeClass = stageBadgeClass[stage] || 'ko-badge-r32';
-    const fullName = stageFullName[stage] || label;
-    const matchCount = matches.length;
+  if (!knockoutData || !knockoutData.length) {
+    el.innerHTML = pHtml + '<div style="text-align:center;padding:32px 16px;color:#475569;font-size:0.85rem;">Knockout bracket will appear here once the Round of 32 draw is confirmed.</div>';
+    return;
+  }
 
-    html += `<div class="ko-stage-block">`;
-    html += `<div class="ko-stage-header">
-      <span class="ko-stage-title">${esc(fullName)}</span>
-      <span class="ko-stage-badge ${badgeClass}">${esc(label)} · ${matchCount} matches</span>
+  // Index stages
+  const stageMap = {};
+  knockoutData.forEach(s => { stageMap[s.stage] = s.matches; });
+  const activeStages = STAGE_ORDER_KO.filter(s => stageMap[s]);
+
+  // ── DESKTOP: horizontal bracket ──────────────────────────────────────────
+  // Split stages: left half fanning inward, right half fanning inward, meet at Final
+  // For N stages (excl Final): left = first ceil(N/2), right = remaining (mirror)
+  const nonFinal = activeStages.filter(s => s !== 'FINAL');
+  const hasF = !!stageMap['FINAL'];
+  const leftStages  = nonFinal.slice(0, Math.ceil(nonFinal.length / 2));
+  const rightStages = nonFinal.slice(Math.ceil(nonFinal.length / 2)).reverse();
+
+  function matchesHtml(matches, stageKey, side) {
+    // For left half, show first half of matches; right half show second half
+    const total = matches.length;
+    const half = Math.ceil(total / 2);
+    const subset = side === 'left' ? matches.slice(0, half) : matches.slice(half);
+    let h = '';
+    subset.forEach(m => {
+      h += cardHtml(m);
+    });
+    return h;
+  }
+
+  function cardHtml(m) {
+    const isDone = m.status === 'FINISHED';
+    const isLive = m.status === 'LIVE';
+    const isPending = !isDone && !isLive;
+    const homeWon = isDone && m.winner === 'home';
+    const awayWon = isDone && m.winner === 'away';
+    const homeTbd = !m.home;
+    const awayTbd = !m.away;
+    const homeOwner = m.home_owner;
+    const awayOwner = m.away_owner;
+    const homeColor = homeOwner ? ((participants[homeOwner]||{}).color||'#64748b') : '#64748b';
+    const awayColor = awayOwner ? ((participants[awayOwner]||{}).color||'#64748b') : '#64748b';
+    const cardCls = isDone ? 'r-done' : isLive ? 'r-live' : (m.home ? 'r-soon' : 'r-tbd');
+
+    const hSc = (m.home_score !== null && m.home_score !== undefined) ? m.home_score : '–';
+    const aSc = (m.away_score !== null && m.away_score !== undefined) ? m.away_score : '–';
+    const hScCls = isLive ? 'live-s' : homeWon ? 'win-s' : awayWon ? 'loss-s' : 'tbd-s';
+    const aScCls = isLive ? 'live-s' : awayWon ? 'win-s' : homeWon ? 'loss-s' : 'tbd-s';
+
+    function rowHtml(team, owner, ownerColor, score, scoreCls, won, lost, isTbd) {
+      const rowCls = isTbd ? 'tbd' : won ? 'win' : lost ? 'loss' : '';
+      const nameCls = isTbd ? 'tbd-name' : '';
+      const nameStr = isTbd ? 'TBD' : esc(team);
+      const ownerStr = owner ? `<div class="ko-own-line" style="color:${ownerColor};">${esc(owner)}</div>` : '';
+      return `<div class="ko-row ${rowCls}">
+        <div class="ko-team"><div class="ko-tname ${nameCls}">${nameStr}</div>${ownerStr}</div>
+        <div class="ko-sc ${scoreCls}">${score}</div>
+      </div>`;
+    }
+
+    const dateStr = m.date_short || '';
+    return `<div class="ko-card ${cardCls}">
+      ${rowHtml(m.home, homeOwner, homeColor, hSc, hScCls, homeWon, awayWon, homeTbd)}
+      ${rowHtml(m.away, awayOwner, awayColor, aSc, aScCls, awayWon, homeWon, awayTbd)}
+      ${dateStr ? `<div class="ko-date">${esc(dateStr)}</div>` : ''}
     </div>`;
+  }
+
+  function champCard() {
+    const fMatches = stageMap['FINAL'] || [];
+    const fm = fMatches[0];
+    const isDone = fm && fm.status === 'FINISHED';
+    const champTeam = isDone ? (fm.winner === 'home' ? fm.home : fm.away) : null;
+    const champOwner = isDone ? (fm.winner === 'home' ? fm.home_owner : fm.away_owner) : null;
+    const champColor = champOwner ? ((participants[champOwner]||{}).color||'#D97706') : '#D97706';
+    const dateStr = fm ? fm.date_short : '19 Jul';
+    if (champTeam) {
+      return `<div class="ko-champ-card">
+        <div style="font-size:1.4rem;margin-bottom:4px;">🏆</div>
+        <div class="ko-champ-name" style="color:${champColor};">${esc(champTeam)}</div>
+        <div class="ko-champ-owner" style="color:${champColor};">${esc(champOwner)}</div>
+      </div>`;
+    }
+    return `<div class="ko-champ-card">
+      <div style="font-size:1rem;margin-bottom:4px;color:#334155;font-style:italic;">TBD</div>
+      <div class="ko-champ-owner">${dateStr ? esc(dateStr) : 'Final'}</div>
+    </div>`;
+  }
+
+  // Build columns
+  let desktopHtml = '<div class="ko-desktop"><div class="ko-bracket-wrap">';
+
+  // Left columns
+  leftStages.forEach((stage, i) => {
+    const sd = STAGE_DISPLAY[stage] || { full: stage, label: stage, colCls: '' };
+    desktopHtml += `<div class="ko-round-col">
+      <div class="ko-round-label ${sd.colCls}">${sd.full}</div>
+      <div class="ko-round-matches">${matchesHtml(stageMap[stage], stage, 'left')}</div>
+    </div><div class="ko-gap"></div>`;
+  });
+
+  // Champion column
+  desktopHtml += `<div class="ko-champ-col">
+    <div class="ko-trophy-icon">🏆</div>
+    <div class="ko-champ-label">Champion</div>
+    ${champCard()}
+    <div class="ko-champ-date">Jul 19 · MetLife</div>
+  </div>`;
+
+  // Right columns (reversed so outermost round is on far right)
+  rightStages.forEach((stage, i) => {
+    const sd = STAGE_DISPLAY[stage] || { full: stage, label: stage, colCls: '' };
+    desktopHtml += `<div class="ko-gap"></div><div class="ko-round-col">
+      <div class="ko-round-label ${sd.colCls}">${sd.full}</div>
+      <div class="ko-round-matches">${matchesHtml(stageMap[stage], stage, 'right')}</div>
+    </div>`;
+  });
+
+  desktopHtml += '</div>'; // bracket-wrap
+
+  // Legend
+  desktopHtml += `<div class="ko-legend">
+    <div class="ko-li"><div class="ko-ld" style="border-left:2px solid #22c55e;background:rgba(34,197,94,0.1);"></div> Result</div>
+    <div class="ko-li"><div class="ko-ld" style="border-left:2px solid #3b82f6;background:rgba(59,130,246,0.1);"></div> Upcoming</div>
+    <div class="ko-li" style="color:#334155;">— TBD</div>
+  </div></div>`; // end ko-desktop
+
+  // ── MOBILE: vertical list ──────────────────────────────────────────────────
+  let mobileHtml = '<div class="ko-mobile">';
+
+  activeStages.forEach(stage => {
+    const sd = STAGE_DISPLAY[stage] || { full: stage, label: stage, pillCls: 'sp-r32' };
+    const matches = stageMap[stage] || [];
+    mobileHtml += `<div class="ko-stage-block">
+      <div class="ko-stage-header">
+        <span class="ko-stage-name">${esc(sd.full)}</span>
+        <span class="ko-stage-pill ${sd.pillCls}">${esc(sd.label)}</span>
+      </div>`;
 
     matches.forEach(m => {
-      const isLive = m.status === 'LIVE';
       const isDone = m.status === 'FINISHED';
-      const isPending = !isLive && !isDone;
-
-      const timeClass = isLive ? 'live-time' : isDone ? 'done-time' : '';
-      const timeLabel = isLive ? '🔴 LIVE' : (m.date_short || '—');
-      const timeSubLabel = isLive ? '' : (m.date_aest || '');
-
-      // Determine winner for styling
+      const isLive = m.status === 'LIVE';
       const homeWon = isDone && m.winner === 'home';
       const awayWon = isDone && m.winner === 'away';
-
-      // Home team
-      const homeDisplay = m.home || null;
-      const homeTbd = !homeDisplay;
+      const homeTbd = !m.home;
+      const awayTbd = !m.away;
       const homeOwner = m.home_owner;
-      const homeColor = homeOwner ? ((participants[homeOwner] || {}).color || '#64748B') : '#64748B';
-      const homeOdds = homeDisplay ? oddsMap[homeDisplay] : null;
-      const homeNameClass = homeTbd ? 'tbd' : (isDone && !homeWon ? 'eliminated' : '');
-
-      // Away team
-      const awayDisplay = m.away || null;
-      const awayTbd = !awayDisplay;
       const awayOwner = m.away_owner;
-      const awayColor = awayOwner ? ((participants[awayOwner] || {}).color || '#64748B') : '#64748B';
-      const awayOdds = awayDisplay ? oddsMap[awayDisplay] : null;
-      const awayNameClass = awayTbd ? 'tbd' : (isDone && !awayWon ? 'eliminated' : '');
+      const homeColor = homeOwner ? ((participants[homeOwner]||{}).color||'#64748b') : '#64748b';
+      const awayColor = awayOwner ? ((participants[awayOwner]||{}).color||'#64748b') : '#64748b';
+      const lbarColor = homeOwner ? homeColor : '#2d3748';
 
-      // Scores
-      const homeScoreClass = isLive ? 'live' : homeWon ? 'winner' : awayWon ? 'loser' : 'dash';
-      const awayScoreClass = isLive ? 'live' : awayWon ? 'winner' : homeWon ? 'loser' : 'dash';
-      const homeScoreStr = (m.home_score !== null && m.home_score !== undefined) ? m.home_score : '–';
-      const awayScoreStr = (m.away_score !== null && m.away_score !== undefined) ? m.away_score : '–';
+      const hSc = (m.home_score !== null && m.home_score !== undefined) ? m.home_score : '–';
+      const aSc = (m.away_score !== null && m.away_score !== undefined) ? m.away_score : '–';
+      const hScCls = isLive ? 'lv' : homeWon ? 'w' : awayWon ? 'l' : 'd';
+      const aScCls = isLive ? 'lv' : awayWon ? 'w' : homeWon ? 'l' : 'd';
 
-      // Left bar color = home owner color
-      const barColor = homeOwner ? homeColor : '#E2E8F0';
+      const timeLabel = isLive ? '🔴 LIVE' : (m.date_short || '—');
+      const timeSub   = isLive ? '' : (m.date_aest ? m.date_aest.replace(/^(Mon|Tue|Wed|Thu|Fri|Sat|Sun) /,'') : '');
+      const timeCls   = isLive ? 'live-t' : isDone ? 'done-t' : '';
 
-      // Owner + odds display
-      function ownerOddsHtml(owner, ownerColor, teamOdds, isWinner, isElim) {
-        if (!owner && !teamOdds) return '';
+      function mobTeam(team, owner, ownerColor, sc, scCls, won, lost, isTbd) {
+        const nameCls = isTbd ? 'tbd-m' : (isDone && !won ? 'elim' : '');
+        const ownerHtml = owner ? `<span class="ko-mob-owner" style="color:${ownerColor};">${esc(owner)}</span>` : '';
+        // Odds for this team
+        const teamOdds = team ? oddsMap[team] : null;
         let oddsHtml = '';
-        if (teamOdds) {
-          const pillClass = oddsPillClass(teamOdds.decimal);
-          oddsHtml = `<span class="ko-odds-pill ${pillClass}">${esc(teamOdds.now)}</span>`;
+        if (teamOdds && !isDone) {
+          const oc = oddsMobClass(teamOdds.decimal);
+          oddsHtml = `<span class="ko-mob-odds ${oc}" style="${oc==='fav'?'background:rgba(34,197,94,0.18);color:#4ade80;':oc==='mid'?'background:rgba(59,130,246,0.18);color:#93c5fd;':'background:rgba(251,191,36,0.18);color:#fbbf24;'}">${esc(teamOdds.now)}</span>`;
         }
-        const ownerHtml = owner ? `<span class="ko-owner" style="color:${ownerColor};">${esc(owner)}</span>` : '';
-        return `<div class="ko-owner-odds">${ownerHtml}${oddsHtml}</div>`;
+        return `<div class="ko-mob-team">
+          <div class="ko-mob-tname ${nameCls}">${isTbd ? 'TBD' : esc(team)}</div>
+          ${ownerHtml}${oddsHtml}
+          <div class="ko-mob-sc ${scCls}">${sc}</div>
+        </div>`;
       }
 
-      html += `
-      <div class="ko-match-card">
-        <div class="ko-left-bar" style="background:${barColor};"></div>
-        <div class="ko-match-time ${timeClass}">
+      mobileHtml += `<div class="ko-mob-match">
+        <div class="ko-mob-lbar" style="background:${lbarColor};"></div>
+        <div class="ko-mob-time ${timeCls}">
           <span>${esc(timeLabel)}</span>
-          ${timeSubLabel ? `<span style="font-weight:400;font-size:0.58rem;">${esc(timeSubLabel)}</span>` : ''}
+          ${timeSub ? `<span style="font-weight:400;">${esc(timeSub)}</span>` : ''}
         </div>
-        <div class="ko-teams">
-          <div class="ko-team-row">
-            <div class="ko-team-name ${homeNameClass}">${homeTbd ? 'TBD' : esc(homeDisplay)}</div>
-            ${ownerOddsHtml(homeOwner, homeColor, homeOdds, homeWon, isDone && !homeWon)}
-            <div class="ko-score ${homeScoreClass}">${homeScoreStr}</div>
-          </div>
-          ${m.score_note ? `<div class="ko-score-note">${esc(m.score_note)}</div>` : ''}
-          <div class="ko-team-row">
-            <div class="ko-team-name ${awayNameClass}">${awayTbd ? 'TBD' : esc(awayDisplay)}</div>
-            ${ownerOddsHtml(awayOwner, awayColor, awayOdds, awayWon, isDone && !awayWon)}
-            <div class="ko-score ${awayScoreClass}">${awayScoreStr}</div>
-          </div>
+        <div class="ko-mob-teams">
+          ${mobTeam(m.home, homeOwner, homeColor, hSc, hScCls, homeWon, awayWon, homeTbd)}
+          ${mobTeam(m.away, awayOwner, awayColor, aSc, aScCls, awayWon, homeWon, awayTbd)}
+          ${m.score_note ? `<div style="font-size:0.55rem;color:#475569;margin-top:2px;">${esc(m.score_note)}</div>` : ''}
         </div>
       </div>`;
     });
 
-    // If this is the Final and there's a winner, show champion banner
-    if (stage === 'FINAL' && matches.length === 1) {
-      const finalMatch = matches[0];
-      if (finalMatch.status === 'FINISHED' && finalMatch.winner) {
-        const champTeam = finalMatch.winner === 'home' ? finalMatch.home : finalMatch.away;
-        const champOwner = finalMatch.winner === 'home' ? finalMatch.home_owner : finalMatch.away_owner;
-        const champColor = champOwner ? ((participants[champOwner] || {}).color || '#D97706') : '#D97706';
-        html += `
-        <div class="ko-final-banner">
-          <div class="ko-trophy">🏆</div>
-          <div class="ko-finalist-name" style="color:${champColor};">${esc(champTeam)}</div>
-          <div class="ko-finalist-owner">Champion — owned by <strong style="color:${champColor};">${esc(champOwner)}</strong></div>
+    // Champion banner in Final section on mobile
+    if (stage === 'FINAL') {
+      const fMatches = stageMap['FINAL'] || [];
+      const fm = fMatches[0];
+      const isDone = fm && fm.status === 'FINISHED';
+      if (isDone && fm.winner) {
+        const champTeam  = fm.winner === 'home' ? fm.home  : fm.away;
+        const champOwner = fm.winner === 'home' ? fm.home_owner : fm.away_owner;
+        const champColor = champOwner ? ((participants[champOwner]||{}).color||'#D97706') : '#D97706';
+        mobileHtml += `<div class="ko-mob-champ">
+          <div style="font-size:2rem;margin-bottom:6px;">🏆</div>
+          <div style="font-size:1rem;font-weight:800;color:${champColor};">${esc(champTeam)}</div>
+          <div style="font-size:0.75rem;color:#64748b;margin-top:3px;">Champion · owned by <strong style="color:${champColor};">${esc(champOwner)}</strong></div>
         </div>`;
       }
     }
 
-    html += '</div>'; // end ko-stage-block
+    mobileHtml += '</div>'; // ko-stage-block
   });
 
-  html += `<div class="ko-refresh-note">Bracket updates every hour · Odds: best AU price · Times in AEST</div>`;
+  mobileHtml += '<div class="ko-refresh-note">Updates every 30 min · Odds: best AU price · Times in AEST</div>';
+  mobileHtml += '</div>'; // ko-mobile
 
-  el.innerHTML = html;
+  el.innerHTML = pHtml + desktopHtml + mobileHtml;
 }
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
