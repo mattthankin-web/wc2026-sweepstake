@@ -124,6 +124,14 @@ def format_date_short(utc_str):
     dt_aest = dt.astimezone(AEST)
     return dt_aest.strftime("%-d %b")
 
+def format_date_iso(utc_str):
+    """Format as 'YYYY-MM-DD' in AEST."""
+    if not utc_str:
+        return ""
+    dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
+    dt_aest = dt.astimezone(AEST)
+    return dt_aest.strftime("%Y-%m-%d")
+
 def build_standings(matches):
     """
     Build participant standings from match results.
@@ -332,6 +340,120 @@ def build_upcoming(matches):
     return upcoming
 
 
+# ── Knockout bracket builder ──────────────────────────────────────────────────
+# football-data.org stage names for WC2026 knockout rounds
+STAGE_ORDER = ["ROUND_OF_32", "LAST_16", "QUARTER_FINALS", "SEMI_FINALS", "FINAL"]
+STAGE_LABELS = {
+    "ROUND_OF_32": "R32",
+    "LAST_16": "R16",
+    "QUARTER_FINALS": "QF",
+    "SEMI_FINALS": "SF",
+    "FINAL": "F",
+}
+
+def build_knockout(matches):
+    """
+    Build knockout bracket data from all matches.
+    Returns a dict with stage data including results and placeholders.
+    Each match entry has:
+      id, stage, date_aest, date_iso, home, home_owner, home_score,
+      away, away_owner, away_score, status, winner, venue
+    """
+    ko_stages = {}
+    for stage in STAGE_ORDER:
+        ko_stages[stage] = []
+
+    for m in matches:
+        stage = m.get("stage", "")
+        if stage not in STAGE_ORDER:
+            continue
+
+        utc_str = m.get("utcDate", "")
+        home_name = m["homeTeam"].get("name") or m["homeTeam"].get("shortName") or ""
+        away_name = m["awayTeam"].get("name") or m["awayTeam"].get("shortName") or ""
+
+        # Placeholder teams appear as empty strings or None in the API
+        home_display = get_display_name(home_name) if home_name else None
+        away_display = get_display_name(away_name) if away_name else None
+        home_owner = get_owner(home_name) if home_name else None
+        away_owner = get_owner(away_name) if away_name else None
+
+        score = m.get("score", {})
+        hs = (score.get("fullTime") or {}).get("home")
+        as_ = (score.get("fullTime") or {}).get("away")
+
+        # Determine winner for finished matches
+        winner = None
+        if m["status"] == "FINISHED" and hs is not None and as_ is not None:
+            if hs > as_:
+                winner = "home"
+            elif as_ > hs:
+                winner = "away"
+            else:
+                # Check penalties/ET
+                penalties = score.get("penalties") or {}
+                ph = penalties.get("home")
+                pa = penalties.get("away")
+                if ph is not None and pa is not None:
+                    winner = "home" if ph > pa else "away"
+
+        # Score display: for ET/Penalties show ET score
+        et_score = score.get("extraTime") or {}
+        et_h = et_score.get("home")
+        et_a = et_score.get("away")
+        pen_score = score.get("penalties") or {}
+        pen_h = pen_score.get("home")
+        pen_a = pen_score.get("away")
+
+        score_note = ""
+        if pen_h is not None:
+            score_note = f"(pens {pen_h}–{pen_a})"
+        elif et_h is not None:
+            score_note = "(aet)"
+
+        status = m["status"]
+        # Normalise live statuses
+        if status in ("IN_PLAY", "PAUSED"):
+            status = "LIVE"
+
+        venue = m.get("venue", "") or ""
+
+        ko_stages[stage].append({
+            "id": m.get("id"),
+            "stage": stage,
+            "stage_label": STAGE_LABELS[stage],
+            "date_aest": format_aest(utc_str),
+            "date_short": format_date_short(utc_str),
+            "date_iso": format_date_iso(utc_str),
+            "home": home_display,
+            "home_owner": home_owner if home_owner != "?" else None,
+            "home_score": hs,
+            "away": away_display,
+            "away_owner": away_owner if away_owner != "?" else None,
+            "away_score": as_,
+            "score_note": score_note,
+            "status": status,
+            "winner": winner,
+            "venue": venue,
+        })
+
+    # Sort each stage by date
+    for stage in ko_stages:
+        ko_stages[stage].sort(key=lambda x: x.get("date_iso") or "")
+
+    # Build flat list in bracket order (R32 first)
+    stages_list = []
+    for stage in STAGE_ORDER:
+        if ko_stages[stage]:
+            stages_list.append({
+                "stage": stage,
+                "label": STAGE_LABELS[stage],
+                "matches": ko_stages[stage],
+            })
+
+    return stages_list
+
+
 def fetch_au_odds():
     """
     Fetch World Cup winner outright odds from Australian bookmakers
@@ -457,6 +579,7 @@ def main():
     new_standings_raw = build_standings(matches)
     new_results = build_results(matches)
     new_upcoming = build_upcoming(matches)
+    new_knockout = build_knockout(matches)
 
     # Merge standings: update on-pitch stats, preserve win_pct/move from existing
     existing_standing_map = {s["name"]: s for s in existing.get("standings", [])}
@@ -505,18 +628,18 @@ def main():
     existing["standings"] = merged_standings
     existing["recent_results"] = new_results
     existing["upcoming_fixtures"] = new_upcoming
+    existing["knockout"] = new_knockout
 
     with open(DATA_FILE, "w") as f:
         json.dump(existing, f, indent=2, ensure_ascii=False)
 
     finished_count = len([m for m in matches if m["status"] == "FINISHED"])
     live_count = len([m for m in matches if m["status"] in ("IN_PLAY", "PAUSED")])
+    ko_count = sum(len(s["matches"]) for s in new_knockout)
     print(f"  Finished: {finished_count}, Live: {live_count}")
+    print(f"  Knockout matches found: {ko_count}")
     print(f"  Updated {DATA_FILE}")
     print(f"  Last updated: {existing['meta']['last_updated_aest']}")
 
 if __name__ == "__main__":
     main()
-
-
-
