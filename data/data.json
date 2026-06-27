@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-27T08:11:07.658661+00:00",
-    "last_updated_aest": "Saturday 27 Jun 2026, 6:11pm AEST",
-    "edition": 14,
+    "last_updated": "2026-06-27T11:03:57.221880+00:00",
+    "last_updated_aest": "Saturday 27 Jun 2026, 9:03pm AEST",
+    "edition": 15,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "27 Jun 2026 6:11am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-26T12:27:30.623226+00:00",
-    "last_score_refresh": "27 Jun 2026 6:11pm AEST",
+    "trivia_schedule_generated": "2026-06-27T11:04:30.820225+00:00",
+    "last_score_refresh": "27 Jun 2026 9:03pm AEST",
     "last_commentary_participants": [
-      "Crowle",
-      "Kenna",
-      "Cronan"
+      "Galbraith",
+      "Morris",
+      "P Rankin"
     ],
-    "last_commentary_generated": "2026-06-26T12:27:30.622947+00:00",
+    "last_commentary_generated": "2026-06-27T11:04:30.819953+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -452,22 +452,22 @@
   ],
   "commentary": [
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: Ecuador's Win Is The Portfolio's First, And Possibly Last",
-      "body": "Ecuador's 2–1 victory over Germany was, by any measure, the most significant result Crowle has produced since the sweepstake began. It is also, at rank 11 with 3.42%, arriving approximately three weeks too late. One win from seven games, a goal difference of -7, and Belgium's apparent constitutional commitment to the draw have left this portfolio in a condition that a restructuring consultant would describe as \"terminal.\" The points tally of 6 suggests a group stage experience best characterised as educational.\n\nThe Ecuador result does at least confirm the portfolio is capable of motion. Belgium remain the nominally prestigious asset, though their draw-heavy record has the feel of a once-grand institution refusing to accept its own decline. Bosnia and Uzbekistan have offered nothing. Crowle's Win% of 3.42% is not a recovery story; it is a postscript."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: The Portfolio Looks Lean, But the Crown Jewel Still Shines",
+      "body": "With Turkey and South Africa already packed off home, Galbraith is running a two-horse operation — and one of those horses is Argentina. No results today directly involved Galbraith's remaining sides, which is either a blessing or a sign that the sweepstake has quietly moved on without them. Morocco, who won their group, provide a credible second string heading into the knockouts, and a favourable draw could see them cause further disruption. The portfolio is thin but not hollow.\n\nAt 12.06% and ranked fourth, Galbraith sits in the awkward middle ground: too good to dismiss, not quite threatening enough to fear. Argentina's knockout trajectory is everything here. A Messi-era vintage run and Galbraith climbs the table rapidly; an early exit and this becomes a two-team rump masquerading as a contender. Morocco are the insurance policy. Whether it pays out depends on the bracket being kind."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Eight Teams, One Point, Zero Curaçao",
-      "body": "Curaçao's 0–2 defeat to Ivory Coast on the 26th was, in the grand sweep of Kenna's misfortunes, barely noticeable. The portfolio now sits at W2-D4-L10 — a record that, across eight teams, suggests not bad luck but a systematic failure of asset quality. Ten losses from sixteen games is the kind of statistical outcome that stops being coincidence and starts being character. Spain remains the sole holding of genuine consequence, carrying the entire 13.78% Win% on its back while seven other nations contribute little beyond fixture congestion.\n\nThe uncomfortable arithmetic is this: Kenna holds third place on Win% almost entirely because Spain exist. Remove Spain from the calculation and what remains is a collection of group-stage participants in varying states of exit. Jordan, New Zealand, Haiti, Egypt, Senegal, South Korea, and now Curaçao have collectively done what passengers do — occupied space while Spain drove. The portfolio is large. It is not deep."
+      "participant": "Morris",
+      "color": "#0891B2",
+      "title": "Morris: Draws Are a Character Flaw, Not a Strategy",
+      "body": "Today delivered a study in Morris-brand frustration. Uruguay lost 1-0 to Spain, a result that does nothing for Morris's points tally and everything for Kenna's. Iran, meanwhile, drew 1-1 with Egypt — two Morris and Kenna assets sharing a point in what might be described as a sweepstake version of a pub argument where nobody wins. Six draws from twelve games tells a story of a participant whose teams treat the lead like an unwanted houseguest: invite it in briefly, then show it the door.\n\nBrazil remains the load-bearing wall of this entire operation. Strip away the draws, the Uruguay defeat, and the Iran-Egypt stalemate, and Morris's fate rests almost entirely on the Seleção's ability to actually win football matches in a knockout format — which, recent tournament history suggests, is less guaranteed than the seedings imply. At 7.78%, Morris is hovering in the respectable-but-anxious tier. Brazil must convert promise into points, or this portfolio quietly flatlines."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: First Place, France Dependent, And Aware Of Both",
-      "body": "Cronan leads the sweepstake at 17.74%, a position that invites congratulation and immediate qualification in roughly equal measure. The Paraguay draw handed Australia a 0–0 result that neither advanced nor embarrassed the portfolio, which is broadly the contribution Australia has made throughout. France remain the engine, the chassis, and the fuel of this operation. Austria and Panama exist in the standings the way a footnote exists in a treaty — present, technically relevant, unlikely to change anything.\n\nThe lead is real and should not be dismissed. Win% is what the market prices, and the market is pricing France's tournament run with sufficient respect to put Cronan clear of Silk, Kenna, and the rest. The concern is structural: a one-team portfolio at this stage of a winner-takes-all competition is a high-variance position dressed in respectable clothing. France advance, Cronan advances. France do not, and the remaining assets — Australia drawing in Group E, Austria doing whatever Austria does — will not cushion the landing."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: Iraq's 0-5 Demolition Completes a Grim Wednesday",
+      "body": "Senegal 5-0 Iraq. There is not a great deal of analytical nuance to extract from that scoreline, other than to note that P Rankin's supporting cast has now been reduced to rubble with some efficiency. Iraq conceding five goals in a group stage exit is the sort of result that doesn't just lose points — it announces itself. With Czech Republic and Sweden also offering little in the way of salvation, the entire P Rankin enterprise now rests on Germany, which is either reassuring or terrifying depending on how seriously one takes tournament Germany as a concept.\n\nAt 7.18% and ranked seventh, P Rankin is below the waterline but not yet drowning — solely because Germany are performing well and carry genuine knockout weight. The flagship, at least, has not sprung a leak. But the fleet is largely sunk. Three of four assets are either eliminated or irrelevant, and W3-D2-L7 is a record that speaks of a group stage spent mostly watching others win. Germany's deep run is now not a bonus — it is the entire thesis."
     }
   ],
   "odds": [
@@ -779,9 +779,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "T Rankin's Tunisia lost to his own Netherlands, a self-inflicted wound that defies conventional analysis.",
-    "paragraph_1": "The day's defining result was Turkey's 3–2 victory over the USA, handing Galbraith three points at Silk's direct expense — a transfer of fortune as clean as it gets. Ecuador's 2–1 defeat of Germany compounds P Rankin's misery, while Kenna's Curaçao were eliminated quietly, 0–2 to Hankin's Ivory Coast. Paraguay and Australia played to a goalless draw, leaving both Same and Cronan exactly where they started. Cronan retains top spot on win percentage despite the stalemate.",
-    "paragraph_2": "Saturday's early fixture pits Hankin's Norway against Cronan's France in Group I — a result with direct implications for the leader. Simultaneously, Kenna's Senegal face P Rankin's Iraq, with Kenna needing points badly after Curaçao's exit. The 10am window offers Kenna a second bite via Spain against Morris's Uruguay, though relying on two separate squads to perform simultaneously is the kind of portfolio management that rarely ends well. Hankin's Saudi Arabia also feature, providing that owner with unusual Saturday coverage."
+    "pull_quote": "Kenna owns four teams, lost three times today, and still sits third.",
+    "paragraph_1": "The defining result of the window was France's 4-1 demolition of Norway, a scoreline that did Cronan considerable good and left Hankin reflecting on the dual indignity of conceding four and then drawing 0-0 with Cape Verde Islands in the same afternoon. Kenna's portfolio produced a study in contradiction: Senegal thrashed Iraq 5-0, yet Uruguay and New Zealand lost, and Egypt could only draw with Iran. Net effect — Kenna holds third place on 17 points, though the loss column now reads 11.",
+    "paragraph_2": "Sunday's fixtures demand attention. Panama versus England pits Cronan's most expendable asset against Silk's most reliable one — a loss for Panama costs Cronan little, but an England win keeps Silk's 14.05% threat credible. More intriguingly, Same holds both Colombia and Portugal in Group K; the fixture is essentially a guaranteed three points for Same regardless of result, a structural advantage the sweepstake's format did not intend to reward quite so generously."
   },
   "trivia_schedule": {
     "2026-06-24": [
