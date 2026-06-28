@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-28T08:34:16.883035+00:00",
-    "last_updated_aest": "Sunday 28 Jun 2026, 6:34pm AEST",
-    "edition": 15,
+    "last_updated": "2026-06-28T11:18:41.538802+00:00",
+    "last_updated_aest": "Sunday 28 Jun 2026, 9:18pm AEST",
+    "edition": 16,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "28 Jun 2026 6:34am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-27T11:04:30.820225+00:00",
-    "last_score_refresh": "28 Jun 2026 6:34pm AEST",
+    "trivia_schedule_generated": "2026-06-28T11:19:11.065343+00:00",
+    "last_score_refresh": "28 Jun 2026 9:18pm AEST",
     "last_commentary_participants": [
-      "Galbraith",
-      "Morris",
-      "P Rankin"
+      "Hankin",
+      "Varcoe",
+      "Crowle"
     ],
-    "last_commentary_generated": "2026-06-27T11:04:30.819953+00:00",
+    "last_commentary_generated": "2026-06-28T11:19:11.065056+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -422,22 +422,22 @@
   ],
   "commentary": [
     {
-      "participant": "Galbraith",
-      "color": "#7C3AED",
-      "title": "Galbraith: The Portfolio Looks Lean, But the Crown Jewel Still Shines",
-      "body": "With Turkey and South Africa already packed off home, Galbraith is running a two-horse operation — and one of those horses is Argentina. No results today directly involved Galbraith's remaining sides, which is either a blessing or a sign that the sweepstake has quietly moved on without them. Morocco, who won their group, provide a credible second string heading into the knockouts, and a favourable draw could see them cause further disruption. The portfolio is thin but not hollow.\n\nAt 12.06% and ranked fourth, Galbraith sits in the awkward middle ground: too good to dismiss, not quite threatening enough to fear. Argentina's knockout trajectory is everything here. A Messi-era vintage run and Galbraith climbs the table rapidly; an early exit and this becomes a two-team rump masquerading as a contender. Morocco are the insurance policy. Whether it pays out depends on the bracket being kind."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: Most Points, Least Respect",
+      "body": "There is something quietly maddening about Hankin's position. With 23 points and a W7-D2-L3 record, Hankin leads the entire field on raw on-pitch performance — tied with Galbraith on points, but with a better win count. The markets, however, remain unmoved. A 4.54% win probability places Hankin ninth, a ranking that reflects not the quality of football played but the brutal arithmetic of tournament survival odds. Norway, Mexico, and Ivory Coast have all punched above their weight. Saudi Arabia, characteristically, did not.\n\nThe sweepstake operates on futures logic, not retrospective merit, which means Hankin's points tally functions mostly as a consolation for the statistically literate. The teams are performing. The probability engine is unimpressed. Whether the markets eventually capitulate to the evidence, or the teams capitulate to the markets, is the central dramatic question of Hankin's campaign."
     },
     {
-      "participant": "Morris",
-      "color": "#0891B2",
-      "title": "Morris: Draws Are a Character Flaw, Not a Strategy",
-      "body": "Today delivered a study in Morris-brand frustration. Uruguay lost 1-0 to Spain, a result that does nothing for Morris's points tally and everything for Kenna's. Iran, meanwhile, drew 1-1 with Egypt — two Morris and Kenna assets sharing a point in what might be described as a sweepstake version of a pub argument where nobody wins. Six draws from twelve games tells a story of a participant whose teams treat the lead like an unwanted houseguest: invite it in briefly, then show it the door.\n\nBrazil remains the load-bearing wall of this entire operation. Strip away the draws, the Uruguay defeat, and the Iran-Egypt stalemate, and Morris's fate rests almost entirely on the Seleção's ability to actually win football matches in a knockout format — which, recent tournament history suggests, is less guaranteed than the seedings imply. At 7.78%, Morris is hovering in the respectable-but-anxious tier. Brazil must convert promise into points, or this portfolio quietly flatlines."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: Unbeaten, Undervalued, Unbothered",
+      "body": "Varcoe has not lost a game. That bears repeating: across the entire sweepstake portfolio of Japan, Switzerland, DR Congo, and Canada, the record stands at W5-D5-L2 — and today DR Congo added a 3-1 victory over Crowle's Uzbekistan, a result that simultaneously boosted Varcoe's points and administered a further blow to the participant ranked directly below. The goal difference of +14 is the best in the sweepstake. None of this, apparently, is sufficient to escape a 3.59% win probability and tenth place.\n\nThe disconnect between Varcoe's results and Varcoe's ranking is the sweepstake's most persistent anomaly. The portfolio lacks a recognised title contender, which is the source of the market's indifference. Japan and Switzerland are credible knockout-stage operators; DR Congo and Canada are useful depth. What is absent is the single galvanising team capable of shifting Kalshi's needle. Varcoe is winning games. Varcoe is not, in the market's estimation, winning the sweepstake."
     },
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: Iraq's 0-5 Demolition Completes a Grim Wednesday",
-      "body": "Senegal 5-0 Iraq. There is not a great deal of analytical nuance to extract from that scoreline, other than to note that P Rankin's supporting cast has now been reduced to rubble with some efficiency. Iraq conceding five goals in a group stage exit is the sort of result that doesn't just lose points — it announces itself. With Czech Republic and Sweden also offering little in the way of salvation, the entire P Rankin enterprise now rests on Germany, which is either reassuring or terrifying depending on how seriously one takes tournament Germany as a concept.\n\nAt 7.18% and ranked seventh, P Rankin is below the waterline but not yet drowning — solely because Germany are performing well and carry genuine knockout weight. The flagship, at least, has not sprung a leak. But the fleet is largely sunk. Three of four assets are either eliminated or irrelevant, and W3-D2-L7 is a record that speaks of a group stage spent mostly watching others win. Germany's deep run is now not a bonus — it is the entire thesis."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: A Portfolio in Search of a Result",
+      "body": "The 3-1 defeat of Uzbekistan by Varcoe's DR Congo today was, for Crowle, simply the latest administrative confirmation of a difficult tournament. Uzbekistan joins Ecuador, Bosnia, and Belgium in a portfolio that has collectively produced a W2-D3-L4 record and 9 points — the lowest total in the sweepstake. Belgium, whose apparent tactical philosophy is to avoid losing rather than to win, have drawn their way through the group stage with the energy of a committee reviewing its own terms of reference. The others have offered little more.\n\nAt 3.42%, Crowle occupies last place, a position that feels less like bad luck and more like structural inevitability. There is no team in the portfolio capable of a deep run without a significant recalibration of expectations — by both the participant and the teams themselves. Belgium could yet stir. Ecuador and Bosnia have shown glimpses. Uzbekistan, following today's result, appears to have shown all of its glimpses."
     }
   ],
   "odds": [
@@ -713,9 +713,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Kenna owns four teams, lost three times today, and still sits third.",
-    "paragraph_1": "The defining result of the window was France's 4-1 demolition of Norway, a scoreline that did Cronan considerable good and left Hankin reflecting on the dual indignity of conceding four and then drawing 0-0 with Cape Verde Islands in the same afternoon. Kenna's portfolio produced a study in contradiction: Senegal thrashed Iraq 5-0, yet Uruguay and New Zealand lost, and Egypt could only draw with Iran. Net effect — Kenna holds third place on 17 points, though the loss column now reads 11.",
-    "paragraph_2": "Sunday's fixtures demand attention. Panama versus England pits Cronan's most expendable asset against Silk's most reliable one — a loss for Panama costs Cronan little, but an England win keeps Silk's 14.05% threat credible. More intriguingly, Same holds both Colombia and Portugal in Group K; the fixture is essentially a guaranteed three points for Same regardless of result, a structural advantage the sweepstake's format did not intend to reward quite so generously."
+    "pull_quote": "Silk's England dismantled Cronan's Panama while Cronan's Austria handed Silk's Algeria a point. A tidy equilibrium.",
+    "paragraph_1": "The day's defining result was England's 2–0 defeat of Panama, a clean transfer of momentum from Cronan to Silk, who now trails by just 3.69 percentage points despite holding fewer wins. Galbraith extended his points lead to 23 — the highest in the field — after Argentina put three past Kenna's Jordan, a result that widens the gap between Galbraith's points tally and everyone else's. Same's Colombia drew with Same's Portugal, a fiscally neutral afternoon. T Rankin's Croatia beating T Rankin's Ghana was similarly self-contained.",
+    "paragraph_2": "The next 48 hours carry genuine consequence. Galbraith faces Varcoe in the Last 32 as South Africa meets Canada — a win either way stays in the sweepstake, but elimination for either would sting Galbraith most given his current position. Brazil versus Japan pits Morris against Varcoe, while Germany against Paraguay sets P Rankin against Same. Netherlands versus Morocco is the pick of the bracket: T Rankin and Galbraith, first and fourth by points, meeting at the knockout stage for the first time."
   },
   "trivia_schedule": {
     "2026-06-24": [
