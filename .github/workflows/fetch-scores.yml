@@ -42,7 +42,11 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to data.json"
           else
+            git stash
+            git pull --rebase origin main
+            git stash pop
+            git add data/data.json
             git commit -m "chore: scores + odds $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git push origin HEAD:main || (git pull --rebase origin main && git push origin HEAD:main)
+            git push
             echo "Pushed updated data.json"
           fi

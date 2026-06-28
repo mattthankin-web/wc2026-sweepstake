@@ -1989,12 +1989,13 @@ function triviaReset() {
 
 const STAGE_DISPLAY = {
   'ROUND_OF_32': { label: 'R32', full: 'Round of 32',      pillCls: 'sp-r32', colCls: 'b-r32', cardCls: 'b-r32' },
+  'LAST_32':     { label: 'R32', full: 'Round of 32',      pillCls: 'sp-r32', colCls: 'b-r32', cardCls: 'b-r32' },
   'LAST_16':     { label: 'R16', full: 'Round of 16',      pillCls: 'sp-r16', colCls: 'b-r16', cardCls: 'b-r16' },
   'QUARTER_FINALS':{ label: 'QF', full: 'Quarter-Finals',  pillCls: 'sp-qf',  colCls: 'b-qf',  cardCls: 'b-qf'  },
   'SEMI_FINALS': { label: 'SF', full: 'Semi-Finals',       pillCls: 'sp-sf',  colCls: 'b-sf',  cardCls: 'b-sf'  },
   'FINAL':       { label: 'F',  full: 'Final',             pillCls: 'sp-f',   colCls: 'b-f',   cardCls: 'b-f'   },
 };
-const STAGE_ORDER_KO = ['ROUND_OF_32','LAST_16','QUARTER_FINALS','SEMI_FINALS','FINAL'];
+const STAGE_ORDER_KO = ['ROUND_OF_32','LAST_32','LAST_16','QUARTER_FINALS','SEMI_FINALS','FINAL'];
 
 function renderKnockout(knockoutData, participants, odds) {
   const el = document.getElementById('knockout-content');
@@ -2081,7 +2082,7 @@ function renderKnockout(knockoutData, participants, odds) {
   const nonFinal = activeStages.filter(s => s !== 'FINAL');
   const hasF = !!stageMap['FINAL'];
   const leftStages  = nonFinal.slice(0, Math.ceil(nonFinal.length / 2));
-  const rightStages = nonFinal.slice(Math.ceil(nonFinal.length / 2)).reverse();
+  const rightStages = nonFinal.slice(Math.ceil(nonFinal.length / 2)); // show QF/SF in forward order
 
   function matchesHtml(matches, stageKey, side) {
     // For left half, show first half of matches; right half show second half
