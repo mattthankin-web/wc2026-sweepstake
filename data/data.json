@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-28T22:02:37.195363+00:00",
-    "last_updated_aest": "Monday 29 Jun 2026, 8:02am AEST",
+    "last_updated": "2026-06-28T22:10:48.076867+00:00",
+    "last_updated_aest": "Monday 29 Jun 2026, 8:10am AEST",
     "edition": 16,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "29 Jun 2026 8:02am AEST",
+    "odds_last_updated": "29 Jun 2026 8:10am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-28T11:19:11.065343+00:00",
-    "last_score_refresh": "29 Jun 2026 8:02am AEST",
+    "last_score_refresh": "29 Jun 2026 8:10am AEST",
     "last_commentary_participants": [
       "Hankin",
       "Varcoe",
@@ -609,10 +609,10 @@
     {
       "team": "Canada",
       "owner": "Varcoe",
-      "prev": "$340.0",
+      "prev": "$350.0",
       "now": "$350.0",
       "now_decimal": 350.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -636,10 +636,10 @@
     {
       "team": "Australia",
       "owner": "Cronan",
-      "prev": "$520.0",
+      "prev": "$530.0",
       "now": "$530.0",
       "now_decimal": 530.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
