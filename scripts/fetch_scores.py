@@ -209,7 +209,7 @@ def build_results(matches):
         home_owner = get_owner(home_name) if home_name != "TBD" else "?"
         away_owner = get_owner(away_name) if away_name != "TBD" else "?"
         group_raw = m.get("group") or m.get("stage") or ""
-        group = group_raw.replace("GROUP_", "Group ").replace("ROUND_OF_32","Round of 32").replace("LAST_16","Round of 16").replace("QUARTER_FINALS","Quarter-Final").replace("SEMI_FINALS","Semi-Final").replace("FINAL","Final").replace("_", " ")
+        group = group_raw.replace("GROUP_", "Group ").replace("ROUND_OF_32","Round of 32").replace("LAST_32","Round of 32").replace("LAST_16","Round of 16").replace("QUARTER_FINALS","Quarter-Final").replace("SEMI_FINALS","Semi-Final").replace("FINAL","Final").replace("_", " ")
 
         # Score — try fullTime first, fallback to currentPeriodStartScore then 0
         score = m.get("score", {})
@@ -272,7 +272,7 @@ def build_results(matches):
         hs = (m["score"].get("fullTime") or {}).get("home")
         as_ = (m["score"].get("fullTime") or {}).get("away")
         group_raw = m.get("group") or m.get("stage") or ""
-        group = group_raw.replace("GROUP_", "Group ").replace("ROUND_OF_32","Round of 32").replace("LAST_16","Round of 16").replace("QUARTER_FINALS","Quarter-Final").replace("SEMI_FINALS","Semi-Final").replace("FINAL","Final").replace("_", " ")
+        group = group_raw.replace("GROUP_", "Group ").replace("ROUND_OF_32","Round of 32").replace("LAST_32","Round of 32").replace("LAST_16","Round of 16").replace("QUARTER_FINALS","Quarter-Final").replace("SEMI_FINALS","Semi-Final").replace("FINAL","Final").replace("_", " ")
 
         results.append({
             "date": format_date_short(utc_str),
@@ -317,7 +317,7 @@ def build_upcoming(matches):
         home_owner = get_owner(home_name) if home_name != "TBD" else "?"
         away_owner = get_owner(away_name) if away_name != "TBD" else "?"
         group_raw = m.get("group") or m.get("stage") or ""
-        group = group_raw.replace("GROUP_", "").replace("ROUND_OF_32","R32").replace("LAST_16","R16").replace("QUARTER_FINALS","QF").replace("SEMI_FINALS","SF").replace("FINAL","F").replace("_", " ").strip()
+        group = group_raw.replace("GROUP_", "").replace("ROUND_OF_32","R32").replace("LAST_32","R32").replace("LAST_16","R16").replace("QUARTER_FINALS","QF").replace("SEMI_FINALS","SF").replace("FINAL","F").replace("_", " ").strip()
         status = m["status"]
 
         entry = {
@@ -345,9 +345,10 @@ def build_upcoming(matches):
 
 # ── Knockout bracket builder ──────────────────────────────────────────────────
 # football-data.org stage names for WC2026 knockout rounds
-STAGE_ORDER = ["ROUND_OF_32", "LAST_16", "QUARTER_FINALS", "SEMI_FINALS", "FINAL"]
+STAGE_ORDER = ["ROUND_OF_32", "LAST_32", "LAST_16", "QUARTER_FINALS", "SEMI_FINALS", "FINAL"]
 STAGE_LABELS = {
     "ROUND_OF_32": "R32",
+    "LAST_32": "R32",   # football-data.org uses LAST_32 for 2026 WC
     "LAST_16": "R16",
     "QUARTER_FINALS": "QF",
     "SEMI_FINALS": "SF",
