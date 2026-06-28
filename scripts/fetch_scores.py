@@ -634,8 +634,39 @@ def main():
     existing["upcoming_fixtures"] = new_upcoming
     existing["knockout"] = new_knockout
 
-    with open(DATA_FILE, "w") as f:
-        json.dump(existing, f, indent=2, ensure_ascii=False)
+    # Write via GitHub API (avoids git merge conflicts from concurrent runs)
+    github_token = os.environ.get("GITHUB_TOKEN", "")
+    if github_token:
+        try:
+            import base64
+            # Get current file SHA first
+            repo = os.environ.get("GITHUB_REPOSITORY", "")
+            api_url = f"https://api.github.com/repos/{repo}/contents/data/data.json"
+            headers = {
+                "Authorization": f"token {github_token}",
+                "Accept": "application/vnd.github.v3+json"
+            }
+            get_resp = requests.get(api_url, headers=headers, timeout=15)
+            sha = get_resp.json().get("sha", "")
+            new_content = json.dumps(existing, indent=2, ensure_ascii=False)
+            encoded = base64.b64encode(new_content.encode()).decode()
+            put_resp = requests.put(api_url, headers=headers, json={
+                "message": f"chore: scores + odds {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}",
+                "content": encoded,
+                "sha": sha
+            }, timeout=15)
+            if put_resp.status_code in (200, 201):
+                print(f"  data.json written via GitHub API ✓")
+            else:
+                raise Exception(f"API write failed: {put_resp.status_code} {put_resp.text[:100]}")
+        except Exception as e:
+            print(f"  GitHub API write failed ({e}), falling back to local write")
+            with open(DATA_FILE, "w") as f:
+                json.dump(existing, f, indent=2, ensure_ascii=False)
+    else:
+        # Local run fallback
+        with open(DATA_FILE, "w") as f:
+            json.dump(existing, f, indent=2, ensure_ascii=False)
 
     finished_count = len([m for m in matches if m["status"] == "FINISHED"])
     live_count = len([m for m in matches if m["status"] in ("IN_PLAY", "PAUSED")])
