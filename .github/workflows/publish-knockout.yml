@@ -1,66 +1,13 @@
 name: Publish Knockout Tab
 
-# Runs once: Sun 29 Jun 2026 at 02:00 UTC = 12:00pm AEST
-# (2 hours after last group stage match kicks off, giving time for final standings)
+# This workflow has already been superseded — the knockout tab
+# was added manually. Keeping this as a no-op to avoid further failures.
 on:
-  schedule:
-    - cron: '0 2 29 6 *'
-  workflow_dispatch:  # allow manual trigger too
+  workflow_dispatch:
 
 jobs:
-  publish:
+  noop:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Add Knock Out tab to nav and move to position 2
-        run: |
-          python3 - << 'PYEOF'
-import re
-
-with open("index.html", "r") as f:
-    content = f.read()
-
-# 1. Add KO tab button as 2nd tab (after Analysis, before Table)
-# Current order: Analysis | Table | Results | Fixtures | Trivia (BETA)
-# Target order:  Analysis | Knock Out (BETA) | Table | Results | Fixtures | Trivia (BETA)
-old_tabs = '''    <button class="tab" onclick="showTab('standings')" role="tab">Table</button>'''
-new_tabs = '''    <button class="tab" onclick="showTab('knockout')" role="tab">Knock Out (BETA)</button>
-    <button class="tab" onclick="showTab('standings')" role="tab">Table</button>'''
-content = content.replace(old_tabs, new_tabs, 1)
-
-# 2. Update tabs grid from 4 to 5 columns
-content = content.replace(
-    "grid-template-columns: repeat(4, 1fr);",
-    "grid-template-columns: repeat(5, 1fr);",
-    1  # only the .tabs rule, not others
-)
-
-# 3. Add 'knockout' to the panels array in showTab()
-content = content.replace(
-    "const panels = ['analysis','standings','results','fixtures','trivia'];",
-    "const panels = ['analysis','knockout','standings','results','fixtures','trivia'];"
-)
-
-with open("index.html", "w") as f:
-    f.write(content)
-
-print("KO tab added at position 2 ✓")
-print("Grid updated to 5 cols ✓")
-print("Panels array updated ✓")
-PYEOF
-
-      - name: Commit and push
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
-          git commit -m "🏆 Publish Knock Out (BETA) tab — group stage complete
-
-          Automated: adds KO tab as 2nd nav item (after Analysis, before Table).
-          Group stage confirmed complete — knockout bracket now live."
-          git push
+      - name: Already published
+        run: echo "Knockout tab was published manually. Nothing to do."

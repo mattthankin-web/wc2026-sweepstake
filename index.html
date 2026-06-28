@@ -97,7 +97,7 @@
   /* ── Tabs ─────────────────────────────────────────────────── */
   .tabs {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     background: var(--navy);
     position: sticky;
     top: 56px;
@@ -681,7 +681,7 @@
   .days-left-badge strong { font-size: 1rem; display: block; }
 
   @media(min-width:480px){
-    .trivia-name-grid { grid-template-columns: repeat(4, 1fr); }
+    .trivia-name-grid { grid-template-columns: repeat(6, 1fr); }
   }
 
   @media (min-width: 480px) {
@@ -988,6 +988,7 @@
   <!-- ── Tabs ──────────────────────────────────────────────────────────────── -->
   <nav class="tabs" role="tablist">
     <button class="tab active" onclick="showTab('analysis')" role="tab">Analysis</button>
+    <button class="tab" onclick="showTab('knockout')" role="tab">Knockout</button>
     <button class="tab" onclick="showTab('standings')" role="tab">Table</button>
     <button class="tab" onclick="showTab('results')"  role="tab">Results</button>
     <button class="tab" onclick="showTab('fixtures')" role="tab">Fixtures</button>
@@ -1166,7 +1167,7 @@ async function loadData() {
 // ── Tab switching ─────────────────────────────────────────────────────────────
 function showTab(name) {
   document.querySelectorAll('.tab').forEach((t, i) => {
-    const panels = ['analysis','standings','results','fixtures','trivia','knockout'];
+    const panels = ['analysis','knockout','standings','results','fixtures','trivia'];
     t.classList.toggle('active', panels[i] === name);
   });
   document.querySelectorAll('.panel').forEach(p => {
