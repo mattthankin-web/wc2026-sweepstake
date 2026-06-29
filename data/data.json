@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-29T23:33:53.323499+00:00",
-    "last_updated_aest": "Tuesday 30 Jun 2026, 9:33am AEST",
+    "last_updated": "2026-06-29T23:34:40.596353+00:00",
+    "last_updated_aest": "Tuesday 30 Jun 2026, 9:34am AEST",
     "edition": 17,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "30 Jun 2026 9:33am AEST",
+    "odds_last_updated": "30 Jun 2026 9:34am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-29T16:45:49.065455+00:00",
-    "last_score_refresh": "30 Jun 2026 9:33am AEST",
+    "last_score_refresh": "30 Jun 2026 9:34am AEST",
     "last_commentary_participants": [
       "Kenna",
       "Cronan",
@@ -183,11 +183,11 @@
     },
     {
       "name": "Same",
-      "pld": 10,
+      "pld": 9,
       "w": 4,
-      "d": 5,
+      "d": 4,
       "l": 1,
-      "pts": 17,
+      "pts": 16,
       "gd": 6,
       "rank": 5,
       "left": 6,
@@ -211,11 +211,11 @@
     },
     {
       "name": "P Rankin",
-      "pld": 13,
+      "pld": 12,
       "w": 3,
-      "d": 3,
+      "d": 2,
       "l": 7,
-      "pts": 12,
+      "pts": 11,
       "gd": -9,
       "rank": 7,
       "left": 5,
@@ -283,6 +283,22 @@
   "recent_results": [
     {
       "date": "30 Jun",
+      "aest_time": "Tue 6:30am",
+      "group": "Round of 32",
+      "home": "Germany",
+      "home_owner": "P Rankin",
+      "away": "Paraguay",
+      "away_owner": "Same",
+      "home_score": 5,
+      "away_score": 5,
+      "status": "LIVE",
+      "match_minute": "90+'",
+      "badge": "LIVE",
+      "sweepstake_relevant": true,
+      "sort_key": "0_live"
+    },
+    {
+      "date": "30 Jun",
       "aest_time": "Tue 3:00am",
       "group": "Round of 32",
       "home": "Brazil",
@@ -296,25 +312,20 @@
       "badge": "",
       "sweepstake_relevant": true,
       "sort_key": "1_2026-06-29T17:00:00Z"
-    },
+    }
+  ],
+  "upcoming_fixtures": [
     {
-      "date": "30 Jun",
-      "aest_time": "Tue 6:30am",
-      "group": "Round of 32",
+      "aest_time": "🔴 LIVE",
+      "group": "R32",
       "home": "Germany",
       "home_owner": "P Rankin",
       "away": "Paraguay",
       "away_owner": "Same",
-      "home_score": 5,
-      "away_score": 5,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-06-29T20:30:00Z"
-    }
-  ],
-  "upcoming_fixtures": [
+      "status": "IN_PLAY",
+      "context": "",
+      "live_score": "5–5"
+    },
     {
       "aest_time": "Tue 11:00am",
       "group": "R32",
@@ -2716,8 +2727,8 @@
           "away_owner": "Same",
           "away_score": 5,
           "score_note": "(pens 4–4)",
-          "status": "FINISHED",
-          "winner": "away",
+          "status": "LIVE",
+          "winner": null,
           "venue": ""
         },
         {
