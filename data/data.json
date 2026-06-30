@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-06-30T08:49:34.926328+00:00",
-    "last_updated_aest": "Tuesday 30 Jun 2026, 6:49pm AEST",
-    "edition": 17,
+    "last_updated": "2026-06-30T12:23:40.009892+00:00",
+    "last_updated_aest": "Tuesday 30 Jun 2026, 10:23pm AEST",
+    "edition": 18,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "30 Jun 2026 6:49am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-29T16:45:49.065455+00:00",
-    "last_score_refresh": "30 Jun 2026 6:49pm AEST",
+    "trivia_schedule_generated": "2026-06-30T12:24:09.587086+00:00",
+    "last_score_refresh": "30 Jun 2026 10:23pm AEST",
     "last_commentary_participants": [
-      "Kenna",
-      "Cronan",
-      "Silk"
+      "P Rankin",
+      "T Rankin",
+      "Hankin"
     ],
-    "last_commentary_generated": "2026-06-29T16:45:49.065208+00:00",
+    "last_commentary_generated": "2026-06-30T12:24:09.586797+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -394,22 +394,25 @@
   ],
   "commentary": [
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Eight Teams, One Hope, Zero Margin For Error",
-      "body": "Kenna's portfolio is a masterclass in quantity over quality. Eight teams — the largest holding in the sweepstake — and the record to show for it: four wins, five draws, twelve defeats, a goal difference of minus sixteen. The combined deadweight of Jordan, New Zealand, Curaçao, and Haiti sits in the portfolio like ballast on a sinking vessel. Egypt and South Korea add colour without adding conviction. Senegal offers occasional flickers of relevance.\n\nThe entire enterprise rests on Spain. Strip that single asset away and Kenna's 13.78% collapses to something that would embarrass a rounding error. The irony is that Spain is genuinely good — good enough, perhaps, to carry a portfolio this dysfunctional to within striking distance of the prize. It is an uncomfortable way to run a sweepstake position, but it is not, technically, a hopeless one."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: Germany Scores Four, Loses Anyway",
+      "body": "In what may stand as the defining metaphor of P Rankin's sweepstake campaign, Germany put four goals past Paraguay and still went home. A 4–5 defeat in the Round of 32 eliminates the flagship, leaving a portfolio that now consists of Czech Republic, Iraq, and Sweden — a tripartite arrangement whose combined global football footprint is, to put it charitably, modest. The win percentage sits at 7.18%, rank seven, and the points tally of 11 suggests the supporting cast has been doing considerably less supporting than advertised.",
+      "body2": "To be fair to Germany, scoring four goals in a knockout match and losing is a specific kind of cruelty that deserves acknowledgement before being filed away permanently. The remaining three teams are not without pulse, but none is troubling the tournament's upper atmosphere. Czech Republic, Iraq, and Sweden represent hope in the same way that a three-legged stool represents furniture: technically accurate, but you would not build a house around it. P Rankin's route back into this competition runs through sustained improbability."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: First Place, One Team, and a Polite Fiction",
-      "body": "Cronan sits atop the standings at 17.74% and would be forgiven for feeling pleased about this. The feeling should be tempered by an honest audit of what is actually generating that number. France is doing the work. Austria, Australia, and Panama are the supporting cast in a production where the supporting cast has already been escorted from the building — or is shuffling toward the exit. A record of five wins, two draws, and five losses across the portfolio tells its own story about which teams are contributing and which are consuming oxygen.\n\nThis is, in essence, a single-team bet dressed in the finery of a four-team portfolio. That is not necessarily a problem — France is an entirely credible tournament winner — but Cronan's lead over Silk and Kenna is thinner than the headline figure implies. One bad France result and the gap closes with uncomfortable speed."
+      "participant": "T Rankin",
+      "color": "#4338CA",
+      "title": "T Rankin: Netherlands Fall, but the Bracket Has Not Forgotten Them",
+      "body": "A 3–4 defeat to Galbraith's Morocco in the Round of 32 removes Netherlands from proceedings, which is a significant blow given they were rated as T Rankin's primary engine of advancement. The portfolio now rests on Croatia — already eliminated — Ghana, and Tunisia, a combination that does not obviously inspire confidence. Win percentage of 6.30% and rank eight reflect a position that is deteriorating in structure even as the raw points total of 17 looks superficially respectable.",
+      "body2": "The Netherlands result stings precisely because it was the team around which a genuine knockout narrative had been constructed. Ghana remain as the live wildcard option, and in a wide-open bracket that counts for something — but only something. Tunisia's contribution to date has been functional without being threatening. T Rankin now occupies the uncomfortable position of being one bad Ghana result away from a sweepstake that is essentially theoretical. The gap to the top five is measurable in probability terms and increasingly difficult to close through goodwill alone."
     },
     {
-      "participant": "Silk",
-      "color": "#BE185D",
-      "title": "Silk: Two Serious Teams and the Dignity Not to Mention the Others",
-      "body": "Silk holds eighteen points, the highest raw points total among the top three, and sits at 14.05% on the strength of a portfolio that is quietly more interesting than its ranking suggests. England and the United States represent two genuinely live tournament assets — neither is a favourite, but both are capable of deep runs, and the combination of an English-speaking double act progressing in tandem would generate sweepstake value in a way that Cronan's one-man France operation cannot match. Algeria and Qatar are noted here only for completeness, and will not be mentioned again.\n\nThe structural case for Silk is straightforward: if England and the USA both navigate the knockout rounds with reasonable efficiency, the combined probability mass starts to look competitive against France alone. It requires things to go right on two fronts simultaneously, which is admittedly a significant ask, but it is a coherent thesis rather than a hope dressed up as one."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: First in Points, Ninth in Everything That Counts",
+      "body": "The central paradox of Hankin's campaign continues to deepen. Seven wins, two draws, three losses, 23 points — a haul that leads the entire field on raw on-pitch performance — and yet a win probability of 4.54% places them ninth. Saudi Arabia are eliminated, which tidies the portfolio without improving it. Norway, Mexico, and Ivory Coast are all performing above their pre-tournament station, which is genuinely impressive and almost entirely beside the point when the market has already priced in their collective ceiling.",
+      "body2": "The win percentage problem is structural rather than incidental. Hankin's teams are performing like mid-tier overachievers, which generates points generously but title probability parsimoniously. Norway have been a revelation; Mexico have been competitive; Ivory Coast have offered more than expected. None of them, however, is a team that serious tournament modelling identifies as a winner. Hankin is, in effect, running a very efficient operation aimed at a prize that is distributed by a different metric entirely. Industrious, admirable, and almost certainly futile."
     }
   ],
   "odds": [
@@ -649,9 +652,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Varcoe's Canada eliminated Galbraith's South Africa, a result of modest consequence to everyone except Galbraith.",
-    "paragraph_1": "The sole result of this window was Canada's 1–0 victory over South Africa on 29 June, a clean transaction that moved Varcoe's stock modestly upward while doing nothing to arrest Galbraith's slide from a position of relative strength. With 23 points and a 12.06% win probability, Galbraith remains third in the standings by points but continues to haemorrhage percentage. Cronan leads on win probability at 17.74%, followed closely by Silk at 14.05%, with Kenna's improbable 12-loss record somehow sustaining a third-place probability share.",
-    "paragraph_2": "The next 48 hours offer a more consequential set of fixtures. Morris's Brazil faces Varcoe's Japan on Tuesday, a match that will either consolidate or puncture Brazil's considerable tournament weight. Germany versus Paraguay pits P Rankin against Same, who sits fifth on 9.56% and needs Paraguay to keep winning with minimal drama. Most intriguing is Netherlands versus Morocco: T Rankin and Galbraith meet directly, with Galbraith needing a Morocco win to recover ground. Hankin, meanwhile, owns both Ivory Coast and Norway — a fixture in which he cannot lose and cannot gain relative to the field."
+    "pull_quote": "Same's Paraguay eliminated Germany in five goals of chaos, leaving P Rankin to reflect on the mathematics of misfortune.",
+    "paragraph_1": "Three results on 30 June reshuffled the mid-table with characteristic brutality. Morris's Brazil dispatched Varcoe's Japan 2–1, a routine transaction. The day's defining spectacle was Same's Paraguay overturning P Rankin's Germany 5–4, a result that simultaneously punctures German presumption and propels Same to fifth on win percentage despite playing only ten matches. Galbraith's Morocco edged T Rankin's Netherlands 4–3, consolidating Galbraith's position at fourth with 26 points — the highest points total in the top five.",
+    "paragraph_2": "The next 48 hours offer limited drama for most, with one notable exception. Hankin owns both Ivory Coast and Norway on Wednesday, guaranteeing himself a result regardless of outcome — a structural advantage the sweepstake's format permits and everyone else will resent. Cronan's France faces P Rankin's Sweden at 7am Wednesday; a French win would strengthen Cronan's grip on first place. Thursday brings Silk's England against Varcoe's DR Congo, a fixture Silk — currently second — will expect to convert."
   },
   "trivia_schedule": {
     "2026-06-24": [
