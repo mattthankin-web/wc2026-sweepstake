@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-01T10:17:15.695091+00:00",
-    "last_updated_aest": "Wednesday 1 Jul 2026, 8:17pm AEST",
+    "last_updated": "2026-07-01T10:19:42.570086+00:00",
+    "last_updated_aest": "Wednesday 1 Jul 2026, 8:19pm AEST",
     "edition": 18,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "1 Jul 2026 8:17am AEST",
+    "odds_last_updated": "1 Jul 2026 8:19am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-30T12:24:09.587086+00:00",
-    "last_score_refresh": "1 Jul 2026 8:17pm AEST",
+    "last_score_refresh": "1 Jul 2026 8:19pm AEST",
     "last_commentary_participants": [
       "P Rankin",
       "T Rankin",
@@ -491,10 +491,10 @@
     {
       "team": "Mexico",
       "owner": "Hankin",
-      "prev": "$40.0",
+      "prev": "$38.0",
       "now": "$38.0",
       "now_decimal": 38.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
