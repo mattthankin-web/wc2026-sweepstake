@@ -587,6 +587,114 @@ def update_odds(existing_data, best_odds, owner_map):
     print(f"  Odds updated: {len(new_odds)} teams, best AU prices")
     return existing_data
 
+def fetch_h2h_odds():
+    """
+    Fetch head-to-head match odds for upcoming WC fixtures from AU bookmakers.
+    Returns dict keyed by normalised team pair: { "TeamA_vs_TeamB": { home, away, home_price, draw_price, away_price, source } }
+    """
+    if not ODDS_API_KEY:
+        return {}
+    try:
+        resp = requests.get(
+            "https://api.the-odds-api.com/v4/sports/soccer_fifa_world_cup/odds/",
+            params={
+                "apiKey": ODDS_API_KEY,
+                "regions": "au",
+                "markets": "h2h",
+                "oddsFormat": "decimal",
+                "daysFrom": 7
+            },
+            timeout=15
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        print(f"  H2H odds: {len(data)} matches, {resp.headers.get('x-requests-remaining')} requests remaining")
+
+        h2h = {}
+        for event in data:
+            home_raw = event['home_team']
+            away_raw = event['away_team']
+            home = get_display_name(home_raw)
+            away = get_display_name(away_raw)
+
+            # Get best price per outcome across all AU bookmakers
+            best = {}
+            for bm in event.get('bookmakers', []):
+                bm_name = bm['title']
+                for market in bm.get('markets', []):
+                    if market['key'] == 'h2h':
+                        for o in market['outcomes']:
+                            name = o['name']
+                            price = o['price']
+                            # Normalise team name in outcome
+                            norm_name = get_display_name(name) if name != 'Draw' else 'Draw'
+                            if norm_name not in best or price > best[norm_name]['price']:
+                                best[norm_name] = {'price': price, 'bookmaker': bm_name}
+
+            # Store under normalised key
+            key = f"{home}_vs_{away}"
+            h2h[key] = {
+                'home': home,
+                'away': away,
+                'home_price': best.get(home, best.get(home_raw, {})).get('price'),
+                'home_source': best.get(home, best.get(home_raw, {})).get('bookmaker'),
+                'draw_price': best.get('Draw', {}).get('price'),
+                'draw_source': best.get('Draw', {}).get('bookmaker'),
+                'away_price': best.get(away, best.get(away_raw, {})).get('price'),
+                'away_source': best.get(away, best.get(away_raw, {})).get('bookmaker'),
+            }
+            # Also store reverse key for lookup flexibility
+            h2h[f"{away}_vs_{home}"] = h2h[key]
+
+        return h2h
+    except Exception as e:
+        print(f"  H2H odds fetch failed: {e}")
+        return {}
+
+
+def attach_h2h_to_knockout(knockout_data, h2h_odds):
+    """Match h2h odds to knockout bracket matches and attach prices."""
+    if not h2h_odds:
+        return knockout_data
+    
+    attached = 0
+    for stage in knockout_data:
+        for match in stage.get('matches', []):
+            home = match.get('home')
+            away = match.get('away')
+            if not home or not away:
+                continue
+            
+            # Try both orderings
+            key1 = f"{home}_vs_{away}"
+            key2 = f"{away}_vs_{home}"
+            h2h = h2h_odds.get(key1) or h2h_odds.get(key2)
+            
+            if h2h:
+                # Ensure prices are from home team's perspective
+                if h2h_odds.get(key1):
+                    match['h2h_home_price'] = h2h['home_price']
+                    match['h2h_draw_price'] = h2h['draw_price']
+                    match['h2h_away_price'] = h2h['away_price']
+                    match['h2h_source'] = h2h.get('home_source', 'Betfair')
+                else:
+                    # reverse — swap home/away prices
+                    match['h2h_home_price'] = h2h['away_price']
+                    match['h2h_draw_price'] = h2h['draw_price']
+                    match['h2h_away_price'] = h2h['home_price']
+                    match['h2h_source'] = h2h.get('away_source', 'Betfair')
+                attached += 1
+            else:
+                # Clear stale h2h data for finished matches
+                match.pop('h2h_home_price', None)
+                match.pop('h2h_draw_price', None)
+                match.pop('h2h_away_price', None)
+                match.pop('h2h_source', None)
+    
+    print(f"  H2H odds attached to {attached} knockout matches")
+    return knockout_data
+
+
 def main():
     print("Fetching WC2026 matches...")
     matches = fetch_matches()
@@ -640,10 +748,35 @@ def main():
         if not f.get("context") and key in existing_fixture_map:
             f["context"] = existing_fixture_map[key]
 
-    # Fetch and update AU odds
+    # Fetch and update AU outright odds
     best_odds = fetch_au_odds()
     if best_odds:
         existing = update_odds(existing, best_odds, {})
+
+    # Fetch h2h match odds for knockout fixtures
+    h2h_odds = fetch_h2h_odds()
+    if h2h_odds and new_knockout:
+        new_knockout = attach_h2h_to_knockout(new_knockout, h2h_odds)
+    
+    # Also attach to upcoming_fixtures
+    if h2h_odds:
+        for f in new_upcoming:
+            home = f.get('home')
+            away = f.get('away')
+            if not home or not away:
+                continue
+            key1 = f"{home}_vs_{away}"
+            key2 = f"{away}_vs_{home}"
+            h2h = h2h_odds.get(key1) or h2h_odds.get(key2)
+            if h2h:
+                if h2h_odds.get(key1):
+                    f['h2h_home_price'] = h2h['home_price']
+                    f['h2h_draw_price'] = h2h['draw_price']
+                    f['h2h_away_price'] = h2h['away_price']
+                else:
+                    f['h2h_home_price'] = h2h['away_price']
+                    f['h2h_draw_price'] = h2h['draw_price']
+                    f['h2h_away_price'] = h2h['home_price']
 
     # Write back
     existing["standings"] = merged_standings

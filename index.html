@@ -340,6 +340,13 @@
     line-height: 1.3;
   }
 
+  .fixture-h2h {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 3px;
+    font-size: 0.7rem;
+  }
   .fixture-meta {
     font-size: 0.68rem;
     color: var(--slate);
@@ -850,6 +857,14 @@
   .ko-sc.live-s { color: #ef4444; }
   .ko-sc.tbd-s { color: #334155; font-weight: 300; }
   .ko-date { font-size: 0.52rem; color: #475569; text-align: center; padding: 2px 0; }
+  .ko-h2h {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 3px 6px 2px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    background: rgba(0,0,0,0.15);
+  }
+  .ko-h2h-price { font-size: 0.65rem; font-weight: 800; }
+  .ko-h2h-draw { font-size: 0.6rem; color: #64748b; font-weight: 600; }
 
   /* Champion column */
   .ko-champ-col {
@@ -1430,6 +1445,11 @@ function renderFixtures(fixtures, participants) {
           <span class="muted"> vs </span>
           ${ownerSpan(f.away_owner, participants)}
         </div>
+        ${(f.h2h_home_price) ? `<div class="fixture-h2h">
+          <span style="color:${(participants[f.home_owner]||{}).color||'#64748B'};font-weight:800;font-size:0.7rem;">$${f.h2h_home_price}</span>
+          <span style="color:#64748B;font-size:0.68rem;">Draw $${f.h2h_draw_price}</span>
+          <span style="color:${(participants[f.away_owner]||{}).color||'#64748B'};font-weight:800;font-size:0.7rem;">$${f.h2h_away_price}</span>
+        </div>` : ''}
         ${f.context ? `<div class="fixture-meta">${esc(f.context)}</div>` : ''}
       </div>
     </div>`;
@@ -2127,9 +2147,22 @@ function renderKnockout(knockoutData, participants, odds) {
     }
 
     const dateStr = m.date_short || '';
+    // H2H odds row
+    let h2hHtml = '';
+    if (!isDone && !isLive && m.h2h_home_price) {
+      const hp = m.h2h_home_price ? `$${m.h2h_home_price}` : '—';
+      const dp = m.h2h_draw_price ? `$${m.h2h_draw_price}` : '—';
+      const ap = m.h2h_away_price ? `$${m.h2h_away_price}` : '—';
+      h2hHtml = `<div class="ko-h2h">
+        <span class="ko-h2h-price" style="color:${homeColor};">${hp}</span>
+        <span class="ko-h2h-draw">${dp}</span>
+        <span class="ko-h2h-price" style="color:${awayColor};">${ap}</span>
+      </div>`;
+    }
     return `<div class="ko-card ${cardCls}">
       ${rowHtml(m.home, homeOwner, homeColor, hSc, hScCls, homeWon, awayWon, homeTbd)}
       ${rowHtml(m.away, awayOwner, awayColor, aSc, aScCls, awayWon, homeWon, awayTbd)}
+      ${h2hHtml}
       ${dateStr ? `<div class="ko-date">${esc(dateStr)}</div>` : ''}
     </div>`;
   }
