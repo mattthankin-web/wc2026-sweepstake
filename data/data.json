@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-01T10:57:40.965812+00:00",
-    "last_updated_aest": "Wednesday 1 Jul 2026, 8:57pm AEST",
-    "edition": 18,
+    "last_updated": "2026-07-01T13:40:00.087065+00:00",
+    "last_updated_aest": "Wednesday 1 Jul 2026, 11:40pm AEST",
+    "edition": 19,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "1 Jul 2026 8:57am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-06-30T12:24:09.587086+00:00",
-    "last_score_refresh": "1 Jul 2026 8:57pm AEST",
+    "trivia_schedule_generated": "2026-07-01T13:40:26.259918+00:00",
+    "last_score_refresh": "1 Jul 2026 11:40pm AEST",
     "last_commentary_participants": [
-      "P Rankin",
-      "T Rankin",
-      "Hankin"
+      "Varcoe",
+      "Crowle",
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-06-30T12:24:09.586797+00:00",
+    "last_commentary_generated": "2026-07-01T13:40:26.259607+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -339,10 +339,7 @@
       "away": "DR Congo",
       "away_owner": "Varcoe",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.32,
-      "h2h_draw_price": 5.3,
-      "h2h_away_price": 16.5
+      "context": ""
     },
     {
       "aest_time": "Thu 6:00am",
@@ -352,10 +349,7 @@
       "away": "Senegal",
       "away_owner": "Kenna",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 2.22,
-      "h2h_draw_price": 3.35,
-      "h2h_away_price": 3.9
+      "context": ""
     },
     {
       "aest_time": "Thu 10:00am",
@@ -365,10 +359,7 @@
       "away": "Bosnia",
       "away_owner": "Crowle",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.42,
-      "h2h_draw_price": 5.1,
-      "h2h_away_price": 9.4
+      "context": ""
     },
     {
       "aest_time": "Fri 5:00am",
@@ -378,10 +369,7 @@
       "away": "Austria",
       "away_owner": "Cronan",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.35,
-      "h2h_draw_price": 5.4,
-      "h2h_away_price": 12.0
+      "context": ""
     },
     {
       "aest_time": "Fri 9:00am",
@@ -391,10 +379,7 @@
       "away": "Croatia",
       "away_owner": "T Rankin",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.84,
-      "h2h_draw_price": 3.6,
-      "h2h_away_price": 5.3
+      "context": ""
     },
     {
       "aest_time": "Fri 1:00pm",
@@ -404,33 +389,27 @@
       "away": "Algeria",
       "away_owner": "Silk",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 2.08,
-      "h2h_draw_price": 3.35,
-      "h2h_away_price": 4.4
+      "context": ""
     }
   ],
   "commentary": [
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: Germany Scores Four, Loses Anyway",
-      "body": "In what may stand as the defining metaphor of P Rankin's sweepstake campaign, Germany put four goals past Paraguay and still went home. A 4–5 defeat in the Round of 32 eliminates the flagship, leaving a portfolio that now consists of Czech Republic, Iraq, and Sweden — a tripartite arrangement whose combined global football footprint is, to put it charitably, modest. The win percentage sits at 7.18%, rank seven, and the points tally of 11 suggests the supporting cast has been doing considerably less supporting than advertised.",
-      "body2": "To be fair to Germany, scoring four goals in a knockout match and losing is a specific kind of cruelty that deserves acknowledgement before being filed away permanently. The remaining three teams are not without pulse, but none is troubling the tournament's upper atmosphere. Czech Republic, Iraq, and Sweden represent hope in the same way that a three-legged stool represents furniture: technically accurate, but you would not build a house around it. P Rankin's route back into this competition runs through sustained improbability."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: Unbeaten, Unloved, and Somehow Still Tenth",
+      "body": "There is something almost philosophically impressive about Varcoe's situation. Six wins, five draws, three losses, a goal difference of plus fourteen — and yet the sweepstake market has priced them at 3.59%, which is roughly the implied probability of a coin landing on its edge. Japan, Switzerland, DR Congo and Canada have collectively refused to lose, producing the kind of quietly efficient football that wins no admirers and, apparently, very little Kalshi probability.\n\nThe cruel irony is structural. Varcoe has four solid, functioning teams and a record any sensible analyst would envy. The problem is that \"solid and functioning\" does not tend to win World Cups. None of Varcoe's quartet inspire genuine title terror. The portfolio is built for respectability. The sweepstake rewards only one outcome."
     },
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: Netherlands Fall, but the Bracket Has Not Forgotten Them",
-      "body": "A 3–4 defeat to Galbraith's Morocco in the Round of 32 removes Netherlands from proceedings, which is a significant blow given they were rated as T Rankin's primary engine of advancement. The portfolio now rests on Croatia — already eliminated — Ghana, and Tunisia, a combination that does not obviously inspire confidence. Win percentage of 6.30% and rank eight reflect a position that is deteriorating in structure even as the raw points total of 17 looks superficially respectable.",
-      "body2": "The Netherlands result stings precisely because it was the team around which a genuine knockout narrative had been constructed. Ghana remain as the live wildcard option, and in a wide-open bracket that counts for something — but only something. Tunisia's contribution to date has been functional without being threatening. T Rankin now occupies the uncomfortable position of being one bad Ghana result away from a sweepstake that is essentially theoretical. The gap to the top five is measurable in probability terms and increasingly difficult to close through goodwill alone."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: Mexico Just Kicked Them While They Were Down",
+      "body": "Ecuador, the most credible name in an admittedly modest Crowle portfolio, fell 2-0 to Mexico on 1 July — owned, with characteristic efficiency, by Hankin. That result leaves Crowle with Belgium, Bosnia and Uzbekistan as the remaining sources of hope, which is a sentence that should be read slowly and with appropriate gravity. Belgium continue their commitment to the draw as an aesthetic choice. Bosnia and Uzbekistan are functioning primarily as scoreline contributors for other people's teams.\n\nAt 3.42% and rank eleven, Crowle occupies last place in a sweepstake where last place is not merely a position but a condition. Three wins across the entire portfolio, zero momentum, and a goal difference of minus eight. The portfolio does not need a result urgently so much as it needs a structural rethink — which, given the format, is no longer available."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: First in Points, Ninth in Everything That Counts",
-      "body": "The central paradox of Hankin's campaign continues to deepen. Seven wins, two draws, three losses, 23 points — a haul that leads the entire field on raw on-pitch performance — and yet a win probability of 4.54% places them ninth. Saudi Arabia are eliminated, which tidies the portfolio without improving it. Norway, Mexico, and Ivory Coast are all performing above their pre-tournament station, which is genuinely impressive and almost entirely beside the point when the market has already priced in their collective ceiling.",
-      "body2": "The win percentage problem is structural rather than incidental. Hankin's teams are performing like mid-tier overachievers, which generates points generously but title probability parsimoniously. Norway have been a revelation; Mexico have been competitive; Ivory Coast have offered more than expected. None of them, however, is a team that serious tournament modelling identifies as a winner. Hankin is, in effect, running a very efficient operation aimed at a prize that is distributed by a different metric entirely. Industrious, admirable, and almost certainly futile."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Eight Teams, One Asset, Twelve Losses",
+      "body": "Kenna holds the largest portfolio in the sweepstake — eight teams — and has somehow managed to construct a record of W4-D5-L12 with it. The loss column alone is a kind of achievement. Spain, the solitary pillar upon which 13.78% of implied probability rests, continues to justify its market position. The remaining seven teams — Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti — are performing the sweepstake equivalent of ballast: present, accounted for, and contributing very little to forward motion.\n\nThe mathematical absurdity of Kenna's situation deserves acknowledgement. More teams than anyone else. Third in win probability. Twenty-one combined losses and draws from assets not named Spain. The portfolio is less a diversified strategy than a demonstration that quantity and quality are, in this context, entirely unrelated concepts. Spain must go very deep. Everything else is noise."
     }
   ],
   "odds": [
@@ -661,9 +640,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Same's Paraguay eliminated Germany in five goals of chaos, leaving P Rankin to reflect on the mathematics of misfortune.",
-    "paragraph_1": "Three results on 30 June reshuffled the mid-table with characteristic brutality. Morris's Brazil dispatched Varcoe's Japan 2–1, a routine transaction. The day's defining spectacle was Same's Paraguay overturning P Rankin's Germany 5–4, a result that simultaneously punctures German presumption and propels Same to fifth on win percentage despite playing only ten matches. Galbraith's Morocco edged T Rankin's Netherlands 4–3, consolidating Galbraith's position at fourth with 26 points — the highest points total in the top five.",
-    "paragraph_2": "The next 48 hours offer limited drama for most, with one notable exception. Hankin owns both Ivory Coast and Norway on Wednesday, guaranteeing himself a result regardless of outcome — a structural advantage the sweepstake's format permits and everyone else will resent. Cronan's France faces P Rankin's Sweden at 7am Wednesday; a French win would strengthen Cronan's grip on first place. Thursday brings Silk's England against Varcoe's DR Congo, a fixture Silk — currently second — will expect to convert."
+    "pull_quote": "Hankin's portfolio both won and lost on the same day, leaving him precisely where he started.",
+    "paragraph_1": "The July 1st window produced a clean sweep for the higher-ranked nations. France's 3–0 demolition of Sweden was the standout result, doing Cronan's Win% no harm at all while ending whatever slim hopes P Rankin had attached to a Swedish summer. Hankin, meanwhile, experienced the full sweep of sweepstake emotion: Norway beat his own Ivory Coast, then Mexico obliged by beating Crowle's Ecuador. Net effect for Hankin: ambiguous. Crowle takes two losses in a single session.",
+    "paragraph_2": "The next 48 hours carry unusual weight. Silk, currently second, has both England and USA in action — a rare double exposure that could consolidate his position or halve it before Friday breakfast. Crowle, already down after Ecuador, faces Belgium against Kenna's Senegal, a fixture that offers him little comfort given Kenna sits third overall. Friday's Spain versus Austria pits Kenna's most valuable asset directly against Cronan's, a collision between first and third that the standings can ill afford to ignore."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2818,11 +2797,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.32,
-          "h2h_draw_price": 5.3,
-          "h2h_away_price": 16.5,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537422,
@@ -2840,11 +2815,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 2.22,
-          "h2h_draw_price": 3.35,
-          "h2h_away_price": 3.9,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537421,
@@ -2862,11 +2833,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.42,
-          "h2h_draw_price": 5.1,
-          "h2h_away_price": 9.4,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537420,
@@ -2884,11 +2851,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.35,
-          "h2h_draw_price": 5.4,
-          "h2h_away_price": 12.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537419,
@@ -2906,11 +2869,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.84,
-          "h2h_draw_price": 3.6,
-          "h2h_away_price": 5.3,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537429,
@@ -2928,11 +2887,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 2.08,
-          "h2h_draw_price": 3.35,
-          "h2h_away_price": 4.4,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537428,
@@ -2950,11 +2905,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 3.55,
-          "h2h_draw_price": 2.96,
-          "h2h_away_price": 2.6,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537427,
@@ -2972,11 +2923,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.18,
-          "h2h_draw_price": 8.4,
-          "h2h_away_price": 24.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537430,
@@ -2994,11 +2941,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.56,
-          "h2h_draw_price": 4.1,
-          "h2h_away_price": 8.4,
-          "h2h_source": "Betfair"
+          "venue": ""
         }
       ]
     },
@@ -3022,11 +2965,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 5.2,
-          "h2h_draw_price": 3.6,
-          "h2h_away_price": 1.88,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537375,
@@ -3044,11 +2983,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 23.0,
-          "h2h_draw_price": 7.4,
-          "h2h_away_price": 1.2,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537377,
@@ -3066,11 +3001,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.99,
-          "h2h_draw_price": 3.65,
-          "h2h_away_price": 4.3,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537378,
