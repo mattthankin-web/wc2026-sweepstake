@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-06-30T23:14:52.441128+00:00",
-    "last_updated_aest": "Wednesday 1 Jul 2026, 9:14am AEST",
+    "last_updated": "2026-07-01T10:10:46.683616+00:00",
+    "last_updated_aest": "Wednesday 1 Jul 2026, 8:10pm AEST",
     "edition": 18,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "1 Jul 2026 9:14am AEST",
+    "odds_last_updated": "1 Jul 2026 8:10am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-30T12:24:09.587086+00:00",
-    "last_score_refresh": "1 Jul 2026 9:14am AEST",
+    "last_score_refresh": "1 Jul 2026 8:10pm AEST",
     "last_commentary_participants": [
       "P Rankin",
       "T Rankin",
@@ -239,12 +239,12 @@
     },
     {
       "name": "Hankin",
-      "pld": 14,
-      "w": 8,
+      "pld": 15,
+      "w": 9,
       "d": 2,
       "l": 4,
-      "pts": 26,
-      "gd": 5,
+      "pts": 29,
+      "gd": 7,
       "rank": 9,
       "left": 5,
       "win_pct": 4.54,
@@ -267,12 +267,12 @@
     },
     {
       "name": "Crowle",
-      "pld": 9,
+      "pld": 10,
       "w": 2,
       "d": 3,
-      "l": 4,
+      "l": 5,
       "pts": 9,
-      "gd": -5,
+      "gd": -7,
       "rank": 11,
       "left": 5,
       "win_pct": 3.42,
@@ -281,22 +281,6 @@
     }
   ],
   "recent_results": [
-    {
-      "date": "30 Jun",
-      "aest_time": "Tue 11:00am",
-      "group": "Round of 32",
-      "home": "Netherlands",
-      "home_owner": "T Rankin",
-      "away": "Morocco",
-      "away_owner": "Galbraith",
-      "home_score": 3,
-      "away_score": 4,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "SHOCK RESULT",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-06-30T01:00:00Z"
-    },
     {
       "date": "1 Jul",
       "aest_time": "Wed 3:00am",
@@ -328,19 +312,25 @@
       "badge": "",
       "sweepstake_relevant": true,
       "sort_key": "1_2026-06-30T21:00:00Z"
-    }
-  ],
-  "upcoming_fixtures": [
+    },
     {
+      "date": "1 Jul",
       "aest_time": "Wed 11:00am",
-      "group": "R32",
+      "group": "Round of 32",
       "home": "Mexico",
       "home_owner": "Hankin",
       "away": "Ecuador",
       "away_owner": "Crowle",
-      "status": "TIMED",
-      "context": ""
-    },
+      "home_score": 2,
+      "away_score": 0,
+      "status": "FT",
+      "match_minute": "",
+      "badge": "",
+      "sweepstake_relevant": true,
+      "sort_key": "1_2026-07-01T01:00:00Z"
+    }
+  ],
+  "upcoming_fixtures": [
     {
       "aest_time": "Thu 2:00am",
       "group": "R32",
@@ -390,6 +380,16 @@
       "away_owner": "T Rankin",
       "status": "TIMED",
       "context": ""
+    },
+    {
+      "aest_time": "Fri 1:00pm",
+      "group": "R32",
+      "home": "Switzerland",
+      "home_owner": "Varcoe",
+      "away": "Algeria",
+      "away_owner": "Silk",
+      "status": "TIMED",
+      "context": ""
     }
   ],
   "commentary": [
@@ -419,36 +419,36 @@
     {
       "team": "France",
       "owner": "Cronan",
-      "prev": "$3.3",
-      "now": "$3.1",
-      "now_decimal": 3.15,
+      "prev": "$3.1",
+      "now": "$3.0",
+      "now_decimal": 3.05,
       "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$5.5",
-      "now": "$5.6",
-      "now_decimal": 5.6,
-      "direction": "drifted",
-      "source": "Betfair"
-    },
-    {
-      "team": "England",
-      "owner": "Silk",
-      "prev": "$9.2",
-      "now": "$9.0",
-      "now_decimal": 9.0,
+      "prev": "$5.6",
+      "now": "$5.5",
+      "now_decimal": 5.5,
       "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
+      "prev": "$9.2",
+      "now": "$9.4",
+      "now_decimal": 9.4,
+      "direction": "drifted",
+      "source": "Betfair"
+    },
+    {
+      "team": "England",
+      "owner": "Silk",
       "prev": "$9.0",
-      "now": "$9.2",
-      "now_decimal": 9.2,
+      "now": "$9.6",
+      "now_decimal": 9.6,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -456,26 +456,26 @@
       "team": "Brazil",
       "owner": "Morris",
       "prev": "$13.0",
-      "now": "$13.0",
-      "now_decimal": 13.0,
-      "direction": "unchanged",
+      "now": "$13.5",
+      "now_decimal": 13.5,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Portugal",
       "owner": "Same",
-      "prev": "$16.5",
-      "now": "$17.0",
-      "now_decimal": 17.0,
+      "prev": "$17.0",
+      "now": "$17.5",
+      "now_decimal": 17.5,
       "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Morocco",
       "owner": "Galbraith",
-      "prev": "$28.0",
-      "now": "$32.0",
-      "now_decimal": 32.0,
+      "prev": "$32.0",
+      "now": "$36.0",
+      "now_decimal": 36.0,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -489,21 +489,21 @@
       "source": "Betfair"
     },
     {
-      "team": "Norway",
-      "owner": "Hankin",
-      "prev": "$42.0",
-      "now": "$46.0",
-      "now_decimal": 46.0,
-      "direction": "drifted",
-      "source": "Betfair"
-    },
-    {
       "team": "Mexico",
       "owner": "Hankin",
       "prev": "$55.0",
+      "now": "$40.0",
+      "now_decimal": 40.0,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
+      "team": "Norway",
+      "owner": "Hankin",
+      "prev": "$46.0",
       "now": "$55.0",
       "now_decimal": 55.0,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -518,54 +518,36 @@
     {
       "team": "Switzerland",
       "owner": "Varcoe",
-      "prev": "$110.0",
+      "prev": "$120.0",
       "now": "$120.0",
       "now_decimal": 120.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Senegal",
       "owner": "Kenna",
       "prev": "$160.0",
-      "now": "$160.0",
-      "now_decimal": 160.0,
-      "direction": "unchanged",
-      "source": "Betfair"
-    },
-    {
-      "team": "Ecuador",
-      "owner": "Crowle",
-      "prev": "$150.0",
-      "now": "$190.0",
-      "now_decimal": 190.0,
-      "direction": "drifted",
+      "now": "$150.0",
+      "now_decimal": 150.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Croatia",
       "owner": "T Rankin",
       "prev": "$270.0",
-      "now": "$270.0",
-      "now_decimal": 270.0,
-      "direction": "unchanged",
-      "source": "Betfair"
-    },
-    {
-      "team": "Paraguay",
-      "owner": "Same",
-      "prev": "$400.0",
-      "now": "$390.0",
-      "now_decimal": 390.0,
-      "direction": "shortened",
+      "now": "$280.0",
+      "now_decimal": 280.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Canada",
       "owner": "Varcoe",
-      "prev": "$340.0",
-      "now": "$420.0",
-      "now_decimal": 420.0,
+      "prev": "$420.0",
+      "now": "$470.0",
+      "now_decimal": 470.0,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -573,17 +555,26 @@
       "team": "Austria",
       "owner": "Cronan",
       "prev": "$550.0",
-      "now": "$550.0",
-      "now_decimal": 550.0,
-      "direction": "unchanged",
+      "now": "$530.0",
+      "now_decimal": 530.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Egypt",
       "owner": "Kenna",
-      "prev": "$520.0",
-      "now": "$550.0",
-      "now_decimal": 550.0,
+      "prev": "$550.0",
+      "now": "$530.0",
+      "now_decimal": 530.0,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
+      "team": "Paraguay",
+      "owner": "Same",
+      "prev": "$390.0",
+      "now": "$570.0",
+      "now_decimal": 570.0,
       "direction": "drifted",
       "source": "Betfair"
     },
@@ -591,9 +582,9 @@
       "team": "Australia",
       "owner": "Cronan",
       "prev": "$590.0",
-      "now": "$590.0",
-      "now_decimal": 590.0,
-      "direction": "unchanged",
+      "now": "$600.0",
+      "now_decimal": 600.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -609,9 +600,9 @@
       "team": "Algeria",
       "owner": "Silk",
       "prev": "$800.0",
-      "now": "$800.0",
-      "now_decimal": 800.0,
-      "direction": "unchanged",
+      "now": "$880.0",
+      "now_decimal": 880.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -626,10 +617,10 @@
     {
       "team": "Cape Verde",
       "owner": "Same",
-      "prev": "$990.0",
+      "prev": "$1000.0",
       "now": "$1000.0",
       "now_decimal": 1000.0,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     }
   ],
@@ -2766,13 +2757,13 @@
           "date_iso": "2026-07-01",
           "home": "Mexico",
           "home_owner": "Hankin",
-          "home_score": null,
+          "home_score": 2,
           "away": "Ecuador",
           "away_owner": "Crowle",
-          "away_score": null,
+          "away_score": 0,
           "score_note": "",
-          "status": "TIMED",
-          "winner": null,
+          "status": "FINISHED",
+          "winner": "home",
           "venue": ""
         },
         {
@@ -2971,8 +2962,8 @@
           "home": "Paraguay",
           "home_owner": "Same",
           "home_score": null,
-          "away": null,
-          "away_owner": null,
+          "away": "France",
+          "away_owner": "Cronan",
           "away_score": null,
           "score_note": "",
           "status": "TIMED",
@@ -2989,8 +2980,8 @@
           "home": "Brazil",
           "home_owner": "Morris",
           "home_score": null,
-          "away": null,
-          "away_owner": null,
+          "away": "Norway",
+          "away_owner": "Hankin",
           "away_score": null,
           "score_note": "",
           "status": "TIMED",
