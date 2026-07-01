@@ -57,22 +57,36 @@ TEAM_TO_OWNER = {
     "Democratic Republic of Congo": "Varcoe", "Canada": "Varcoe",
     # Crowle
     "Belgium": "Crowle", "Ecuador": "Crowle",
-    "Bosnia and Herzegovina": "Crowle", "Bosnia": "Crowle", "Uzbekistan": "Crowle",
+    "Bosnia and Herzegovina": "Crowle", "Bosnia": "Crowle",
+    "Bosnia-Herzegovina": "Crowle", "Bosnia & Herzegovina": "Crowle",
+    "Uzbekistan": "Crowle",
 }
 
 DISPLAY_NAMES = {
     "Korea Republic": "South Korea", "Türkiye": "Turkey",
     "Côte d'Ivoire": "Ivory Coast", "Congo DR": "DR Congo",
     "Democratic Republic of Congo": "DR Congo",
-    "United States": "USA", "Bosnia and Herzegovina": "Bosnia",
+    "United States": "USA",
+    "Bosnia and Herzegovina": "Bosnia",
+    "Bosnia-Herzegovina": "Bosnia",
+    "Bosnia & Herzegovina": "Bosnia",
     "Czechia": "Czech Republic",
+    "Cape Verde Islands": "Cape Verde",
+    "IR Iran": "Iran",
 }
 
 def get_display_name(api_name):
     return DISPLAY_NAMES.get(api_name, api_name)
 
 def get_owner(api_name):
-    return TEAM_TO_OWNER.get(api_name, TEAM_TO_OWNER.get(get_display_name(api_name), "?"))
+    if not api_name:
+        return "?"
+    display = get_display_name(api_name)
+    return (TEAM_TO_OWNER.get(api_name)
+         or TEAM_TO_OWNER.get(display)
+         or TEAM_TO_OWNER.get(api_name.replace("-", " and "))
+         or TEAM_TO_OWNER.get(api_name.replace("-", " "))
+         or "?")
 
 def get_badge(match):
     """Assign a badge based on match context."""
@@ -472,7 +486,7 @@ def fetch_au_odds():
         "Spain":"Kenna","Senegal":"Kenna","South Korea":"Kenna","Egypt":"Kenna",
         "Jordan":"Kenna","New Zealand":"Kenna","Curaçao":"Kenna","Curacao":"Kenna","Haiti":"Kenna",
         "France":"Cronan","Austria":"Cronan","Australia":"Cronan","Panama":"Cronan",
-        "England":"Silk","United States":"Silk","Algeria":"Silk","Qatar":"Silk",
+        "England":"Silk","USA":"Silk","United States":"Silk","Algeria":"Silk","Qatar":"Silk",
         "Portugal":"Same","Colombia":"Same","Paraguay":"Same","Cape Verde":"Same",
         "Argentina":"Galbraith","Morocco":"Galbraith","Turkey":"Galbraith","South Africa":"Galbraith",
         "Brazil":"Morris","Uruguay":"Morris","Scotland":"Morris","Iran":"Morris",
@@ -531,9 +545,12 @@ def update_odds(existing_data, best_odds, owner_map):
 
     new_odds = []
     for team, curr in best.items():
-        owner = OWNER_MAP.get(team)
+        # Normalise name — API uses "United States", we store "USA" etc.
+        display_team = get_display_name(team)
+        owner = OWNER_MAP.get(team) or OWNER_MAP.get(display_team)
         if not owner:
             continue  # skip teams not in sweepstake
+        team = display_team  # store under normalised name
 
         curr_price = curr["price"]
         bm = curr["bookmaker"]
