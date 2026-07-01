@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-01T10:26:25.296259+00:00",
-    "last_updated_aest": "Wednesday 1 Jul 2026, 8:26pm AEST",
+    "last_updated": "2026-07-01T10:57:40.965812+00:00",
+    "last_updated_aest": "Wednesday 1 Jul 2026, 8:57pm AEST",
     "edition": 18,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "1 Jul 2026 8:26am AEST",
+    "odds_last_updated": "1 Jul 2026 8:57am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-06-30T12:24:09.587086+00:00",
-    "last_score_refresh": "1 Jul 2026 8:26pm AEST",
+    "last_score_refresh": "1 Jul 2026 8:57pm AEST",
     "last_commentary_participants": [
       "P Rankin",
       "T Rankin",
@@ -353,9 +353,9 @@
       "away_owner": "Kenna",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.2,
+      "h2h_home_price": 2.22,
       "h2h_draw_price": 3.35,
-      "h2h_away_price": 3.95
+      "h2h_away_price": 3.9
     },
     {
       "aest_time": "Thu 10:00am",
@@ -367,7 +367,7 @@
       "status": "TIMED",
       "context": "",
       "h2h_home_price": 1.42,
-      "h2h_draw_price": 5.2,
+      "h2h_draw_price": 5.1,
       "h2h_away_price": 9.4
     },
     {
@@ -392,7 +392,7 @@
       "away_owner": "T Rankin",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.85,
+      "h2h_home_price": 1.84,
       "h2h_draw_price": 3.6,
       "h2h_away_price": 5.3
     },
@@ -453,21 +453,21 @@
       "source": "Betfair"
     },
     {
-      "team": "England",
-      "owner": "Silk",
-      "prev": "$9.6",
-      "now": "$9.4",
-      "now_decimal": 9.4,
-      "direction": "shortened",
-      "source": "Betfair"
-    },
-    {
       "team": "Spain",
       "owner": "Kenna",
       "prev": "$9.4",
       "now": "$9.4",
       "now_decimal": 9.4,
       "direction": "unchanged",
+      "source": "Betfair"
+    },
+    {
+      "team": "England",
+      "owner": "Silk",
+      "prev": "$9.4",
+      "now": "$9.6",
+      "now_decimal": 9.6,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -492,9 +492,9 @@
       "team": "Morocco",
       "owner": "Galbraith",
       "prev": "$36.0",
-      "now": "$36.0",
-      "now_decimal": 36.0,
-      "direction": "unchanged",
+      "now": "$34.0",
+      "now_decimal": 34.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
@@ -555,9 +555,9 @@
       "team": "Senegal",
       "owner": "Kenna",
       "prev": "$150.0",
-      "now": "$150.0",
-      "now_decimal": 150.0,
-      "direction": "unchanged",
+      "now": "$160.0",
+      "now_decimal": 160.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -579,8 +579,8 @@
       "source": "Betfair"
     },
     {
-      "team": "Austria",
-      "owner": "Cronan",
+      "team": "Egypt",
+      "owner": "Kenna",
       "prev": "$530.0",
       "now": "$530.0",
       "now_decimal": 530.0,
@@ -588,12 +588,12 @@
       "source": "Betfair"
     },
     {
-      "team": "Egypt",
-      "owner": "Kenna",
+      "team": "Austria",
+      "owner": "Cronan",
       "prev": "$530.0",
-      "now": "$530.0",
-      "now_decimal": 530.0,
-      "direction": "unchanged",
+      "now": "$550.0",
+      "now_decimal": 550.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -2841,10 +2841,10 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.2,
+          "h2h_home_price": 2.22,
           "h2h_draw_price": 3.35,
-          "h2h_away_price": 3.95,
-          "h2h_source": "Bet Right"
+          "h2h_away_price": 3.9,
+          "h2h_source": "Betfair"
         },
         {
           "id": 537421,
@@ -2864,7 +2864,7 @@
           "winner": null,
           "venue": "",
           "h2h_home_price": 1.42,
-          "h2h_draw_price": 5.2,
+          "h2h_draw_price": 5.1,
           "h2h_away_price": 9.4,
           "h2h_source": "Betfair"
         },
@@ -2907,7 +2907,7 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 1.85,
+          "h2h_home_price": 1.84,
           "h2h_draw_price": 3.6,
           "h2h_away_price": 5.3,
           "h2h_source": "Betfair"
@@ -2975,7 +2975,7 @@
           "venue": "",
           "h2h_home_price": 1.18,
           "h2h_draw_price": 8.4,
-          "h2h_away_price": 23.0,
+          "h2h_away_price": 24.0,
           "h2h_source": "Betfair"
         },
         {
@@ -3025,7 +3025,7 @@
           "venue": "",
           "h2h_home_price": 5.2,
           "h2h_draw_price": 3.6,
-          "h2h_away_price": 1.86,
+          "h2h_away_price": 1.88,
           "h2h_source": "Betfair"
         },
         {
@@ -3045,8 +3045,8 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 22.0,
-          "h2h_draw_price": 7.6,
+          "h2h_home_price": 23.0,
+          "h2h_draw_price": 7.4,
           "h2h_away_price": 1.2,
           "h2h_source": "Betfair"
         },
