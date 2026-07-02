@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-02T10:16:09.138801+00:00",
-    "last_updated_aest": "Thursday 2 Jul 2026, 8:16pm AEST",
-    "edition": 19,
+    "last_updated": "2026-07-02T12:20:19.224285+00:00",
+    "last_updated_aest": "Thursday 2 Jul 2026, 10:20pm AEST",
+    "edition": 20,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "2 Jul 2026 8:16am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-01T13:40:26.259918+00:00",
-    "last_score_refresh": "2 Jul 2026 8:16pm AEST",
+    "trivia_schedule_generated": "2026-07-02T12:20:47.091773+00:00",
+    "last_score_refresh": "2 Jul 2026 10:20pm AEST",
     "last_commentary_participants": [
-      "Varcoe",
-      "Crowle",
-      "Kenna"
+      "Silk",
+      "Same",
+      "Galbraith"
     ],
-    "last_commentary_generated": "2026-07-01T13:40:26.259607+00:00",
+    "last_commentary_generated": "2026-07-02T12:20:47.091447+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -339,10 +339,7 @@
       "away": "Austria",
       "away_owner": "Cronan",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.34,
-      "h2h_draw_price": 5.5,
-      "h2h_away_price": 13.0
+      "context": ""
     },
     {
       "aest_time": "Fri 9:00am",
@@ -352,10 +349,7 @@
       "away": "Croatia",
       "away_owner": "T Rankin",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.76,
-      "h2h_draw_price": 3.85,
-      "h2h_away_price": 5.7
+      "context": ""
     },
     {
       "aest_time": "Fri 1:00pm",
@@ -365,10 +359,7 @@
       "away": "Algeria",
       "away_owner": "Silk",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 2.08,
-      "h2h_draw_price": 3.35,
-      "h2h_away_price": 4.4
+      "context": ""
     },
     {
       "aest_time": "Sat 4:00am",
@@ -378,10 +369,7 @@
       "away": "Egypt",
       "away_owner": "Kenna",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 3.6,
-      "h2h_draw_price": 2.96,
-      "h2h_away_price": 2.56
+      "context": ""
     },
     {
       "aest_time": "Sat 8:00am",
@@ -391,10 +379,7 @@
       "away": "Cape Verde",
       "away_owner": "Same",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.18,
-      "h2h_draw_price": 8.8,
-      "h2h_away_price": 25.0
+      "context": ""
     },
     {
       "aest_time": "Sat 11:30am",
@@ -404,30 +389,27 @@
       "away": "Ghana",
       "away_owner": "T Rankin",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.55,
-      "h2h_draw_price": 4.1,
-      "h2h_away_price": 8.4
+      "context": ""
     }
   ],
   "commentary": [
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: Unbeaten, Unloved, and Somehow Still Tenth",
-      "body": "There is something almost philosophically impressive about Varcoe's situation. Six wins, five draws, three losses, a goal difference of plus fourteen — and yet the sweepstake market has priced them at 3.59%, which is roughly the implied probability of a coin landing on its edge. Japan, Switzerland, DR Congo and Canada have collectively refused to lose, producing the kind of quietly efficient football that wins no admirers and, apparently, very little Kalshi probability.\n\nThe cruel irony is structural. Varcoe has four solid, functioning teams and a record any sensible analyst would envy. The problem is that \"solid and functioning\" does not tend to win World Cups. None of Varcoe's quartet inspire genuine title terror. The portfolio is built for respectability. The sweepstake rewards only one outcome."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: A Clean Sweep That Tidies Up the Portfolio",
+      "body": "Two games, two wins, six points banked. England dispatched DR Congo 2-1 in the Round of 32 while USA put Bosnia away 2-0 with something approaching comfort. For a participant carrying Algeria and Qatar as dead weight — assets that contribute roughly as much as a broken calculator — this was the kind of double-header that justifies the whole enterprise. Both live teams are through, both arrived with momentum, and Silk now sits at rank two with 14.05%.\n\nThe question now is not whether Silk's assets can win games but whether they can win the right ones. England's underlying performances have been watchable without being commanding; USA have been efficient. In a sweepstake where Cronan still leads on probability despite fewer points, Silk needs both horses to keep running rather than one to pull up lame in the quarters."
     },
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: Mexico Just Kicked Them While They Were Down",
-      "body": "Ecuador, the most credible name in an admittedly modest Crowle portfolio, fell 2-0 to Mexico on 1 July — owned, with characteristic efficiency, by Hankin. That result leaves Crowle with Belgium, Bosnia and Uzbekistan as the remaining sources of hope, which is a sentence that should be read slowly and with appropriate gravity. Belgium continue their commitment to the draw as an aesthetic choice. Bosnia and Uzbekistan are functioning primarily as scoreline contributors for other people's teams.\n\nAt 3.42% and rank eleven, Crowle occupies last place in a sweepstake where last place is not merely a position but a condition. Three wins across the entire portfolio, zero momentum, and a goal difference of minus eight. The portfolio does not need a result urgently so much as it needs a structural rethink — which, given the format, is no longer available."
+      "participant": "Same",
+      "color": "#15803D",
+      "title": "Same: The Quiet Accumulator Awaits Its Reckoning",
+      "body": "No results directly involving Same's teams feature in this edition, which suits a participant whose entire sweepstake identity is built on patient, low-drama accumulation. The record of W5-D7-L1 is almost aggressively undramatic — seven draws suggests teams that are either tactically cautious or constitutionally incapable of finishing. Only one defeat in thirteen outings is genuinely impressive, yet 9.56% at rank five tells you the market remains sceptical about where this squad actually peaks.\n\nPortugal has been the disappointment. Colombia has been the quiet overperformer. Same's thesis rests on one or both advancing deep into the knockout rounds, at which point the points tally becomes largely irrelevant and the probability column does all the talking. For now, Same is positioned like an investor sitting on undervalued stock: patient, cautiously optimistic, and quietly hoping nobody else has noticed Colombia."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Eight Teams, One Asset, Twelve Losses",
-      "body": "Kenna holds the largest portfolio in the sweepstake — eight teams — and has somehow managed to construct a record of W4-D5-L12 with it. The loss column alone is a kind of achievement. Spain, the solitary pillar upon which 13.78% of implied probability rests, continues to justify its market position. The remaining seven teams — Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti — are performing the sweepstake equivalent of ballast: present, accounted for, and contributing very little to forward motion.\n\nThe mathematical absurdity of Kenna's situation deserves acknowledgement. More teams than anyone else. Third in win probability. Twenty-one combined losses and draws from assets not named Spain. The portfolio is less a diversified strategy than a demonstration that quantity and quality are, in this context, entirely unrelated concepts. Spain must go very deep. Everything else is noise."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: Two Horses Left, Both Thoroughbreds",
+      "body": "Turkey and South Africa are gone, which means Galbraith has been effectively distilled into its purest form: Argentina and Morocco, two teams that won their groups and arrived at the knockout stage with purpose. The deadweight has been cleared, the portfolio concentrated. At 12.06% and rank four, Galbraith holds a position that is simultaneously frustrating — behind both Cronan and Silk despite eight wins — and genuinely threatening.\n\nMorocco's group-stage form was the kind of thing that makes other sweepstake participants quietly recalculate. Argentina remain the single most dangerous asset in this sweepstake on outright tournament probability. Galbraith does not need things to go right; Galbraith needs things to not go catastrophically wrong, which is a rather more comfortable position than most participants occupy at this stage."
     }
   ],
   "odds": [
@@ -631,9 +613,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Hankin's portfolio both won and lost on the same day, leaving him precisely where he started.",
-    "paragraph_1": "The July 1st window produced a clean sweep for the higher-ranked nations. France's 3–0 demolition of Sweden was the standout result, doing Cronan's Win% no harm at all while ending whatever slim hopes P Rankin had attached to a Swedish summer. Hankin, meanwhile, experienced the full sweep of sweepstake emotion: Norway beat his own Ivory Coast, then Mexico obliged by beating Crowle's Ecuador. Net effect for Hankin: ambiguous. Crowle takes two losses in a single session.",
-    "paragraph_2": "The next 48 hours carry unusual weight. Silk, currently second, has both England and USA in action — a rare double exposure that could consolidate his position or halve it before Friday breakfast. Crowle, already down after Ecuador, faces Belgium against Kenna's Senegal, a fixture that offers him little comfort given Kenna sits third overall. Friday's Spain versus Austria pits Kenna's most valuable asset directly against Cronan's, a collision between first and third that the standings can ill afford to ignore."
+    "pull_quote": "Silk collected six points in a single day while Kenna watched Belgium eliminate his Senegal side.",
+    "paragraph_1": "Three matches on 2 July produced an unambiguous winner: Silk, whose England and USA sides dispatched DR Congo and Bosnia respectively, banking maximum points on a day that did little for anyone else. Varcoe absorbed a defeat via DR Congo. Crowle's Belgium beat Kenna's Senegal 3–2, a result that compounds Kenna's chronic draw-heavy record — five draws, thirteen losses — with a straightforward elimination. Galbraith, sitting third on points with 26, was uninvolved and watched the gap to Silk narrow.",
+    "paragraph_2": "The next 48 hours offer meaningful exposure for several participants. Kenna's Spain face Cronan's Austria on Friday morning — a loss for Spain would further erode Kenna's already strained portfolio, while a win keeps the tournament's highest Win% holder honest. Same's Portugal meet T Rankin's Croatia, a fixture with genuine knockout implications for a participant currently fifth but with the tournament's best loss record at one defeat. Varcoe's Switzerland and Silk's Algeria complete the window, offering Silk a third asset to manage — or lose."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2842,11 +2824,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.34,
-          "h2h_draw_price": 5.5,
-          "h2h_away_price": 13.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537419,
@@ -2864,11 +2842,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.76,
-          "h2h_draw_price": 3.85,
-          "h2h_away_price": 5.7,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537429,
@@ -2886,11 +2860,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 2.08,
-          "h2h_draw_price": 3.35,
-          "h2h_away_price": 4.4,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537428,
@@ -2908,11 +2878,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 3.6,
-          "h2h_draw_price": 2.96,
-          "h2h_away_price": 2.56,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537427,
@@ -2930,11 +2896,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.18,
-          "h2h_draw_price": 8.8,
-          "h2h_away_price": 25.0,
-          "h2h_source": "TAB"
+          "venue": ""
         },
         {
           "id": 537430,
@@ -2952,11 +2914,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.55,
-          "h2h_draw_price": 4.1,
-          "h2h_away_price": 8.4,
-          "h2h_source": "Betfair"
+          "venue": ""
         }
       ]
     },
@@ -2980,11 +2938,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 5.5,
-          "h2h_draw_price": 3.55,
-          "h2h_away_price": 1.84,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537375,
@@ -3002,11 +2956,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 24.0,
-          "h2h_draw_price": 7.6,
-          "h2h_away_price": 1.2,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537377,
@@ -3024,11 +2974,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.95,
-          "h2h_draw_price": 3.75,
-          "h2h_away_price": 4.4,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537378,
@@ -3046,11 +2992,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 3.2,
-          "h2h_draw_price": 3.3,
-          "h2h_away_price": 2.6,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537379,
@@ -3086,11 +3028,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 2.62,
-          "h2h_draw_price": 3.5,
-          "h2h_away_price": 2.92,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537381,
