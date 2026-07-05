@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-05T09:46:27.766613+00:00",
-    "last_updated_aest": "Sunday 5 Jul 2026, 7:46pm AEST",
-    "edition": 22,
+    "last_updated": "2026-07-05T11:15:34.959614+00:00",
+    "last_updated_aest": "Sunday 5 Jul 2026, 9:15pm AEST",
+    "edition": 23,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "5 Jul 2026 7:46am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-04T10:59:49.068361+00:00",
-    "last_score_refresh": "5 Jul 2026 7:46pm AEST",
+    "trivia_schedule_generated": "2026-07-05T11:16:04.002002+00:00",
+    "last_score_refresh": "5 Jul 2026 9:15pm AEST",
     "last_commentary_participants": [
-      "Crowle",
-      "Kenna",
-      "Cronan"
+      "Galbraith",
+      "Morris",
+      "P Rankin"
     ],
-    "last_commentary_generated": "2026-07-04T10:59:49.068036+00:00",
+    "last_commentary_generated": "2026-07-05T11:16:04.001666+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -323,10 +323,7 @@
       "away": "Norway",
       "away_owner": "Hankin",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.84,
-      "h2h_draw_price": 3.85,
-      "h2h_away_price": 5.0
+      "context": ""
     },
     {
       "aest_time": "Mon 10:00am",
@@ -336,10 +333,7 @@
       "away": "England",
       "away_owner": "Silk",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 3.3,
-      "h2h_draw_price": 3.25,
-      "h2h_away_price": 2.52
+      "context": ""
     },
     {
       "aest_time": "Tue 5:00am",
@@ -349,10 +343,7 @@
       "away": "Spain",
       "away_owner": "Kenna",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 4.3,
-      "h2h_draw_price": 3.75,
-      "h2h_away_price": 1.97
+      "context": ""
     },
     {
       "aest_time": "Tue 10:00am",
@@ -362,30 +353,27 @@
       "away": "Belgium",
       "away_owner": "Crowle",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 2.82,
-      "h2h_draw_price": 3.5,
-      "h2h_away_price": 2.74
+      "context": ""
     }
   ],
   "commentary": [
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: A Portfolio That Has Forgotten What Winning Feels Like",
-      "body": "No results involving Crowle's teams today, which is arguably the most merciful outcome available to him. The record reads W4-D4-L7, a sequence that flatters only by including the word 'wins.' Belgium continue their peculiar commitment to the draw as a lifestyle choice, while Ecuador, Bosnia and Uzbekistan have contributed the kind of performances that make neutral observers feel vaguely embarrassed on the owner's behalf. Rank 11 of 11. Win% at 3.42%. The floor has been located.\n\nThere is, technically, still time. Belgium in particular retain some theoretical capacity to progress, and a tournament run from any one of the four sides would shift the numbers. But 'theoretical capacity' is doing considerable heavy lifting in that sentence, and the broader trajectory of this portfolio suggests that hoping for a Belgium revival is the sweepstake equivalent of waiting for a delayed train that may have been cancelled three stops back."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: Morocco Demolish Canada to Keep the Dream Very Much Alive",
+      "body": "A 3–0 dismantling of Canada is not subtle, and Morocco were not trying to be. Galbraith's second string — if you can call them that — delivered the kind of statement scoreline that makes Argentina feel less like a necessity and more like a luxury. With Turkey and South Africa already eliminated, this is now a two-horse portfolio, but what horses. Morocco won their group and are evidently in the mood, while Argentina remain the sweepstake's single most valuable individual asset by some distance.\n\nGalbraith sits fourth on Win% at 12.06% but the underlying quality of the surviving teams flatters the ranking — it arguably undersells it. Cronan leads on Win% but is relying on France navigating a congested bracket. Galbraith, by contrast, has two legitimate contenders in a knockout tournament where the bracket rewards teams built for exactly this format. The gap between fourth and first is smaller than it looks."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Egypt Deliver, Which Is More Than Can Be Said for the Other Seven",
-      "body": "Egypt's 5-3 dismantling of Australia on 4 July was the kind of result that briefly makes Kenna's eight-team portfolio look like a deliberate diversification strategy rather than an accident of the draw. Egypt contributed points, goals, and the rare sensation of a Kenna team winning convincingly. The record moves accordingly, and with Spain still the dominant asset, the Win% holds at 13.78% — good enough for third overall, a position that would look more comfortable if it weren't propped up almost entirely by two teams out of eight.\n\nThe remaining six — Jordan, New Zealand, Curaçao, Haiti, Senegal, South Korea — continue to exist in the standings the way furniture exists in a house fire: present, but not helping. Kenna's W6-D5-L13 loss column is the longest in the sweepstake, a statistic that reflects what happens when quantity and quality diverge at the point of allocation. Spain must go deep. There is no plan B, C, D, E, F, or G."
+      "participant": "Morris",
+      "color": "#0891B2",
+      "title": "Morris: Unbeaten and Underappreciated, But the Draws Are a Problem",
+      "body": "W4-D6-L3 is the record of a team that has watched a great deal of football and profited from relatively little of it. Six draws is less a tactical philosophy than a chronic condition. The points tally of 18 reflects a group stage run that was fine — occasionally promising — but never quite ruthless. Brazil remain the portfolio's engine and, on their day, an entirely plausible world champion. Uruguay have contributed the sort of performances that generate cautious optimism before quietly going nowhere in particular. Scotland and Iran are present, which is the most generous thing one can say.\n\nThe Win% of 7.78% is honest if slightly ungenerous. Morris is not out of this — Brazil in a knockout tournament is always a credible threat — but the draw habit needs to be diagnosed and treated before the round of 16 becomes a series of 120-minute attrition tests decided by penalty shootouts in which nobody can quite remember how to score. Brazil winning the whole thing remains the only scenario that makes this portfolio truly interesting."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: First Place, One Team, One Bad Result Away from a Crisis",
-      "body": "Cronan leads the sweepstake at 17.74% Win%, which is a genuinely impressive position and one that deserves acknowledgement before the structural concerns are raised. Australia's 3-5 defeat to Egypt on 4 July raises those concerns immediately. The result eliminates or severely damages Australia as a scoring vehicle, leaving France, Austria, and Panama as the remaining portfolio. Austria and Panama are functional; they are not France. The entire edifice of Cronan's lead rests on a single French team navigating a World Cup without misfortune, complacency, or the particular self-sabotage the French national side has occasionally treated as tradition.\n\nW6-D2-L7 is a record that conceals more than it reveals — the losses largely attributable to the supporting cast absorbing group-stage punishment while France accumulated. That strategy has its logic, and with France alive and well, Cronan remains the man to beat. But 'one-team portfolio at a tournament' is a known risk category, and the margin for error between first place and irrelevance is precisely ninety minutes of a bad French afternoon."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: Germany Are Excellent, the Rest of the Portfolio Is Not",
+      "body": "Three wins, nine losses, eleven points. The record belongs to a participant who drew Germany in the sweepstake and then watched the rest of their allocation wander off in various unhelpful directions. Czech Republic, Iraq, and Sweden have contributed to the points tally in the way that ambient noise contributes to a conversation — technically present, largely irrelevant. P Rankin's Win% of 7.18% is almost entirely a function of Germany performing well, which they have been, and the market knows it.\n\nThe blunt structural problem is this: a single flagship in a winner-takes-all format is a fine position to be in right up until that flagship loses once. Germany are performing well and the knockout rounds suit a team of their organisation and experience, but one bad afternoon ends the sweepstake interest entirely. P Rankin requires Germany to not merely participate in the latter stages but to win the tournament outright. There is no consolation prize, no partial credit, and no supporting cast to absorb the damage if Die Mannschaft have an off day against the wrong opponent."
     }
   ],
   "odds": [
@@ -517,9 +505,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Kenna's Egypt devoured Cronan's Australia 5-3, leaving the leader's lead looking considerably less comfortable.",
-    "paragraph_1": "Three matches, three decisions. Kenna's Egypt ran riot against Cronan's Australia — a 5-3 scoreline that will sting the current standings leader and narrows the gap at the top. Galbraith's Argentina edged Same's Cape Verde 3-2 in a result that consolidates Galbraith's position as the most quietly threatening portfolio in the field. Same partially offset that loss through Colombia's 1-0 defeat of T Rankin's Ghana, a result that does T Rankin no favours and keeps Same's points column ticking.",
-    "paragraph_2": "The next 48 hours are disproportionately consequential. Galbraith's Morocco faces Varcoe's Canada in a Round of 16 fixture that could extend Galbraith's already formidable record. Same's Paraguay then meets Cronan's France — a fixture with direct implications for the top of the table. Monday brings Hankin a peculiar double-header: Brazil's opponent and Mexico itself, with Silk's England standing between Hankin and a clean sweep of outcomes. Silk, currently second, needs England to perform."
+    "pull_quote": "Galbraith's Morocco dismantled Varcoe's Canada 3–0, which tells you everything about this sweepstake.",
+    "paragraph_1": "Two Round of 16 fixtures on July 5th produced asymmetric outcomes for the standings. Galbraith's Morocco put three past Varcoe's Canada, a result that further consolidates Galbraith's position at 32 points — the highest total in the field — while doing nothing to rescue Varcoe. Cronan's France defeated Same's Paraguay 1–0, a narrow but meaningful win that nudges Cronan to the top of the Win% table and simultaneously dents Same's momentum after a relatively composed group stage.",
+    "paragraph_2": "The next 48 hours are consequential. Monday brings Brazil versus Norway — a fixture owned entirely by Morris and Hankin respectively — before Hankin's Mexico faces Silk's England at 10am, a match that could significantly alter Silk's trajectory from second place. Tuesday's Portugal versus Spain fixture pits Same's interests directly against Kenna's, a zero-sum collision at the worst possible moment for both. Silk's USA then face Crowle's Belgium — Silk holds the most to gain from a clean sweep of his two fixtures."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2878,11 +2866,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.84,
-          "h2h_draw_price": 3.85,
-          "h2h_away_price": 5.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537378,
@@ -2900,11 +2884,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 3.3,
-          "h2h_draw_price": 3.25,
-          "h2h_away_price": 2.52,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537379,
@@ -2922,11 +2902,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 4.3,
-          "h2h_draw_price": 3.75,
-          "h2h_away_price": 1.97,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537380,
@@ -2944,11 +2920,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 2.82,
-          "h2h_draw_price": 3.5,
-          "h2h_away_price": 2.74,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537381,
@@ -2966,11 +2938,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.39,
-          "h2h_draw_price": 5.1,
-          "h2h_away_price": 11.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537382,
@@ -2988,11 +2956,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 3.7,
-          "h2h_draw_price": 3.15,
-          "h2h_away_price": 2.38,
-          "h2h_source": "Betfair"
+          "venue": ""
         }
       ]
     },
@@ -3016,11 +2980,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.6,
-          "h2h_draw_price": 4.25,
-          "h2h_away_price": 7.2,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537384,
