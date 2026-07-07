@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-07T22:42:33.119589+00:00",
-    "last_updated_aest": "Wednesday 8 Jul 2026, 8:42am AEST",
+    "last_updated": "2026-07-07T22:57:01.568119+00:00",
+    "last_updated_aest": "Wednesday 8 Jul 2026, 8:57am AEST",
     "edition": 25,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "8 Jul 2026 8:42am AEST",
+    "odds_last_updated": "8 Jul 2026 8:57am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-07T12:42:04.258815+00:00",
-    "last_score_refresh": "8 Jul 2026 8:42am AEST",
+    "last_score_refresh": "8 Jul 2026 8:57am AEST",
     "last_commentary_participants": [
       "Kenna",
       "Cronan",
@@ -183,12 +183,12 @@
     },
     {
       "name": "Same",
-      "pld": 18,
+      "pld": 19,
       "w": 7,
       "d": 7,
-      "l": 4,
+      "l": 5,
       "pts": 28,
-      "gd": 6,
+      "gd": 5,
       "rank": 5,
       "left": 6,
       "win_pct": 9.56,
@@ -253,12 +253,12 @@
     },
     {
       "name": "Varcoe",
-      "pld": 17,
-      "w": 7,
+      "pld": 18,
+      "w": 8,
       "d": 5,
       "l": 5,
-      "pts": 26,
-      "gd": 12,
+      "pts": 29,
+      "gd": 13,
       "rank": 10,
       "left": 5,
       "win_pct": 3.59,
@@ -281,22 +281,6 @@
     }
   ],
   "recent_results": [
-    {
-      "date": "8 Jul",
-      "aest_time": "Wed 6:00am",
-      "group": "Round of 16",
-      "home": "Switzerland",
-      "home_owner": "Varcoe",
-      "away": "Colombia",
-      "away_owner": "Same",
-      "home_score": 0,
-      "away_score": 0,
-      "status": "LIVE",
-      "match_minute": "90+'",
-      "badge": "LIVE",
-      "sweepstake_relevant": true,
-      "sort_key": "0_live"
-    },
     {
       "date": "7 Jul",
       "aest_time": "Tue 10:00am",
@@ -328,23 +312,25 @@
       "badge": "",
       "sweepstake_relevant": true,
       "sort_key": "1_2026-07-07T16:00:00Z"
-    }
-  ],
-  "upcoming_fixtures": [
+    },
     {
-      "aest_time": "🔴 LIVE",
-      "group": "R16",
+      "date": "8 Jul",
+      "aest_time": "Wed 6:00am",
+      "group": "Round of 16",
       "home": "Switzerland",
       "home_owner": "Varcoe",
       "away": "Colombia",
       "away_owner": "Same",
-      "status": "PAUSED",
-      "context": "",
-      "live_score": "0–0",
-      "h2h_home_price": 46.0,
-      "h2h_draw_price": 1.01,
-      "h2h_away_price": 21.0
-    },
+      "home_score": 4,
+      "away_score": 3,
+      "status": "FT",
+      "match_minute": "",
+      "badge": "",
+      "sweepstake_relevant": true,
+      "sort_key": "1_2026-07-07T20:00:00Z"
+    }
+  ],
+  "upcoming_fixtures": [
     {
       "aest_time": "Fri 6:00am",
       "group": "QF",
@@ -392,46 +378,37 @@
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$5.2",
+      "prev": "$5.1",
       "now": "$5.1",
       "now_decimal": 5.1,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
       "prev": "$5.6",
-      "now": "$5.6",
-      "now_decimal": 5.6,
-      "direction": "unchanged",
+      "now": "$5.3",
+      "now_decimal": 5.3,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$6.4",
+      "prev": "$6.2",
       "now": "$6.2",
       "now_decimal": 6.2,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
       "prev": "$18.0",
-      "now": "$18.0",
-      "now_decimal": 18.0,
-      "direction": "unchanged",
-      "source": "Betfair"
-    },
-    {
-      "team": "Colombia",
-      "owner": "Same",
-      "prev": "$28.0",
-      "now": "$34.0",
-      "now_decimal": 34.0,
-      "direction": "drifted",
+      "now": "$17.5",
+      "now_decimal": 17.5,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
@@ -455,10 +432,19 @@
     {
       "team": "Switzerland",
       "owner": "Varcoe",
-      "prev": "$95.0",
-      "now": "$70.0",
-      "now_decimal": 70.0,
+      "prev": "$70.0",
+      "now": "$61.0",
+      "now_decimal": 61.0,
       "direction": "shortened",
+      "source": "Unibet"
+    },
+    {
+      "team": "Colombia",
+      "owner": "Same",
+      "prev": "$34.0",
+      "now": "$1000.0",
+      "now_decimal": 1000.0,
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
@@ -2907,18 +2893,14 @@
           "date_iso": "2026-07-08",
           "home": "Switzerland",
           "home_owner": "Varcoe",
-          "home_score": 0,
+          "home_score": 4,
           "away": "Colombia",
           "away_owner": "Same",
-          "away_score": 0,
-          "score_note": "(aet)",
-          "status": "LIVE",
-          "winner": null,
-          "venue": "",
-          "h2h_home_price": 46.0,
-          "h2h_draw_price": 1.01,
-          "h2h_away_price": 21.0,
-          "h2h_source": "Unibet"
+          "away_score": 3,
+          "score_note": "(pens 3–3)",
+          "status": "FINISHED",
+          "winner": "home",
+          "venue": ""
         }
       ]
     },
