@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-07T10:31:02.750483+00:00",
-    "last_updated_aest": "Tuesday 7 Jul 2026, 8:31pm AEST",
-    "edition": 24,
+    "last_updated": "2026-07-07T12:41:37.730259+00:00",
+    "last_updated_aest": "Tuesday 7 Jul 2026, 10:41pm AEST",
+    "edition": 25,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "7 Jul 2026 8:31am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-06T16:32:38.465806+00:00",
-    "last_score_refresh": "7 Jul 2026 8:31pm AEST",
+    "trivia_schedule_generated": "2026-07-07T12:42:04.258815+00:00",
+    "last_score_refresh": "7 Jul 2026 10:41pm AEST",
     "last_commentary_participants": [
-      "Hankin",
-      "Varcoe",
-      "Crowle"
+      "Kenna",
+      "Cronan",
+      "Silk"
     ],
-    "last_commentary_generated": "2026-07-06T16:32:38.465635+00:00",
+    "last_commentary_generated": "2026-07-07T12:42:04.258492+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -323,10 +323,7 @@
       "away": "Egypt",
       "away_owner": "Kenna",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.37,
-      "h2h_draw_price": 5.1,
-      "h2h_away_price": 12.5
+      "context": ""
     },
     {
       "aest_time": "Wed 6:00am",
@@ -336,30 +333,27 @@
       "away": "Colombia",
       "away_owner": "Same",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 3.8,
-      "h2h_draw_price": 3.15,
-      "h2h_away_price": 2.34
+      "context": ""
     }
   ],
   "commentary": [
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: The Points Leader Who Can't Buy a Probability",
-      "body": "There is something almost admirable about a portfolio that leads the entire sweepstake in raw on-pitch points — 32, shared with Galbraith at the top — while sitting ninth in the only column that actually matters. Norway's 2–1 defeat of Brazil on July 6th was the kind of result that makes a sweepstake participant feel briefly invincible, and Hankin has earned that. Mexico's exit at the hands of Silk's England, losing 3–2, was the corrective. One team advances, one departs, and the Win% needle barely twitches.\n\nThe structural problem is not performance — Norway, Ivory Coast, and formerly Mexico have all punched above their weight. It is that punching above your weight, when your weight was featherweight to begin with, still leaves you ninth. Saudi Arabia are already gone. Norway are now in the last sixteen and represent Hankin's most credible live asset. Whether \"credible\" translates to \"consequential\" at 4.54% remains, to put it diplomatically, an open question."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Spain Eliminates Its Owner's Only Rival, and Also Its Owner's Anxiety",
+      "body": "Kenna's Spain defeated Same's Portugal 1–0 in the Round of 16, which is both a footballing result and a sweepstake power move. Same drops out of the knockout picture; Kenna advances. The implications are straightforward: Spain is the portfolio, and the portfolio is alive. Eight teams, one matters. The other seven — Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao, Haiti — exist in the standings the way footnotes exist in a legal document: technically present, contributing nothing.\n\nThe win nudges Kenna to third on Win%, at 13.78%, but the gap to Cronan at the top remains meaningful. Spain must go deep, and then deeper still, for this unwieldy eight-team roster to justify its top-three position. For now, Kenna is one result richer and seven teams more optimistic than the facts strictly warrant."
     },
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: Unbeaten, Unloved, and Quietly Running Out of Road",
-      "body": "Across the entire sweepstake, no participant has gone unbeaten across all their games. Varcoe has managed exactly that — Japan, Switzerland, Canada, and DR Congo have collectively refused to lose, producing a record that would, in any other context, be considered a minor triumph. A goal difference of plus twelve is the best in the field. Twenty-six points from a W7-D5-L5 record reflects a portfolio that has ground out results with the quiet efficiency of a mid-table Bundesliga side in October.\n\nAnd yet: third from bottom on Win%, at 3.59%. The sweepstake, with its winner-takes-all structure, has no prize for most draws or tidiest goal difference. Japan are the headline act and the only realistic vehicle to a result that changes the conversation. Switzerland offer plausibility. Canada and DR Congo offer effort. The danger for Varcoe is that \"unbeaten\" and \"going nowhere\" are not mutually exclusive, and the knockout rounds will clarify which one applies."
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: Still Leading, Still Entirely Dependent on One Country's Football Association",
+      "body": "Cronan sits at the top of the sweepstake with 17.74% — a position that commands respect and invites scrutiny in equal measure. France remains the engine, the chassis, and the fuel tank of this portfolio. Austria, Australia, and Panama are the decorative trim. None of them are at a World Cup Round of 16. France, to its credit, is. The lead is real. The diversification is not.\n\nNo results today directly affected Cronan's standing, which means the lead was preserved by inaction — a technically sound strategy. The concern, as it has always been, is concentration risk. Should France encounter a bad evening against a well-organised opponent, Cronan's Win% does not dip. It collapses. First place built on one foundation is not a fortress. It is a very tall ladder."
     },
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: Belgium Draw Again, World Continues to Turn",
-      "body": "The sweepstake record books do not, as a rule, celebrate zero wins across all games played, but Crowle is making history of a sort. Belgium have drawn everything. Ecuador, Bosnia, and Uzbekistan have contributed losses with commendable consistency. The cumulative effect is a portfolio sitting last in the field at 3.42%, with 16 points and a goal difference of minus nine. Crowle's W4-D4-L7 record tells the story of a group of nations that showed up, participated, and largely declined to win.\n\nAt this stage of the tournament, the honest assessment is that Crowle needs Belgium to rediscover whatever it is Belgium periodically rediscovers — namely, that they are a reasonably good football team — and to do so immediately. Ecuador, Bosnia, and Uzbekistan have collectively exhausted their allotted supply of goodwill. Belgium are the only asset with a plausible upside trajectory, and they have spent the group stage treating every match as though it were a contractual obligation to be fulfilled without enthusiasm."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: USA Exit in Emphatic Fashion, Leaving England as the Last Line of Defence",
+      "body": "Belgium's 4–1 dismantling of Silk's USA was not a setback. It was a statement. Four goals, one direction, and Crowle quietly pocketing the sweepstake points while Silk watched a significant asset dissolve in real time. USA had been the secondary pillar of what was, in reasonable conditions, a competitive two-team portfolio. That pillar is now rubble. Algeria and Qatar were already ornamental. England, therefore, is everything.\n\nSilk drops to second on Win% at 14.05%, which flatters the situation somewhat. With USA gone, the portfolio's implied probability rests almost entirely on England navigating the knockout rounds without incident — a proposition that has historically proven more stressful than it appears on paper. Silk remains genuinely in contention. The margin for further error, however, is now precisely zero."
     }
   ],
   "odds": [
@@ -455,9 +449,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Hankin eliminated two rivals in 24 hours, which is either skill or a scheduling anomaly.",
-    "paragraph_1": "Two Round of 16 results on 6 July reshuffled the standings with quiet brutality. Hankin's Norway dispatched Morris's Brazil 2–1, ending what had been Morris's most credible path to a late surge. Hours later, Hankin's Mexico fell 2–3 to Silk's England — a result that simultaneously advanced Silk, currently second on win percentage at 14.05%, while confirming that Hankin's portfolio now runs on Norway alone. Morris exits the bracket conversation entirely.",
-    "paragraph_2": "The next 48 hours are the most consequential of the window. Tuesday's Portugal versus Spain is a direct collision between Same (4th, 9.56%) and Kenna (3rd, 13.78%), with points and bracket progression both on the line. Silk's USA faces Crowle's Belgium shortly after — a win would consolidate Silk's second-place position. Wednesday brings Argentina versus Egypt: Galbraith, sitting fourth on points at 32, holds the tournament favourite and needs no complications from Kenna's Egypt."
+    "pull_quote": "Kenna eliminates Same's Portugal and inherits their points ceiling in a single afternoon.",
+    "paragraph_1": "Two Round of 16 fixtures on July 7th produced clear winners and losers. Kenna's Spain dispatched Same's Portugal 1–0, a result that simultaneously advances Kenna's tournament equity and closes off a scoring avenue for Same, who remains on 28 points. Silk suffered the heavier blow: USA's 1–4 capitulation to Crowle's Belgium was a scoreline that flatters neither the team nor its owner, and Crowle — absent from the top five — now has a live asset worth monitoring.",
+    "paragraph_2": "The next 48 hours carry disproportionate weight. Galbraith, currently fourth by win percentage but leading on points with 32, sends Argentina into a Round of 16 tie against Kenna's Egypt in Wednesday's early fixture — a result that could either consolidate Galbraith's position or hand Kenna a second consecutive elimination scalp. Later Wednesday, Varcoe's Switzerland face Same's Colombia. Same, already without Portugal, can ill afford to lose their remaining asset at this stage."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2888,11 +2882,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.37,
-          "h2h_draw_price": 5.1,
-          "h2h_away_price": 12.5,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537382,
@@ -2910,11 +2900,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 3.8,
-          "h2h_draw_price": 3.15,
-          "h2h_away_price": 2.34,
-          "h2h_source": "Betfair"
+          "venue": ""
         }
       ]
     },
@@ -2938,11 +2924,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.62,
-          "h2h_draw_price": 4.1,
-          "h2h_away_price": 6.8,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537384,
@@ -2960,11 +2942,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.64,
-          "h2h_draw_price": 4.2,
-          "h2h_away_price": 6.2,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537385,
@@ -2982,11 +2960,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 4.3,
-          "h2h_draw_price": 3.8,
-          "h2h_away_price": 1.95,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537386,
