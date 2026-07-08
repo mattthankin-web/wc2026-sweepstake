@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T23:28:26.699586+00:00",
-    "last_updated_aest": "Thursday 9 Jul 2026, 9:28am AEST",
-    "edition": 28,
+    "last_updated": "2026-07-08T22:59:21.401187+00:00",
+    "last_updated_aest": "Thursday 9 Jul 2026, 8:59am AEST",
+    "edition": 29,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "9 Jul 2026 9:28am AEST",
+    "odds_last_updated": "9 Jul 2026 8:59am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-08T23:13:54.324031+00:00",
-    "last_score_refresh": "9 Jul 2026 9:28am AEST",
+    "trivia_schedule_generated": "2026-07-08T23:28:53.346134+00:00",
+    "last_score_refresh": "9 Jul 2026 8:59am AEST",
     "last_commentary_participants": [
-      "Silk",
-      "Same",
-      "Galbraith"
+      "T Rankin",
+      "Hankin",
+      "Varcoe"
     ],
-    "last_commentary_generated": "2026-07-08T23:13:54.323737+00:00",
+    "last_commentary_generated": "2026-07-08T23:28:53.345814+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -311,22 +311,22 @@
   ],
   "commentary": [
     {
-      "participant": "Silk",
-      "color": "#BE185D",
-      "title": "Silk: Two Flags, One Dream, Zero Margin For Error",
-      "body": "Qatar's continued presence is the subplot nobody quite expected. Their next opponent and form will determine whether this is a genuine run or simply a well-managed postponement of the inevitable. For Silk, the strategic calculus is straightforward: England at $6.0 is the live asset worth watching. One bad night for either side and this portfolio halves. The urgency is not abstract — it arrives with every kickoff."
+      "participant": "T Rankin",
+      "color": "#4338CA",
+      "title": "T Rankin: Two Down, One Limping",
+      "body": "Netherlands fell to Morocco on penalties and Ghana were dispatched by Colombia, leaving Tunisia as the sole survivor of what was once a reasonably promising portfolio. Tunisia are still technically alive, which is more than can be said for most of this entry's ambitions. We wish them well and move on."
     },
     {
-      "participant": "Same",
-      "color": "#15803D",
-      "title": "Same: The Portfolio Is Empty, The Season Is Over",
-      "body": "Portugal, Colombia, Paraguay, and Cape Verde have all been eliminated, ending what was briefly the most expansive surviving portfolio in the sweepstake."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: The Dark Horse Stable Has Two Runners Left",
+      "body": "Norway and Mexico both navigating the Round of 16 is the kind of outcome that turns a sweepstake into something worth watching. Norway at $18 are not a joke — they have shown genuine knockout pedigree and the sort of physical, direct football that tends to cause problems for sides who have been coasting through groups. Mexico, perennially the tournament's most dramatically unreliable side, are somehow still here too. Neither were anyone's pre-tournament tip for glory.\n\nThe path is not easy — it never is from this point — but Hankin has two live bullets where most participants have none. If Norway can keep winning the ugly ones and Mexico continue to confound expectations, the conversation around this entry gets considerably more interesting by the quarter-final stage. At $18, Norway represent genuine outsider value. The pot is not yet a fantasy."
     },
     {
-      "participant": "Galbraith",
-      "color": "#7C3AED",
-      "title": "Galbraith: The Favourite and the Disruptor",
-      "body": "Morocco at $36.0 is the portfolio's insurance policy — longer odds, shorter expectations, but a team that has demonstrated a particular talent for making favourites uncomfortable. Their next opponent will reveal whether the 2022 semi-final run was a historical anomaly or the beginning of something more structural. For Galbraith, the arithmetic is enviable: one elite contender and one dangerous outsider, both alive, both with genuine paths. In a winner-takes-all sweepstake, that is not a position to take lightly."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: Switzerland Steady, Canada a Monument to Hope",
+      "body": "Canada at $470 survived the Round of 32, which is the kind of result that prompts a polite round of applause before everyone quietly agrees it probably ends there. Switzerland, however, are a different proposition entirely. At $42, they are the sort of team that tournament forecasters habitually underestimate — organised, difficult to break down, and possessed of an institutional stubbornness in knockout football that has embarrassed better-fancied sides before.\n\nVarcoe's realistic ticket to the pot runs through Zurich, not Ottawa. A quarter-final appearance for Switzerland is plausible; a run to the final requires things to fall right, but at these odds that is precisely what makes it interesting. Canada's continued presence is a bonus — a lottery ticket tucked inside a more credible investment. Varcoe's position is not comfortable, but it is not hopeless either, which in this company passes for optimism."
     }
   ],
   "odds": [
@@ -404,9 +404,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan leads the standings but must first survive France's date with Morocco.",
-    "paragraph_1": "No recent results were provided for this edition, which limits retrospective analysis. What is clear is that the knockout rounds have already thinned the field: participants without surviving teams are effectively spectators. Cronan, Silk, Kenna, Galbraith, and Same all retain live interests, though the absence of result data prevents a precise accounting of who was eliminated since the last report.",
-    "paragraph_2": "The two fixtures of immediate consequence are France against Morocco on Friday and Spain against Belgium on Saturday. Cronan's France and Galbraith's Morocco meet in a direct eliminator — one of them exits the sweepstake entirely. Kenna's Spain face Crowle's Belgium the following morning. Should France and Spain progress, Cronan and Kenna would hold strong knockout pedigree. Galbraith, currently carrying the heaviest points tally among survivors, faces the starkest single-game risk."
+    "pull_quote": "Cronan leads on probability; Galbraith leads on points — the pot will settle the argument.",
+    "paragraph_1": "The knockout rounds have done their usual work of separating ambition from arithmetic. The field has narrowed, and with it the margin for error. Those whose squads have already been eliminated are now spectators with opinions, which is the worst kind. Surviving teams carry tournament odds that compress with every round; the bracket is no longer forgiving, and early-round draws that once padded records are now a memory.",
+    "paragraph_2": "Two fixtures define the immediate horizon. France, carrying Cronan to the top of the probability standings, face Morocco under Galbraith — a result that could either consolidate Cronan's lead or hand Galbraith's already points-heavy portfolio a genuine winning vehicle. The following morning, Kenna's Spain meet Crowle's Belgium, a fixture that could either sustain Kenna's unlikely run or end it quietly before breakfast. Galbraith, with the most points banked and a live quarter-finalist, currently looks best placed to convert tournament position into prize money."
   },
   "trivia_schedule": {
     "2026-06-24": [
