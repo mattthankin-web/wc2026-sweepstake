@@ -39,7 +39,7 @@ PARTICIPANT_NOTES = {
     # KNOCKOUT STAGE — only discuss surviving teams
     # P Rankin and T Rankin are eliminated — brief mention only
     "Kenna":    "Spain ($7.4) and Egypt ($410) are Kenna's surviving teams. Spain are genuine contenders. Focus on Spain's next knockout opponent and realistic path to the title. Egypt are a miracle-run outsider.",
-    "Cronan":   "France ($3.0) are Cronan's sole survivor and tournament favourites. One team, one shot at the pot. Discuss France's form, knockout path and what stands between Cronan and the prize.",
+    "Cronan":   "France ($3.0) are Cronan's sole survivor and tournament favourites. One team, one shot. Discuss France's form, next opponent, and what it would mean for Cronan to win the pot.",
     "Silk":     "England ($12.5) and USA ($40) are both alive. Two live knockout assets. Focus on their respective next opponents, form and which is the more credible title threat.",
     "Same":     "Portugal ($16.5), Colombia ($29) and Paraguay ($650) are all alive — the largest surviving portfolio in the sweepstake. Three genuine shots. Focus on Portugal and Colombia as the serious threats.",
     "Galbraith":"Argentina ($5.7) and Morocco ($40) are both through to the Round of 16. Second favourites plus a dangerous outsider. Two credible paths to the title — discuss both next opponents.",
@@ -106,9 +106,9 @@ CONTEXT: We are in the KNOCKOUT ROUNDS. Winner takes all. Only surviving teams m
 
 TASK: Write an executive summary for this edition.
 
-- pull_quote: A sharp one-liner about the knockout drama or who is closest to winning the pot. Max 20 words. No exclamation marks.
-- paragraph_1: (~70 words) Most significant knockout results — who progressed, who is now eliminated from the sweepstake, biggest upsets or surprises. Only mention eliminated participants briefly in past tense.
-- paragraph_2: (~70 words) Forward look at the next round of knockout fixtures — focus on surviving participants only, their upcoming opponents, and who is best placed to win the pot.
+- pull_quote: A sharp one-liner about the knockout drama or who is best placed to win the pot. Max 20 words. No exclamation marks.
+- paragraph_1: (~70 words) Most significant knockout results since last edition — who progressed, who has been eliminated from the sweepstake. Reference teams and their odds. No points or table positions.
+- paragraph_2: (~70 words) Forward look at upcoming knockout fixtures — surviving participants only, their next opponents and odds, and who has the clearest path to the title. No points. No Win%. Odds and knockout path only.
 
 Dry tone. Reference participant names directly. No cheerleading.
 
@@ -159,11 +159,17 @@ def build_commentary_prompt(data, participants):
         alive     = [t for t in all_teams if t not in eliminated_teams]
         is_out    = len(alive) == 0
         standing  = next((s for s in standings if s["name"] == p), {})
+        # Get odds for alive teams
+        alive_odds = []
+        for o in data.get("odds", []):
+            if o.get("owner") == p and o.get("team") in alive:
+                alive_odds.append(f"{o['team']} @ {o['now']}")
+
         participant_sections += (
             f"\n{p.upper()}:\n"
-            f"  Status: {'ELIMINATED — do not write full commentary' if is_out else 'STILL IN TOURNAMENT'}\n"
+            f"  Status: {'ELIMINATED — one sentence only, nothing more' if is_out else 'STILL IN TOURNAMENT'}\n"
             f"  Alive teams: {', '.join(alive) if alive else 'None — eliminated'}\n"
-            f"  Win%: {standing.get('win_pct', 0):.2f}%\n"
+            f"  Current odds: {', '.join(alive_odds) if alive_odds else 'N/A'}\n"
             f"  Guidance: {notes}\n"
         )
 
@@ -184,20 +190,21 @@ CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
 Only the participant whose team wins the World Cup wins the sweepstake pot.
 
 CRITICAL RULES:
-- ONLY discuss each participant's ALIVE teams (listed under "Alive teams" below)
-- Do NOT mention any eliminated teams except in one sentence if the participant is fully out
-- Focus entirely on: next knockout opponent, form, path to the final, realistic title chances
-- For eliminated participants (P Rankin, T Rankin): one brief sentence only, then nothing more
-- Win% reflects only surviving teams
-- Every match from here eliminates someone — reflect that urgency and tension
-- Reference actual odds when discussing title chances
+- ONLY discuss each participant's ALIVE teams (listed under "Alive teams" and "Current odds" below)
+- Do NOT mention points, Win%, or league table position — these are irrelevant in the knockout stage
+- Do NOT mention any eliminated teams unless the participant is fully out (one sentence max)
+- Focus entirely on: knockout path, next opponent, form, realistic title chances
+- You MAY briefly reflect on the participant's journey so far (e.g. a dramatic R32 win) but only to set up the forward-looking narrative
+- For eliminated participants (P Rankin, T Rankin): one brief sentence acknowledging they are out, nothing more
+- Reference the actual odds provided when assessing title chances
+- Every match eliminates someone — reflect that urgency
 
 TASK: Write commentary for each of the 3 participants:
-- Sharp knockout-stage headline (not group stage references)
+- Sharp knockout-stage headline
 - 1-2 paragraphs (~80-120 words each)
-- Ground everything in next opponents, current odds, and path to the title
+- Ground everything in next opponents, current odds, and the path to lifting the trophy
+- No points. No Win%. No table references. Odds and knockout path only.
 - Follow the Guidance note exactly
-- No group stage references unless directly relevant to current form
 
 Return ONLY valid JSON, no preamble, no markdown:
 [
