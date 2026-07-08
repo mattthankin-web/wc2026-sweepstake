@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T07:56:13.142739+00:00",
-    "last_updated_aest": "Wednesday 8 Jul 2026, 5:56pm AEST",
-    "edition": 25,
+    "last_updated": "2026-07-08T11:20:50.582085+00:00",
+    "last_updated_aest": "Wednesday 8 Jul 2026, 9:20pm AEST",
+    "edition": 26,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "8 Jul 2026 5:56am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-07T12:42:04.258815+00:00",
-    "last_score_refresh": "8 Jul 2026 5:56pm AEST",
+    "trivia_schedule_generated": "2026-07-08T11:21:17.607433+00:00",
+    "last_score_refresh": "8 Jul 2026 9:20pm AEST",
     "last_commentary_participants": [
-      "Kenna",
-      "Cronan",
-      "Silk"
+      "P Rankin",
+      "T Rankin",
+      "Hankin"
     ],
-    "last_commentary_generated": "2026-07-07T12:42:04.258492+00:00",
+    "last_commentary_generated": "2026-07-08T11:21:17.607135+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -323,30 +323,27 @@
       "away": "Morocco",
       "away_owner": "Galbraith",
       "status": "TIMED",
-      "context": "",
-      "h2h_home_price": 1.62,
-      "h2h_draw_price": 4.0,
-      "h2h_away_price": 7.0
+      "context": ""
     }
   ],
   "commentary": [
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Spain Eliminates Its Owner's Only Rival, and Also Its Owner's Anxiety",
-      "body": "Kenna's Spain defeated Same's Portugal 1–0 in the Round of 16, which is both a footballing result and a sweepstake power move. Same drops out of the knockout picture; Kenna advances. The implications are straightforward: Spain is the portfolio, and the portfolio is alive. Eight teams, one matters. The other seven — Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao, Haiti — exist in the standings the way footnotes exist in a legal document: technically present, contributing nothing.\n\nThe win nudges Kenna to third on Win%, at 13.78%, but the gap to Cronan at the top remains meaningful. Spain must go deep, and then deeper still, for this unwieldy eight-team roster to justify its top-three position. For now, Kenna is one result richer and seven teams more optimistic than the facts strictly warrant."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: Germany Carries the Weight of a Portfolio Too Polite to Say It's Struggling",
+      "body": "With 7.18% and a W3-D2-L9 record, P Rankin's sweepstake entry reads like a corporate restructuring memo: one promising asset surrounded by a great deal of dead weight. Germany are the flagship, and they are doing their job — performing credibly enough to keep the overall Kalshi probability from entering hospice territory. The Czech Republic, Iraq, and Sweden constitute a supporting cast whose combined contribution to this sweepstake can be measured in the low single digits of relevance.\n\nThe structural problem is not Germany's form but the arithmetic. At rank 7, P Rankin trails six better-diversified portfolios, several of whom hold teams with considerably more knockout pedigree. Germany must now do something that feels historically complicated for them: actually win a tournament. Everything else here is noise."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: Still Leading, Still Entirely Dependent on One Country's Football Association",
-      "body": "Cronan sits at the top of the sweepstake with 17.74% — a position that commands respect and invites scrutiny in equal measure. France remains the engine, the chassis, and the fuel tank of this portfolio. Austria, Australia, and Panama are the decorative trim. None of them are at a World Cup Round of 16. France, to its credit, is. The lead is real. The diversification is not.\n\nNo results today directly affected Cronan's standing, which means the lead was preserved by inaction — a technically sound strategy. The concern, as it has always been, is concentration risk. Should France encounter a bad evening against a well-organised opponent, Cronan's Win% does not dip. It collapses. First place built on one foundation is not a fortress. It is a very tall ladder."
+      "participant": "T Rankin",
+      "color": "#4338CA",
+      "title": "T Rankin: Netherlands or Nothing, and That Is a Perfectly Acceptable Business Model",
+      "body": "Croatia are out. Tunisia and Ghana have produced enough points to remain politely on the ledger without threatening anyone's sleep. What T Rankin actually holds is a single concentrated bet on the Netherlands, and as concentrated bets go, it is not an embarrassing one. The Dutch are among the more credible knockout candidates remaining in the bracket, and their trajectory deserves to be taken seriously rather than dismissed as wishful thinking from a rank-8 participant.\n\nThe honest read is this: at 6.30%, T Rankin is one convincing Netherlands run away from re-entering the conversation. Ghana remain a wildcard in the loosest, most mathematically modest sense of the term. The rest of the portfolio has already done what it could, which was limited. Netherlands carry the ticket from here, and they are capable of justifying the faith."
     },
     {
-      "participant": "Silk",
-      "color": "#BE185D",
-      "title": "Silk: USA Exit in Emphatic Fashion, Leaving England as the Last Line of Defence",
-      "body": "Belgium's 4–1 dismantling of Silk's USA was not a setback. It was a statement. Four goals, one direction, and Crowle quietly pocketing the sweepstake points while Silk watched a significant asset dissolve in real time. USA had been the secondary pillar of what was, in reasonable conditions, a competitive two-team portfolio. That pillar is now rubble. Algeria and Qatar were already ornamental. England, therefore, is everything.\n\nSilk drops to second on Win% at 14.05%, which flatters the situation somewhat. With USA gone, the portfolio's implied probability rests almost entirely on England navigating the knockout rounds without incident — a proposition that has historically proven more stressful than it appears on paper. Silk remains genuinely in contention. The margin for further error, however, is now precisely zero."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: The Most Productive Participant Nobody Is Backing to Actually Win",
+      "body": "The central paradox of Hankin's position is fully on display: 32 points accumulated across Norway, Mexico, and Ivory Coast, ten wins recorded, a positive goal difference of plus seven, and yet the market assigns a 4.54% probability of lifting the trophy. Saudi Arabia are gone, which tidies the portfolio without meaningfully improving the odds. The surviving trio have punched with admirable consistency throughout the group stages, delivering the kind of cumulative output that would, in any rational sweepstake, translate to genuine contention.\n\nThe problem is that Kalshi is not rewarding effort or points tallies — it is rewarding title probability, and none of Hankin's remaining sides are credibly priced to win this tournament outright. Norway's run has been legitimate. Mexico and Ivory Coast have contributed. But contribution and winning are different things, and the gap between rank 9 and the top of this table reflects a structural mismatch between on-pitch performance and tournament-winning likelihood that no further group stage diligence can fully bridge."
     }
   ],
   "odds": [
@@ -424,9 +421,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Kenna eliminates Same's Portugal and inherits their points ceiling in a single afternoon.",
-    "paragraph_1": "Two Round of 16 fixtures on July 7th produced clear winners and losers. Kenna's Spain dispatched Same's Portugal 1–0, a result that simultaneously advances Kenna's tournament equity and closes off a scoring avenue for Same, who remains on 28 points. Silk suffered the heavier blow: USA's 1–4 capitulation to Crowle's Belgium was a scoreline that flatters neither the team nor its owner, and Crowle — absent from the top five — now has a live asset worth monitoring.",
-    "paragraph_2": "The next 48 hours carry disproportionate weight. Galbraith, currently fourth by win percentage but leading on points with 32, sends Argentina into a Round of 16 tie against Kenna's Egypt in Wednesday's early fixture — a result that could either consolidate Galbraith's position or hand Kenna a second consecutive elimination scalp. Later Wednesday, Varcoe's Switzerland face Same's Colombia. Same, already without Portugal, can ill afford to lose their remaining asset at this stage."
+    "pull_quote": "Galbraith wins the match, then draws France in the quarter-final. The ledger is rarely balanced.",
+    "paragraph_1": "Two results on 8 July reshuffled the mid-table order with characteristic indifference to sentiment. Argentina's 3–2 defeat of Egypt was good news for Galbraith, who now sits fourth on 35 points, and correspondingly bad news for Kenna, whose Egypt exit drags a bloated loss column to 14. Switzerland's 4–3 win over Colombia eliminated Same's side, halting a participant who had climbed to fifth on the back of seven draws cushioning an otherwise modest record.",
+    "paragraph_2": "The defining fixture of the next 48 hours arrives Friday morning: France, held by Cronan, against Morocco, held by Galbraith. Cronan leads the sweepstake on win percentage at 17.74% but trails Galbraith on points. A French victory consolidates Cronan's position and denies Galbraith a semi-final berth; a Moroccan win does the reverse, and would push Galbraith's points total further clear of a chasing pack already short of live teams. One of the top four walks away from this fixture considerably diminished."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2899,11 +2896,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.62,
-          "h2h_draw_price": 4.0,
-          "h2h_away_price": 7.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537384,
@@ -2921,11 +2914,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.68,
-          "h2h_draw_price": 4.1,
-          "h2h_away_price": 6.0,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537385,
@@ -2943,11 +2932,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 4.5,
-          "h2h_draw_price": 3.85,
-          "h2h_away_price": 1.91,
-          "h2h_source": "Betfair"
+          "venue": ""
         },
         {
           "id": 537386,
@@ -2965,11 +2950,7 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": "",
-          "h2h_home_price": 1.75,
-          "h2h_draw_price": 3.7,
-          "h2h_away_price": 6.0,
-          "h2h_source": "Betr"
+          "venue": ""
         }
       ]
     },
