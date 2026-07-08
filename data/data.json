@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T23:13:29.226521+00:00",
-    "last_updated_aest": "Thursday 9 Jul 2026, 9:13am AEST",
-    "edition": 27,
+    "last_updated": "2026-07-08T22:59:21.401187+00:00",
+    "last_updated_aest": "Thursday 9 Jul 2026, 8:59am AEST",
+    "edition": 28,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "9 Jul 2026 9:13am AEST",
+    "odds_last_updated": "9 Jul 2026 8:59am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-08T23:06:42.497293+00:00",
-    "last_score_refresh": "9 Jul 2026 9:13am AEST",
+    "trivia_schedule_generated": "2026-07-08T23:13:54.324031+00:00",
+    "last_score_refresh": "9 Jul 2026 8:59am AEST",
     "last_commentary_participants": [
-      "Varcoe",
-      "Crowle",
-      "Kenna"
+      "Silk",
+      "Same",
+      "Galbraith"
     ],
-    "last_commentary_generated": "2026-07-08T23:06:42.497019+00:00",
+    "last_commentary_generated": "2026-07-08T23:13:54.323737+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -311,22 +311,22 @@
   ],
   "commentary": [
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: The Geometry of Improbability",
-      "body": "At 3.59% and with Canada eliminated, Varcoe's entire World Cup ambition now rests on Switzerland — a team priced at $90 and quietly doing something rather inconvenient to everyone's assumptions. Switzerland are not romantic. They are efficient, defensively structured, and deeply annoying to play against, which in a knockout tournament is practically a superpower. They are a credible quarter-final threat and that is not faint praise at this stage of the competition.\n\nThe problem, as ever with Switzerland, is that credible quarter-finalist and actual champion are separated by approximately three miracles. The odds say so. The draw will likely say so. But Varcoe sits on a GD of +13 and 29 points, which suggests someone has been quietly competent all tournament while the standings refused to notice. Switzerland going deep is not absurd. Switzerland winning it is. There is a difference, and right now Varcoe is living in it."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: Two Flags, One Dream, Zero Margin For Error",
+      "body": "Qatar's continued presence is the subplot nobody quite expected. Their next opponent and form will determine whether this is a genuine run or simply a well-managed postponement of the inevitable. For Silk, the strategic calculus is straightforward: England at $6.0 is the live asset worth watching. One bad night for either side and this portfolio halves. The urgency is not abstract — it arrives with every kickoff."
     },
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: One Flag, One Chance, One Very Long Shot",
-      "body": "Belgium at $75 is not a price that inspires confidence, but it is a price that implies possibility, and at this stage of a winner-takes-all sweepstake, possibility is the only currency that matters. Crowle's squad has been whittled to a single survivor, and Belgium arrive in the knockout rounds carrying the full weight of that responsibility — which is precisely the kind of pressure that has historically not suited Belgian football particularly well.\n\nTheir path to the title requires beating teams who are, in most measurable respects, better organised and better priced. Belgium are not without quality, but quality and tournament winners are frequently different things, especially at $75. Crowle's position in the standings — 3.42%, dead last — is accurate. What keeps this entry technically alive is that Belgium only need to win six consecutive matches against increasingly hostile opposition. Straightforward, really."
+      "participant": "Same",
+      "color": "#15803D",
+      "title": "Same: The Portfolio Is Empty, The Season Is Over",
+      "body": "Portugal, Colombia, Paraguay, and Cape Verde have all been eliminated, ending what was briefly the most expansive surviving portfolio in the sweepstake."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Spain Hold the Keys, Egypt Hold a Prayer",
-      "body": "With Spain at $7.4, Kenna possesses the closest thing this sweepstake has to a genuine favourite, and the standings reflect it — 13.78% and third overall despite carrying the tournament's most chaotic roster of supporting acts. Spain are not merely contenders; they are the kind of team that makes other contenders nervous about their own assumptions. Technically fluent, tactically adaptable, and possessed of the institutional confidence that comes from knowing you have done this before. Their next knockout opponent will need to be very good or very lucky, and preferably both.\n\nEgypt at $410 are the sweepstake's designated miracle narrative — present, breathing, and statistically improbable. Their continued existence is a service to drama rather than probability. The sensible analysis centres entirely on Spain's path to the final, which runs through opponents who are beatable and a draw that has not yet been actively cruel. Kenna's position — third in the standings, one elite team still standing — is quietly the most envied in the room, even if nobody will admit it."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: The Favourite and the Disruptor",
+      "body": "Morocco at $36.0 is the portfolio's insurance policy — longer odds, shorter expectations, but a team that has demonstrated a particular talent for making favourites uncomfortable. Their next opponent will reveal whether the 2022 semi-final run was a historical anomaly or the beginning of something more structural. For Galbraith, the arithmetic is enviable: one elite contender and one dangerous outsider, both alive, both with genuine paths. In a winner-takes-all sweepstake, that is not a position to take lightly."
     }
   ],
   "odds": [
@@ -404,9 +404,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan leads on probability, but Galbraith's points haul suggests the pot is far from settled.",
-    "paragraph_1": "The knockout rounds have begun thinning the field with predictable ruthlessness. Galbraith remains the points leader with 35, his teams having navigated the group stage in robust form. Cronan sits atop the win-probability table despite a modest points return, suggesting his surviving assets carry genuine tournament pedigree. Kenna's record of five draws tells its own story — still alive, but unconvincingly so. Those already eliminated will have only the catering to console them.",
-    "paragraph_2": "Two fixtures define the immediate horizon. Cronan's France face Galbraith's Morocco on Friday morning — a direct elimination contest between the top two probability holders, one of whom will be considerably diminished by breakfast. On Saturday, Kenna's Spain meet Crowle's Belgium. Galbraith, with the tournament's highest points tally, is best placed structurally, but a Friday exit for France would hand Cronan's lead a very short shelf life."
+    "pull_quote": "Cronan leads the standings but must first survive France's date with Morocco.",
+    "paragraph_1": "No recent results were provided for this edition, which limits retrospective analysis. What is clear is that the knockout rounds have already thinned the field: participants without surviving teams are effectively spectators. Cronan, Silk, Kenna, Galbraith, and Same all retain live interests, though the absence of result data prevents a precise accounting of who was eliminated since the last report.",
+    "paragraph_2": "The two fixtures of immediate consequence are France against Morocco on Friday and Spain against Belgium on Saturday. Cronan's France and Galbraith's Morocco meet in a direct eliminator — one of them exits the sweepstake entirely. Kenna's Spain face Crowle's Belgium the following morning. Should France and Spain progress, Cronan and Kenna would hold strong knockout pedigree. Galbraith, currently carrying the heaviest points tally among survivors, faces the starkest single-game risk."
   },
   "trivia_schedule": {
     "2026-06-24": [
