@@ -36,17 +36,19 @@ ALL_PARTICIPANTS = [
 # PARTICIPANT NOTES — edit these to guide commentary tone/angle
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PARTICIPANT_NOTES = {
-    "Kenna":    "Kenna has 8 teams — the largest portfolio. Spain is the only meaningful asset. The other 7 are passengers at varying stages of elimination.",
-    "Cronan":   "Cronan leads on Win% with France as the primary asset. Acknowledge the lead but note it is essentially a one-team portfolio.",
-    "Silk":     "Silk has England and USA as the two live assets. Algeria and Qatar are dead weight. Genuinely competitive if both main teams progress deep.",
-    "Same":     "Same has Portugal and Colombia as the two serious assets. Portugal has been disappointing. Colombia quietly performing well.",
-    "Galbraith":"Galbraith has Argentina as the standout asset plus Morocco who won their group. Turkey and South Africa are eliminated. Focus on Argentina and Morocco's knockout prospects.",
-    "Morris":   "Morris is unbeaten across multiple games but has too many draws. Brazil is the primary asset. Uruguay has been frustrating. Scotland and Iran are fringe contributors.",
-    "P Rankin": "P Rankin's Germany is the flagship and performing well. Sweden, Czech Republic and Iraq are supporting cast at varying degrees of relevance.",
-    "T Rankin": "T Rankin's Netherlands are one of the more dangerous sides in the bracket. Croatia are out. Ghana the wildcard. Focus on Netherlands' knockout potential.",
-    "Hankin":   "Hankin leads the field on raw on-pitch points despite low Win%. Norway, Mexico and Ivory Coast all performing above their title odds. Saudi Arabia eliminated.",
-    "Varcoe":   "Varcoe has gone unbeaten across all games — Japan, Switzerland, Canada and DR Congo all contributing. The quiet overachiever of the sweepstake.",
-    "Crowle":   "Crowle has zero wins across all games played. Belgium drawing everything. Ecuador, Bosnia and Uzbekistan struggling. The portfolio needs a result urgently.",
+    # KNOCKOUT STAGE — only discuss surviving teams
+    # P Rankin and T Rankin are eliminated — brief mention only
+    "Kenna":    "Spain ($7.4) and Egypt ($410) are Kenna's surviving teams. Spain are genuine contenders. Focus on Spain's next knockout opponent and realistic path to the title. Egypt are a miracle-run outsider.",
+    "Cronan":   "France ($3.0) are Cronan's sole survivor and tournament favourites. One team, one shot at the pot. Discuss France's form, knockout path and what stands between Cronan and the prize.",
+    "Silk":     "England ($12.5) and USA ($40) are both alive. Two live knockout assets. Focus on their respective next opponents, form and which is the more credible title threat.",
+    "Same":     "Portugal ($16.5), Colombia ($29) and Paraguay ($650) are all alive — the largest surviving portfolio in the sweepstake. Three genuine shots. Focus on Portugal and Colombia as the serious threats.",
+    "Galbraith":"Argentina ($5.7) and Morocco ($40) are both through to the Round of 16. Second favourites plus a dangerous outsider. Two credible paths to the title — discuss both next opponents.",
+    "Morris":   "Brazil ($14) are Morris's sole survivor. Discuss Brazil's knockout campaign, next opponent, and what they need to deliver to hand Morris the pot.",
+    "P Rankin": "ELIMINATED. Germany lost to Paraguay on penalties, Sweden went out in the group stage. One line acknowledging they are out — then move on entirely.",
+    "T Rankin": "ELIMINATED. Netherlands lost to Morocco on penalties, Ghana lost to Colombia. One line acknowledging they are out — then move on entirely.",
+    "Hankin":   "Norway ($60) and Mexico ($32) are both alive in the Round of 16. Two dark horses with genuine knockout pedigree. Focus on their next opponents and outsider credentials.",
+    "Varcoe":   "Switzerland ($90) and Canada ($470) both survived the Round of 32. Switzerland are a credible quarter-final threat. Canada are the long shot. Any path to the final wins the pot.",
+    "Crowle":   "Belgium ($75) is Crowle's sole survivor after Ecuador, Bosnia and Uzbekistan all went out. One team, one last shot. Discuss Belgium's next opponent and realistic title chances.",
 }
 
 
@@ -100,11 +102,13 @@ TODAY: {now_aest}
 {results_text}
 {upcoming_text}
 
+CONTEXT: We are in the KNOCKOUT ROUNDS. Winner takes all. Only surviving teams matter.
+
 TASK: Write an executive summary for this edition.
 
-- pull_quote: A single sharp one-liner capturing the defining moment or irony of this window. Max 20 words.
-- paragraph_1: (~70 words) The most significant results and storylines — specific scorelines, who gained, who lost ground.
-- paragraph_2: (~70 words) Forward look — key fixtures in the next 48 hours, what's at stake for specific participants.
+- pull_quote: A sharp one-liner about the knockout drama or who is closest to winning the pot. Max 20 words. No exclamation marks.
+- paragraph_1: (~70 words) Most significant knockout results — who progressed, who is now eliminated from the sweepstake, biggest upsets or surprises. Only mention eliminated participants briefly in past tense.
+- paragraph_2: (~70 words) Forward look at the next round of knockout fixtures — focus on surviving participants only, their upcoming opponents, and who is best placed to win the pot.
 
 Dry tone. Reference participant names directly. No cheerleading.
 
@@ -140,16 +144,26 @@ def build_commentary_prompt(data, participants):
         )
     results_text += "NOTE: Each team has exactly one owner shown in brackets. Do not confuse team owners.\n"
 
+    # Build eliminated set from knockout results
+    eliminated_teams = set()
+    for stage in data.get("knockout", []):
+        for m in stage.get("matches", []):
+            if m.get("status") == "FINISHED" and m.get("winner"):
+                loser = m["away"] if m["winner"] == "home" else m["home"]
+                eliminated_teams.add(loser)
+
     participant_sections = ""
     for p in participants:
-        notes   = PARTICIPANT_NOTES.get(p, "")
-        teams   = p_map.get(p, {}).get("teams", [])
-        standing = next((s for s in standings if s["name"] == p), {})
+        notes     = PARTICIPANT_NOTES.get(p, "")
+        all_teams = p_map.get(p, {}).get("teams", [])
+        alive     = [t for t in all_teams if t not in eliminated_teams]
+        is_out    = len(alive) == 0
+        standing  = next((s for s in standings if s["name"] == p), {})
         participant_sections += (
             f"\n{p.upper()}:\n"
-            f"  Teams: {', '.join(teams)}\n"
-            f"  Standing: Rank {standing.get('rank','?')} | {standing.get('win_pct',0):.2f}% | "
-            f"Pts {standing.get('pts','?')} | W{standing.get('w',0)}-D{standing.get('d',0)}-L{standing.get('l',0)}\n"
+            f"  Status: {'ELIMINATED — do not write full commentary' if is_out else 'STILL IN TOURNAMENT'}\n"
+            f"  Alive teams: {', '.join(alive) if alive else 'None — eliminated'}\n"
+            f"  Win%: {standing.get('win_pct', 0):.2f}%\n"
             f"  Guidance: {notes}\n"
         )
 
@@ -166,14 +180,24 @@ COVERING: {', '.join(participants)}
 PARTICIPANT DETAILS:
 {participant_sections}
 
-RULES: Winner takes all. Win% = Kalshi-implied combined win probability across surviving teams.
+CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
+Only the participant whose team wins the World Cup wins the sweepstake pot.
+
+CRITICAL RULES:
+- ONLY discuss each participant's ALIVE teams (listed under "Alive teams" below)
+- Do NOT mention any eliminated teams except in one sentence if the participant is fully out
+- Focus entirely on: next knockout opponent, form, path to the final, realistic title chances
+- For eliminated participants (P Rankin, T Rankin): one brief sentence only, then nothing more
+- Win% reflects only surviving teams
+- Every match from here eliminates someone — reflect that urgency and tension
+- Reference actual odds when discussing title chances
 
 TASK: Write commentary for each of the 3 participants:
-- Sharp specific headline
-- 1-2 paragraphs (~80-120 words each, similar length)
-- Specific results and sweepstake implications
-- Follow the Guidance note for each participant
-- No generic observations
+- Sharp knockout-stage headline (not group stage references)
+- 1-2 paragraphs (~80-120 words each)
+- Ground everything in next opponents, current odds, and path to the title
+- Follow the Guidance note exactly
+- No group stage references unless directly relevant to current form
 
 Return ONLY valid JSON, no preamble, no markdown:
 [
