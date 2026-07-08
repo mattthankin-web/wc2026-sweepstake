@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T11:20:50.582085+00:00",
-    "last_updated_aest": "Wednesday 8 Jul 2026, 9:20pm AEST",
+    "last_updated": "2026-07-08T13:18:48.210319+00:00",
+    "last_updated_aest": "Wednesday 8 Jul 2026, 11:18pm AEST",
     "edition": 26,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "8 Jul 2026 5:56am AEST",
+    "odds_last_updated": "8 Jul 2026 11:18am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-08T11:21:17.607433+00:00",
-    "last_score_refresh": "8 Jul 2026 9:20pm AEST",
+    "last_score_refresh": "8 Jul 2026 11:18pm AEST",
     "last_commentary_participants": [
       "P Rankin",
       "T Rankin",
@@ -323,7 +323,10 @@
       "away": "Morocco",
       "away_owner": "Galbraith",
       "status": "TIMED",
-      "context": ""
+      "context": "",
+      "h2h_home_price": 1.61,
+      "h2h_draw_price": 4.0,
+      "h2h_away_price": 7.2
     }
   ],
   "commentary": [
@@ -360,37 +363,37 @@
       "team": "Spain",
       "owner": "Kenna",
       "prev": "$5.1",
-      "now": "$5.1",
-      "now_decimal": 5.1,
-      "direction": "unchanged",
+      "now": "$5.2",
+      "now_decimal": 5.2,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$5.4",
+      "prev": "$5.3",
       "now": "$5.3",
       "now_decimal": 5.3,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$6.2",
+      "prev": "$6.0",
       "now": "$6.0",
       "now_decimal": 6.0,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Unibet"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
       "prev": "$17.5",
-      "now": "$17.5",
-      "now_decimal": 17.5,
-      "direction": "unchanged",
-      "source": "Betfair"
+      "now": "$17.0",
+      "now_decimal": 17.0,
+      "direction": "shortened",
+      "source": "Unibet"
     },
     {
       "team": "Morocco",
@@ -2896,7 +2899,11 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": ""
+          "venue": "",
+          "h2h_home_price": 1.61,
+          "h2h_draw_price": 4.0,
+          "h2h_away_price": 7.2,
+          "h2h_source": "Betfair"
         },
         {
           "id": 537384,
@@ -2914,7 +2921,11 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": ""
+          "venue": "",
+          "h2h_home_price": 1.68,
+          "h2h_draw_price": 4.0,
+          "h2h_away_price": 6.2,
+          "h2h_source": "Betfair"
         },
         {
           "id": 537385,
@@ -2932,7 +2943,11 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": ""
+          "venue": "",
+          "h2h_home_price": 4.5,
+          "h2h_draw_price": 3.85,
+          "h2h_away_price": 1.91,
+          "h2h_source": "Betfair"
         },
         {
           "id": 537386,
@@ -2950,7 +2965,11 @@
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": ""
+          "venue": "",
+          "h2h_home_price": 1.75,
+          "h2h_draw_price": 3.7,
+          "h2h_away_price": 6.2,
+          "h2h_source": "Betr"
         }
       ]
     },
