@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T23:06:07.670449+00:00",
-    "last_updated_aest": "Thursday 9 Jul 2026, 9:06am AEST",
-    "edition": 26,
+    "last_updated": "2026-07-08T22:59:21.401187+00:00",
+    "last_updated_aest": "Thursday 9 Jul 2026, 8:59am AEST",
+    "edition": 27,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "9 Jul 2026 9:06am AEST",
+    "odds_last_updated": "9 Jul 2026 8:59am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-08T11:21:17.607433+00:00",
-    "last_score_refresh": "9 Jul 2026 9:06am AEST",
+    "trivia_schedule_generated": "2026-07-08T23:06:42.497293+00:00",
+    "last_score_refresh": "9 Jul 2026 8:59am AEST",
     "last_commentary_participants": [
-      "P Rankin",
-      "T Rankin",
-      "Hankin"
+      "Varcoe",
+      "Crowle",
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-07-08T11:21:17.607135+00:00",
+    "last_commentary_generated": "2026-07-08T23:06:42.497019+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -311,22 +311,22 @@
   ],
   "commentary": [
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: Germany Carries the Weight of a Portfolio Too Polite to Say It's Struggling",
-      "body": "With 7.18% and a W3-D2-L9 record, P Rankin's sweepstake entry reads like a corporate restructuring memo: one promising asset surrounded by a great deal of dead weight. Germany are the flagship, and they are doing their job — performing credibly enough to keep the overall Kalshi probability from entering hospice territory. The Czech Republic, Iraq, and Sweden constitute a supporting cast whose combined contribution to this sweepstake can be measured in the low single digits of relevance.\n\nThe structural problem is not Germany's form but the arithmetic. At rank 7, P Rankin trails six better-diversified portfolios, several of whom hold teams with considerably more knockout pedigree. Germany must now do something that feels historically complicated for them: actually win a tournament. Everything else here is noise."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: The Geometry of Improbability",
+      "body": "At 3.59% and with Canada eliminated, Varcoe's entire World Cup ambition now rests on Switzerland — a team priced at $90 and quietly doing something rather inconvenient to everyone's assumptions. Switzerland are not romantic. They are efficient, defensively structured, and deeply annoying to play against, which in a knockout tournament is practically a superpower. They are a credible quarter-final threat and that is not faint praise at this stage of the competition.\n\nThe problem, as ever with Switzerland, is that credible quarter-finalist and actual champion are separated by approximately three miracles. The odds say so. The draw will likely say so. But Varcoe sits on a GD of +13 and 29 points, which suggests someone has been quietly competent all tournament while the standings refused to notice. Switzerland going deep is not absurd. Switzerland winning it is. There is a difference, and right now Varcoe is living in it."
     },
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: Netherlands or Nothing, and That Is a Perfectly Acceptable Business Model",
-      "body": "Croatia are out. Tunisia and Ghana have produced enough points to remain politely on the ledger without threatening anyone's sleep. What T Rankin actually holds is a single concentrated bet on the Netherlands, and as concentrated bets go, it is not an embarrassing one. The Dutch are among the more credible knockout candidates remaining in the bracket, and their trajectory deserves to be taken seriously rather than dismissed as wishful thinking from a rank-8 participant.\n\nThe honest read is this: at 6.30%, T Rankin is one convincing Netherlands run away from re-entering the conversation. Ghana remain a wildcard in the loosest, most mathematically modest sense of the term. The rest of the portfolio has already done what it could, which was limited. Netherlands carry the ticket from here, and they are capable of justifying the faith."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: One Flag, One Chance, One Very Long Shot",
+      "body": "Belgium at $75 is not a price that inspires confidence, but it is a price that implies possibility, and at this stage of a winner-takes-all sweepstake, possibility is the only currency that matters. Crowle's squad has been whittled to a single survivor, and Belgium arrive in the knockout rounds carrying the full weight of that responsibility — which is precisely the kind of pressure that has historically not suited Belgian football particularly well.\n\nTheir path to the title requires beating teams who are, in most measurable respects, better organised and better priced. Belgium are not without quality, but quality and tournament winners are frequently different things, especially at $75. Crowle's position in the standings — 3.42%, dead last — is accurate. What keeps this entry technically alive is that Belgium only need to win six consecutive matches against increasingly hostile opposition. Straightforward, really."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: The Most Productive Participant Nobody Is Backing to Actually Win",
-      "body": "The central paradox of Hankin's position is fully on display: 32 points accumulated across Norway, Mexico, and Ivory Coast, ten wins recorded, a positive goal difference of plus seven, and yet the market assigns a 4.54% probability of lifting the trophy. Saudi Arabia are gone, which tidies the portfolio without meaningfully improving the odds. The surviving trio have punched with admirable consistency throughout the group stages, delivering the kind of cumulative output that would, in any rational sweepstake, translate to genuine contention.\n\nThe problem is that Kalshi is not rewarding effort or points tallies — it is rewarding title probability, and none of Hankin's remaining sides are credibly priced to win this tournament outright. Norway's run has been legitimate. Mexico and Ivory Coast have contributed. But contribution and winning are different things, and the gap between rank 9 and the top of this table reflects a structural mismatch between on-pitch performance and tournament-winning likelihood that no further group stage diligence can fully bridge."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Spain Hold the Keys, Egypt Hold a Prayer",
+      "body": "With Spain at $7.4, Kenna possesses the closest thing this sweepstake has to a genuine favourite, and the standings reflect it — 13.78% and third overall despite carrying the tournament's most chaotic roster of supporting acts. Spain are not merely contenders; they are the kind of team that makes other contenders nervous about their own assumptions. Technically fluent, tactically adaptable, and possessed of the institutional confidence that comes from knowing you have done this before. Their next knockout opponent will need to be very good or very lucky, and preferably both.\n\nEgypt at $410 are the sweepstake's designated miracle narrative — present, breathing, and statistically improbable. Their continued existence is a service to drama rather than probability. The sensible analysis centres entirely on Spain's path to the final, which runs through opponents who are beatable and a draw that has not yet been actively cruel. Kenna's position — third in the standings, one elite team still standing — is quietly the most envied in the room, even if nobody will admit it."
     }
   ],
   "odds": [
@@ -404,9 +404,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Galbraith wins the match, then draws France in the quarter-final. The ledger is rarely balanced.",
-    "paragraph_1": "Two results on 8 July reshuffled the mid-table order with characteristic indifference to sentiment. Argentina's 3–2 defeat of Egypt was good news for Galbraith, who now sits fourth on 35 points, and correspondingly bad news for Kenna, whose Egypt exit drags a bloated loss column to 14. Switzerland's 4–3 win over Colombia eliminated Same's side, halting a participant who had climbed to fifth on the back of seven draws cushioning an otherwise modest record.",
-    "paragraph_2": "The defining fixture of the next 48 hours arrives Friday morning: France, held by Cronan, against Morocco, held by Galbraith. Cronan leads the sweepstake on win percentage at 17.74% but trails Galbraith on points. A French victory consolidates Cronan's position and denies Galbraith a semi-final berth; a Moroccan win does the reverse, and would push Galbraith's points total further clear of a chasing pack already short of live teams. One of the top four walks away from this fixture considerably diminished."
+    "pull_quote": "Cronan leads on probability, but Galbraith's points haul suggests the pot is far from settled.",
+    "paragraph_1": "The knockout rounds have begun thinning the field with predictable ruthlessness. Galbraith remains the points leader with 35, his teams having navigated the group stage in robust form. Cronan sits atop the win-probability table despite a modest points return, suggesting his surviving assets carry genuine tournament pedigree. Kenna's record of five draws tells its own story — still alive, but unconvincingly so. Those already eliminated will have only the catering to console them.",
+    "paragraph_2": "Two fixtures define the immediate horizon. Cronan's France face Galbraith's Morocco on Friday morning — a direct elimination contest between the top two probability holders, one of whom will be considerably diminished by breakfast. On Saturday, Kenna's Spain meet Crowle's Belgium. Galbraith, with the tournament's highest points tally, is best placed structurally, but a Friday exit for France would hand Cronan's lead a very short shelf life."
   },
   "trivia_schedule": {
     "2026-06-24": [
