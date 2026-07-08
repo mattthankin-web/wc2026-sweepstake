@@ -461,10 +461,39 @@ def main():
     # 3. Generate/update trivia schedule
     data = generate_trivia_schedule(data)
 
-    with open(DATA_FILE, "w") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
+    # Write via GitHub API to avoid push conflicts with concurrent runs
+    import base64
+    github_token = os.environ.get("GITHUB_TOKEN", "")
+    if github_token:
+        try:
+            repo = os.environ.get("GITHUB_REPOSITORY", "")
+            api_url = f"https://api.github.com/repos/{repo}/contents/data/data.json"
+            headers = {
+                "Authorization": f"token {github_token}",
+                "Accept": "application/vnd.github.v3+json"
+            }
+            sha = requests.get(api_url, headers=headers, timeout=15).json().get("sha", "")
+            encoded = base64.b64encode(
+                json.dumps(data, indent=2, ensure_ascii=False).encode()
+            ).decode()
+            put = requests.put(api_url, headers=headers, json={
+                "message": f"chore: daily commentary {datetime.now(timezone.utc).strftime('%Y-%m-%d')}",
+                "content": encoded,
+                "sha": sha
+            }, timeout=15)
+            if put.status_code in (200, 201):
+                print(f"  data.json written via GitHub API ✓")
+            else:
+                raise Exception(f"API write failed: {put.status_code}")
+        except Exception as e:
+            print(f"  API write failed ({e}), falling back to local")
+            with open(DATA_FILE, "w") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+    else:
+        with open(DATA_FILE, "w") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
 
-    print(f"  Done. Written to {DATA_FILE}")
+    print(f"  Done. Edition written.")
     for c in commentary:
         print(f"    → {c['title']}")
 
