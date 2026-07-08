@@ -106,9 +106,9 @@ CONTEXT: We are in the KNOCKOUT ROUNDS. Winner takes all. Only surviving teams m
 
 TASK: Write an executive summary for this edition.
 
-- pull_quote: A sharp one-liner about the knockout drama or who is best placed to win the pot. Max 20 words. No exclamation marks.
-- paragraph_1: (~70 words) Most significant knockout results since last edition — who progressed, who has been eliminated from the sweepstake. Reference teams and their odds. No points or table positions.
-- paragraph_2: (~70 words) Forward look at upcoming knockout fixtures — surviving participants only, their next opponents and odds, and who has the clearest path to the title. No points. No Win%. Odds and knockout path only.
+- pull_quote: A sharp one-liner capturing the defining drama or tension of this moment. Max 20 words. No exclamation marks.
+- paragraph_1: (~70 words) Most significant recent knockout results — who progressed, who has been knocked out, any upsets or drama worth noting. Reference teams and their tournament odds. No points totals, no table positions.
+- paragraph_2: (~70 words) Forward look at the next round of fixtures — who plays who, what is at stake for each surviving participant, and who looks best placed to win the pot. Engaging and specific, not generic.
 
 Dry tone. Reference participant names directly. No cheerleading.
 
@@ -189,22 +189,22 @@ PARTICIPANT DETAILS:
 CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
 Only the participant whose team wins the World Cup wins the sweepstake pot.
 
-CRITICAL RULES:
-- ONLY discuss each participant's ALIVE teams (listed under "Alive teams" and "Current odds" below)
-- Do NOT mention points, Win%, or league table position — these are irrelevant in the knockout stage
+RULES:
+- Focus on each participant's ALIVE teams (listed under "Alive teams" and "Current odds" below)
+- Do NOT mention points, league table position, or Win% at any point — none of that matters now
 - Do NOT mention any eliminated teams unless the participant is fully out (one sentence max)
-- Focus entirely on: knockout path, next opponent, form, realistic title chances
-- You MAY briefly reflect on the participant's journey so far (e.g. a dramatic R32 win) but only to set up the forward-looking narrative
-- For eliminated participants (P Rankin, T Rankin): one brief sentence acknowledging they are out, nothing more
-- Reference the actual odds provided when assessing title chances
-- Every match eliminates someone — reflect that urgency
+- You are encouraged to reference the journey so far — group stage results, dramatic knockout wins, penalty shootouts — to build narrative and context
+- The forward focus should be on: next opponent, form, path to the final, title odds
+- For eliminated participants (P Rankin, T Rankin): one brief sentence only, then nothing more
+- Reference the actual odds provided — use them to assess realistic chances, not just list them
+- Write with personality — this is a sweepstake among mates, not a press conference
 
 TASK: Write commentary for each of the 3 participants:
-- Sharp knockout-stage headline
-- 1-2 paragraphs (~80-120 words each)
-- Ground everything in next opponents, current odds, and the path to lifting the trophy
-- No points. No Win%. No table references. Odds and knockout path only.
-- Follow the Guidance note exactly
+- Sharp headline that captures this participant's current situation
+- 1-2 paragraphs (~80-120 words each) — engaging, specific, grounded in actual results and odds
+- Mix of retrospective (how they got here) and prospective (what they need to win the pot)
+- No points totals. No Win%. No table standings. Everything else is fair game.
+- Follow the Guidance note for each participant
 
 Return ONLY valid JSON, no preamble, no markdown:
 [
