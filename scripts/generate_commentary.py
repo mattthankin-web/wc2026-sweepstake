@@ -65,32 +65,40 @@ def pick_participants(data):
 
 def build_exec_summary_prompt(data):
     """Prompt for the executive summary — overview of the whole window."""
-    standings = data.get("standings", [])
     results   = data.get("recent_results", [])
     upcoming  = data.get("upcoming_fixtures", [])
+    p_map     = data.get("participants", {})
 
-    standings_text = "CURRENT STANDINGS (top 5 by Win%):\n"
-    for s in standings[:5]:
-        standings_text += (
-            f"  {s['rank']}. {s['name']}: {s['win_pct']:.2f}% | "
-            f"Pts {s['pts']} | W{s['w']}-D{s['d']}-L{s['l']}\n"
-        )
+    # Build definitive alive/eliminated list from odds table
+    teams_in_odds = {o["team"] for o in data.get("odds", [])}
+    alive_lines = []
+    for name, info in p_map.items():
+        alive = [t for t in info.get("teams", []) if t in teams_in_odds]
+        if alive:
+            odds_str = ", ".join(
+                f"{t} @ {next((o['now'] for o in data.get('odds',[]) if o['team']==t), '?')}"
+                for t in alive
+            )
+            alive_lines.append(f"  {name}: STILL IN — {odds_str}")
+        else:
+            alive_lines.append(f"  {name}: ELIMINATED")
+    alive_text = "PARTICIPANT STATUS (definitive — use this to determine who is in/out):\n"
+    alive_text += "\n".join(alive_lines) + "\n"
 
     results_text = "RECENT RESULTS:\n"
-    for r in results[:6]:
+    for r in results[:8]:
         results_text += (
-            f"  {r['date']} Grp {r.get('group','?')}: "
+            f"  {r['date']} {r.get('group','?')}: "
             f"{r['home']} ({r['home_owner']}) {r['home_score']}–{r['away_score']} "
             f"{r['away']} ({r['away_owner']})\n"
         )
 
-    upcoming_text = "UPCOMING KEY FIXTURES (format: Team [Owner] vs Team [Owner]):\n"
-    for f in upcoming[:4]:
+    upcoming_text = "UPCOMING FIXTURES:\n"
+    for f in upcoming[:5]:
         upcoming_text += (
-            f"  {f['aest_time']} Grp {f.get('group','?')}: "
+            f"  {f['aest_time']}: "
             f"{f['home']} [owned by {f['home_owner']}] vs {f['away']} [owned by {f['away_owner']}]\n"
         )
-    upcoming_text += "NOTE: Each team has exactly one owner shown in brackets. Do not confuse team owners.\n"
 
     now_aest = datetime.now(AEST).strftime("%-d %B %Y")
 
@@ -98,7 +106,7 @@ def build_exec_summary_prompt(data):
 
 TODAY: {now_aest}
 
-{standings_text}
+{alive_text}
 {results_text}
 {upcoming_text}
 
@@ -106,9 +114,11 @@ CONTEXT: We are in the KNOCKOUT ROUNDS. Winner takes all. Only surviving teams m
 
 TASK: Write an executive summary for this edition.
 
+CRITICAL: Before writing, check the "ALIVE PARTICIPANTS" list below. Only declare a participant eliminated if they have NO teams remaining. If they have even one team still in the tournament, they are still in the sweepstake.
+
 - pull_quote: A sharp one-liner capturing the defining drama or tension of this moment. Max 20 words. No exclamation marks.
-- paragraph_1: (~70 words) Most significant recent knockout results — who progressed, who has been knocked out, any upsets or drama worth noting. Reference teams and their tournament odds. No points totals, no table positions.
-- paragraph_2: (~70 words) Forward look at the next round of fixtures — who plays who, what is at stake for each surviving participant, and who looks best placed to win the pot. Engaging and specific, not generic.
+- paragraph_1: (~70 words) Most significant recent knockout results — who progressed, who has been knocked out, any upsets or drama. If a participant lost one team but still has another alive, note BOTH facts. No points totals, no table positions.
+- paragraph_2: (~70 words) Forward look — upcoming fixtures, what is at stake for each SURVIVING participant (those with at least one alive team), and who looks best placed to win the pot.
 
 Dry tone. Reference participant names directly. No cheerleading.
 
@@ -134,6 +144,19 @@ def build_commentary_prompt(data, participants):
             f"Pts {s['pts']} | W{s['w']}-D{s['d']}-L{s['l']} | GD {s['gd']:+d} | "
             f"Teams: {', '.join(teams)}\n"
         )
+
+    # Build alive participants summary for exec prompt
+    teams_in_odds_exec = {o["team"] for o in data.get("odds", [])}
+    alive_summary = []
+    for name, info in p_map.items():
+        alive = [t for t in info.get("teams", []) if t in teams_in_odds_exec]
+        if alive:
+            odds_str = ", ".join(f"{t} @ {next((o['now'] for o in data.get('odds',[]) if o['team']==t), '?')}" for t in alive)
+            alive_summary.append(f"{name}: {odds_str}")
+        else:
+            alive_summary.append(f"{name}: ELIMINATED")
+    alive_participants_text = "ALIVE PARTICIPANTS (for reference — do not declare anyone eliminated unless listed as ELIMINATED here):\n"
+    alive_participants_text += "\n".join(f"  {s}" for s in alive_summary) + "\n\n"
 
     results_text = "RESULTS SINCE LAST EDITION (format: Team [Owner] Score Team [Owner]):\n"
     for r in results[:8]:
