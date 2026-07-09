@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-08T22:59:21.401187+00:00",
-    "last_updated_aest": "Thursday 9 Jul 2026, 8:59am AEST",
+    "last_updated": "2026-07-09T10:37:34.177654+00:00",
+    "last_updated_aest": "Thursday 9 Jul 2026, 8:37pm AEST",
     "edition": 29,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "9 Jul 2026 8:59am AEST",
+    "odds_last_updated": "9 Jul 2026 8:37am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-08T23:28:53.346134+00:00",
-    "last_score_refresh": "9 Jul 2026 8:59am AEST",
+    "last_score_refresh": "9 Jul 2026 8:37pm AEST",
     "last_commentary_participants": [
       "T Rankin",
       "Hankin",
@@ -291,7 +291,7 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.61,
+      "h2h_home_price": 1.62,
       "h2h_draw_price": 4.0,
       "h2h_away_price": 7.2
     },
@@ -304,8 +304,8 @@
       "away_owner": "Crowle",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.68,
-      "h2h_draw_price": 4.1,
+      "h2h_home_price": 1.69,
+      "h2h_draw_price": 4.0,
       "h2h_away_price": 6.0
     }
   ],
@@ -397,9 +397,9 @@
       "team": "Switzerland",
       "owner": "Varcoe",
       "prev": "$42.0",
-      "now": "$42.0",
-      "now_decimal": 42.0,
-      "direction": "unchanged",
+      "now": "$44.0",
+      "now_decimal": 44.0,
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
@@ -2880,7 +2880,7 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 1.61,
+          "h2h_home_price": 1.62,
           "h2h_draw_price": 4.0,
           "h2h_away_price": 7.2,
           "h2h_source": "Betfair"
@@ -2902,8 +2902,8 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 1.68,
-          "h2h_draw_price": 4.1,
+          "h2h_home_price": 1.69,
+          "h2h_draw_price": 4.0,
           "h2h_away_price": 6.0,
           "h2h_source": "Betfair"
         },
@@ -2948,8 +2948,8 @@
           "venue": "",
           "h2h_home_price": 1.75,
           "h2h_draw_price": 3.7,
-          "h2h_away_price": 6.0,
-          "h2h_source": "Betr"
+          "h2h_away_price": 6.2,
+          "h2h_source": "Betfair"
         }
       ]
     },
