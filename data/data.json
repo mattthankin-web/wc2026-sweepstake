@@ -2,21 +2,21 @@
   "meta": {
     "last_updated": "2026-07-09T10:37:34.177654+00:00",
     "last_updated_aest": "Thursday 9 Jul 2026, 8:37pm AEST",
-    "edition": 30,
+    "edition": 31,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "9 Jul 2026 8:37am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-09T11:41:46.457149+00:00",
+    "trivia_schedule_generated": "2026-07-09T14:02:25.477075+00:00",
     "last_score_refresh": "9 Jul 2026 8:37pm AEST",
     "last_commentary_participants": [
-      "Crowle",
-      "Kenna",
-      "Cronan"
+      "Galbraith",
+      "Morris",
+      "P Rankin"
     ],
-    "last_commentary_generated": "2026-07-09T11:41:46.456886+00:00",
+    "last_commentary_generated": "2026-07-09T14:02:25.476778+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -311,22 +311,22 @@
   ],
   "commentary": [
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: One Flag, One Prayer, One Very Long Shot",
-      "body": "Belgium's path to the title requires beating opponents who, on current form, would rather not oblige. The odds reflect a team capable of a decent knockout run rather than a coronation. For Crowle, this is the tournament distilled to its purest, most uncomfortable form: one team, one match at a time, and a nagging sense that $38.0 exists for very good reasons. Still, someone has to cause an upset. It is, theoretically, possible that it could be Belgium."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: The Favourite and the Fanatic",
+      "body": "Galbraith enters the knockout rounds with the most enviable hand in the sweepstake: Argentina, the defending champions, priced at $5.1 and looking every inch a side that knows how to win tournaments the ugly way. Their next opponent will need to contend with a squad that has been there, done it, and had the trophy engraved before the final whistle. At those odds, Argentina represent the most credible single path to the pot of anyone still standing. Galbraith need them to keep grinding.\n\nMorocco at $36 are the wildcard that sweepstake dreams are made of — unfancied, organised to the point of tedium for opposing forwards, and historically capable of embarrassing teams who underestimate them. Their next opponent faces a side that has made a habit of winning matches it has no business winning. Should Argentina falter, Galbraith still holds a ticket. Two live teams, two distinct styles, and one very satisfied expression at the draw."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: Spain Are Serious, and That Is the Only Sentence That Matters",
-      "body": "Kenna's position is quietly enviable. One quality team, real odds, a credible path. Spain's next opponent will test them, but this is a side built for exactly these moments — structured, calm under pressure, and apparently allergic to panic. If Spain can keep their discipline and their key players fit, Kenna has a genuine chance of winning a pot that, frankly, looked improbable when the draw was made. Spain at $5.2 is not a gift, but it is a weapon."
+      "participant": "Morris",
+      "color": "#0891B2",
+      "title": "Morris: One Samba Left to Dance",
+      "body": "Morris is eliminated from the sweepstake, kept alive in conversation only by Brazil, who at $14 remain a legitimate if not overwhelming contender to hand him the pot."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: The Favourite's Weight, and All That Comes With It",
-      "body": "Cronan's sole surviving team now faces the business end of the competition with the weight of expectation and a $3.1 price tag that suggests the market, at least, believes. France's next opponent will demand a focused performance, and their path to the final is unlikely to get easier. But this is precisely the situation France are built for. If Cronan can avoid the particular cruelty reserved for favourites — the early goal conceded, the late red card, the penalty shootout — the pot is there to be won. No pressure."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: Auf Wiedersehen, Pet",
+      "body": "Germany's penalty shootout exit to Paraguay and Sweden's failure to escape the group stage have confirmed what the odds suspected all along, and P Rankin is out."
     }
   ],
   "odds": [
@@ -404,9 +404,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan leads on probability; Galbraith leads on points — something has to give.",
-    "paragraph_1": "The knockout rounds have begun their customary work of eliminating hope. With Kenna's record of five draws in 26 games suggesting a side built more for survival than glory, and Galbraith quietly accumulating the highest points tally among the leading group, the field has thinned to the teams still capable of winning this thing. No recent results were provided for this edition, but the trajectory is clear: probability and points are telling different stories, and the tournament will resolve that contradiction brutally.",
-    "paragraph_2": "Two fixtures define the immediate picture. France against Morocco — Cronan versus Galbraith — is the standout collision: the current win-percentage leader faces the points leader in a single-elimination tie that could redraw the entire sweepstake. A Galbraith win would be damaging to Cronan's position and consolidating for his own. Simultaneously, Kenna's Spain face Crowle's Belgium. Kenna, third on win percentage, needs Spain to advance to stay relevant. Crowle, absent from the top five, could gate-crash the conversation entirely."
+    "pull_quote": "Galbraith leads on points; Cronan leads on probability — the distinction is about to matter.",
+    "paragraph_1": "The knockout rounds have begun their customary work of elimination. With the group stage settled, only surviving teams carry any relevance to the final standings. The specific results feeding into this edition were not provided, but the broader picture is clear: several participants have already seen their hopes extinguished, and the field is narrowing toward the semi-finals. Cronan and Galbraith, in particular, have emerged as the two names the rest of the group is watching.",
+    "paragraph_2": "Two quarter-finals dominate the weekend. France, held by Cronan, face Morocco, held by Galbraith — a fixture that will either consolidate Cronan's probability lead or hand Galbraith a path to outright favouritism. Simultaneously, Kenna's Spain take on Crowle's Belgium; a Spain victory would breathe life into Kenna's campaign, while a Belgian win would represent one of the more consequential upsets of the tournament for this sweepstake. Galbraith, sitting atop the points table, is best placed structurally — provided France do not disagree on Friday morning."
   },
   "trivia_schedule": {
     "2026-06-24": [
