@@ -144,19 +144,16 @@ def build_commentary_prompt(data, participants):
         )
     results_text += "NOTE: Each team has exactly one owner shown in brackets. Do not confuse team owners.\n"
 
-    # Build eliminated set from knockout results
-    eliminated_teams = set()
-    for stage in data.get("knockout", []):
-        for m in stage.get("matches", []):
-            if m.get("status") == "FINISHED" and m.get("winner"):
-                loser = m["away"] if m["winner"] == "home" else m["home"]
-                eliminated_teams.add(loser)
+    # Use odds table as definitive source of alive teams
+    # Catches BOTH group-stage AND knockout eliminations
+    # If a team has no odds entry, they are out of the tournament
+    teams_in_odds = {o["team"] for o in data.get("odds", [])}
 
     participant_sections = ""
     for p in participants:
         notes     = PARTICIPANT_NOTES.get(p, "")
         all_teams = p_map.get(p, {}).get("teams", [])
-        alive     = [t for t in all_teams if t not in eliminated_teams]
+        alive     = [t for t in all_teams if t in teams_in_odds]
         is_out    = len(alive) == 0
         standing  = next((s for s in standings if s["name"] == p), {})
         # Get odds for alive teams
@@ -190,7 +187,7 @@ CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
 Only the participant whose team wins the World Cup wins the sweepstake pot.
 
 RULES:
-- Focus on each participant's ALIVE teams (listed under "Alive teams" and "Current odds" below)
+- ONLY discuss teams listed under "Alive teams" below — if a team is not listed there, they are eliminated and must not be mentioned
 - Do NOT mention points, league table position, or Win% at any point — none of that matters now
 - Do NOT mention any eliminated teams unless the participant is fully out (one sentence max)
 - You are encouraged to reference the journey so far — group stage results, dramatic knockout wins, penalty shootouts — to build narrative and context
