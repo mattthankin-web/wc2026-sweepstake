@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-09T11:41:16.140328+00:00",
-    "last_updated_aest": "Thursday 9 Jul 2026, 9:41pm AEST",
-    "edition": 29,
+    "last_updated": "2026-07-09T10:37:34.177654+00:00",
+    "last_updated_aest": "Thursday 9 Jul 2026, 8:37pm AEST",
+    "edition": 30,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "9 Jul 2026 9:41am AEST",
+    "odds_last_updated": "9 Jul 2026 8:37am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-08T23:28:53.346134+00:00",
-    "last_score_refresh": "9 Jul 2026 9:41pm AEST",
+    "trivia_schedule_generated": "2026-07-09T11:41:46.457149+00:00",
+    "last_score_refresh": "9 Jul 2026 8:37pm AEST",
     "last_commentary_participants": [
-      "T Rankin",
-      "Hankin",
-      "Varcoe"
+      "Crowle",
+      "Kenna",
+      "Cronan"
     ],
-    "last_commentary_generated": "2026-07-08T23:28:53.345814+00:00",
+    "last_commentary_generated": "2026-07-09T11:41:46.456886+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -306,27 +306,27 @@
       "context": "",
       "h2h_home_price": 1.69,
       "h2h_draw_price": 4.0,
-      "h2h_away_price": 5.9
+      "h2h_away_price": 6.0
     }
   ],
   "commentary": [
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: Two Down, One Limping",
-      "body": "Netherlands fell to Morocco on penalties and Ghana were dispatched by Colombia, leaving Tunisia as the sole survivor of what was once a reasonably promising portfolio. Tunisia are still technically alive, which is more than can be said for most of this entry's ambitions. We wish them well and move on."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: One Flag, One Prayer, One Very Long Shot",
+      "body": "Belgium's path to the title requires beating opponents who, on current form, would rather not oblige. The odds reflect a team capable of a decent knockout run rather than a coronation. For Crowle, this is the tournament distilled to its purest, most uncomfortable form: one team, one match at a time, and a nagging sense that $38.0 exists for very good reasons. Still, someone has to cause an upset. It is, theoretically, possible that it could be Belgium."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: The Dark Horse Stable Has Two Runners Left",
-      "body": "Norway and Mexico both navigating the Round of 16 is the kind of outcome that turns a sweepstake into something worth watching. Norway at $18 are not a joke — they have shown genuine knockout pedigree and the sort of physical, direct football that tends to cause problems for sides who have been coasting through groups. Mexico, perennially the tournament's most dramatically unreliable side, are somehow still here too. Neither were anyone's pre-tournament tip for glory.\n\nThe path is not easy — it never is from this point — but Hankin has two live bullets where most participants have none. If Norway can keep winning the ugly ones and Mexico continue to confound expectations, the conversation around this entry gets considerably more interesting by the quarter-final stage. At $18, Norway represent genuine outsider value. The pot is not yet a fantasy."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: Spain Are Serious, and That Is the Only Sentence That Matters",
+      "body": "Kenna's position is quietly enviable. One quality team, real odds, a credible path. Spain's next opponent will test them, but this is a side built for exactly these moments — structured, calm under pressure, and apparently allergic to panic. If Spain can keep their discipline and their key players fit, Kenna has a genuine chance of winning a pot that, frankly, looked improbable when the draw was made. Spain at $5.2 is not a gift, but it is a weapon."
     },
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: Switzerland Steady, Canada a Monument to Hope",
-      "body": "Canada at $470 survived the Round of 32, which is the kind of result that prompts a polite round of applause before everyone quietly agrees it probably ends there. Switzerland, however, are a different proposition entirely. At $42, they are the sort of team that tournament forecasters habitually underestimate — organised, difficult to break down, and possessed of an institutional stubbornness in knockout football that has embarrassed better-fancied sides before.\n\nVarcoe's realistic ticket to the pot runs through Zurich, not Ottawa. A quarter-final appearance for Switzerland is plausible; a run to the final requires things to fall right, but at these odds that is precisely what makes it interesting. Canada's continued presence is a bonus — a lottery ticket tucked inside a more credible investment. Varcoe's position is not comfortable, but it is not hopeless either, which in this company passes for optimism."
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: The Favourite's Weight, and All That Comes With It",
+      "body": "Cronan's sole surviving team now faces the business end of the competition with the weight of expectation and a $3.1 price tag that suggests the market, at least, believes. France's next opponent will demand a focused performance, and their path to the final is unlikely to get easier. But this is precisely the situation France are built for. If Cronan can avoid the particular cruelty reserved for favourites — the early goal conceded, the late red card, the penalty shootout — the pot is there to be won. No pressure."
     }
   ],
   "odds": [
@@ -352,9 +352,9 @@
       "team": "Spain",
       "owner": "Kenna",
       "prev": "$5.2",
-      "now": "$5.3",
-      "now_decimal": 5.3,
-      "direction": "drifted",
+      "now": "$5.2",
+      "now_decimal": 5.2,
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -396,17 +396,17 @@
     {
       "team": "Switzerland",
       "owner": "Varcoe",
-      "prev": "$44.0",
-      "now": "$42.0",
-      "now_decimal": 42.0,
-      "direction": "shortened",
+      "prev": "$42.0",
+      "now": "$44.0",
+      "now_decimal": 44.0,
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan leads on probability; Galbraith leads on points — the pot will settle the argument.",
-    "paragraph_1": "The knockout rounds have done their usual work of separating ambition from arithmetic. The field has narrowed, and with it the margin for error. Those whose squads have already been eliminated are now spectators with opinions, which is the worst kind. Surviving teams carry tournament odds that compress with every round; the bracket is no longer forgiving, and early-round draws that once padded records are now a memory.",
-    "paragraph_2": "Two fixtures define the immediate horizon. France, carrying Cronan to the top of the probability standings, face Morocco under Galbraith — a result that could either consolidate Cronan's lead or hand Galbraith's already points-heavy portfolio a genuine winning vehicle. The following morning, Kenna's Spain meet Crowle's Belgium, a fixture that could either sustain Kenna's unlikely run or end it quietly before breakfast. Galbraith, with the most points banked and a live quarter-finalist, currently looks best placed to convert tournament position into prize money."
+    "pull_quote": "Cronan leads on probability; Galbraith leads on points — something has to give.",
+    "paragraph_1": "The knockout rounds have begun their customary work of eliminating hope. With Kenna's record of five draws in 26 games suggesting a side built more for survival than glory, and Galbraith quietly accumulating the highest points tally among the leading group, the field has thinned to the teams still capable of winning this thing. No recent results were provided for this edition, but the trajectory is clear: probability and points are telling different stories, and the tournament will resolve that contradiction brutally.",
+    "paragraph_2": "Two fixtures define the immediate picture. France against Morocco — Cronan versus Galbraith — is the standout collision: the current win-percentage leader faces the points leader in a single-elimination tie that could redraw the entire sweepstake. A Galbraith win would be damaging to Cronan's position and consolidating for his own. Simultaneously, Kenna's Spain face Crowle's Belgium. Kenna, third on win percentage, needs Spain to advance to stay relevant. Crowle, absent from the top five, could gate-crash the conversation entirely."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2904,7 +2904,7 @@
           "venue": "",
           "h2h_home_price": 1.69,
           "h2h_draw_price": 4.0,
-          "h2h_away_price": 5.9,
+          "h2h_away_price": 6.0,
           "h2h_source": "Betfair"
         },
         {
