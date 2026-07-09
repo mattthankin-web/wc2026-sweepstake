@@ -2,21 +2,21 @@
   "meta": {
     "last_updated": "2026-07-09T22:54:53.124292+00:00",
     "last_updated_aest": "Friday 10 Jul 2026, 8:54am AEST",
-    "edition": 31,
+    "edition": 32,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "10 Jul 2026 8:54am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-09T14:02:25.477075+00:00",
+    "trivia_schedule_generated": "2026-07-09T23:44:34.262189+00:00",
     "last_score_refresh": "10 Jul 2026 8:54am AEST",
     "last_commentary_participants": [
-      "Galbraith",
-      "Morris",
-      "P Rankin"
+      "Hankin",
+      "Varcoe",
+      "Crowle"
     ],
-    "last_commentary_generated": "2026-07-09T14:02:25.476778+00:00",
+    "last_commentary_generated": "2026-07-09T23:44:34.261860+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -328,22 +328,25 @@
   ],
   "commentary": [
     {
-      "participant": "Galbraith",
-      "color": "#7C3AED",
-      "title": "Galbraith: The Favourite and the Fanatic",
-      "body": "Galbraith enters the knockout rounds with the most enviable hand in the sweepstake: Argentina, the defending champions, priced at $5.1 and looking every inch a side that knows how to win tournaments the ugly way. Their next opponent will need to contend with a squad that has been there, done it, and had the trophy engraved before the final whistle. At those odds, Argentina represent the most credible single path to the pot of anyone still standing. Galbraith need them to keep grinding.\n\nMorocco at $36 are the wildcard that sweepstake dreams are made of — unfancied, organised to the point of tedium for opposing forwards, and historically capable of embarrassing teams who underestimate them. Their next opponent faces a side that has made a habit of winning matches it has no business winning. Should Argentina falter, Galbraith still holds a ticket. Two live teams, two distinct styles, and one very satisfied expression at the draw."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: The Viking Longshot Who Refuses to Go Home",
+      "body": "Norway at $18.50 is not, by any conventional measure, a favourite. And yet here they are, still breathing in the knockout rounds, which is more than can be said for a significant portion of this sweepstake's more fancied entries. Hankin's squad arrived at this tournament looking like a team assembled to make up the numbers and has quietly made a nonsense of that assumption. The dark horse credentials are real: a physical, organised side with genuine threat from set pieces, and a tournament draw that has not been entirely unkind.",
+      "body2": "The path from here requires beating opponents that, on paper, should be better. That is precisely the kind of scenario Norway seem to enjoy. At $18.50, the market is not writing them off entirely — they are priced as an outsider with a puncher's chance, which is exactly what they are. Hankin needs Norway to keep doing what they have been doing: defending with discipline, nicking goals when it matters, and making better-fancied sides profoundly uncomfortable. Unlikely to win the pot. Not impossible. In a sweepstake, that distinction matters enormously."
     },
     {
-      "participant": "Morris",
-      "color": "#0891B2",
-      "title": "Morris: One Samba Left to Dance",
-      "body": "Morris is eliminated from the sweepstake, kept alive in conversation only by Brazil, who at $14 remain a legitimate if not overwhelming contender to hand him the pot."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: Tidy, Underrated, and Absolutely Not Going to Win This",
+      "body": "Switzerland at $48.00 is a team that has been underestimated at every World Cup for approximately twenty years, and shows no signs of changing that dynamic. They survived the Round of 32 with the sort of composed, tactically disciplined performance that wins no admirers and earns no column inches, which is arguably their greatest competitive advantage. Varcoe, who has watched most of this tournament from the lower reaches of the standings, suddenly finds themselves with a credible quarter-final contender and the quiet satisfaction of having been right about Switzerland all along.",
+      "body2": "The uncomfortable truth is that $48.00 reflects the ceiling fairly accurately. Switzerland are excellent at not losing and considerably less excellent at beating the sides who actually win tournaments. A quarter-final run is plausible. A semi-final appearance would be a genuine achievement. Lifting the trophy would require a sequence of results so improbable that the pot would feel almost philosophically undeserved — though Varcoe would almost certainly take it. Any path to the final wins the pot, as the rules note with admirable clarity. Switzerland's path exists. It is just very, very narrow."
     },
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: Auf Wiedersehen, Pet",
-      "body": "Germany's penalty shootout exit to Paraguay and Sweden's failure to escape the group stage have confirmed what the odds suspected all along, and P Rankin is out."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: One Team, One Prayer, One Very Long Odds",
+      "body": "Ecuador, Bosnia, and Uzbekistan have all departed, leaving Belgium as the sole standard-bearer for a sweepstake entry that once looked reasonably well-stocked. Belgium at $44.00 is the kind of price that reflects a nation permanently hovering between genuine contender and expensive disappointment — a distinction that has defined their international football for the better part of a decade. The Golden Generation did not deliver. Whether this generation has the stomach to do what their predecessors could not is the central dramatic question of Crowle's remaining involvement in this sweepstake.",
+      "body2": "The next opponent will tell us a great deal. Belgium have the individual quality to beat almost anyone on a given day — the squad depth, the technical ability, the tactical flexibility — but they also have a well-documented tendency to find ways to make things harder than necessary. Crowle needs them to be the Belgium that turns up and imposes themselves, not the Belgium that overthinks a winnable game into a defeat. At $44.00, the market sees possibility without conviction. That is, honestly, about right. One team, one shot, and a set of opponents that will require Belgium to finally be the side they have always promised to become."
     }
   ],
   "odds": [
@@ -412,9 +415,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Galbraith leads on points; Cronan leads on probability — the distinction is about to matter.",
-    "paragraph_1": "The knockout rounds have begun their customary work of elimination. With the group stage settled, only surviving teams carry any relevance to the final standings. The specific results feeding into this edition were not provided, but the broader picture is clear: several participants have already seen their hopes extinguished, and the field is narrowing toward the semi-finals. Cronan and Galbraith, in particular, have emerged as the two names the rest of the group is watching.",
-    "paragraph_2": "Two quarter-finals dominate the weekend. France, held by Cronan, face Morocco, held by Galbraith — a fixture that will either consolidate Cronan's probability lead or hand Galbraith a path to outright favouritism. Simultaneously, Kenna's Spain take on Crowle's Belgium; a Spain victory would breathe life into Kenna's campaign, while a Belgian win would represent one of the more consequential upsets of the tournament for this sweepstake. Galbraith, sitting atop the points table, is best placed structurally — provided France do not disagree on Friday morning."
+    "pull_quote": "France eliminated Morocco, leaving Galbraith to contemplate what might have been from the sofa.",
+    "paragraph_1": "The quarterfinal picture sharpened on Thursday when France, owned by Cronan, dispatched Morocco 2–0 in a result that was comfortable enough to feel inevitable. Galbraith, who had been harbouring genuine ambitions of a late surge, now watches the remainder of the tournament as a spectator. France remain among the stronger surviving sides, and Cronan's position at the top of the standings is looking less like a fluke with every passing round.",
+    "paragraph_2": "Two fixtures define the weekend. Saturday brings Spain, held by Kenna, against Belgium, belonging to Crowle — a match that could either consolidate Kenna's already credible position or hand Crowle a lifeline they have done little to deserve. Sunday's tie is starker in its implications: Norway face England, which means Hankin faces Silk directly. Silk, among the tightest clutch of contenders, would welcome the elimination of a fellow frontrunner. Hankin, less fancied, needs Norway to perform above expectation."
   },
   "trivia_schedule": {
     "2026-06-24": [
