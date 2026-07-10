@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-10T00:13:01.225925+00:00",
-    "last_updated_aest": "Friday 10 Jul 2026, 10:13am AEST",
+    "last_updated": "2026-07-10T10:36:21.914645+00:00",
+    "last_updated_aest": "Friday 10 Jul 2026, 8:36pm AEST",
     "edition": 38,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "10 Jul 2026 10:13am AEST",
+    "odds_last_updated": "10 Jul 2026 8:36am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-10T00:19:11.423871+00:00",
-    "last_score_refresh": "10 Jul 2026 10:13am AEST",
+    "last_score_refresh": "10 Jul 2026 8:36pm AEST",
     "last_commentary_participants": [
       "Crowle",
       "Kenna",
@@ -135,7 +135,7 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 38.76,
+      "win_pct": 39.06,
       "move": "up",
       "move_note": "France +370, clear leader",
       "eliminated": false
@@ -319,9 +319,9 @@
       "away_owner": "Crowle",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.69,
-      "h2h_draw_price": 4.0,
-      "h2h_away_price": 6.0
+      "h2h_home_price": 1.67,
+      "h2h_draw_price": 4.1,
+      "h2h_away_price": 6.2
     },
     {
       "aest_time": "Sun 7:00am",
@@ -332,9 +332,22 @@
       "away_owner": "Silk",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 4.5,
+      "h2h_home_price": 4.4,
       "h2h_draw_price": 3.8,
-      "h2h_away_price": 1.92
+      "h2h_away_price": 1.94
+    },
+    {
+      "aest_time": "Sun 11:00am",
+      "group": "QF",
+      "home": "Argentina",
+      "home_owner": "Galbraith",
+      "away": "Switzerland",
+      "away_owner": "Varcoe",
+      "status": "TIMED",
+      "context": "",
+      "h2h_home_price": 1.75,
+      "h2h_draw_price": 3.7,
+      "h2h_away_price": 6.2
     }
   ],
   "commentary": [
@@ -366,7 +379,7 @@
       "owner": "Cronan",
       "prev": "$2.6",
       "now": "$2.6",
-      "now_decimal": 2.56,
+      "now_decimal": 2.58,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -374,19 +387,19 @@
       "team": "Argentina",
       "owner": "Galbraith",
       "prev": "$5.6",
-      "now": "$5.6",
-      "now_decimal": 5.6,
-      "direction": "unchanged",
-      "source": "Betfair"
+      "now": "$5.5",
+      "now_decimal": 5.5,
+      "direction": "shortened",
+      "source": "Unibet"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
       "prev": "$5.6",
-      "now": "$5.6",
-      "now_decimal": 5.6,
-      "direction": "unchanged",
-      "source": "Betfair"
+      "now": "$5.5",
+      "now_decimal": 5.5,
+      "direction": "shortened",
+      "source": "Unibet"
     },
     {
       "team": "England",
@@ -401,9 +414,9 @@
       "team": "Norway",
       "owner": "Hankin",
       "prev": "$18.5",
-      "now": "$18.5",
-      "now_decimal": 18.5,
-      "direction": "unchanged",
+      "now": "$18.0",
+      "now_decimal": 18.0,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
@@ -2920,9 +2933,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 1.69,
-          "h2h_draw_price": 4.0,
-          "h2h_away_price": 6.0,
+          "h2h_home_price": 1.67,
+          "h2h_draw_price": 4.1,
+          "h2h_away_price": 6.2,
           "h2h_source": "Betfair"
         },
         {
@@ -2942,9 +2955,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 4.5,
+          "h2h_home_price": 4.4,
           "h2h_draw_price": 3.8,
-          "h2h_away_price": 1.92,
+          "h2h_away_price": 1.94,
           "h2h_source": "Betfair"
         },
         {
@@ -2982,8 +2995,8 @@
           "date_aest": "Wed 5:00am",
           "date_short": "15 Jul",
           "date_iso": "2026-07-15",
-          "home": null,
-          "home_owner": null,
+          "home": "France",
+          "home_owner": "Cronan",
           "home_score": null,
           "away": null,
           "away_owner": null,
