@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-10T00:01:17.881489+00:00",
-    "last_updated_aest": "Friday 10 Jul 2026, 10:01am AEST",
-    "edition": 33,
+    "last_updated": "2026-07-09T22:54:53.124292+00:00",
+    "last_updated_aest": "Friday 10 Jul 2026, 8:54am AEST",
+    "edition": 34,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "10 Jul 2026 10:01am AEST",
+    "odds_last_updated": "10 Jul 2026 8:54am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-09T23:52:37.175626+00:00",
-    "last_score_refresh": "10 Jul 2026 10:01am AEST",
+    "trivia_schedule_generated": "2026-07-10T00:01:37.172846+00:00",
+    "last_score_refresh": "10 Jul 2026 8:54am AEST",
     "last_commentary_participants": [
-      "Kenna",
-      "Cronan",
-      "Silk"
+      "P Rankin",
+      "T Rankin",
+      "Hankin"
     ],
-    "last_commentary_generated": "2026-07-09T23:52:37.175350+00:00",
+    "last_commentary_generated": "2026-07-10T00:01:37.172578+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -323,98 +323,98 @@
       "context": "",
       "h2h_home_price": 4.5,
       "h2h_draw_price": 3.8,
-      "h2h_away_price": 1.92
+      "h2h_away_price": 1.91
     }
   ],
   "commentary": [
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: One Queen Left, and She Might Actually Be Good Enough",
-      "body": "The path from here is unforgiving, but Spain have navigated tighter corners before. For Kenna, who has watched the rest of their roster depart with the quiet resignation of someone reading a flight cancellation board, this is now a straightforward proposition: Spain win the World Cup, or Kenna wins nothing. Given the odds, that is not a delusional position to hold. It is, in fact, the most coherent position available to anyone in this sweepstake who isn't called Cronan."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: The Sweepstake Has Moved On",
+      "body": "With Germany falling to Paraguay on penalties and Sweden exiting in the group stage, P Rankin's tournament ended some time ago, and there is little to be gained by dwelling on it."
     },
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: One Team, Tournament Favourites, Absolutely No Excuses Left",
-      "body": "The question now is simple and slightly nerve-wracking: can France go all the way. At $2.6 the market thinks probably yes. Cronan, who leads the sweepstake standings on win percentage and has done so with characteristic understatement, would win not just the pot but the argument — the argument being that drawing France in the first place was less luck than destiny, and that anyone who suggests otherwise is simply jealous. They probably are."
+      "participant": "T Rankin",
+      "color": "#4338CA",
+      "title": "T Rankin: Dutch Courage, Insufficient Quantity",
+      "body": "Netherlands lost to Morocco on penalties and Ghana were swept aside by Colombia, meaning T Rankin's involvement in this sweepstake is now a matter of historical record rather than live interest."
     },
     {
-      "participant": "Silk",
-      "color": "#BE185D",
-      "title": "Silk: Two Tickets to the Party, One Considerably More Plausible Than the Other",
-      "body": "Realistically, England are the horse to back here. $6.0 reflects a team with genuine pedigree and a draw that could have been kinder, but could also have been considerably worse. If England can manage their way through the semi-final without manufacturing a crisis from a position of comfort — a discipline they have historically struggled to master — Silk is in serious contention for the pot. The USA, meanwhile, remain on the board and should be acknowledged as such, if only briefly and with appropriate caveats."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: The Quiet Accumulator Who Still Has a Pulse",
+      "body": "Norway at $18.50 is not a number that inspires confidence in the abstract, but consider the journey: they have navigated the knockout rounds with the grim efficiency of a team that refuses to read the script written for them. Dark horses have a habit of staying dark until, suddenly, they are not. Norway's next opponent will believe they are the overwhelming favourite, which is precisely the kind of assumption that tends to age poorly.\n\nThe path to the final is narrow but it exists, and Hankin — having watched the rest of the draw thin out around them — is still standing when several more fancied portfolios are not. At $18.50, Norway offers the kind of odds that reward the patient. Whether Hankin's patience survives ninety minutes of knockout football is, of course, another question entirely."
     }
   ],
   "odds": [
     {
       "team": "France",
       "owner": "Cronan",
-      "prev": "$2.6",
+      "prev": "$3.1",
       "now": "$2.6",
-      "now_decimal": 2.56,
-      "direction": "unchanged",
+      "now_decimal": 2.58,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$5.6",
+      "prev": "$5.1",
       "now": "$5.6",
       "now_decimal": 5.6,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$5.6",
+      "prev": "$5.1",
       "now": "$5.6",
       "now_decimal": 5.6,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$6.0",
+      "prev": "$5.9",
       "now": "$6.0",
       "now_decimal": 6.0,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
-      "prev": "$18.5",
+      "prev": "$19.0",
       "now": "$18.5",
       "now_decimal": 18.5,
-      "direction": "unchanged",
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Belgium",
       "owner": "Crowle",
-      "prev": "$44.0",
+      "prev": "$38.0",
       "now": "$44.0",
       "now_decimal": 44.0,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Switzerland",
       "owner": "Varcoe",
-      "prev": "$48.0",
+      "prev": "$44.0",
       "now": "$48.0",
       "now_decimal": 48.0,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
   "exec_summary": {
-    "pull_quote": "France are through; four quarter-finals remain, and the pot is still anyone's problem.",
-    "paragraph_1": "France dispatched Morocco 2–0 on Saturday, a result that eliminates no sweepstake participant — Morocco belonged to no one still standing — but confirms Cronan's position as the holder of the tournament favourite at odds of $2.6. France are into the semi-finals. The remaining field of eight survivors watches on, aware that two more quarter-finals this weekend will thin the herd considerably.",
-    "paragraph_2": "Saturday brings Spain against Belgium: Kenna and Crowle in direct conflict, with one certain to exit. Sunday pits Norway against England, meaning Hankin and Silk cannot both survive the weekend. By Monday morning, the eight surviving participants will be at most six. Cronan, already through, sits in the most enviable position. Varcoe and Crowle, holding Switzerland and Belgium at long odds, need results that the market considers unlikely. Galbraith's Argentina remain a credible threat on the other side of the draw."
+    "pull_quote": "Cronan pulls clear of the field while four others prepare to discover their fate.",
+    "paragraph_1": "France dispatched Morocco 2–0 in the quarter-final, a result that benefits Cronan considerably and eliminates no sweepstake participant directly, Morocco having been unowned. The field now stands at seven survivors. Galbraith, whose Argentina remain alive, is unaffected by today's result. The eliminations of Same, Morris, P Rankin, and T Rankin are already baked in. What remains is a thinning bracket and an increasingly concentrated set of outcomes.",
+    "paragraph_2": "Two fixtures loom. Saturday brings Kenna's Spain against Crowle's Belgium — a straight sweepstake elimination dressed as a football match. Sunday pits Hankin's Norway against Silk's England, another zero-sum encounter. Cronan, with France already through to the semi-finals, currently holds the shortest odds and the most comfortable position. Galbraith's Argentina await their own semi-final path. Varcoe and Crowle, carrying Switzerland and Belgium respectively, are longshots in every meaningful sense of the word."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2930,7 +2930,7 @@
           "venue": "",
           "h2h_home_price": 4.5,
           "h2h_draw_price": 3.8,
-          "h2h_away_price": 1.92,
+          "h2h_away_price": 1.91,
           "h2h_source": "Betfair"
         },
         {
