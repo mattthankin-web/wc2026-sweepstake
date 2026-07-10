@@ -2,21 +2,21 @@
   "meta": {
     "last_updated": "2026-07-09T22:54:53.124292+00:00",
     "last_updated_aest": "Friday 10 Jul 2026, 8:54am AEST",
-    "edition": 34,
+    "edition": 35,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "10 Jul 2026 8:54am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-10T00:01:37.172846+00:00",
+    "trivia_schedule_generated": "2026-07-10T00:06:16.347701+00:00",
     "last_score_refresh": "10 Jul 2026 8:54am AEST",
     "last_commentary_participants": [
-      "P Rankin",
-      "T Rankin",
-      "Hankin"
+      "Varcoe",
+      "Crowle",
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-07-10T00:01:37.172578+00:00",
+    "last_commentary_generated": "2026-07-10T00:06:16.347384+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -328,22 +328,25 @@
   ],
   "commentary": [
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: The Sweepstake Has Moved On",
-      "body": "With Germany falling to Paraguay on penalties and Sweden exiting in the group stage, P Rankin's tournament ended some time ago, and there is little to be gained by dwelling on it."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: The Efficient Machine Running on the Wrong Fuel",
+      "body": "Switzerland at $48.0. That is not a number that screams destiny, but it is not nothing either. Varcoe's Swiss have been the tournament's quietly competent operators — compact, disciplined, occasionally maddening to watch, and stubbornly still alive. They are a credible quarter-final threat in the way a sensible saloon car is a credible motorway vehicle: not glamorous, not fast, but unlikely to break down at an inconvenient moment. The question is whether credible translates to champion, and at those odds, the market is politely suggesting it probably does not.",
+      "body2": "To win the pot, Switzerland need to do something they have historically treated as an abstract philosophical concept: win a major tournament. The path exists — every path exists at this stage — but it requires beating teams who are rather keener on the idea of winning than Switzerland typically appear to be. Varcoe has been a model of quiet accumulation throughout this competition, which makes it all the more poignant that the one thing required now is a single dramatic act of glory. Switzerland must, against all cultural instinct, make a scene."
     },
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: Dutch Courage, Insufficient Quantity",
-      "body": "Netherlands lost to Morocco on penalties and Ghana were swept aside by Colombia, meaning T Rankin's involvement in this sweepstake is now a matter of historical record rather than live interest."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: One Flag Left Flying, Held Together With Hope and Stubbornness",
+      "body": "Ecuador went. Bosnia went. Uzbekistan went. And yet here is Crowle, still technically in the sweepstake, because Belgium have decided that this tournament is not their moment to be sensible and go home early. At $44.0, Belgium are priced as outsiders with enough quality to make you briefly nervous, which is more than can be said for the three teams that preceded them into the exit. Crowle's entire World Cup now fits in a single dressing room, and Belgium are the sole occupants. There is a certain dramatic economy to it.",
+      "body2": "Belgium's realistic title chances depend on a version of events in which their considerable individual talent briefly coheres into something resembling a collective plan, sustained over multiple knockout matches under pressure. This has not historically been Belgium's strong suit. Their next opponent will require them to demonstrate precisely the temperament they have spent the last decade conspicuously failing to produce at the critical moment. Crowle needs not just a win but a run — a sequence of them — from a team that has made a minor art form of not quite managing it. The odds are not wrong to be sceptical."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: The Quiet Accumulator Who Still Has a Pulse",
-      "body": "Norway at $18.50 is not a number that inspires confidence in the abstract, but consider the journey: they have navigated the knockout rounds with the grim efficiency of a team that refuses to read the script written for them. Dark horses have a habit of staying dark until, suddenly, they are not. Norway's next opponent will believe they are the overwhelming favourite, which is precisely the kind of assumption that tends to age poorly.\n\nThe path to the final is narrow but it exists, and Hankin — having watched the rest of the draw thin out around them — is still standing when several more fancied portfolios are not. At $18.50, Norway offers the kind of odds that reward the patient. Whether Hankin's patience survives ninety minutes of knockout football is, of course, another question entirely."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: One Genuine Contender, One Miracle Required, and a Drawer Full of Eliminated Receipts",
+      "body": "Spain at $5.6 is the closest thing this sweepstake has to a front-runner with actual credibility. They have been the tournament's most composed attacking force, playing the kind of football that makes opposition analysts look tired, and their odds reflect a genuine rather than sentimental belief that they can go all the way. Kenna arrived here with eight teams, a figure that inspired either admiration for depth or suspicion about the allocation process, and has watched the majority of that portfolio quietly fold. What remains is the one that actually matters.",
+      "body2": "Spain's path to the title is the most plausible single narrative in Kenna's possession. Their next knockout opponent will need to be significantly better than their recent opponents have managed, and there is not an enormous amount of evidence that anyone left in the draw is keen to do that. The reigning European champions playing with this level of fluency, at these odds, represent the clearest route to winning this sweepstake that any participant currently holds. Whether Kenna fully appreciates the value of what they are sitting on — after the noise of eight teams, five eliminations, and considerable administrative distraction — is a separate and quietly amusing question."
     }
   ],
   "odds": [
@@ -412,9 +415,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Cronan pulls clear of the field while four others prepare to discover their fate.",
-    "paragraph_1": "France dispatched Morocco 2–0 in the quarter-final, a result that benefits Cronan considerably and eliminates no sweepstake participant directly, Morocco having been unowned. The field now stands at seven survivors. Galbraith, whose Argentina remain alive, is unaffected by today's result. The eliminations of Same, Morris, P Rankin, and T Rankin are already baked in. What remains is a thinning bracket and an increasingly concentrated set of outcomes.",
-    "paragraph_2": "Two fixtures loom. Saturday brings Kenna's Spain against Crowle's Belgium — a straight sweepstake elimination dressed as a football match. Sunday pits Hankin's Norway against Silk's England, another zero-sum encounter. Cronan, with France already through to the semi-finals, currently holds the shortest odds and the most comfortable position. Galbraith's Argentina await their own semi-final path. Varcoe and Crowle, carrying Switzerland and Belgium respectively, are longshots in every meaningful sense of the word."
+    "pull_quote": "Cronan inches toward the pot as four others prepare to discover their fate this weekend.",
+    "paragraph_1": "France dispatched Morocco 2–0 in the quarter-finals, a result that removes no sweepstake participant — Morocco was unowned — but advances Cronan to the semi-finals with the shortest odds in the field. The bracket is thinning: Same, Morris, P Rankin, and T Rankin have already been eliminated. Eight participants remain alive, their fates now compressed into a handful of fixtures with no margin for error.",
+    "paragraph_2": "Two quarter-finals follow this weekend. Kenna's Spain face Crowle's Belgium on Saturday; one of them exits. Sunday brings Hankin's Norway against Silk's England, another elimination guaranteed. Cronan, already through, watches from a position of considerable comfort with France at $2.6. Galbraith's Argentina and Kenna's Spain represent the next most credible threats. Crowle and Hankin are, at their respective odds, operating on hope rather than expectation."
   },
   "trivia_schedule": {
     "2026-06-24": [
