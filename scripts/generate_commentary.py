@@ -40,7 +40,7 @@ PARTICIPANT_NOTES = {
     # P Rankin and T Rankin are eliminated — brief mention only
     "Kenna":    "Spain ($7.4) and Egypt ($410) are Kenna's surviving teams. Spain are genuine contenders. Focus on Spain's next knockout opponent and realistic path to the title. Egypt are a miracle-run outsider.",
     "Cronan":   "France ($3.0) are Cronan's sole survivor and tournament favourites. One team, one shot. Discuss France's form, next opponent, and what it would mean for Cronan to win the pot.",
-    "Silk":     "England ($12.5) and USA ($40) are both alive. Two live knockout assets. Focus on their respective next opponents, form and which is the more credible title threat.",
+    "Silk":     "England ($6.0) is Silk's ONLY surviving team. USA, Algeria and Qatar are all eliminated. Write exclusively about England's semi-final path and realistic title chances. Do not mention USA or any other Silk team.",
     "Same":     "Portugal ($16.5), Colombia ($29) and Paraguay ($650) are all alive — the largest surviving portfolio in the sweepstake. Three genuine shots. Focus on Portugal and Colombia as the serious threats.",
     "Galbraith":"Argentina ($5.7) and Morocco ($40) are both through to the Round of 16. Second favourites plus a dangerous outsider. Two credible paths to the title — discuss both next opponents.",
     "Morris":   "Brazil ($14) are Morris's sole survivor. Discuss Brazil's knockout campaign, next opponent, and what they need to deliver to hand Morris the pot.",
@@ -210,7 +210,7 @@ CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
 Only the participant whose team wins the World Cup wins the sweepstake pot.
 
 RULES:
-- ONLY discuss teams listed under "Alive teams" below — if a team is not listed there, they are eliminated and must not be mentioned
+- ONLY discuss teams listed under "Alive teams" below — if a team is not listed there, do NOT mention it under any circumstances, even briefly
 - Do NOT mention points, league table position, or Win% at any point — none of that matters now
 - Do NOT mention any eliminated teams unless the participant is fully out (one sentence max)
 - You are encouraged to reference the journey so far — group stage results, dramatic knockout wins, penalty shootouts — to build narrative and context
