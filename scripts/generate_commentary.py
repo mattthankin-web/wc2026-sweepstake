@@ -85,6 +85,26 @@ def build_exec_summary_prompt(data):
     alive_text = "PARTICIPANT STATUS (definitive — use this to determine who is in/out):\n"
     alive_text += "\n".join(alive_lines) + "\n"
 
+    # Also list recently eliminated teams with their owners for context
+    all_teams_flat = {}
+    for name, info in p_map.items():
+        for t in info.get("teams", []):
+            all_teams_flat[t] = name
+    recently_eliminated = []
+    for stage in data.get("knockout", []):
+        for m in stage.get("matches", []):
+            if m.get("status") == "FINISHED" and m.get("winner"):
+                loser = m["away"] if m["winner"] == "home" else m["home"]
+                owner = all_teams_flat.get(loser, "?")
+                winner = m["home"] if m["winner"] == "home" else m["away"]
+                winner_owner = all_teams_flat.get(winner, "?")
+                recently_eliminated.append(
+                    f"  {loser} [{owner}] eliminated by {winner} [{winner_owner}] in {stage['label']}"
+                )
+    if recently_eliminated:
+        alive_text += "\nRECENTLY ELIMINATED TEAMS (with their owners — use this when discussing results):\n"
+        alive_text += "\n".join(recently_eliminated[-12:]) + "\n"
+
     results_text = "RECENT RESULTS (team owner shown in brackets — use this to identify who was eliminated):\n"
     for r in results[:8]:
         home_owner = r.get('home_owner','?') or '?'
