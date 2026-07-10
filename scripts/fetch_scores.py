@@ -722,8 +722,26 @@ def main():
             "move": ex.get("move", "same"),
             "move_note": ex.get("move_note", ""),
         })
-    # Re-sort by win_pct (primary sweepstake metric)
-    merged_standings.sort(key=lambda x: -x["win_pct"])
+    # Recalculate win_pct from current odds table — eliminates stale data
+    # A participant is eliminated if NONE of their teams appear in the odds
+    current_odds_by_team = {o["team"]: o["now_decimal"] for o in existing.get("odds", [])}
+    participants_map = existing.get("participants", {})
+
+    for s in merged_standings:
+        owner_teams = participants_map.get(s["name"], {}).get("teams", [])
+        alive_teams = [t for t in owner_teams if t in current_odds_by_team]
+
+        if alive_teams:
+            # Sum of (1/odds) for all alive teams = combined win probability
+            combined_pct = sum(1.0 / current_odds_by_team[t] * 100 for t in alive_teams)
+            s["win_pct"] = round(combined_pct, 2)
+            s["eliminated"] = False
+        else:
+            s["win_pct"] = 0.0
+            s["eliminated"] = True
+
+    # Re-sort: alive participants by win_pct first, eliminated last
+    merged_standings.sort(key=lambda x: (x.get("eliminated", False), -x["win_pct"]))
     for i, s in enumerate(merged_standings):
         s["rank"] = i + 1
 

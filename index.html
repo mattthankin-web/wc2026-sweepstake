@@ -1015,7 +1015,7 @@
     <div class="section-head">
       <h2>Participant Standings</h2>
     </div>
-    <p class="small muted" style="margin-bottom:12px;">Ranked by Win% — Kalshi implied probability across surviving teams. Tap a row to expand teams.</p>
+    <p class="small muted" style="margin-bottom:12px;">Ranked by tournament odds — surviving teams only. Eliminated participants shown in grey. Tap a row to expand teams.</p>
     <div id="standings-content"><div class="loading">Loading standings...</div></div>
   </section>
 
@@ -1279,21 +1279,23 @@ function renderStandings(standings, participants) {
     <tbody>`;
 
   standings.forEach((s, i) => {
-    const color = participants[s.name]?.color || '#64748B';
-    const rank = medals[i] || s.rank;
+    const isElim = s.eliminated === true || s.win_pct === 0;
+    const color = isElim ? '#94A3B8' : (participants[s.name]?.color || '#64748B');
+    const rank = isElim ? '💀' : (medals[i] || s.rank);
     const ptsColor = s.pts >= 12 ? 'var(--green)' : s.pts >= 6 ? '#1D4ED8' : 'var(--slate)';
-    const bg = i === 0 ? '#FFFBEB' : i % 2 === 0 ? 'white' : '#F8FAFC';
-    const winPctColor = color;
+    const bg = isElim ? '#F1F5F9' : (i === 0 ? '#FFFBEB' : i % 2 === 0 ? 'white' : '#F8FAFC');
+    const winPctColor = isElim ? '#94A3B8' : color;
+    const nameStyle = isElim ? 'text-decoration:line-through;opacity:0.5;' : '';
 
     const teamsStr = (participants[s.name]?.teams || []).join(' · ');
     const rowId = `row-${i}`;
     const teamsRowId = `teams-${i}`;
 
     html += `
-      <tr style="background:${bg}; border-left:3px solid ${color};" onclick="toggleTeams('${teamsRowId}')">
+      <tr style="background:${bg}; border-left:3px solid ${color}; ${isElim ? 'opacity:0.6;' : ''}" onclick="toggleTeams('${teamsRowId}')">
         <td class="rank-cell ${i===0?'rank-1':''}">${rank}</td>
-        <td><span class="participant-name" style="color:${color};">${esc(s.name)}</span></td>
-        <td><span class="win-pct" style="color:${winPctColor};">${s.win_pct.toFixed(2)}%</span></td>
+        <td><span class="participant-name" style="color:${color};${nameStyle}">${esc(s.name)}</span></td>
+        <td><span class="win-pct" style="color:${winPctColor};">${isElim ? '—' : s.win_pct.toFixed(2)+'%'}</span></td>
         <td><span class="pts-cell" style="color:${ptsColor};">${s.pts}</span></td>
         <td>${gd(s.gd)}</td>
         <td class="muted small">${s.pld}</td>
