@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-10T00:13:01.225925+00:00",
-    "last_updated_aest": "Friday 10 Jul 2026, 10:13am AEST",
+    "last_updated": "2026-07-10T00:14:24.997331+00:00",
+    "last_updated_aest": "Friday 10 Jul 2026, 10:14am AEST",
     "edition": 35,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "10 Jul 2026 10:13am AEST",
+    "odds_last_updated": "10 Jul 2026 10:14am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-10T00:06:16.347701+00:00",
-    "last_score_refresh": "10 Jul 2026 10:13am AEST",
+    "last_score_refresh": "10 Jul 2026 10:14am AEST",
     "last_commentary_participants": [
       "Varcoe",
       "Crowle",
@@ -135,7 +135,7 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 38.76,
+      "win_pct": 39.06,
       "move": "up",
       "move_note": "France +370, clear leader",
       "eliminated": false
