@@ -2,21 +2,21 @@
   "meta": {
     "last_updated": "2026-07-11T06:26:00.359996+00:00",
     "last_updated_aest": "Saturday 11 Jul 2026, 4:26pm AEST",
-    "edition": 39,
+    "edition": 40,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "11 Jul 2026 4:26am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-10T12:39:03.817992+00:00",
+    "trivia_schedule_generated": "2026-07-11T09:11:13.969211+00:00",
     "last_score_refresh": "11 Jul 2026 4:26pm AEST",
     "last_commentary_participants": [
-      "Galbraith",
-      "Morris",
-      "P Rankin"
+      "Hankin",
+      "Varcoe",
+      "Crowle"
     ],
-    "last_commentary_generated": "2026-07-10T12:39:03.817694+00:00",
+    "last_commentary_generated": "2026-07-11T09:11:13.968932+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -339,22 +339,22 @@
   ],
   "commentary": [
     {
-      "participant": "Galbraith",
-      "color": "#7C3AED",
-      "title": "Galbraith: One Horse Left, And It Happens To Be The Best One",
-      "body": "Morocco's elimination at the hands of France — Cronan's France, no less — was the kind of result that makes a sweepstake genuinely unpleasant to witness. Galbraith entered this tournament with four teams, built what looked like a diversified portfolio, and has watched it consolidate into a single position: Argentina at $5.50. In isolation, that is not a bad position to be in. The world champions, the defending title holders, Messi's probable last World Cup, the tournament's second-shortest odds. There are worse horses to be left with.\n\nThe question is whether $5.50 reflects genuine probability or lingering romanticism about Messi. Argentina have looked formidable in patches and unconvincing in others, and their semi-final path will demand they produce something close to their ceiling. Galbraith needs them to win three knockout matches without the margin for a bad day. It is entirely possible. It is also far from certain. For a participant who once had Morocco quietly threatening a run, this is now a straightforward proposition: Argentina win the World Cup, or Galbraith wins nothing."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: The Dark Horse Whisperer Still Has a Horse in the Race",
+      "body": "The path to the final is narrow but it exists, and at $18.0, the odds are at least treating Norway with a degree of respect that the broader field is not. Their knockout pedigree — physical, organised, capable of absorbing pressure and punishing on the counter — makes them a genuinely uncomfortable draw for anyone. Hankin is not winning this sweepstake on paper. Norway, however, have never been especially interested in paper."
     },
     {
-      "participant": "Morris",
-      "color": "#0891B2",
-      "title": "Morris: Fully Eliminated, Which The Record Will Show",
-      "body": "Morris is out — all four teams gone, the sweepstake over before the final weekend, a outcome that requires no further elaboration and shall receive none."
+      "participant": "Varcoe",
+      "color": "#92400E",
+      "title": "Varcoe: One Credible Quarter-Finalist and One Act of Faith",
+      "body": "The arithmetic here is unforgiving. $55.0 odds reflect a team that is respected without being feared, which is perhaps the most dangerous kind. Varcoe needs Switzerland to keep doing what Switzerland does: frustrate, grind, and occasionally produce something that makes you wonder why you ever doubted them. Any path to the final wins the pot. Switzerland, improbably, still has one."
     },
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: Gone, And Not Particularly Gracefully",
-      "body": "Germany fell on penalties and Sweden did not survive the group stage, which is about as comprehensive an elimination as the format allows."
+      "participant": "Crowle",
+      "color": "#0369A1",
+      "title": "Crowle: Eliminated — Spain Closed the Door",
+      "body": "Belgium fell 2-1 to Spain on 11 July, and with that, Crowle's sweepstake is over."
     }
   ],
   "odds": [
@@ -414,9 +414,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Galbraith loses Morocco but retains Argentina; the sweepstake's most resilient operator survives another round.",
-    "paragraph_1": "France's 2–0 dismissal of Morocco on 10 July confirmed Cronan's passage to the semi-finals while simultaneously eliminating Galbraith's second team. Galbraith, however, remains in contention via Argentina, who earlier dispatched both Kenna's Egypt and Varcoe's Canada en route to the last four. Four participants — Same, Morris, P Rankin, and T Rankin — are fully eliminated. The seven survivors now hold one team apiece, with the bracket thinning sharply.",
-    "paragraph_2": "Three quarter-finals remain. Kenna's Spain face Crowle's Belgium on Saturday, a fixture that will eliminate one of two long-shot holders. Sunday brings Norway against England, pitting Hankin's 18-to-one outsider against Silk's modestly fancied Three Lions. Then Galbraith's Argentina meet Varcoe's Switzerland — the tournament favourite against the sweepstake's longest shot at 48-to-one. On current odds, Cronan's France look best placed to take the pot, though Galbraith, with Argentina still alive, remains the canniest threat."
+    "pull_quote": "Four teams remain, four participants survive, and the pot belongs to whoever holds their nerve.",
+    "paragraph_1": "The quarter-finals have now concluded. Kenna's Spain dispatched Crowle's Belgium 2–1 on Saturday, ending Crowle's participation entirely. Cronan's France had already eliminated Galbraith's Morocco in the other quarter-final, leaving Galbraith reliant solely on Argentina. Same, who had accumulated an improbable four teams across the tournament, has been eliminated — each of Paraguay, Portugal, Cape Verde and Colombia now gone. Six participants are out. Six remain in with something to play for.",
+    "paragraph_2": "Sunday delivers both semi-finals. Hankin's Norway face Silk's England at 7:00am — a result that eliminates one and elevates the other. Then Galbraith's Argentina meet Varcoe's Switzerland at 11:00am, where Varcoe's rank outsider at $55.0 confronts the tournament's second favourite. On current odds, Cronan holds the strongest position: France at $2.7 have already proved themselves. Kenna's Spain at $4.5 are credible contenders. Varcoe, predictably, remains the sweepstake's longest shot with anything left to win."
   },
   "trivia_schedule": {
     "2026-06-24": [
