@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-11T10:43:12.789315+00:00",
-    "last_updated_aest": "Saturday 11 Jul 2026, 8:43pm AEST",
+    "last_updated": "2026-07-11T14:37:09.202891+00:00",
+    "last_updated_aest": "Sunday 12 Jul 2026, 12:37am AEST",
     "edition": 40,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "11 Jul 2026 8:43am AEST",
+    "odds_last_updated": "12 Jul 2026 12:37am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-11T09:11:13.969211+00:00",
-    "last_score_refresh": "11 Jul 2026 8:43pm AEST",
+    "last_score_refresh": "12 Jul 2026 12:37am AEST",
     "last_commentary_participants": [
       "Hankin",
       "Varcoe",
@@ -135,7 +135,7 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 37.59,
+      "win_pct": 38.17,
       "move": "up",
       "move_note": "France +370, clear leader",
       "eliminated": false
@@ -180,7 +180,7 @@
       "gd": -3,
       "rank": 4,
       "left": 6,
-      "win_pct": 16.13,
+      "win_pct": 15.62,
       "move": "up",
       "move_note": "USA through, England tomorrow",
       "eliminated": false
@@ -319,8 +319,8 @@
       "away_owner": "Silk",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 4.0,
-      "h2h_draw_price": 3.85,
+      "h2h_home_price": 4.1,
+      "h2h_draw_price": 3.8,
       "h2h_away_price": 2.0
     },
     {
@@ -332,8 +332,8 @@
       "away_owner": "Varcoe",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.75,
-      "h2h_draw_price": 3.75,
+      "h2h_home_price": 1.74,
+      "h2h_draw_price": 3.7,
       "h2h_away_price": 6.2
     }
   ],
@@ -361,9 +361,9 @@
     {
       "team": "France",
       "owner": "Cronan",
-      "prev": "$2.7",
+      "prev": "$2.6",
       "now": "$2.6",
-      "now_decimal": 2.62,
+      "now_decimal": 2.64,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -388,19 +388,19 @@
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$6.2",
+      "prev": "$6.4",
       "now": "$6.4",
       "now_decimal": 6.4,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
       "prev": "$18.0",
-      "now": "$18.0",
-      "now_decimal": 18.0,
-      "direction": "unchanged",
+      "now": "$18.5",
+      "now_decimal": 18.5,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -2926,8 +2926,8 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 4.0,
-          "h2h_draw_price": 3.85,
+          "h2h_home_price": 4.1,
+          "h2h_draw_price": 3.8,
           "h2h_away_price": 2.0,
           "h2h_source": "Betfair"
         },
@@ -2948,10 +2948,10 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 1.75,
-          "h2h_draw_price": 3.75,
+          "h2h_home_price": 1.74,
+          "h2h_draw_price": 3.7,
           "h2h_away_price": 6.2,
-          "h2h_source": "Betr"
+          "h2h_source": "Betfair"
         }
       ]
     },
@@ -2976,10 +2976,10 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.48,
+          "h2h_home_price": 2.45,
           "h2h_draw_price": 3.3,
           "h2h_away_price": 3.35,
-          "h2h_source": "Betfair"
+          "h2h_source": "Betr"
         },
         {
           "id": 537388,
