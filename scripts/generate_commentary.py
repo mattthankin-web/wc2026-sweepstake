@@ -46,21 +46,38 @@ PARTICIPANT_NOTES = {
     "Morris":   "Brazil ($14) are Morris's sole survivor. Discuss Brazil's knockout campaign, next opponent, and what they need to deliver to hand Morris the pot.",
     "P Rankin": "ELIMINATED. Germany lost to Paraguay on penalties, Sweden went out in the group stage. One line acknowledging they are out — then move on entirely.",
     "T Rankin": "ELIMINATED. Netherlands lost to Morocco on penalties, Ghana lost to Colombia. One line acknowledging they are out — then move on entirely.",
-    "Hankin":   "Norway ($60) and Mexico ($32) are both alive in the Round of 16. Two dark horses with genuine knockout pedigree. Focus on their next opponents and outsider credentials.",
+    "Hankin":   "Norway have been eliminated by England. Hankin is out of the sweepstake. Write this with a tone of complete resignation and detachment — the kind of energy of someone who has switched off the TV, poured a drink and stopped caring. One paragraph maximum. Acknowledge Norway's exit, note that Hankin is done, and move on. No false hope, no consolation. Just done.",
     "Varcoe":   "Switzerland ($90) and Canada ($470) both survived the Round of 32. Switzerland are a credible quarter-final threat. Canada are the long shot. Any path to the final wins the pot.",
     "Crowle":   "Belgium ($75) is Crowle's sole survivor after Ecuador, Bosnia and Uzbekistan all went out. One team, one last shot. Discuss Belgium's next opponent and realistic title chances.",
 }
 
 
 def pick_participants(data):
-    """Pick 3 participants, avoiding repeating the last edition's batch."""
+    """Pick 3 participants, avoiding repeating the last edition's batch.
+    Always includes newly eliminated participants so their exit is acknowledged."""
     last_covered = data.get("meta", {}).get("last_commentary_participants", [])
     edition = data.get("meta", {}).get("edition", 1)
+
+    # Detect newly eliminated participants (in odds last edition but not now)
+    teams_in_odds = {o["team"] for o in data.get("odds", [])}
+    p_map = data.get("participants", {})
+    newly_eliminated = []
+    for name, info in p_map.items():
+        alive = [t for t in info.get("teams", []) if t in teams_in_odds]
+        # If they were covered recently and now have no alive teams, prioritise them
+        if len(alive) == 0 and name not in last_covered:
+            newly_eliminated.append(name)
+
     available = [p for p in ALL_PARTICIPANTS if p not in last_covered]
     if len(available) < 3:
         available = ALL_PARTICIPANTS.copy()
-    start = (edition * 3) % len(available)
-    return [available[(start + i) % len(available)] for i in range(3)]
+
+    # Force newly eliminated participants in first
+    forced = [p for p in newly_eliminated if p in available][:2]
+    remaining = [p for p in available if p not in forced]
+    start = (edition * 3) % len(remaining)
+    filler = [remaining[(start + i) % len(remaining)] for i in range(3 - len(forced))]
+    return forced + filler
 
 
 def build_exec_summary_prompt(data):
