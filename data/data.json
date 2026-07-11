@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-11T22:33:49.736420+00:00",
-    "last_updated_aest": "Sunday 12 Jul 2026, 8:33am AEST",
-    "edition": 40,
+    "last_updated": "2026-07-11T21:10:44.475973+00:00",
+    "last_updated_aest": "Sunday 12 Jul 2026, 7:10am AEST",
+    "edition": 41,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "12 Jul 2026 8:33am AEST",
+    "odds_last_updated": "12 Jul 2026 7:10am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-11T09:11:13.969211+00:00",
-    "last_score_refresh": "12 Jul 2026 8:33am AEST",
+    "trivia_schedule_generated": "2026-07-11T22:34:21.557304+00:00",
+    "last_score_refresh": "12 Jul 2026 7:10am AEST",
     "last_commentary_participants": [
-      "Hankin",
-      "Varcoe",
-      "Crowle"
+      "Kenna",
+      "Cronan",
+      "Silk"
     ],
-    "last_commentary_generated": "2026-07-11T09:11:13.968932+00:00",
+    "last_commentary_generated": "2026-07-11T22:34:21.557044+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -135,7 +135,7 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 38.46,
+      "win_pct": 37.88,
       "move": "up",
       "move_note": "France +370, clear leader",
       "eliminated": false
@@ -150,7 +150,7 @@
       "gd": -11,
       "rank": 2,
       "left": 10,
-      "win_pct": 22.22,
+      "win_pct": 22.73,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -165,37 +165,37 @@
       "gd": 10,
       "rank": 3,
       "left": 4,
-      "win_pct": 17.24,
+      "win_pct": 17.86,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
     },
     {
       "name": "Silk",
-      "pld": 16,
-      "w": 7,
+      "pld": 17,
+      "w": 8,
       "d": 3,
       "l": 6,
-      "pts": 24,
-      "gd": -4,
+      "pts": 27,
+      "gd": -3,
       "rank": 4,
       "left": 6,
-      "win_pct": 16.67,
+      "win_pct": 15.15,
       "move": "up",
       "move_note": "USA through, England tomorrow",
       "eliminated": false
     },
     {
       "name": "Hankin",
-      "pld": 16,
+      "pld": 17,
       "w": 10,
       "d": 2,
-      "l": 4,
+      "l": 5,
       "pts": 32,
-      "gd": 8,
+      "gd": 7,
       "rank": 5,
       "left": 5,
-      "win_pct": 5.0,
+      "win_pct": 5.26,
       "move": "down",
       "move_note": "Saudi eliminated",
       "eliminated": false
@@ -300,10 +300,10 @@
       "home_owner": "Hankin",
       "away": "England",
       "away_owner": "Silk",
-      "home_score": 2,
-      "away_score": 1,
+      "home_score": 0,
+      "away_score": 0,
       "status": "LIVE",
-      "match_minute": "90+'",
+      "match_minute": "10'",
       "badge": "LIVE",
       "sweepstake_relevant": true,
       "sort_key": "0_live"
@@ -319,10 +319,10 @@
       "away_owner": "Silk",
       "status": "IN_PLAY",
       "context": "",
-      "live_score": "2–1",
-      "h2h_home_price": 5.0,
-      "h2h_draw_price": 2.24,
-      "h2h_away_price": 2.8
+      "live_score": "None–None",
+      "h2h_home_price": 4.4,
+      "h2h_draw_price": 3.75,
+      "h2h_away_price": 1.99
     },
     {
       "aest_time": "Sun 11:00am",
@@ -340,22 +340,22 @@
   ],
   "commentary": [
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: The Dark Horse Whisperer Still Has a Horse in the Race",
-      "body": "The path to the final is narrow but it exists, and at $18.0, the odds are at least treating Norway with a degree of respect that the broader field is not. Their knockout pedigree — physical, organised, capable of absorbing pressure and punishing on the counter — makes them a genuinely uncomfortable draw for anyone. Hankin is not winning this sweepstake on paper. Norway, however, have never been especially interested in paper."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: One Iberian Lifeline, and the Audacity to Believe in It",
+      "body": "Spain's path to the final will not be straightforward — it never is at this stage — but their squad is deep, their manager is composed, and their style is built for knockout football. Kenna entered this competition with eight teams and is now relying on one. That is either a humiliation or a masterclass in consolidation, depending on your perspective. At $4.5, Spain are the second-shortest price among the remaining sweepstake contenders. Kenna has been here before — just about — and will be quietly, desperately hoping Spain can do what Spain do."
     },
     {
-      "participant": "Varcoe",
-      "color": "#92400E",
-      "title": "Varcoe: One Credible Quarter-Finalist and One Act of Faith",
-      "body": "The arithmetic here is unforgiving. $55.0 odds reflect a team that is respected without being feared, which is perhaps the most dangerous kind. Varcoe needs Switzerland to keep doing what Switzerland does: frustrate, grind, and occasionally produce something that makes you wonder why you ever doubted them. Any path to the final wins the pot. Switzerland, improbably, still has one."
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: Tournament Favourites, One Team, and the Weight of Expectation",
+      "body": "What would it mean for Cronan to win the pot on the back of France? Structurally, it would be the least surprising outcome in the history of this sweepstake — backing the favourite and watching them win is not a story, it is a transaction. But sweepstakes are not assigned by choice, and Cronan will take it regardless. France's next opponent will need to be considerably better than anything they have faced so far to derail this. At $2.6, the market is not predicting a derailment. Neither, frankly, is anyone else."
     },
     {
-      "participant": "Crowle",
-      "color": "#0369A1",
-      "title": "Crowle: Eliminated — Spain Closed the Door",
-      "body": "Belgium fell 2-1 to Spain on 11 July, and with that, Crowle's sweepstake is over."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: England Grind Out a Draw, and So the Suffering Continues",
+      "body": "The path from here for Silk runs directly through whatever England do next, and England's record in knockout football is a document of psychological complexity that would fill several volumes. The $6.0 price reflects genuine quality tempered by genuine doubt. Silk has watched every other team in their stable exit the tournament, leaving England as the sole vehicle for sweepstake glory. It is not a comfortable position. It is, however, a live one — and at a World Cup held partly on home-adjacent soil with a partisan following, stranger things have happened. Not many, but some."
     }
   ],
   "odds": [
@@ -364,44 +364,44 @@
       "owner": "Cronan",
       "prev": "$2.6",
       "now": "$2.6",
-      "now_decimal": 2.58,
+      "now_decimal": 2.6,
       "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$4.5",
+      "prev": "$4.4",
       "now": "$4.5",
       "now_decimal": 4.5,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$5.8",
-      "now": "$5.6",
-      "now_decimal": 5.6,
-      "direction": "shortened",
+      "prev": "$5.6",
+      "now": "$5.8",
+      "now_decimal": 5.8,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$6.0",
-      "now": "$7.2",
-      "now_decimal": 7.2,
-      "direction": "drifted",
-      "source": "Betfair"
+      "prev": "$6.6",
+      "now": "$6.0",
+      "now_decimal": 6.0,
+      "direction": "shortened",
+      "source": "Unibet"
     },
     {
       "team": "Norway",
       "owner": "Hankin",
-      "prev": "$20.0",
-      "now": "$16.5",
-      "now_decimal": 16.5,
-      "direction": "shortened",
+      "prev": "$19.0",
+      "now": "$20.0",
+      "now_decimal": 20.0,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -415,9 +415,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Four teams remain, four participants survive, and the pot belongs to whoever holds their nerve.",
-    "paragraph_1": "The quarter-finals have now concluded. Kenna's Spain dispatched Crowle's Belgium 2–1 on Saturday, ending Crowle's participation entirely. Cronan's France had already eliminated Galbraith's Morocco in the other quarter-final, leaving Galbraith reliant solely on Argentina. Same, who had accumulated an improbable four teams across the tournament, has been eliminated — each of Paraguay, Portugal, Cape Verde and Colombia now gone. Six participants are out. Six remain in with something to play for.",
-    "paragraph_2": "Sunday delivers both semi-finals. Hankin's Norway face Silk's England at 7:00am — a result that eliminates one and elevates the other. Then Galbraith's Argentina meet Varcoe's Switzerland at 11:00am, where Varcoe's rank outsider at $55.0 confronts the tournament's second favourite. On current odds, Cronan holds the strongest position: France at $2.7 have already proved themselves. Kenna's Spain at $4.5 are credible contenders. Varcoe, predictably, remains the sweepstake's longest shot with anything left to win."
+    "pull_quote": "Four semi-finalists remain; six participants watch from the sofa with their wallets intact.",
+    "paragraph_1": "The quarter-finals have pruned the field with some efficiency. Galbraith watched Morocco — a team he owned — fall to Cronan's France, a defeat softened only by Argentina's continued presence in the draw. Kenna, meanwhile, dispatched Crowle's Belgium via Spain, eliminating Crowle from the sweepstake entirely. Same, already holding a string of eliminations across earlier rounds, remains out. The semi-final stage now belongs to Kenna, Cronan, Silk, Galbraith, Hankin, and Varcoe.",
+    "paragraph_2": "Norway and England are currently deadlocked at 0–0, with Hankin and Silk's respective fates being settled in real time. On Sunday, Galbraith's Argentina face Varcoe's Switzerland — the latter at 55-to-one odds suggesting the market holds a firm view. Cronan's France, at 2.6, remains the most credible favourite in the field. Kenna's Spain at 4.5 offers a plausible challenger. Whoever emerges from the Norway-England tie inherits a semi-final with significant implications for the pot."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2792,8 +2792,8 @@
           "away_owner": "Silk",
           "away_score": 3,
           "score_note": "",
-          "status": "2026-07-06 01:00:00Z",
-          "winner": null,
+          "status": "FINISHED",
+          "winner": "away",
           "venue": ""
         },
         {
@@ -2919,17 +2919,17 @@
           "date_iso": "2026-07-12",
           "home": "Norway",
           "home_owner": "Hankin",
-          "home_score": 2,
+          "home_score": 0,
           "away": "England",
           "away_owner": "Silk",
-          "away_score": 1,
+          "away_score": 0,
           "score_note": "",
           "status": "LIVE",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 5.0,
-          "h2h_draw_price": 2.24,
-          "h2h_away_price": 2.8,
+          "h2h_home_price": 4.4,
+          "h2h_draw_price": 3.75,
+          "h2h_away_price": 1.99,
           "h2h_source": "Betfair"
         },
         {
@@ -2977,9 +2977,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.42,
+          "h2h_home_price": 2.46,
           "h2h_draw_price": 3.3,
-          "h2h_away_price": 3.45,
+          "h2h_away_price": 3.35,
           "h2h_source": "Betfair"
         },
         {
