@@ -105,21 +105,39 @@ def build_exec_summary_prompt(data):
         alive_text += "\nRECENTLY ELIMINATED TEAMS (with their owners — use this when discussing results):\n"
         alive_text += "\n".join(recently_eliminated[-12:]) + "\n"
 
-    results_text = "RECENT RESULTS (team owner shown in brackets — use this to identify who was eliminated):\n"
-    for r in results[:8]:
-        home_owner = r.get('home_owner','?') or '?'
-        away_owner = r.get('away_owner','?') or '?'
-        results_text += (
-            f"  {r['date']} {r.get('group','?')}: "
-            f"{r['home']} [{home_owner}] {r['home_score']}–{r['away_score']} "
-            f"{r['away']} [{away_owner}]\n"
-        )
+    # Separate finished, live and upcoming matches clearly
+    finished = [r for r in results if r.get('status') == 'FINISHED']
+    live = [r for r in results if r.get('status') in ('IN_PLAY','LIVE','PAUSED')]
 
-    upcoming_text = "UPCOMING FIXTURES:\n"
+    results_text = "COMPLETED RESULTS (these matches are finished — you may discuss outcomes):\n"
+    if finished:
+        for r in finished[:8]:
+            home_owner = r.get('home_owner','?') or '?'
+            away_owner = r.get('away_owner','?') or '?'
+            results_text += (
+                f"  FINISHED: {r['home']} [{home_owner}] {r['home_score']}–{r['away_score']} "
+                f"{r['away']} [{away_owner}]\n"
+            )
+    else:
+        results_text += "  No completed results since last edition.\n"
+
+    if live:
+        results_text += "\nLIVE NOW (in progress — do NOT write as if these are finished):\n"
+        for r in live:
+            home_owner = r.get('home_owner','?') or '?'
+            away_owner = r.get('away_owner','?') or '?'
+            results_text += (
+                f"  LIVE: {r['home']} [{home_owner}] {r['home_score']}–{r['away_score']} "
+                f"{r['away']} [{away_owner}] (match in progress)\n"
+            )
+
+    upcoming_text = "UPCOMING FIXTURES (not yet played — write about these as future events only):\n"
     for f in upcoming[:5]:
+        home_owner = f.get('home_owner','?') or '?'
+        away_owner = f.get('away_owner','?') or '?'
         upcoming_text += (
             f"  {f['aest_time']}: "
-            f"{f['home']} [owned by {f['home_owner']}] vs {f['away']} [owned by {f['away_owner']}]\n"
+            f"{f['home']} [owned by {home_owner}] vs {f['away']} [owned by {away_owner}]\n"
         )
 
     now_aest = datetime.now(AEST).strftime("%-d %B %Y")
@@ -135,6 +153,8 @@ TODAY: {now_aest}
 CONTEXT: We are in the KNOCKOUT ROUNDS. Winner takes all. Only surviving teams matter.
 
 TASK: Write an executive summary for this edition.
+
+CRITICAL TENSE RULE: Only write about COMPLETED RESULTS as finished. LIVE matches are in progress — write about them using present tense. UPCOMING matches have not happened — write about them as future events only. Never state a match result that hasn't happened yet.
 
 CRITICAL: Before writing, check the "ALIVE PARTICIPANTS" list below. Only declare a participant eliminated if they have NO teams remaining. If they have even one team still in the tournament, they are still in the sweepstake.
 
