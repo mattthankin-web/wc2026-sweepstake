@@ -38,15 +38,15 @@ ALL_PARTICIPANTS = [
 PARTICIPANT_NOTES = {
     # KNOCKOUT STAGE — only discuss surviving teams
     # P Rankin and T Rankin are eliminated — brief mention only
-    "Kenna":    "Spain ($4.7) is Kenna's ONLY team. Do NOT mention Egypt, Senegal, South Korea, Jordan, New Zealand, Curaçao or Haiti. Write only about Spain — their semi-final against France, form, and Kenna's chances of winning the pot.",
-    "Cronan":   "France ($2.6) is Cronan's ONLY team. Do NOT mention Austria, Australia, Panama or any other team. Write only about France — their form, next opponent (the semi-final), and Cronan's realistic path to winning the pot.",
-    "Silk":     "England ($4.5) is Silk's ONLY team. Do NOT mention USA, Algeria or Qatar. Write only about England — their semi-final, form, and what it would take for Silk to win the pot.",
+    "Kenna":    "Write ONLY about Spain ($4.7). Semi-final vs France. Legitimate contenders. Kenna vs Cronan in the semis. Nothing else.",
+    "Cronan":   "Write ONLY about France ($2.6). Semi-final vs Spain. Tournament favourites. Cronan's shot at the pot. Nothing else.",
+    "Silk":     "Write ONLY about England ($4.5). Semi-final opponent TBD. Still in it. What England need to do. Nothing else.",
     "Same":     "ELIMINATED. All of Same's teams are out. One sentence only. Do not mention Portugal, Colombia, Paraguay or Cape Verde.",
-    "Poncho Man":"Argentina ($5.6) is Poncho Man's ONLY team. Do NOT mention Morocco, Turkey, South Africa or Switzerland. Write only about Argentina — their semi-final, form, and Poncho Man's realistic shot at winning the pot.",
+    "Poncho Man":"Write ONLY about Argentina ($5.6). Quarter-final winner. Semi-final ahead. World champions. Poncho Man's path to the pot. Nothing else.",
     "Morris":   "ELIMINATED. Brazil are out. One sentence acknowledging Morris is done. Nothing more — do not discuss Brazil or any other team.",
     "P Rankin": "ELIMINATED. One sentence only. Do not mention Germany or Sweden.",
     "T Rankin": "ELIMINATED. One sentence only. Do not mention Netherlands, Ghana or any other team.",
-    "Hankin":   "Norway have been eliminated by England. Hankin is out of the sweepstake. Write this with a tone of complete resignation and detachment — the kind of energy of someone who has switched off the TV, poured a drink and stopped caring. One paragraph maximum. Acknowledge Norway's exit, note that Hankin is done, and move on. No false hope, no consolation. Just done.",
+    "Hankin":   "ELIMINATED. One sentence: Hankin is out. Nothing more.",
     "Varcoe":   "Switzerland ($90) and Canada ($470) both survived the Round of 32. Switzerland are a credible quarter-final threat. Canada are the long shot. Any path to the final wins the pot.",
     "Crowle":   "Belgium ($75) is Crowle's sole survivor after Ecuador, Bosnia and Uzbekistan all went out. One team, one last shot. Discuss Belgium's next opponent and realistic title chances.",
 }
@@ -269,19 +269,21 @@ PARTICIPANT DETAILS:
 CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
 Only the participant whose team wins the World Cup wins the sweepstake pot.
 
-RULES:
-- You are writing ONLY about surviving participants (those with alive teams listed below)
-- Eliminated participants do NOT appear in individual commentary at all — the exec summary handles them
-- Reference the journey so far (how they got here, key results) to add colour and context
-- Forward focus: next opponent, path to the final, title odds
-- Do NOT mention any eliminated team as if they are still playing or could still win
-- No points totals, no Win%, no table positions
-- Write with personality — sweepstake among mates, not a press release
+ABSOLUTE RULE: Each participant has exactly ONE alive team. Name ONLY that team. Do not name any other team for any reason — not historically, not as context, not in passing. Austria, Morocco, Egypt, Switzerland, USA, Norway and all other eliminated teams must not appear.
 
-TASK: Write commentary for each surviving participant listed:
-- Sharp headline capturing their current situation
-- 1-2 paragraphs (~80-120 words) grounded in actual results and current odds
-- No mention of eliminated teams or eliminated participants whatsoever
+RULES:
+- Write ONLY about the one alive team listed per participant
+- Do NOT name any other team the participant owns or owned — zero tolerance
+- Eliminated participants do not appear in individual commentary at all
+- You may reference how the alive team got here (their knockout results) but name only alive teams and their opponents who are still in the tournament
+- Forward focus: next opponent, path to the final, title odds
+- No points, no Win%, no table positions
+- Write with personality
+
+TASK: For each participant listed — write about their ONE team only:
+- Sharp headline
+- 1-2 paragraphs (~80-120 words)
+- Zero mention of any eliminated team or participant
 - Follow the Guidance note exactly
 
 Return ONLY valid JSON, no preamble, no markdown:
