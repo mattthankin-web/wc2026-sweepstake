@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-12T19:57:00.075471+00:00",
-    "last_updated_aest": "Monday 13 Jul 2026, 5:57am AEST",
+    "last_updated": "2026-07-12T22:32:55.707395+00:00",
+    "last_updated_aest": "Monday 13 Jul 2026, 8:32am AEST",
     "edition": 46,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "13 Jul 2026 5:57am AEST",
+    "odds_last_updated": "13 Jul 2026 8:32am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-12T13:19:05.273917+00:00",
-    "last_score_refresh": "13 Jul 2026 5:57am AEST",
+    "last_score_refresh": "13 Jul 2026 8:32am AEST",
     "last_commentary_participants": [
       "Cronan",
       "Silk",
@@ -135,7 +135,7 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 38.76,
+      "win_pct": 39.06,
       "move": "up",
       "move_note": "France +370, clear leader",
       "eliminated": false
@@ -294,22 +294,6 @@
   "recent_results": [
     {
       "date": "12 Jul",
-      "aest_time": "Sun 7:00am",
-      "group": "Quarter-Final",
-      "home": "Norway",
-      "home_owner": "Hankin",
-      "away": "England",
-      "away_owner": "Silk",
-      "home_score": 1,
-      "away_score": 2,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-07-11T21:00:00Z"
-    },
-    {
-      "date": "12 Jul",
       "aest_time": "Sun 11:00am",
       "group": "Quarter-Final",
       "home": "Argentina",
@@ -335,9 +319,9 @@
       "away_owner": "Kenna",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.44,
+      "h2h_home_price": 2.42,
       "h2h_draw_price": 3.4,
-      "h2h_away_price": 3.35
+      "h2h_away_price": 3.4
     }
   ],
   "commentary": [
@@ -377,7 +361,7 @@
       "now": "$4.5",
       "now_decimal": 4.5,
       "direction": "unchanged",
-      "source": "TAB"
+      "source": "Betfair"
     },
     {
       "team": "Spain",
@@ -2953,9 +2937,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.44,
+          "h2h_home_price": 2.42,
           "h2h_draw_price": 3.4,
-          "h2h_away_price": 3.35,
+          "h2h_away_price": 3.4,
           "h2h_source": "Betfair"
         },
         {
@@ -2975,9 +2959,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.72,
+          "h2h_home_price": 2.76,
           "h2h_draw_price": 3.05,
-          "h2h_away_price": 3.2,
+          "h2h_away_price": 3.15,
           "h2h_source": "Betfair"
         }
       ]
