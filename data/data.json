@@ -326,22 +326,22 @@
   ],
   "commentary": [
     {
-      "participant": "Same",
-      "color": "#15803D",
-      "title": "Same: The Lights Are Off",
-      "body": "Same is out of the sweepstake, and there is nothing further to add."
-    },
-    {
-      "participant": "Morris",
-      "color": "#0891B2",
-      "title": "Morris: Signed Off",
-      "body": "Morris is eliminated, and this column has nothing more to say on the matter."
-    },
-    {
       "participant": "Hankin",
       "color": "#166534",
-      "title": "Hankin: Norway Depart, Quietly and Without Ceremony",
-      "body": "Norway went to a quarter-final, which is more than most expected, and then lost 2–1 to England, which is exactly what most expected. Hankin is done. The sweepstake pot will be won by someone else, the details of which are no longer Hankin's concern. There is nothing to salvage here, no consolation bracket, no moral victory worth packaging. Norway came, Norway played, Norway went home. So did Hankin. Next."
+      "title": "Hankin: Norway Came, Norway Saw, Norway Lost to England in Extra Time",
+      "body": "Norway beat Brazil in the Round of 16. Let that sentence sit for a moment, because it deserves to. Erling Haaland and a team of committed, well-organised Scandinavians knocked out the five-time world champions and briefly made this sweepstake feel like something genuinely interesting was happening. Then they played England in the quarter-final and lost 2–1 after extra time, which is the kind of outcome that feels both surprising and entirely inevitable in equal measure. Hankin is out. Norway gave everything. The Senior Analyst is not taking questions at this time."
+    },
+    {
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: The Favourite’s Burden, and the Insufferable Likelihood of Winning",
+      "body": "France beat Morocco 2–0 in the quarter-final and are now in the semi-finals against Spain, which is either a mouth-watering clash of footballing philosophies or a deeply inconvenient fixture depending on whether you are Cronan or Kenna. At $2.6, France are the clear market favourite to win this tournament and, by extension, hand Cronan the pot. Cronan drew France in what felt like a formality and has since watched the competition thin around them like fog burning off a harbour. The path to the final is Spain. The path to the title is whoever emerges from the other side. Both are very winnable. Cronan should enjoy this. Most people in this sweepstake would prefer they didn’t."
+    },
+    {
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: England Are in the Semi-Finals and Everyone Is Pretending to Be Calm",
+      "body": "England beat Norway 2–1 after extra time in the quarter-final, which means Silk is in the semi-finals with a team priced at $4.5 and a very reasonable shot at the pot. England’s route here has been characteristically English — functional, occasionally inspired, frequently stressful, and ultimately effective. Their semi-final opponent is yet to be determined pending Argentina vs Switzerland, but France or Spain await in the final if they get there. Silk needs England to channel their best football for two more games. England are entirely capable of this. England are also entirely capable of making it far more complicated than it needs to be. That is the arrangement."
     }
   ],
   "odds": [
@@ -401,9 +401,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Four teams remain, three of them realistic contenders, and one Norwegian footnote.",
-    "paragraph_1": "The quarter-finals have tidied the field considerably. Galbraith watched Morocco fall to France, eliminating Cronan's most credible rival in that half of the draw, while Kenna dispatched Crowle's Belgium to put Spain in the last four. Most dramatically, Silk's England ended Hankin's Norway — a result that transforms Hankin from accidental giant-killer to sweepstake also-ran, holding a ticket now worth considerably less than the paper it was printed on. Four participants survive: Kenna, Cronan, Silk, Galbraith, Varcoe, and Hankin, though Hankin's position warrants the word 'surviving' only in the technical sense.",
-    "paragraph_2": "The sole remaining fixture pits Galbraith's Argentina against Varcoe's Switzerland, with the winner advancing to face either Kenna's Spain or Cronan's France — the other semi-final pairing. Cronan holds the shortest odds and looks well placed with France; Kenna's Spain are dangerous. Varcoe faces long odds against Galbraith's Argentina, while Hankin's Norway are already eliminated, leaving Hankin to contemplate what might have been had England's quarter-final gone differently. The pot will be decided across two semi-finals and a final still to come."
+    "pull_quote": "Norway are out. This report will continue. It just won’t mean it.",
+    "paragraph_1": "Norway lost 1–2 to England after extra time in the quarter-final, and with that the Senior Analyst's reason for caring about this sweepstake departed the building. Four semi-finalists remain: France (Cronan, $2.6), Spain (Kenna, $4.5), England (Silk, $4.5), and Argentina (Galbraith, $6.0), with Switzerland (Varcoe, $55.0) yet to face Argentina in the remaining quarter-final. This is, objectively, a fine group of teams. The report is aware of this. The report simply no longer has a dog in the fight, and it shows.",
+    "paragraph_2": "The scores will continue to update every 30 minutes because the workflow does not have feelings and has not been told about Norway. The commentary will continue to be generated at 2pm daily because the cron job does not know what loss feels like. Cronan is, in all probability, going to win this sweepstake. France at $2.6 are the market’s clear favourite and Cronan has done nothing to deserve them, which is precisely how sweepstakes work. The remaining participants are encouraged to enjoy themselves. The Senior Analyst has taken the afternoon off."
   },
   "trivia_schedule": {
     "2026-06-24": [
