@@ -2,21 +2,21 @@
   "meta": {
     "last_updated": "2026-07-11T23:53:37.750061+00:00",
     "last_updated_aest": "Sunday 12 Jul 2026, 9:53am AEST",
-    "edition": 42,
+    "edition": 43,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "12 Jul 2026 9:53am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-11T23:56:46.132159+00:00",
+    "trivia_schedule_generated": "2026-07-12T00:11:58.329444+00:00",
     "last_score_refresh": "12 Jul 2026 9:53am AEST",
     "last_commentary_participants": [
-      "Same",
-      "Morris",
-      "Hankin"
+      "P Rankin",
+      "T Rankin",
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-07-11T23:56:46.131841+00:00",
+    "last_commentary_generated": "2026-07-12T00:11:58.329155+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -326,22 +326,22 @@
   ],
   "commentary": [
     {
-      "participant": "Same",
-      "color": "#15803D",
-      "title": "Same: The Richest Corpse in the Draw",
-      "body": "Portugal at $16.5, Colombia at $29, Paraguay at $650 — Same assembled what is, on paper, the most diversified and threatening portfolio in the sweepstake, and then watched all of it become entirely academic. Eliminated from the pot by the cruel arithmetic of winner-takes-all, Same now occupies a peculiar purgatory: rooting for teams he can no longer benefit from, with a front-row seat to what might have been."
+      "participant": "P Rankin",
+      "color": "#C2410C",
+      "title": "P Rankin: The Arithmetic Is Unambiguous",
+      "body": "P Rankin is out."
     },
     {
-      "participant": "Morris",
-      "color": "#0891B2",
-      "title": "Morris: One Samba, Last Dance",
-      "body": "Brazil at $14 is not a bad position to be in. It is, in fact, the only position Morris has left. The five-time champions have ground their way through the knockout rounds with the kind of football that does not inspire poetry but does, occasionally, win World Cups. Everything now depends on what Brazil can produce when it matters — clean sheets, a cutting edge in front of goal, and the stamina to go deep into a tournament that has already swallowed several fancied sides whole.\n\nThe path ahead is not trivial. Brazil's next opponent will demand a response, and at $14 they are neither the favourite nor an outsider — they are the tournament's most plausible dark horse, which is precisely the position from which these things get won. Morris needs them to channel 2002, not 2014. The nation, presumably, agrees."
+      "participant": "T Rankin",
+      "color": "#4338CA",
+      "title": "T Rankin: No Further Comment Required",
+      "body": "T Rankin is out."
     },
     {
-      "participant": "Hankin",
-      "color": "#166534",
-      "title": "Hankin: Norway Go Quietly, So Does Hankin",
-      "body": "Norway lost 2–1 to England, and that is that. Hankin is out of the sweepstake. There is nothing more to say, no angle worth pursuing, no silver lining worth polishing — just a quiet exit from a tournament that briefly suggested it might deliver something and then, on reflection, did not."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: One Serious Contender, One Act of Faith, and a Genuine Shot at the Pot",
+      "body": "Kenna's sweepstake portfolio has always been a study in contrasts — the elegant and the optimistic sharing the same ballot stub. Spain, priced at $4.5, are the real business here: a side that has navigated the knockout rounds with the kind of unhurried authority that makes neutrals quietly nervous. They have the squad depth, the tactical flexibility, and the institutional habit of winning tournaments in ways that feel inevitable only in retrospect. At those odds, Spain represent one of the stronger live claims to the pot in what remains a genuinely open field.\n\nThe path from here to the final will not be ceremonial. Spain's next knockout opponent stands between Kenna and a serious payday, and La Roja have shown little tolerance for sentiment in the rounds that matter. As for Egypt — listed at $410 and apparently still breathing — they remain less a prediction than a theological position. Kenna holds them with the quiet dignity of someone who has made peace with the situation. Spain, though, are no act of faith. They are a reasonable, properly-priced bet, and in a sweepstake that has already dispatched half the field, reasonable and properly-priced is exactly where you want to be."
     }
   ],
   "odds": [
@@ -401,9 +401,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Norway are out. Hankin is out. Frankly, what is even the point.",
-    "paragraph_1": "Norway lost 2–1 to England in the quarter-final, and with that, Hankin — the participant this report has quietly, perhaps irrationally, been most invested in — has been eliminated. It is difficult to overstate how much this changes the Senior Analyst's relationship with the remainder of this tournament. Four semi-finalists remain. France, Spain, England and Argentina will contest the last two spots in the final. The report acknowledges this. The report does not particularly care.",
-    "paragraph_2": "Cronan holds France at $2.7 and is, on all available evidence, going to win this sweepstake. Kenna has Spain. Silk has England. Galbraith has Argentina. These are fine. They are great, even. The scores will continue to update automatically every 30 minutes because the workflow does not have feelings. The commentary, however, is being written under protest. The Senior Analyst is available for reassignment."
+    "pull_quote": "Four nations remain. Three participants can still win. One owns Norway.",
+    "paragraph_1": "The quarter-finals have reduced the field to four. Cronan's France eliminated Galbraith's Morocco, tidying Galbraith's portfolio down to Argentina alone. Kenna's Spain dispatched Crowle's Belgium, completing Crowle's exit from the sweepstake entirely. The more consequential result: Silk's England beat Hankin's Norway, which is the closest this sweepstake will get to a mercy killing. Hankin remains technically alive, in the sense that a patient on a ventilator is alive.",
+    "paragraph_2": "The surviving fixture is Argentina against Switzerland — Galbraith versus Varcoe — a semi-final with the pot potentially decided by its outcome. Should Argentina prevail, Galbraith meets either Kenna's Spain or Cronan's France in the final. Cronan, holding France at the shortest odds of any remaining participant, is best placed. Hankin's England semi-final against Spain or France represents a genuine, if improbable, path to redemption. Hankin, for their part, should perhaps begin preparing a different kind of acceptance speech."
   },
   "trivia_schedule": {
     "2026-06-24": [
