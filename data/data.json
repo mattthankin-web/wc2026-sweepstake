@@ -1,22 +1,22 @@
 {
   "meta": {
-    "last_updated": "2026-07-12T13:18:35.452258+00:00",
-    "last_updated_aest": "Sunday 12 Jul 2026, 11:18pm AEST",
-    "edition": 45,
+    "last_updated": "2026-07-12T12:58:13.329098+00:00",
+    "last_updated_aest": "Sunday 12 Jul 2026, 10:58pm AEST",
+    "edition": 46,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "12 Jul 2026 11:18am AEST",
+    "odds_last_updated": "12 Jul 2026 10:58am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-12T10:13:35.935536+00:00",
-    "last_score_refresh": "12 Jul 2026 11:18pm AEST",
+    "trivia_schedule_generated": "2026-07-12T13:19:05.273917+00:00",
+    "last_score_refresh": "12 Jul 2026 10:58pm AEST",
     "last_commentary_participants": [
-      "P Rankin",
-      "T Rankin",
-      "Kenna"
+      "Cronan",
+      "Silk",
+      "Poncho Man"
     ],
-    "last_commentary_generated": "2026-07-12T10:13:35.935339+00:00",
+    "last_commentary_generated": "2026-07-12T13:19:05.273803+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -180,7 +180,7 @@
       "gd": 12,
       "rank": 4,
       "left": 4,
-      "win_pct": 17.86,
+      "win_pct": 18.18,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -328,22 +328,22 @@
   "upcoming_fixtures": [],
   "commentary": [
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: A Dignified Exit, Relative to the Chaos That Preceded It",
-      "body": "P Rankin is out of the sweepstake, which at this point may constitute a mercy."
+      "participant": "Cronan",
+      "color": "#1D4ED8",
+      "title": "Cronan: The Favourite's Burden",
+      "body": "France enter the semi-final as tournament favourites and, at $2.6, the market has made its feelings rather clear. Cronan, who has watched the rest of this sweepstake with the quiet confidence of someone holding a winning lottery ticket they haven't checked yet, now faces Spain in what is ostensibly the most consequential match of his sweepstake life.\n\nThe path to the pot is straightforward, if not quite simple: beat Spain, win the final, collect the money, accept the congratulations with false modesty. France are good enough. The odds say so. The question is whether tournaments care about odds, which historically they do not."
     },
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: Eliminated, Though One Suspects They Saw It Coming",
-      "body": "T Rankin has been eliminated from the sweepstake and is invited to enjoy the remainder of the tournament as a neutral."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: Unlikely, Unglamorous, Undeniable",
+      "body": "England are at $4.5 and still standing, which is more than most of this sweepstake predicted. Silk's route to the semi-final has been what the diplomatic observer might call 'functional' — results accumulated through a grinding pragmatism that England have historically reserved for making their own supporters miserable.\n\nThe semi-final opponent is yet to be confirmed, which is either a narrative gift or a logistical inconvenience depending on your disposition. What England need is a performance of sustained coherence — ninety minutes without the customary late crisis, followed ideally by a final. Silk needs the same. Both have been waiting longer than is reasonable."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: One Genuine Contender, One Act of God Required",
-      "body": "Kenna's portfolio at this stage of the tournament is a study in contrasts. Spain, priced at $4.6, represent one of the more credible claims on the sweepstake pot still active in this competition — a side that has navigated the knockout rounds with the kind of unhurried technical authority that tends to age well in tournaments. They are not flashy. They do not need to be. Whoever stands between Spain and the next round will need to be very good, or very lucky, and the draw has not been especially kind to anyone.\n\nEgypt, meanwhile, are still technically alive, which is itself a minor administrative achievement. At $410 they are priced less as a football team and more as a philosophical proposition — the sort of odds that suggest the market has moved on even if Kenna has not. The sweepstake, in practice, rides on Spain. If La Roja can maintain composure through the latter knockout rounds and reach a final, Kenna becomes a genuine threat to collect. That is not an outlandish scenario. It is, in fact, one of the more structurally sound positions remaining in this competition."
+      "participant": "Poncho Man",
+      "color": "#7C3AED",
+      "title": "Poncho Man: World Champions, Semi-Finalists, Still Dangerous",
+      "body": "Argentina dispatched their quarter-final opponent 3–1 with the casual authority of a team that considers itself the natural inheritor of the tournament. At $5.6, the market respects them without quite fearing them, which is precisely the kind of disrespect that tends to motivate world champions.\n\nPoncho Man, whose sweepstake fortunes have been hitched to this particular wagon since the draw, now finds himself in the semi-finals with a credible shot at the pot. Argentina's path will not get easier. It rarely does. But they have been here before, and they have the institutional memory of a side that knows how to win things when it matters most."
     }
   ],
   "odds": [
@@ -377,17 +377,17 @@
     {
       "team": "Argentina",
       "owner": "Poncho Man",
-      "prev": "$5.6",
+      "prev": "$5.5",
       "now": "$5.6",
       "now_decimal": 5.6,
-      "direction": "unchanged",
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
   "exec_summary": {
-    "pull_quote": "Four participants remain. Three teams will fail. One pot will be claimed.",
-    "paragraph_1": "The quarter-finals have reduced the field to four surviving participants. Cronan's France dispatched Poncho Man's Morocco, leaving Poncho Man dependent solely on Argentina. Kenna's Spain eliminated Crowle's Belgium, ending Crowle's involvement entirely. Silk's England saw off Hankin's Norway, with Hankin — who had already lost Mexico to Silk in the round of sixteen — now fully eliminated. Poncho Man's Argentina removed Varcoe's Switzerland, completing Varcoe's exit after Canada had already fallen to that same Argentina side.",
-    "paragraph_2": "The semi-finals will set the final four teams against one another in pairings not yet confirmed. Cronan holds the shortest odds with France at $2.6, making him the statistical favourite for the pot. Kenna's Spain at $4.6 and Silk's England at $4.8 are closely matched. Poncho Man's Argentina, at $5.4 the longest price among survivors, remains credible. Same, Morris, P Rankin, T Rankin, Hankin, Varcoe, and Crowle are all watching from the sidelines."
+    "pull_quote": "Four teams remain, four participants remain, and the math has never been simpler or crueller.",
+    "paragraph_1": "The quarter-finals completed the cull with characteristic efficiency. Cronan's France dispatched Poncho Man's Morocco, ending what had been a productive run for the Argentina holder. Kenna's Spain eliminated Crowle's Belgium, leaving Crowle with nothing to show for a useful run to the last eight. Silk's England beat Hankin's Norway — a result that also extinguished Hankin's last indirect interest in proceedings — and Poncho Man's Argentina eliminated Varcoe's Switzerland. The field is now four participants, one team each, no safety nets.",
+    "paragraph_2": "Cronan holds France at $2.6, the shortest price remaining and the closest thing this sweepstake has to a favourite. Kenna's Spain trade at $4.7, having removed both Portugal and Belgium en route to the semi-finals. Silk's England are at $4.5, their run built on wins over Mexico and Norway. Poncho Man's Argentina, at $5.6, are the longest shot still standing. All four participants face each other in the semi-finals; two will be eliminated before the final is played. The pot goes to exactly one of these four."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2961,7 +2961,7 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.66,
+          "h2h_home_price": 2.68,
           "h2h_draw_price": 3.1,
           "h2h_away_price": 3.25,
           "h2h_source": "Betfair"
