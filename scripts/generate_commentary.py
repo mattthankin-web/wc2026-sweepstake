@@ -538,22 +538,33 @@ def main():
     commentary = call_claude(build_commentary_prompt(data, participants), max_tokens=2000)
     print(f"  Generated {len(commentary)} blocks")
 
-    # Post-process: detect and warn about eliminated team mentions
+    # Post-process: remove any sentence containing an eliminated team name
     teams_in_odds_set = {o["team"] for o in data.get("odds", [])}
     all_participant_teams = set()
     for info in data.get("participants", {}).values():
         all_participant_teams.update(info.get("teams", []))
     eliminated_check = all_participant_teams - teams_in_odds_set
+
     for c in commentary:
-        flagged = [t for t in eliminated_check if t in c.get("body","") or t in c.get("title","")]
+        body = c.get("body", "")
+        flagged = [t for t in eliminated_check if t in body or t in c.get("title","")]
         if flagged:
-            # Truncate body to just the first sentence mentioning an alive team
-            print(f"  WARN: {c['participant']} mentions eliminated teams {flagged} — replacing body")
-            c["body"] = (
-                f"{c['participant']} is still in the sweepstake with "
-                + next((f"{o['team']} at {o['now']}" for o in data.get('odds',[]) if o['owner']==c['participant']), "their team")
-                + ". [Commentary regeneration required — eliminated team reference detected and removed.]"
-            )
+            print(f"  POST-PROCESS: {c['participant']} mentioned {flagged} — stripping offending sentences")
+            # Remove any sentence containing an eliminated team name
+            import re as _re
+            sentences = _re.split(r"(?<=[.!?])\s+", body)
+            clean_sentences = []
+            for sent in sentences:
+                if not any(t in sent for t in eliminated_check):
+                    clean_sentences.append(sent)
+                else:
+                    print(f"    Removed: {sent[:80]}...")
+            c["body"] = " ".join(clean_sentences).strip()
+            if not c["body"]:
+                # Fallback if everything was stripped
+                alive_team = next((o['team'] for o in data.get('odds',[]) if o['owner']==c['participant']), None)
+                odds = next((o['now'] for o in data.get('odds',[]) if o['owner']==c['participant']), '?')
+                c["body"] = f"{alive_team} at {odds} carry {c['participant']}\'s hopes into the semi-final. The path to the pot runs through the next 90 minutes."
 
     # 3. Write back to data.json
     data["exec_summary"] = exec_summary
