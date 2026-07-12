@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-12T11:43:13.205783+00:00",
-    "last_updated_aest": "Sunday 12 Jul 2026, 9:43pm AEST",
+    "last_updated": "2026-07-12T12:58:13.329098+00:00",
+    "last_updated_aest": "Sunday 12 Jul 2026, 10:58pm AEST",
     "edition": 45,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "12 Jul 2026 9:43am AEST",
+    "odds_last_updated": "12 Jul 2026 10:58am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-12T10:13:35.935536+00:00",
-    "last_score_refresh": "12 Jul 2026 9:43pm AEST",
+    "last_score_refresh": "12 Jul 2026 10:58pm AEST",
     "last_commentary_participants": [
       "P Rankin",
       "T Rankin",
@@ -135,24 +135,9 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 38.17,
+      "win_pct": 39.06,
       "move": "up",
       "move_note": "France +370, clear leader",
-      "eliminated": false
-    },
-    {
-      "name": "Kenna",
-      "pld": 27,
-      "w": 8,
-      "d": 5,
-      "l": 14,
-      "pts": 29,
-      "gd": -11,
-      "rank": 2,
-      "left": 10,
-      "win_pct": 21.74,
-      "move": "up",
-      "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
     },
     {
@@ -163,11 +148,26 @@
       "l": 6,
       "pts": 30,
       "gd": -2,
-      "rank": 3,
+      "rank": 2,
       "left": 6,
-      "win_pct": 21.05,
+      "win_pct": 22.22,
       "move": "up",
       "move_note": "USA through, England tomorrow",
+      "eliminated": false
+    },
+    {
+      "name": "Kenna",
+      "pld": 27,
+      "w": 8,
+      "d": 5,
+      "l": 14,
+      "pts": 29,
+      "gd": -11,
+      "rank": 3,
+      "left": 10,
+      "win_pct": 21.28,
+      "move": "up",
+      "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
     },
     {
@@ -180,7 +180,7 @@
       "gd": 12,
       "rank": 4,
       "left": 4,
-      "win_pct": 18.52,
+      "win_pct": 18.18,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -353,33 +353,33 @@
       "prev": "$2.6",
       "now": "$2.6",
       "now_decimal": 2.56,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$4.8",
+      "prev": "$4.5",
       "now": "$4.5",
       "now_decimal": 4.5,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$4.6",
+      "prev": "$4.7",
       "now": "$4.7",
       "now_decimal": 4.7,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Poncho Man",
-      "prev": "$5.4",
-      "now": "$5.5",
-      "now_decimal": 5.5,
+      "prev": "$5.5",
+      "now": "$5.6",
+      "now_decimal": 5.6,
       "direction": "drifted",
       "source": "Betfair"
     }
@@ -2961,9 +2961,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.7,
+          "h2h_home_price": 2.68,
           "h2h_draw_price": 3.1,
-          "h2h_away_price": 3.2,
+          "h2h_away_price": 3.25,
           "h2h_source": "Betfair"
         }
       ]
