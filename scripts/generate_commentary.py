@@ -41,11 +41,11 @@ PARTICIPANT_NOTES = {
     "Kenna":    "Spain ($7.4) and Egypt ($410) are Kenna's surviving teams. Spain are genuine contenders. Focus on Spain's next knockout opponent and realistic path to the title. Egypt are a miracle-run outsider.",
     "Cronan":   "France ($3.0) are Cronan's sole survivor and tournament favourites. One team, one shot. Discuss France's form, next opponent, and what it would mean for Cronan to win the pot.",
     "Silk":     "England ($6.0) is Silk's ONLY surviving team. USA, Algeria and Qatar are all eliminated. Write exclusively about England's semi-final path and realistic title chances. Do not mention USA or any other Silk team.",
-    "Same":     "Portugal ($16.5), Colombia ($29) and Paraguay ($650) are all alive — the largest surviving portfolio in the sweepstake. Three genuine shots. Focus on Portugal and Colombia as the serious threats.",
+    "Same":     "ELIMINATED. All of Same's teams are out. One sentence only. Do not mention Portugal, Colombia, Paraguay or Cape Verde.",
     "Galbraith":"Argentina ($5.6) is Galbraith's ONLY surviving team — Morocco have been eliminated by France. Write exclusively about Argentina's semi-final path, their odds and Galbraith's realistic chance of winning the pot.",
-    "Morris":   "Brazil ($14) are Morris's sole survivor. Discuss Brazil's knockout campaign, next opponent, and what they need to deliver to hand Morris the pot.",
-    "P Rankin": "ELIMINATED. Germany lost to Paraguay on penalties, Sweden went out in the group stage. One line acknowledging they are out — then move on entirely.",
-    "T Rankin": "ELIMINATED. Netherlands lost to Morocco on penalties, Ghana lost to Colombia. One line acknowledging they are out — then move on entirely.",
+    "Morris":   "ELIMINATED. Brazil are out. One sentence acknowledging Morris is done. Nothing more — do not discuss Brazil or any other team.",
+    "P Rankin": "ELIMINATED. One sentence only. Do not mention Germany or Sweden.",
+    "T Rankin": "ELIMINATED. One sentence only. Do not mention Netherlands, Ghana or any other team.",
     "Hankin":   "Norway have been eliminated by England. Hankin is out of the sweepstake. Write this with a tone of complete resignation and detachment — the kind of energy of someone who has switched off the TV, poured a drink and stopped caring. One paragraph maximum. Acknowledge Norway's exit, note that Hankin is done, and move on. No false hope, no consolation. Just done.",
     "Varcoe":   "Switzerland ($90) and Canada ($470) both survived the Round of 32. Switzerland are a credible quarter-final threat. Canada are the long shot. Any path to the final wins the pot.",
     "Crowle":   "Belgium ($75) is Crowle's sole survivor after Ecuador, Bosnia and Uzbekistan all went out. One team, one last shot. Discuss Belgium's next opponent and realistic title chances.",
@@ -274,7 +274,7 @@ RULES:
 - Do NOT mention any eliminated teams unless the participant is fully out (one sentence max)
 - You are encouraged to reference the journey so far — group stage results, dramatic knockout wins, penalty shootouts — to build narrative and context
 - The forward focus should be on: next opponent, form, path to the final, title odds
-- For eliminated participants (P Rankin, T Rankin): one brief sentence only, then nothing more
+- For ANY eliminated participant (Status shows ELIMINATED): write ONE sentence only — e.g. "Morris is out." Do NOT discuss their teams, past results, or any players. Move on immediately
 - Reference the actual odds provided — use them to assess realistic chances, not just list them
 - Write with personality — this is a sweepstake among mates, not a press conference
 
