@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-12T07:16:33.455938+00:00",
-    "last_updated_aest": "Sunday 12 Jul 2026, 5:16pm AEST",
+    "last_updated": "2026-07-12T11:43:13.205783+00:00",
+    "last_updated_aest": "Sunday 12 Jul 2026, 9:43pm AEST",
     "edition": 45,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "12 Jul 2026 5:16am AEST",
+    "odds_last_updated": "12 Jul 2026 9:43am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-12T10:13:35.935536+00:00",
-    "last_score_refresh": "12 Jul 2026 5:16pm AEST",
+    "last_score_refresh": "12 Jul 2026 9:43pm AEST",
     "last_commentary_participants": [
       "P Rankin",
       "T Rankin",
@@ -135,24 +135,9 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 37.88,
+      "win_pct": 38.17,
       "move": "up",
       "move_note": "France +370, clear leader",
-      "eliminated": false
-    },
-    {
-      "name": "Silk",
-      "pld": 18,
-      "w": 9,
-      "d": 3,
-      "l": 6,
-      "pts": 30,
-      "gd": -2,
-      "rank": 2,
-      "left": 6,
-      "win_pct": 22.22,
-      "move": "up",
-      "move_note": "USA through, England tomorrow",
       "eliminated": false
     },
     {
@@ -163,11 +148,26 @@
       "l": 14,
       "pts": 29,
       "gd": -11,
-      "rank": 3,
+      "rank": 2,
       "left": 10,
-      "win_pct": 22.22,
+      "win_pct": 21.74,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
+      "eliminated": false
+    },
+    {
+      "name": "Silk",
+      "pld": 18,
+      "w": 9,
+      "d": 3,
+      "l": 6,
+      "pts": 30,
+      "gd": -2,
+      "rank": 3,
+      "left": 6,
+      "win_pct": 21.05,
+      "move": "up",
+      "move_note": "USA through, England tomorrow",
       "eliminated": false
     },
     {
@@ -180,24 +180,9 @@
       "gd": 12,
       "rank": 4,
       "left": 4,
-      "win_pct": 16.67,
+      "win_pct": 18.52,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
-      "eliminated": false
-    },
-    {
-      "name": "Varcoe",
-      "pld": 19,
-      "w": 8,
-      "d": 5,
-      "l": 6,
-      "pts": 29,
-      "gd": 11,
-      "rank": 5,
-      "left": 5,
-      "win_pct": 1.82,
-      "move": "up",
-      "move_note": "Japan 4-0 Tunisia, unbeaten",
       "eliminated": false
     },
     {
@@ -208,12 +193,27 @@
       "l": 6,
       "pts": 32,
       "gd": 6,
-      "rank": 6,
+      "rank": 5,
       "left": 5,
-      "win_pct": 0.1,
+      "win_pct": 0.0,
       "move": "down",
       "move_note": "Saudi eliminated",
-      "eliminated": false
+      "eliminated": true
+    },
+    {
+      "name": "Varcoe",
+      "pld": 19,
+      "w": 8,
+      "d": 5,
+      "l": 6,
+      "pts": 29,
+      "gd": 11,
+      "rank": 6,
+      "left": 5,
+      "win_pct": 0.0,
+      "move": "up",
+      "move_note": "Japan 4-0 Tunisia, unbeaten",
+      "eliminated": true
     },
     {
       "name": "Same",
@@ -352,35 +352,35 @@
       "owner": "Cronan",
       "prev": "$2.6",
       "now": "$2.6",
-      "now_decimal": 2.62,
-      "direction": "unchanged",
-      "source": "Betfair"
-    },
-    {
-      "team": "Spain",
-      "owner": "Kenna",
-      "prev": "$4.5",
-      "now": "$4.6",
-      "now_decimal": 4.6,
-      "direction": "drifted",
+      "now_decimal": 2.56,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$4.5",
-      "now": "$4.8",
-      "now_decimal": 4.75,
+      "prev": "$4.8",
+      "now": "$4.5",
+      "now_decimal": 4.5,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
+      "team": "Spain",
+      "owner": "Kenna",
+      "prev": "$4.6",
+      "now": "$4.7",
+      "now_decimal": 4.7,
       "direction": "drifted",
-      "source": "Unibet"
+      "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$6.0",
-      "now": "$5.4",
-      "now_decimal": 5.4,
-      "direction": "shortened",
+      "prev": "$5.4",
+      "now": "$5.5",
+      "now_decimal": 5.5,
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
@@ -2939,7 +2939,7 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.38,
+          "h2h_home_price": 2.4,
           "h2h_draw_price": 3.35,
           "h2h_away_price": 3.45,
           "h2h_source": "Betfair"
@@ -2961,9 +2961,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.6,
+          "h2h_home_price": 2.7,
           "h2h_draw_price": 3.1,
-          "h2h_away_price": 3.3,
+          "h2h_away_price": 3.2,
           "h2h_source": "Betfair"
         }
       ]
