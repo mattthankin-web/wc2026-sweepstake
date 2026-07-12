@@ -53,31 +53,31 @@ PARTICIPANT_NOTES = {
 
 
 def pick_participants(data):
-    """Pick 3 participants, avoiding repeating the last edition's batch.
-    Always includes newly eliminated participants so their exit is acknowledged."""
+    """Pick participants for individual commentary — ALIVE participants only.
+    Eliminated participants are covered in the exec summary only, not here."""
     last_covered = data.get("meta", {}).get("last_commentary_participants", [])
     edition = data.get("meta", {}).get("edition", 1)
 
-    # Detect newly eliminated participants (in odds last edition but not now)
+    # Only consider participants with at least one alive team
     teams_in_odds = {o["team"] for o in data.get("odds", [])}
     p_map = data.get("participants", {})
-    newly_eliminated = []
-    for name, info in p_map.items():
-        alive = [t for t in info.get("teams", []) if t in teams_in_odds]
-        # If they were covered recently and now have no alive teams, prioritise them
-        if len(alive) == 0 and name not in last_covered:
-            newly_eliminated.append(name)
+    alive_participants = [
+        name for name in ALL_PARTICIPANTS
+        if any(t in teams_in_odds for t in p_map.get(name, {}).get("teams", []))
+    ]
 
-    available = [p for p in ALL_PARTICIPANTS if p not in last_covered]
-    if len(available) < 3:
-        available = ALL_PARTICIPANTS.copy()
+    if not alive_participants:
+        return []
 
-    # Force newly eliminated participants in first
-    forced = [p for p in newly_eliminated if p in available][:2]
-    remaining = [p for p in available if p not in forced]
-    start = (edition * 3) % len(remaining)
-    filler = [remaining[(start + i) % len(remaining)] for i in range(3 - len(forced))]
-    return forced + filler
+    # Rotate through alive participants, avoiding repeats from last edition
+    available = [p for p in alive_participants if p not in last_covered]
+    if not available:
+        available = alive_participants.copy()
+
+    # Pick up to 3, or however many alive participants there are
+    count = min(3, len(alive_participants))
+    start = (edition * 3) % len(available)
+    return [available[(start + i) % len(available)] for i in range(min(count, len(available)))]
 
 
 def build_exec_summary_prompt(data):
@@ -169,15 +169,16 @@ TODAY: {now_aest}
 
 CONTEXT: We are in the KNOCKOUT ROUNDS. Winner takes all. Only surviving teams matter.
 
-TASK: Write an executive summary for this edition.
+TASK: Write an executive summary covering the entire sweepstake picture.
+This is the ONLY place where eliminated participants are mentioned.
 
-CRITICAL TENSE RULE: Only write about COMPLETED RESULTS as finished. LIVE matches are in progress — write about them using present tense. UPCOMING matches have not happened — write about them as future events only. Never state a match result that hasn't happened yet.
+CRITICAL TENSE RULE: Only write about COMPLETED RESULTS as finished. LIVE matches are in progress — write about them in present tense. UPCOMING matches have not happened — write about them as future events only. Never state a result that hasn't happened.
 
-CRITICAL: Before writing, check the "ALIVE PARTICIPANTS" list below. Only declare a participant eliminated if they have NO teams remaining. If they have even one team still in the tournament, they are still in the sweepstake.
+CRITICAL: Use the PARTICIPANT STATUS list below as your source of truth for who is in/out.
 
-- pull_quote: A sharp one-liner capturing the defining drama or tension of this moment. Max 20 words. No exclamation marks.
-- paragraph_1: (~70 words) Most significant recent knockout results — who progressed, who has been knocked out, any upsets or drama. If a participant lost one team but still has another alive, note BOTH facts. No points totals, no table positions.
-- paragraph_2: (~70 words) Forward look — upcoming fixtures, what is at stake for each SURVIVING participant (those with at least one alive team), and who looks best placed to win the pot.
+- pull_quote: A sharp one-liner about the state of the sweepstake right now. Max 20 words. No exclamation marks.
+- paragraph_1: (~80 words) Cover all recent results and their sweepstake impact — who progressed, who was eliminated, any drama. Brief mention of eliminated participants is fine here only. No points totals.
+- paragraph_2: (~80 words) Cover ALL surviving participants — their team, current odds, next opponent, and realistic path to the pot. Name every surviving participant explicitly. This paragraph should read like a concise state-of-play for the whole remaining field.
 
 Dry tone. Reference participant names directly. No cheerleading.
 
@@ -269,21 +270,19 @@ CONTEXT: We are in the KNOCKOUT ROUNDS of the 2026 World Cup. Winner takes all.
 Only the participant whose team wins the World Cup wins the sweepstake pot.
 
 RULES:
-- ONLY discuss teams listed under "Alive teams" below — if a team is not listed there, do NOT mention it under any circumstances, even briefly
-- Do NOT mention points, league table position, or Win% at any point — none of that matters now
-- Do NOT mention any eliminated teams unless the participant is fully out (one sentence max)
-- You are encouraged to reference the journey so far — group stage results, dramatic knockout wins, penalty shootouts — to build narrative and context
-- The forward focus should be on: next opponent, form, path to the final, title odds
-- For ANY eliminated participant (Status shows ELIMINATED): write ONE sentence only — e.g. "Morris is out." Do NOT discuss their teams, past results, or any players. Move on immediately
-- Reference the actual odds provided — use them to assess realistic chances, not just list them
-- Write with personality — this is a sweepstake among mates, not a press conference
+- You are writing ONLY about surviving participants (those with alive teams listed below)
+- Eliminated participants do NOT appear in individual commentary at all — the exec summary handles them
+- Reference the journey so far (how they got here, key results) to add colour and context
+- Forward focus: next opponent, path to the final, title odds
+- Do NOT mention any eliminated team as if they are still playing or could still win
+- No points totals, no Win%, no table positions
+- Write with personality — sweepstake among mates, not a press release
 
-TASK: Write commentary for each of the 3 participants:
-- Sharp headline that captures this participant's current situation
-- 1-2 paragraphs (~80-120 words each) — engaging, specific, grounded in actual results and odds
-- Mix of retrospective (how they got here) and prospective (what they need to win the pot)
-- No points totals. No Win%. No table standings. Everything else is fair game.
-- Follow the Guidance note for each participant
+TASK: Write commentary for each surviving participant listed:
+- Sharp headline capturing their current situation
+- 1-2 paragraphs (~80-120 words) grounded in actual results and current odds
+- No mention of eliminated teams or eliminated participants whatsoever
+- Follow the Guidance note exactly
 
 Return ONLY valid JSON, no preamble, no markdown:
 [
