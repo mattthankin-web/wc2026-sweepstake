@@ -37,9 +37,9 @@ TEAM_TO_OWNER = {
     "Algeria": "Silk", "Qatar": "Silk",
     # Same
     "Portugal": "Same", "Colombia": "Same", "Paraguay": "Same", "Cape Verde": "Same",
-    # Galbraith
-    "Argentina": "Galbraith", "Morocco": "Galbraith",
-    "Türkiye": "Galbraith", "Turkey": "Galbraith", "South Africa": "Galbraith",
+    # Poncho Man
+    "Argentina": "Poncho Man", "Morocco": "Poncho Man",
+    "Türkiye": "Poncho Man", "Turkey": "Poncho Man", "South Africa": "Poncho Man",
     # Morris
     "Brazil": "Morris", "Uruguay": "Morris", "Scotland": "Morris", "Iran": "Morris",
     # P Rankin
@@ -488,7 +488,7 @@ def fetch_au_odds():
         "France":"Cronan","Austria":"Cronan","Australia":"Cronan","Panama":"Cronan",
         "England":"Silk","USA":"Silk","United States":"Silk","Algeria":"Silk","Qatar":"Silk",
         "Portugal":"Same","Colombia":"Same","Paraguay":"Same","Cape Verde":"Same",
-        "Argentina":"Galbraith","Morocco":"Galbraith","Turkey":"Galbraith","South Africa":"Galbraith",
+        "Argentina":"Poncho Man","Morocco":"Poncho Man","Turkey":"Poncho Man","South Africa":"Poncho Man",
         "Brazil":"Morris","Uruguay":"Morris","Scotland":"Morris","Iran":"Morris",
         "Germany":"P Rankin","Czech Republic":"P Rankin","Iraq":"P Rankin","Sweden":"P Rankin",
         "Netherlands":"T Rankin","Croatia":"T Rankin","Ghana":"T Rankin","Tunisia":"T Rankin",
