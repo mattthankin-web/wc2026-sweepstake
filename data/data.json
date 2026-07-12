@@ -2,21 +2,21 @@
   "meta": {
     "last_updated": "2026-07-11T23:53:37.750061+00:00",
     "last_updated_aest": "Sunday 12 Jul 2026, 9:53am AEST",
-    "edition": 43,
+    "edition": 44,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "12 Jul 2026 9:53am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-12T00:11:58.329444+00:00",
+    "trivia_schedule_generated": "2026-07-12T00:13:48.866496+00:00",
     "last_score_refresh": "12 Jul 2026 9:53am AEST",
     "last_commentary_participants": [
-      "P Rankin",
-      "T Rankin",
-      "Kenna"
+      "Same",
+      "Morris",
+      "Hankin"
     ],
-    "last_commentary_generated": "2026-07-12T00:11:58.329155+00:00",
+    "last_commentary_generated": "2026-07-12T00:13:48.866238+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -326,22 +326,22 @@
   ],
   "commentary": [
     {
-      "participant": "P Rankin",
-      "color": "#C2410C",
-      "title": "P Rankin: The Arithmetic Is Unambiguous",
-      "body": "P Rankin is out."
+      "participant": "Same",
+      "color": "#15803D",
+      "title": "Same: The Lights Are Off",
+      "body": "Same is out of the sweepstake, and there is nothing further to add."
     },
     {
-      "participant": "T Rankin",
-      "color": "#4338CA",
-      "title": "T Rankin: No Further Comment Required",
-      "body": "T Rankin is out."
+      "participant": "Morris",
+      "color": "#0891B2",
+      "title": "Morris: Signed Off",
+      "body": "Morris is eliminated, and this column has nothing more to say on the matter."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: One Serious Contender, One Act of Faith, and a Genuine Shot at the Pot",
-      "body": "Kenna's sweepstake portfolio has always been a study in contrasts — the elegant and the optimistic sharing the same ballot stub. Spain, priced at $4.5, are the real business here: a side that has navigated the knockout rounds with the kind of unhurried authority that makes neutrals quietly nervous. They have the squad depth, the tactical flexibility, and the institutional habit of winning tournaments in ways that feel inevitable only in retrospect. At those odds, Spain represent one of the stronger live claims to the pot in what remains a genuinely open field.\n\nThe path from here to the final will not be ceremonial. Spain's next knockout opponent stands between Kenna and a serious payday, and La Roja have shown little tolerance for sentiment in the rounds that matter. As for Egypt — listed at $410 and apparently still breathing — they remain less a prediction than a theological position. Kenna holds them with the quiet dignity of someone who has made peace with the situation. Spain, though, are no act of faith. They are a reasonable, properly-priced bet, and in a sweepstake that has already dispatched half the field, reasonable and properly-priced is exactly where you want to be."
+      "participant": "Hankin",
+      "color": "#166534",
+      "title": "Hankin: Norway Depart, Quietly and Without Ceremony",
+      "body": "Norway went to a quarter-final, which is more than most expected, and then lost 2–1 to England, which is exactly what most expected. Hankin is done. The sweepstake pot will be won by someone else, the details of which are no longer Hankin's concern. There is nothing to salvage here, no consolation bracket, no moral victory worth packaging. Norway came, Norway played, Norway went home. So did Hankin. Next."
     }
   ],
   "odds": [
@@ -401,9 +401,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Four nations remain. Three participants can still win. One owns Norway.",
-    "paragraph_1": "The quarter-finals have reduced the field to four. Cronan's France eliminated Galbraith's Morocco, tidying Galbraith's portfolio down to Argentina alone. Kenna's Spain dispatched Crowle's Belgium, completing Crowle's exit from the sweepstake entirely. The more consequential result: Silk's England beat Hankin's Norway, which is the closest this sweepstake will get to a mercy killing. Hankin remains technically alive, in the sense that a patient on a ventilator is alive.",
-    "paragraph_2": "The surviving fixture is Argentina against Switzerland — Galbraith versus Varcoe — a semi-final with the pot potentially decided by its outcome. Should Argentina prevail, Galbraith meets either Kenna's Spain or Cronan's France in the final. Cronan, holding France at the shortest odds of any remaining participant, is best placed. Hankin's England semi-final against Spain or France represents a genuine, if improbable, path to redemption. Hankin, for their part, should perhaps begin preparing a different kind of acceptance speech."
+    "pull_quote": "Four teams remain, three of them realistic contenders, and one Norwegian footnote.",
+    "paragraph_1": "The quarter-finals have tidied the field considerably. Galbraith watched Morocco fall to France, eliminating Cronan's most credible rival in that half of the draw, while Kenna dispatched Crowle's Belgium to put Spain in the last four. Most dramatically, Silk's England ended Hankin's Norway — a result that transforms Hankin from accidental giant-killer to sweepstake also-ran, holding a ticket now worth considerably less than the paper it was printed on. Four participants survive: Kenna, Cronan, Silk, Galbraith, Varcoe, and Hankin, though Hankin's position warrants the word 'surviving' only in the technical sense.",
+    "paragraph_2": "The sole remaining fixture pits Galbraith's Argentina against Varcoe's Switzerland, with the winner advancing to face either Kenna's Spain or Cronan's France — the other semi-final pairing. Cronan holds the shortest odds and looks well placed with France; Kenna's Spain are dangerous. Varcoe faces long odds against Galbraith's Argentina, while Hankin's Norway are already eliminated, leaving Hankin to contemplate what might have been had England's quarter-final gone differently. The pot will be decided across two semi-finals and a final still to come."
   },
   "trivia_schedule": {
     "2026-06-24": [
