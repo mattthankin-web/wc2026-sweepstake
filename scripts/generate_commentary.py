@@ -38,11 +38,11 @@ ALL_PARTICIPANTS = [
 PARTICIPANT_NOTES = {
     # KNOCKOUT STAGE — only discuss surviving teams
     # P Rankin and T Rankin are eliminated — brief mention only
-    "Kenna":    "Spain ($7.4) and Egypt ($410) are Kenna's surviving teams. Spain are genuine contenders. Focus on Spain's next knockout opponent and realistic path to the title. Egypt are a miracle-run outsider.",
-    "Cronan":   "France ($3.0) are Cronan's sole survivor and tournament favourites. One team, one shot. Discuss France's form, next opponent, and what it would mean for Cronan to win the pot.",
-    "Silk":     "England ($6.0) is Silk's ONLY surviving team. USA, Algeria and Qatar are all eliminated. Write exclusively about England's semi-final path and realistic title chances. Do not mention USA or any other Silk team.",
+    "Kenna":    "Spain ($4.7) is Kenna's ONLY team. Do NOT mention Egypt, Senegal, South Korea, Jordan, New Zealand, Curaçao or Haiti. Write only about Spain — their semi-final against France, form, and Kenna's chances of winning the pot.",
+    "Cronan":   "France ($2.6) is Cronan's ONLY team. Do NOT mention Austria, Australia, Panama or any other team. Write only about France — their form, next opponent (the semi-final), and Cronan's realistic path to winning the pot.",
+    "Silk":     "England ($4.5) is Silk's ONLY team. Do NOT mention USA, Algeria or Qatar. Write only about England — their semi-final, form, and what it would take for Silk to win the pot.",
     "Same":     "ELIMINATED. All of Same's teams are out. One sentence only. Do not mention Portugal, Colombia, Paraguay or Cape Verde.",
-    "Poncho Man":"Argentina ($5.6) is Poncho Man's ONLY surviving team — Morocco have been eliminated by France. Write exclusively about Argentina's semi-final path, their odds and Poncho Man's realistic chance of winning the pot.",
+    "Poncho Man":"Argentina ($5.6) is Poncho Man's ONLY team. Do NOT mention Morocco, Turkey, South Africa or Switzerland. Write only about Argentina — their semi-final, form, and Poncho Man's realistic shot at winning the pot.",
     "Morris":   "ELIMINATED. Brazil are out. One sentence acknowledging Morris is done. Nothing more — do not discuss Brazil or any other team.",
     "P Rankin": "ELIMINATED. One sentence only. Do not mention Germany or Sweden.",
     "T Rankin": "ELIMINATED. One sentence only. Do not mention Netherlands, Ghana or any other team.",
