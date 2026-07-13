@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-13T18:05:55.143600+00:00",
-    "last_updated_aest": "Tuesday 14 Jul 2026, 4:05am AEST",
+    "last_updated": "2026-07-13T21:35:26.795288+00:00",
+    "last_updated_aest": "Tuesday 14 Jul 2026, 7:35am AEST",
     "edition": 47,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "14 Jul 2026 4:05am AEST",
+    "odds_last_updated": "14 Jul 2026 7:35am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-13T13:03:07.766110+00:00",
-    "last_score_refresh": "14 Jul 2026 4:05am AEST",
+    "last_score_refresh": "14 Jul 2026 7:35am AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -133,7 +133,7 @@
       "gd": 5,
       "rank": 1,
       "left": 6,
-      "win_pct": 39.68,
+      "win_pct": 39.37,
       "move": "up",
       "move_note": "France +370, clear leader",
       "eliminated": false
@@ -163,7 +163,7 @@
       "gd": -11,
       "rank": 3,
       "left": 10,
-      "win_pct": 21.28,
+      "win_pct": 22.22,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -178,7 +178,7 @@
       "gd": 12,
       "rank": 4,
       "left": 4,
-      "win_pct": 17.24,
+      "win_pct": 16.95,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -303,6 +303,19 @@
       "h2h_home_price": 2.5,
       "h2h_draw_price": 3.4,
       "h2h_away_price": 3.3
+    },
+    {
+      "aest_time": "Thu 5:00am",
+      "group": "SF",
+      "home": "England",
+      "home_owner": "Silk",
+      "away": "Argentina",
+      "away_owner": "Poncho Man",
+      "status": "TIMED",
+      "context": "",
+      "h2h_home_price": 2.78,
+      "h2h_draw_price": 3.0,
+      "h2h_away_price": 3.2
     }
   ],
   "commentary": [
@@ -324,6 +337,15 @@
       "source": "Betfair"
     },
     {
+      "team": "Spain",
+      "owner": "Kenna",
+      "prev": "$4.5",
+      "now": "$4.4",
+      "now_decimal": 4.4,
+      "direction": "shortened",
+      "source": "Betfair"
+    },
+    {
       "team": "England",
       "owner": "Silk",
       "prev": "$4.5",
@@ -333,21 +355,12 @@
       "source": "Betfair"
     },
     {
-      "team": "Spain",
-      "owner": "Kenna",
-      "prev": "$4.7",
-      "now": "$4.5",
-      "now_decimal": 4.5,
-      "direction": "shortened",
-      "source": "Betfair"
-    },
-    {
       "team": "Argentina",
       "owner": "Poncho Man",
-      "prev": "$5.8",
+      "prev": "$5.9",
       "now": "$5.9",
       "now_decimal": 5.9,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     }
   ],
