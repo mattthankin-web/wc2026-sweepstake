@@ -2,21 +2,19 @@
   "meta": {
     "last_updated": "2026-07-13T10:41:42.225746+00:00",
     "last_updated_aest": "Monday 13 Jul 2026, 8:41pm AEST",
-    "edition": 46,
+    "edition": 47,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "13 Jul 2026 8:41am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-12T13:19:05.273917+00:00",
+    "trivia_schedule_generated": "2026-07-13T13:03:07.766110+00:00",
     "last_score_refresh": "13 Jul 2026 8:41pm AEST",
     "last_commentary_participants": [
-      "Cronan",
-      "Silk",
-      "Poncho Man"
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-07-12T13:19:05.273803+00:00",
+    "last_commentary_generated": "2026-07-13T13:03:07.765992+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -309,22 +307,10 @@
   ],
   "commentary": [
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: The Favourite's Burden",
-      "body": "France enter the semi-final as tournament favourites and, at $2.6, the market has made its feelings rather clear. Cronan, who has watched the rest of this sweepstake with the quiet confidence of someone holding a winning lottery ticket they haven't checked yet, now faces Spain in what is ostensibly the most consequential match of his sweepstake life.\n\nThe path to the pot is straightforward, if not quite simple: beat Spain, win the final, collect the money, accept the congratulations with false modesty. France are good enough. The odds say so. The question is whether tournaments care about odds, which historically they do not."
-    },
-    {
-      "participant": "Silk",
-      "color": "#BE185D",
-      "title": "Silk: Unlikely, Unglamorous, Undeniable",
-      "body": "England are at $4.5 and still standing, which is more than most of this sweepstake predicted. Silk's route to the semi-final has been what the diplomatic observer might call 'functional' — results accumulated through a grinding pragmatism that England have historically reserved for making their own supporters miserable.\n\nThe semi-final opponent is yet to be confirmed, which is either a narrative gift or a logistical inconvenience depending on your disposition. What England need is a performance of sustained coherence — ninety minutes without the customary late crisis, followed ideally by a final. Silk needs the same. Both have been waiting longer than is reasonable."
-    },
-    {
-      "participant": "Poncho Man",
-      "color": "#7C3AED",
-      "title": "Poncho Man: World Champions, Semi-Finalists, Still Dangerous",
-      "body": "Argentina dispatched their quarter-final opponent 3–1 with the casual authority of a team that considers itself the natural inheritor of the tournament. At $5.6, the market respects them without quite fearing them, which is precisely the kind of disrespect that tends to motivate world champions.\n\nPoncho Man, whose sweepstake fortunes have been hitched to this particular wagon since the draw, now finds himself in the semi-finals with a credible shot at the pot. Argentina's path will not get easier. It rarely does. But they have been here before, and they have the institutional memory of a side that knows how to win things when it matters most."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: The Last Man Standing Has a Proper Team",
+      "body": "After a tournament that has tested Kenna's nerves and presumably his blood pressure, it comes down to this: Spain in the semi-finals, odds of $4.7, and a date with Cronan's France. La Roja have been the kind of side that makes neutrals nervous — technically immaculate, occasionally infuriating, ultimately dangerous. They are, by any reasonable measure, legitimate contenders for the title.\n\nThe sweepstake arithmetic is brutally simple. Beat France, and Kenna is in a World Cup final with a realistic shot at the pot. Lose, and Cronan — currently leading this competition with the quiet confidence of a man who has never once doubted himself — walks away with everything. No pressure."
     }
   ],
   "odds": [
@@ -366,9 +352,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Four teams remain, four participants remain, and the math has never been simpler or crueller.",
-    "paragraph_1": "The quarter-finals completed the cull with characteristic efficiency. Cronan's France dispatched Poncho Man's Morocco, ending what had been a productive run for the Argentina holder. Kenna's Spain eliminated Crowle's Belgium, leaving Crowle with nothing to show for a useful run to the last eight. Silk's England beat Hankin's Norway — a result that also extinguished Hankin's last indirect interest in proceedings — and Poncho Man's Argentina eliminated Varcoe's Switzerland. The field is now four participants, one team each, no safety nets.",
-    "paragraph_2": "Cronan holds France at $2.6, the shortest price remaining and the closest thing this sweepstake has to a favourite. Kenna's Spain trade at $4.7, having removed both Portugal and Belgium en route to the semi-finals. Silk's England are at $4.5, their run built on wins over Mexico and Norway. Poncho Man's Argentina, at $5.6, are the longest shot still standing. All four participants face each other in the semi-finals; two will be eliminated before the final is played. The pot goes to exactly one of these four."
+    "pull_quote": "Four teams, four owners, one pot: the sweepstake has distilled itself to its purest and most unpleasant form.",
+    "paragraph_1": "The quarter-finals have done their work with characteristic brutality. Poncho Man watched Morocco — his R16 conqueror of Varcoe's Canada — fall to Cronan's France, a result that simultaneously advanced his Argentina and eliminated his other asset in the same breath. Kenna's Spain dispatched Crowle's Belgium, while Silk's England ended Hankin's Norway run. Varcoe's Switzerland, having seen off Same's Colombia, was then removed by Poncho Man's Argentina. Same, Morris, P Rankin, T Rankin, Hankin, Varcoe, and Crowle are all out. The field is four.",
+    "paragraph_2": "The surviving four present a compact and consequential picture. Cronan holds France at $2.5, the shortest price in the draw and the clear favourite. Kenna counters with Spain at $4.7, and the two meet in the semi-final on Wednesday — meaning one of the sweepstake's two strongest-fancied entries will be eliminated before the final. Silk's England at $4.5 and Poncho Man's Argentina at $5.8 occupy the other half of the bracket. Both are credible winners. The pot will belong to one of these four; the only question is which semi-final survivor gets fortunate in the final."
   },
   "trivia_schedule": {
     "2026-06-24": [
