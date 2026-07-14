@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-13T21:35:26.795288+00:00",
-    "last_updated_aest": "Tuesday 14 Jul 2026, 7:35am AEST",
+    "last_updated": "2026-07-14T03:44:34.227294+00:00",
+    "last_updated_aest": "Tuesday 14 Jul 2026, 1:44pm AEST",
     "edition": 47,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "14 Jul 2026 7:35am AEST",
+    "odds_last_updated": "14 Jul 2026 1:44am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-13T13:03:07.766110+00:00",
-    "last_score_refresh": "14 Jul 2026 7:35am AEST",
+    "last_score_refresh": "14 Jul 2026 1:44pm AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -139,21 +139,6 @@
       "eliminated": false
     },
     {
-      "name": "Silk",
-      "pld": 18,
-      "w": 9,
-      "d": 3,
-      "l": 6,
-      "pts": 30,
-      "gd": -2,
-      "rank": 2,
-      "left": 6,
-      "win_pct": 22.22,
-      "move": "up",
-      "move_note": "USA through, England tomorrow",
-      "eliminated": false
-    },
-    {
       "name": "Kenna",
       "pld": 27,
       "w": 8,
@@ -161,11 +146,26 @@
       "l": 14,
       "pts": 29,
       "gd": -11,
-      "rank": 3,
+      "rank": 2,
       "left": 10,
-      "win_pct": 22.22,
+      "win_pct": 22.73,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
+      "eliminated": false
+    },
+    {
+      "name": "Silk",
+      "pld": 18,
+      "w": 9,
+      "d": 3,
+      "l": 6,
+      "pts": 30,
+      "gd": -2,
+      "rank": 3,
+      "left": 6,
+      "win_pct": 22.22,
+      "move": "up",
+      "move_note": "USA through, England tomorrow",
       "eliminated": false
     },
     {
@@ -313,9 +313,9 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.78,
+      "h2h_home_price": 2.76,
       "h2h_draw_price": 3.0,
-      "h2h_away_price": 3.2
+      "h2h_away_price": 3.25
     }
   ],
   "commentary": [
@@ -339,10 +339,10 @@
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$4.5",
+      "prev": "$4.4",
       "now": "$4.4",
       "now_decimal": 4.4,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
@@ -2922,7 +2922,7 @@
           "h2h_home_price": 2.5,
           "h2h_draw_price": 3.4,
           "h2h_away_price": 3.3,
-          "h2h_source": "Betfair"
+          "h2h_source": "Bet Right"
         },
         {
           "id": 537388,
@@ -2941,9 +2941,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.78,
+          "h2h_home_price": 2.76,
           "h2h_draw_price": 3.0,
-          "h2h_away_price": 3.2,
+          "h2h_away_price": 3.25,
           "h2h_source": "Betfair"
         }
       ]
