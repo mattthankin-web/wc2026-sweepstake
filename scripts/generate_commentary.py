@@ -28,7 +28,7 @@ DATA_FILE       = Path(__file__).parent.parent / "data" / "data.json"
 AEST            = timezone(timedelta(hours=10))
 
 ALL_PARTICIPANTS = [
-    "Kenna", "Cronan", "Silk", "Same", "Poncho Man",
+    "Kenna", "Cronan", "Silk", "Same", "Galbraith",
     "Morris", "P Rankin", "T Rankin", "Hankin", "Varcoe", "Crowle"
 ]
 
@@ -42,7 +42,7 @@ PARTICIPANT_NOTES = {
     "Cronan":   "Write ONLY about France ($2.6). Semi-final vs Spain. Tournament favourites. Cronan's shot at the pot. Nothing else.",
     "Silk":     "Write ONLY about England ($4.5). Semi-final opponent TBD. Still in it. What England need to do. Nothing else.",
     "Same":     "ELIMINATED. All of Same's teams are out. One sentence only. Do not mention Portugal, Colombia, Paraguay or Cape Verde.",
-    "Poncho Man":"Write ONLY about Argentina ($5.6). Quarter-final winner. Semi-final ahead. World champions. Poncho Man's path to the pot. Nothing else.",
+    "Galbraith":"Write ONLY about Argentina ($5.6). Quarter-final winner. Semi-final ahead. World champions. Galbraith's path to the pot. Nothing else.",
     "Morris":   "ELIMINATED. Brazil are out. One sentence acknowledging Morris is done. Nothing more — do not discuss Brazil or any other team.",
     "P Rankin": "ELIMINATED. One sentence only. Do not mention Germany or Sweden.",
     "T Rankin": "ELIMINATED. One sentence only. Do not mention Netherlands, Ghana or any other team.",
@@ -296,7 +296,7 @@ Return ONLY valid JSON, no preamble, no markdown:
   }}
 ]
 
-Colors: Kenna=#EA580C, Cronan=#1D4ED8, Silk=#BE185D, Same=#15803D, Poncho Man=#7C3AED, Morris=#0891B2, P Rankin=#C2410C, T Rankin=#4338CA, Hankin=#166534, Varcoe=#92400E, Crowle=#0369A1"""
+Colors: Kenna=#EA580C, Cronan=#1D4ED8, Silk=#BE185D, Same=#15803D, Galbraith=#7C3AED, Morris=#0891B2, P Rankin=#C2410C, T Rankin=#4338CA, Hankin=#166534, Varcoe=#92400E, Crowle=#0369A1"""
 
 
 def call_claude(prompt, max_tokens=2000):
@@ -451,18 +451,18 @@ ALL_QUESTIONS = [
   {"id":111,"question":"At the 2026 World Cup, Group K had Portugal, Colombia, DR Congo and which other team?","options":["Jordan","Uzbekistan","Bosnia","Algeria"],"correct":1,"explanation":"Group K consisted of Portugal, Colombia, DR Congo and Uzbekistan.","category":"2026","difficulty":"medium"},
   {"id":112,"question":"Which country has hosted the most World Cups?","options":["Brazil","Germany","France","Mexico"],"correct":3,"explanation":"Mexico hosted the World Cup in 1970, 1986 and 2026 — more times than any other country.","category":"history","difficulty":"medium"},
   {"id":113,"question":"Ecuador drew 0-0 with Curaçao at WC2026. Which sweepstake participant owns Ecuador?","options":["Crowle","Morris","T Rankin","Silk"],"correct":0,"explanation":"Crowle holds Ecuador in the WC2026 sweepstake.","category":"sweepstake","difficulty":"easy"},
-  {"id":114,"question":"In the sweepstake, which participant owns both Brazil and Uruguay?","options":["Poncho Man","Morris","Cronan","Kenna"],"correct":1,"explanation":"Morris owns both Brazil and Uruguay in the WC2026 sweepstake.","category":"sweepstake","difficulty":"easy"},
-  {"id":115,"question":"Which sweepstake participant owns France — the tournament favourite?","options":["Silk","Cronan","Poncho Man","Hankin"],"correct":1,"explanation":"Cronan owns France, giving them the highest win probability in the sweepstake.","category":"sweepstake","difficulty":"easy"},
-  {"id":116,"question":"Which participant owns Argentina AND Morocco in the sweepstake?","options":["Same","Cronan","Poncho Man","T Rankin"],"correct":2,"explanation":"Poncho Man owns Argentina and Morocco — two teams who performed well in the group stage.","category":"sweepstake","difficulty":"easy"},
-  {"id":117,"question":"Which sweepstake participant owns the most teams?","options":["Same","Kenna","Poncho Man","Cronan"],"correct":1,"explanation":"Kenna owns 8 teams — Spain, Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti.","category":"sweepstake","difficulty":"easy"},
+  {"id":114,"question":"In the sweepstake, which participant owns both Brazil and Uruguay?","options":["Galbraith","Morris","Cronan","Kenna"],"correct":1,"explanation":"Morris owns both Brazil and Uruguay in the WC2026 sweepstake.","category":"sweepstake","difficulty":"easy"},
+  {"id":115,"question":"Which sweepstake participant owns France — the tournament favourite?","options":["Silk","Cronan","Galbraith","Hankin"],"correct":1,"explanation":"Cronan owns France, giving them the highest win probability in the sweepstake.","category":"sweepstake","difficulty":"easy"},
+  {"id":116,"question":"Which participant owns Argentina AND Morocco in the sweepstake?","options":["Same","Cronan","Galbraith","T Rankin"],"correct":2,"explanation":"Galbraith owns Argentina and Morocco — two teams who performed well in the group stage.","category":"sweepstake","difficulty":"easy"},
+  {"id":117,"question":"Which sweepstake participant owns the most teams?","options":["Same","Kenna","Galbraith","Cronan"],"correct":1,"explanation":"Kenna owns 8 teams — Spain, Senegal, South Korea, Egypt, Jordan, New Zealand, Curaçao and Haiti.","category":"sweepstake","difficulty":"easy"},
   {"id":118,"question":"Varcoe owns Japan, Switzerland, DR Congo and which other team?","options":["Mexico","Australia","Canada","Belgium"],"correct":2,"explanation":"Varcoe owns Canada, who famously beat Qatar 6-0 at the 2026 World Cup.","category":"sweepstake","difficulty":"easy"},
   {"id":119,"question":"Which participant owns Germany — their flagship asset who qualified from Group E?","options":["T Rankin","P Rankin","Hankin","Crowle"],"correct":1,"explanation":"P Rankin owns Germany in the WC2026 sweepstake.","category":"sweepstake","difficulty":"easy"},
   {"id":120,"question":"Which sweepstake participant owns the Netherlands, who beat Sweden 5-1?","options":["T Rankin","P Rankin","Silk","Morris"],"correct":0,"explanation":"T Rankin owns the Netherlands in the WC2026 sweepstake.","category":"sweepstake","difficulty":"easy"},
   {"id":121,"question":"Hankin owns Norway, Mexico, Ivory Coast and which other team?","options":["Iran","Belgium","Saudi Arabia","Scotland"],"correct":2,"explanation":"Hankin owns Saudi Arabia — though they were eliminated in the group stage after Spain beat them 4-0.","category":"sweepstake","difficulty":"easy"},
-  {"id":122,"question":"Which sweepstake participant owns England and the USA?","options":["Cronan","Poncho Man","Silk","Same"],"correct":2,"explanation":"Silk owns England and USA — both strong performers at the 2026 World Cup.","category":"sweepstake","difficulty":"easy"},
+  {"id":122,"question":"Which sweepstake participant owns England and the USA?","options":["Cronan","Galbraith","Silk","Same"],"correct":2,"explanation":"Silk owns England and USA — both strong performers at the 2026 World Cup.","category":"sweepstake","difficulty":"easy"},
   {"id":123,"question":"Same owns Portugal, Colombia, Paraguay and which other team?","options":["Jordan","Cape Verde","New Zealand","Tunisia"],"correct":1,"explanation":"Same owns Cape Verde — the team that famously drew 0-0 with Spain despite heavy pressure.","category":"sweepstake","difficulty":"easy"},
   {"id":124,"question":"Which participant owns Belgium, Ecuador, Bosnia and Uzbekistan?","options":["Morris","Crowle","T Rankin","Same"],"correct":1,"explanation":"Crowle owns Belgium, Ecuador, Bosnia and Uzbekistan — currently winless in the group stage.","category":"sweepstake","difficulty":"easy"},
-  {"id":125,"question":"In the sweepstake, which participant owns Norway — the team shortening in the odds?","options":["Poncho Man","Hankin","P Rankin","Morris"],"correct":1,"explanation":"Hankin owns Norway, who impressed with a 4-1 win over Iraq at the 2026 World Cup.","category":"sweepstake","difficulty":"easy"},
+  {"id":125,"question":"In the sweepstake, which participant owns Norway — the team shortening in the odds?","options":["Galbraith","Hankin","P Rankin","Morris"],"correct":1,"explanation":"Hankin owns Norway, who impressed with a 4-1 win over Iraq at the 2026 World Cup.","category":"sweepstake","difficulty":"easy"},
   {"id":126,"question":"Which 2026 World Cup group had Spain, Saudi Arabia, Cape Verde and Uruguay?","options":["Group G","Group H","Group I","Group J"],"correct":1,"explanation":"Spain, Saudi Arabia, Cape Verde and Uruguay were all in Group H.","category":"2026","difficulty":"medium"},
   {"id":127,"question":"Which 2026 World Cup group had Belgium, Egypt, Iran and New Zealand?","options":["Group E","Group F","Group G","Group H"],"correct":2,"explanation":"Belgium, Egypt, Iran and New Zealand were all in Group G.","category":"2026","difficulty":"medium"},
   {"id":128,"question":"Which 2026 World Cup group had Germany, Curaçao, Ivory Coast and Ecuador?","options":["Group D","Group E","Group F","Group G"],"correct":1,"explanation":"Germany, Curaçao, Ivory Coast and Ecuador were in Group E.","category":"2026","difficulty":"medium"},

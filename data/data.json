@@ -58,7 +58,7 @@
         "Cape Verde"
       ]
     },
-    "Poncho Man": {
+    "Galbraith": {
       "color": "#7C3AED",
       "teams": [
         "Argentina",
@@ -169,7 +169,7 @@
       "eliminated": false
     },
     {
-      "name": "Poncho Man",
+      "name": "Galbraith",
       "pld": 19,
       "w": 12,
       "d": 2,
@@ -310,7 +310,7 @@
       "home": "England",
       "home_owner": "Silk",
       "away": "Argentina",
-      "away_owner": "Poncho Man",
+      "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
       "h2h_home_price": 2.78,
@@ -356,7 +356,7 @@
     },
     {
       "team": "Argentina",
-      "owner": "Poncho Man",
+      "owner": "Galbraith",
       "prev": "$5.9",
       "now": "$5.9",
       "now_decimal": 5.9,
@@ -366,8 +366,8 @@
   ],
   "exec_summary": {
     "pull_quote": "Four teams, four owners, one pot: the sweepstake has distilled itself to its purest and most unpleasant form.",
-    "paragraph_1": "The quarter-finals have done their work with characteristic brutality. Poncho Man watched Morocco — his R16 conqueror of Varcoe's Canada — fall to Cronan's France, a result that simultaneously advanced his Argentina and eliminated his other asset in the same breath. Kenna's Spain dispatched Crowle's Belgium, while Silk's England ended Hankin's Norway run. Varcoe's Switzerland, having seen off Same's Colombia, was then removed by Poncho Man's Argentina. Same, Morris, P Rankin, T Rankin, Hankin, Varcoe, and Crowle are all out. The field is four.",
-    "paragraph_2": "The surviving four present a compact and consequential picture. Cronan holds France at $2.5, the shortest price in the draw and the clear favourite. Kenna counters with Spain at $4.7, and the two meet in the semi-final on Wednesday — meaning one of the sweepstake's two strongest-fancied entries will be eliminated before the final. Silk's England at $4.5 and Poncho Man's Argentina at $5.8 occupy the other half of the bracket. Both are credible winners. The pot will belong to one of these four; the only question is which semi-final survivor gets fortunate in the final."
+    "paragraph_1": "The quarter-finals have done their work with characteristic brutality. Galbraith watched Morocco — his R16 conqueror of Varcoe's Canada — fall to Cronan's France, a result that simultaneously advanced his Argentina and eliminated his other asset in the same breath. Kenna's Spain dispatched Crowle's Belgium, while Silk's England ended Hankin's Norway run. Varcoe's Switzerland, having seen off Same's Colombia, was then removed by Galbraith's Argentina. Same, Morris, P Rankin, T Rankin, Hankin, Varcoe, and Crowle are all out. The field is four.",
+    "paragraph_2": "The surviving four present a compact and consequential picture. Cronan holds France at $2.5, the shortest price in the draw and the clear favourite. Kenna counters with Spain at $4.7, and the two meet in the semi-final on Wednesday — meaning one of the sweepstake's two strongest-fancied entries will be eliminated before the final. Silk's England at $4.5 and Galbraith's Argentina at $5.8 occupy the other half of the bracket. Both are credible winners. The pot will belong to one of these four; the only question is which semi-final survivor gets fortunate in the final."
   },
   "trivia_schedule": {
     "2026-06-24": [
@@ -2140,7 +2140,7 @@
       "id": 114,
       "question": "In the sweepstake, which participant owns both Brazil and Uruguay?",
       "options": [
-        "Poncho Man",
+        "Galbraith",
         "Morris",
         "Cronan",
         "Kenna"
@@ -2156,7 +2156,7 @@
       "options": [
         "Silk",
         "Cronan",
-        "Poncho Man",
+        "Galbraith",
         "Hankin"
       ],
       "correct": 1,
@@ -2170,11 +2170,11 @@
       "options": [
         "Same",
         "Cronan",
-        "Poncho Man",
+        "Galbraith",
         "T Rankin"
       ],
       "correct": 2,
-      "explanation": "Poncho Man owns Argentina and Morocco — two teams who performed well in the group stage.",
+      "explanation": "Galbraith owns Argentina and Morocco — two teams who performed well in the group stage.",
       "category": "sweepstake",
       "difficulty": "easy"
     },
@@ -2184,7 +2184,7 @@
       "options": [
         "Same",
         "Kenna",
-        "Poncho Man",
+        "Galbraith",
         "Cronan"
       ],
       "correct": 1,
@@ -2253,7 +2253,7 @@
       "question": "Which sweepstake participant owns England and the USA?",
       "options": [
         "Cronan",
-        "Poncho Man",
+        "Galbraith",
         "Silk",
         "Same"
       ],
@@ -2294,7 +2294,7 @@
       "id": 125,
       "question": "In the sweepstake, which participant owns Norway — the team shortening in the odds?",
       "options": [
-        "Poncho Man",
+        "Galbraith",
         "Hankin",
         "P Rankin",
         "Morris"
@@ -2388,7 +2388,7 @@
           "date_short": "29 Jun",
           "date_iso": "2026-06-29",
           "home": "South Africa",
-          "home_owner": "Poncho Man",
+          "home_owner": "Galbraith",
           "home_score": 0,
           "away": "Canada",
           "away_owner": "Varcoe",
@@ -2445,7 +2445,7 @@
           "home_owner": "T Rankin",
           "home_score": 3,
           "away": "Morocco",
-          "away_owner": "Poncho Man",
+          "away_owner": "Galbraith",
           "away_score": 4,
           "score_note": "(pens 2–3)",
           "status": "FINISHED",
@@ -2640,7 +2640,7 @@
           "date_short": "4 Jul",
           "date_iso": "2026-07-04",
           "home": "Argentina",
-          "home_owner": "Poncho Man",
+          "home_owner": "Galbraith",
           "home_score": 3,
           "away": "Cape Verde",
           "away_owner": "Same",
@@ -2685,7 +2685,7 @@
           "home_owner": "Varcoe",
           "home_score": 0,
           "away": "Morocco",
-          "away_owner": "Poncho Man",
+          "away_owner": "Galbraith",
           "away_score": 3,
           "score_note": "",
           "status": "FINISHED",
@@ -2790,7 +2790,7 @@
           "date_short": "8 Jul",
           "date_iso": "2026-07-08",
           "home": "Argentina",
-          "home_owner": "Poncho Man",
+          "home_owner": "Galbraith",
           "home_score": 3,
           "away": "Egypt",
           "away_owner": "Kenna",
@@ -2835,7 +2835,7 @@
           "home_owner": "Cronan",
           "home_score": 2,
           "away": "Morocco",
-          "away_owner": "Poncho Man",
+          "away_owner": "Galbraith",
           "away_score": 0,
           "score_note": "",
           "status": "FINISHED",
@@ -2886,7 +2886,7 @@
           "date_short": "12 Jul",
           "date_iso": "2026-07-12",
           "home": "Argentina",
-          "home_owner": "Poncho Man",
+          "home_owner": "Galbraith",
           "home_score": 3,
           "away": "Switzerland",
           "away_owner": "Varcoe",
@@ -2935,7 +2935,7 @@
           "home_owner": "Silk",
           "home_score": null,
           "away": "Argentina",
-          "away_owner": "Poncho Man",
+          "away_owner": "Galbraith",
           "away_score": null,
           "score_note": "",
           "status": "TIMED",
