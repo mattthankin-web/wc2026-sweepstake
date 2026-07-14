@@ -2,21 +2,19 @@
   "meta": {
     "last_updated": "2026-07-14T21:38:57.844277+00:00",
     "last_updated_aest": "Wednesday 15 Jul 2026, 7:38am AEST",
-    "edition": 48,
+    "edition": 49,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "15 Jul 2026 7:38am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-14T10:25:05.877972+00:00",
+    "trivia_schedule_generated": "2026-07-14T21:40:20.066944+00:00",
     "last_score_refresh": "15 Jul 2026 7:38am AEST",
     "last_commentary_participants": [
-      "Cronan",
-      "Silk",
-      "Galbraith"
+      "Kenna"
     ],
-    "last_commentary_generated": "2026-07-14T10:25:05.877867+00:00",
+    "last_commentary_generated": "2026-07-14T21:40:20.066842+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -326,22 +324,10 @@
   ],
   "commentary": [
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: The Favourite's Burden",
-      "body": "France arrive at the semi-final as tournament favourites, priced at $2.50 — the shortest odds of any remaining side — and Cronan, having watched the knockout rounds with the studied calm of a man who already knows where the pot is going, now faces the most dangerous moment in sweepstake psychology: genuine expectation. France have the squad, the structure, and the collective nerve of a side that does not appear to find pressure particularly interesting.\n\nThe semi-final against Spain is not a formality, but France are not a side that deals in formalities. Win this, and Cronan is one match from collecting. The pot has rarely felt so close to someone who has done so little to deserve it."
-    },
-    {
-      "participant": "Silk",
-      "color": "#BE185D",
-      "title": "Silk: Hope, Carefully Managed",
-      "body": "England are priced at $4.50, which is either a generous assessment of their quality or a generous assessment of the tournament field, depending on your disposition. They are in the semi-final regardless, and Silk — who has watched this tournament with the expression of someone defusing a bomb — is now two wins from the pot. England's path here has been characterised by the usual mixture of competence, anxiety, and inexplicable set-piece goals.\n\nWhat England need now is what they have historically struggled to locate: composure when it matters, and a goalkeeper who does not become a philosophical problem. The semi-final is winnable. England being England, that is both the good news and the warning."
-    },
-    {
-      "participant": "Galbraith",
-      "color": "#7C3AED",
-      "title": "Galbraith: The Champions Refuse to Leave",
-      "body": "Argentina have won their quarter-final and arrived at the semi-final with the unhurried confidence of a side that has been here before and found the experience agreeable. At $5.90 they are not the bookmakers' preferred outcome, but world champions have a habit of making the bookmakers look foolish, and Argentina have made something of a career of it. Galbraith, currently sitting outside the prize positions, now finds that the entire sweepstake calculus runs through Buenos Aires.\n\nThe semi-final is Argentina's to shape. Should they reach the final and win it, Galbraith collects everything — a prospect the rest of the field is contemplating with undisguised discomfort."
+      "participant": "Kenna",
+      "color": "#EA580C",
+      "title": "Kenna: La Roja, and the Rest Is Noise",
+      "body": "Two goals, zero conceded, and a place in the final secured with the air of a team that had already booked the restaurant. At $1.7, the market is not exactly hiding its feelings. Kenna, who has spent much of this tournament nursing the existential anxiety of a large but fragile portfolio, now holds the one thing that actually matters: the favourite. The path here was not always pretty, but Spain have a habit of making football look like an argument they already won. Kenna will not sleep well — favourites rarely do — but they will sleep better than everyone else."
     }
   ],
   "odds": [
@@ -374,9 +360,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Four teams, four owners, one pot — the sweepstake has, against all odds, achieved competence.",
-    "paragraph_1": "The quarter-finals have reduced the field to four, with the casualties distributed across the eliminated with notable efficiency. Galbraith's Morocco, having dispatched Varcoe's Canada in the round of sixteen, was itself dispatched by Cronan's France in the quarters — a satisfying act of sweepstake self-destruction. Kenna's Spain removed Crowle's Belgium. Silk's England ended Hankin's Norway. Galbraith survived regardless, as Argentina beat Varcoe's Switzerland. Same, already shorn of Paraguay, Portugal, and Colombia across the earlier rounds, departs the sweepstake without ceremony.",
-    "paragraph_2": "The semi-finals present two all-sweepstake fixtures. Cronan holds France at $2.5, the shortest price remaining and the logical favourite against Kenna's Spain at $4.4, who meet Wednesday. Galbraith's Argentina, at $5.9, face Silk's England at $4.5 on Thursday. Cronan is best-placed on paper; Silk and Kenna represent credible alternatives; Galbraith, longest-priced of the four, has nonetheless beaten two opponents to get here. Every surviving participant is one result from a final — and one result from nothing."
+    "pull_quote": "Three entered the semi-finals; one leaves with the pot.",
+    "paragraph_1": "The semi-final stage has done its culling with characteristic efficiency. Spain's elimination of France means Cronan is out, taking with him the last realistic threat to Kenna's growing dominance. That result — Spain beating France — also confirmed that Kenna now holds the tournament favourite heading into the final. The broader carnage of earlier rounds has already claimed Same, Morris, Hankin, P Rankin, T Rankin, Varcoe, and Crowle, leaving the sweepstake in the hands of three participants and two remaining fixtures.",
+    "paragraph_2": "Kenna holds Spain at $1.7 — the shortest odds in the surviving field and, after dispatching Portugal, Egypt, Belgium, and France in succession, the most battle-tested team remaining. Galbraith holds Argentina at $5.4, a team that has quietly removed Egypt and Switzerland without fanfare. Silk holds England at $4.2, who accounted for Mexico and Norway. The matter resolves Thursday morning: England face Argentina, with the winner meeting Spain in the final. Kenna watches from a position of uncomfortable comfort; Silk and Galbraith must first settle their own question."
   },
   "trivia_schedule": {
     "2026-06-24": [
