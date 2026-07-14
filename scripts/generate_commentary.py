@@ -39,7 +39,7 @@ PARTICIPANT_NOTES = {
     # KNOCKOUT STAGE — only discuss surviving teams
     # P Rankin and T Rankin are eliminated — brief mention only
     "Kenna":    "Write ONLY about Spain ($4.7). Semi-final vs France. Legitimate contenders. Kenna vs Cronan in the semis. Nothing else.",
-    "Cronan":   "Write ONLY about France ($2.6). Semi-final vs Spain. Tournament favourites. Cronan's shot at the pot. Nothing else.",
+    "Cronan":   "ELIMINATED. France went into the semi-final as tournament favourites and were beaten 2-0 by Spain without scoring. Write 1-2 brutal sentences on the favourites folding when it mattered — no mercy, no consolation. Nothing else.",
     "Silk":     "Write ONLY about England ($4.5). Semi-final opponent TBD. Still in it. What England need to do. Nothing else.",
     "Same":     "ELIMINATED. All of Same's teams are out. One sentence only. Do not mention Portugal, Colombia, Paraguay or Cape Verde.",
     "Galbraith":"Write ONLY about Argentina ($5.6). Quarter-final winner. Semi-final ahead. World champions. Galbraith's path to the pot. Nothing else.",
