@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T07:29:43.153353+00:00",
-    "last_updated_aest": "Wednesday 15 Jul 2026, 5:29pm AEST",
+    "last_updated": "2026-07-15T12:07:06.215739+00:00",
+    "last_updated_aest": "Wednesday 15 Jul 2026, 10:07pm AEST",
     "edition": 50,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "15 Jul 2026 5:29am AEST",
+    "odds_last_updated": "15 Jul 2026 10:07am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-15T10:30:17.130767+00:00",
-    "last_score_refresh": "15 Jul 2026 5:29pm AEST",
+    "last_score_refresh": "15 Jul 2026 10:07pm AEST",
     "last_commentary_participants": [
       "Galbraith",
       "Silk"
@@ -319,7 +319,7 @@
       "status": "TIMED",
       "context": "",
       "h2h_home_price": 2.84,
-      "h2h_draw_price": 2.98,
+      "h2h_draw_price": 2.96,
       "h2h_away_price": 3.15
     }
   ],
@@ -343,7 +343,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.74,
+      "now_decimal": 1.72,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -351,9 +351,9 @@
       "team": "England",
       "owner": "Silk",
       "prev": "$4.2",
-      "now": "$4.2",
-      "now_decimal": 4.2,
-      "direction": "unchanged",
+      "now": "$4.3",
+      "now_decimal": 4.3,
+      "direction": "drifted",
       "source": "Betfair"
     },
     {
@@ -2940,7 +2940,7 @@
           "winner": null,
           "venue": "",
           "h2h_home_price": 2.84,
-          "h2h_draw_price": 2.98,
+          "h2h_draw_price": 2.96,
           "h2h_away_price": 3.15,
           "h2h_source": "Betfair"
         }
