@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T16:55:07.362566+00:00",
-    "last_updated_aest": "Thursday 16 Jul 2026, 2:55am AEST",
+    "last_updated": "2026-07-15T20:38:26.978850+00:00",
+    "last_updated_aest": "Thursday 16 Jul 2026, 6:38am AEST",
     "edition": 50,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "16 Jul 2026 2:55am AEST",
+    "odds_last_updated": "16 Jul 2026 6:38am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-15T10:30:17.130767+00:00",
-    "last_score_refresh": "16 Jul 2026 2:55am AEST",
+    "last_score_refresh": "16 Jul 2026 6:38am AEST",
     "last_commentary_participants": [
       "Galbraith",
       "Silk"
@@ -134,7 +134,7 @@
       "gd": -9,
       "rank": 1,
       "left": 10,
-      "win_pct": 58.14,
+      "win_pct": 57.8,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -164,7 +164,7 @@
       "gd": 12,
       "rank": 3,
       "left": 4,
-      "win_pct": 19.23,
+      "win_pct": 19.61,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -292,35 +292,36 @@
   ],
   "recent_results": [
     {
-      "date": "15 Jul",
-      "aest_time": "Wed 5:00am",
+      "date": "16 Jul",
+      "aest_time": "Thu 5:00am",
       "group": "Semi-Final",
-      "home": "France",
-      "home_owner": "Cronan",
-      "away": "Spain",
-      "away_owner": "Kenna",
-      "home_score": 0,
-      "away_score": 2,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "SHOCK RESULT",
+      "home": "England",
+      "home_owner": "Silk",
+      "away": "Argentina",
+      "away_owner": "Galbraith",
+      "home_score": 1,
+      "away_score": 0,
+      "status": "LIVE",
+      "match_minute": "90+'",
+      "badge": "LIVE",
       "sweepstake_relevant": true,
-      "sort_key": "1_2026-07-14T19:00:00Z"
+      "sort_key": "0_live"
     }
   ],
   "upcoming_fixtures": [
     {
-      "aest_time": "Thu 5:00am",
+      "aest_time": "🔴 LIVE",
       "group": "SF",
       "home": "England",
       "home_owner": "Silk",
       "away": "Argentina",
       "away_owner": "Galbraith",
-      "status": "TIMED",
+      "status": "IN_PLAY",
       "context": "",
-      "h2h_home_price": 2.78,
-      "h2h_draw_price": 3.0,
-      "h2h_away_price": 3.2
+      "live_score": "1–0",
+      "h2h_home_price": 1.55,
+      "h2h_draw_price": 3.55,
+      "h2h_away_price": 14.0
     }
   ],
   "commentary": [
@@ -343,7 +344,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.73,
+      "now_decimal": 1.72,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -351,18 +352,18 @@
       "team": "England",
       "owner": "Silk",
       "prev": "$4.3",
-      "now": "$4.3",
-      "now_decimal": 4.3,
-      "direction": "unchanged",
+      "now": "$3.1",
+      "now_decimal": 3.1,
+      "direction": "shortened",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$5.2",
-      "now": "$5.1",
-      "now_decimal": 5.1,
-      "direction": "shortened",
+      "prev": "$5.1",
+      "now": "$9.2",
+      "now_decimal": 9.2,
+      "direction": "drifted",
       "source": "Betfair"
     }
   ],
@@ -2931,17 +2932,17 @@
           "date_iso": "2026-07-16",
           "home": "England",
           "home_owner": "Silk",
-          "home_score": null,
+          "home_score": 1,
           "away": "Argentina",
           "away_owner": "Galbraith",
-          "away_score": null,
+          "away_score": 0,
           "score_note": "",
-          "status": "TIMED",
+          "status": "LIVE",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.78,
-          "h2h_draw_price": 3.0,
-          "h2h_away_price": 3.2,
+          "h2h_home_price": 1.55,
+          "h2h_draw_price": 3.55,
+          "h2h_away_price": 14.0,
           "h2h_source": "Betfair"
         }
       ]
