@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-14T23:37:52.505386+00:00",
-    "last_updated_aest": "Wednesday 15 Jul 2026, 9:37am AEST",
+    "last_updated": "2026-07-15T07:29:43.153353+00:00",
+    "last_updated_aest": "Wednesday 15 Jul 2026, 5:29pm AEST",
     "edition": 49,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "15 Jul 2026 9:37am AEST",
+    "odds_last_updated": "15 Jul 2026 5:29am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-14T21:40:20.066944+00:00",
-    "last_score_refresh": "15 Jul 2026 9:37am AEST",
+    "last_score_refresh": "15 Jul 2026 5:29pm AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -133,7 +133,7 @@
       "gd": -9,
       "rank": 1,
       "left": 10,
-      "win_pct": 57.8,
+      "win_pct": 57.47,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -163,7 +163,7 @@
       "gd": 12,
       "rank": 3,
       "left": 4,
-      "win_pct": 18.87,
+      "win_pct": 19.23,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -318,7 +318,7 @@
       "status": "TIMED",
       "context": "",
       "h2h_home_price": 2.84,
-      "h2h_draw_price": 2.96,
+      "h2h_draw_price": 2.98,
       "h2h_away_price": 3.15
     }
   ],
@@ -358,10 +358,10 @@
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$5.3",
+      "prev": "$5.2",
       "now": "$5.2",
       "now_decimal": 5.2,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     }
   ],
@@ -2939,7 +2939,7 @@
           "winner": null,
           "venue": "",
           "h2h_home_price": 2.84,
-          "h2h_draw_price": 2.96,
+          "h2h_draw_price": 2.98,
           "h2h_away_price": 3.15,
           "h2h_source": "Betfair"
         }
@@ -2956,8 +2956,8 @@
           "date_aest": "Mon 5:00am",
           "date_short": "20 Jul",
           "date_iso": "2026-07-20",
-          "home": null,
-          "home_owner": null,
+          "home": "Spain",
+          "home_owner": "Kenna",
           "home_score": null,
           "away": null,
           "away_owner": null,
