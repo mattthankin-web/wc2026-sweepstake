@@ -2,19 +2,20 @@
   "meta": {
     "last_updated": "2026-07-15T07:29:43.153353+00:00",
     "last_updated_aest": "Wednesday 15 Jul 2026, 5:29pm AEST",
-    "edition": 49,
+    "edition": 50,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "15 Jul 2026 5:29am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-14T21:40:20.066944+00:00",
+    "trivia_schedule_generated": "2026-07-15T10:30:17.130767+00:00",
     "last_score_refresh": "15 Jul 2026 5:29pm AEST",
     "last_commentary_participants": [
-      "Kenna"
+      "Galbraith",
+      "Silk"
     ],
-    "last_commentary_generated": "2026-07-14T21:40:20.066842+00:00",
+    "last_commentary_generated": "2026-07-15T10:30:17.130652+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -324,16 +325,16 @@
   ],
   "commentary": [
     {
-      "participant": "Cronan",
-      "color": "#1D4ED8",
-      "title": "Cronan: The Favourites Just Got Embarrassed",
-      "body": "Let's not dress this up. France went into Wednesday's semi-final as the shortest price left in the tournament — the team everyone, Cronan included, had quietly pencilled in for the final — and were beaten 2-0 by Spain without ever looking like they belonged on the same pitch. No away goal, no late rally, no argument for the highlights reel. Just a favourite tag that turned out to be worth nothing when it counted.\\n\\nCronan spent six weeks as the sweepstake's presumptive frontrunner on the strength of a fixture list and a world ranking, and it evaporated in ninety minutes. The pot is now a straight fight between Kenna, Silk and Galbraith. Cronan gets to watch the final like everyone else who backed the wrong certainty."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: The Favourite Wears a Crown It Has Worn Before",
+      "body": "Argentina are through to the semi-final, and at $5.20 they remain the tournament's most credible claimant to the throne. The world champions — a title they wear not as a burden but as a quiet expectation — have done what world champions tend to do: win the matches that matter, keep the scoreline tidy, and arrive at the final four looking unhurried.\n\nGalbraith's path to the pot now runs through one semi-final and, should composure prevail, a final. Argentina have been here before, of course. Several times. The difference this time is that they have already answered the question of whether they can win it. They have. The only open question is whether they will do it again."
     },
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: La Roja, and the Rest Is Noise",
-      "body": "Two goals, zero conceded, and a place in the final secured with the air of a team that had already booked the restaurant. At $1.7, the market is not exactly hiding its feelings. Kenna, who has spent much of this tournament nursing the existential anxiety of a large but fragile portfolio, now holds the one thing that actually matters: the favourite. The path here was not always pretty, but Spain have a habit of making football look like an argument they already won. Kenna will not sleep well — favourites rarely do — but they will sleep better than everyone else."
+      "participant": "Silk",
+      "color": "#BE185D",
+      "title": "Silk: England Are Still Here, Which Continues to Surprise Everyone, Including England",
+      "body": "England have reached the semi-final of a World Cup, and the nation has responded with the particular anxiety of a people who have learned not to trust good news. At $4.20, the market has priced in genuine belief — which is, historically speaking, precisely when England tend to disappoint. Their semi-final opponent is yet to be confirmed, which means Silk currently enjoys the rare luxury of optimism untested by specifics.\n\nWhat England need is ruthlessness in front of goal, defensive solidity under pressure, and for the penalty gods to be in a generous mood should it come to that. Two of those three are achievable."
     }
   ],
   "odds": [
@@ -366,9 +367,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "France arrived as favourites and left without taking a shot worth remembering. Cronan's tournament is over.",
-    "paragraph_1": "France's semi-final was not a contest so much as a public dismantling. Cronan's team arrived at Spain's door as tournament favourites, the shortest price left in the draw, the safe pick — and were beaten 2-0 without laying a glove on Kenna's side, who now stroll into the final on the back of it. There is no consoling gloss to put on this: the favourites folded when it mattered most, and Cronan's shot at the pot folded with them. The broader carnage of earlier rounds has already claimed Same, Morris, Hankin, P Rankin, T Rankin, Varcoe, and Crowle. Cronan now joins them — the most expensive elimination of the tournament, and by some distance the most avoidable.",
-    "paragraph_2": "Kenna holds Spain at $1.7 — the shortest odds in the surviving field and, after dispatching Portugal, Egypt, Belgium, and France in succession, the most battle-tested team remaining. Galbraith holds Argentina at $5.4, a team that has quietly removed Egypt and Switzerland without fanfare. Silk holds England at $4.2, who accounted for Mexico and Norway. The matter resolves Thursday morning: England face Argentina, with the winner meeting Spain in the final. Kenna watches from a position of uncomfortable comfort; Silk and Galbraith must first settle their own question."
+    "pull_quote": "Three remain. One final match stands between Silk, Galbraith, and Kenna's inevitable coronation.",
+    "paragraph_1": "The semifinal stage has done its work with characteristic brutality. Cronan watched France fall to Spain, surrendering any claim on the pot and leaving Kenna's investment looking increasingly prescient. Earlier exits confirmed the wider carnage: Same, Morris, Hankin, P Rankin, T Rankin, Varcoe, and Crowle are all spectators now. The field has contracted to three participants, one semifinal result, and a final that will settle the matter entirely.",
+    "paragraph_2": "Kenna holds Spain at $1.7 — the shortest price remaining and, having dispatched Egypt, Belgium, and France in sequence, the most battle-hardened route to the final. Kenna is already through. Standing between the pot and a straightforward Kenna victory is Thursday's semifinal: Silk's England, priced at $4.2, face Galbraith's Argentina at $5.2. One of those two will meet Spain in the final; the other joins the eliminated majority. Both face steep odds. Kenna, for now, simply waits."
   },
   "trivia_schedule": {
     "2026-06-24": [
