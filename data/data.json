@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-15T12:07:06.215739+00:00",
-    "last_updated_aest": "Wednesday 15 Jul 2026, 10:07pm AEST",
+    "last_updated": "2026-07-15T16:55:07.362566+00:00",
+    "last_updated_aest": "Thursday 16 Jul 2026, 2:55am AEST",
     "edition": 50,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "15 Jul 2026 10:07am AEST",
+    "odds_last_updated": "16 Jul 2026 2:55am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-15T10:30:17.130767+00:00",
-    "last_score_refresh": "15 Jul 2026 10:07pm AEST",
+    "last_score_refresh": "16 Jul 2026 2:55am AEST",
     "last_commentary_participants": [
       "Galbraith",
       "Silk"
@@ -134,7 +134,7 @@
       "gd": -9,
       "rank": 1,
       "left": 10,
-      "win_pct": 57.47,
+      "win_pct": 58.14,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -149,7 +149,7 @@
       "gd": -2,
       "rank": 2,
       "left": 6,
-      "win_pct": 23.81,
+      "win_pct": 23.26,
       "move": "up",
       "move_note": "USA through, England tomorrow",
       "eliminated": false
@@ -318,9 +318,9 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.84,
-      "h2h_draw_price": 2.96,
-      "h2h_away_price": 3.15
+      "h2h_home_price": 2.78,
+      "h2h_draw_price": 3.0,
+      "h2h_away_price": 3.2
     }
   ],
   "commentary": [
@@ -343,26 +343,26 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.72,
+      "now_decimal": 1.73,
       "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "England",
       "owner": "Silk",
-      "prev": "$4.2",
+      "prev": "$4.3",
       "now": "$4.3",
       "now_decimal": 4.3,
-      "direction": "drifted",
+      "direction": "unchanged",
       "source": "Betfair"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
       "prev": "$5.2",
-      "now": "$5.2",
-      "now_decimal": 5.2,
-      "direction": "unchanged",
+      "now": "$5.1",
+      "now_decimal": 5.1,
+      "direction": "shortened",
       "source": "Betfair"
     }
   ],
@@ -2939,9 +2939,9 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.84,
-          "h2h_draw_price": 2.96,
-          "h2h_away_price": 3.15,
+          "h2h_home_price": 2.78,
+          "h2h_draw_price": 3.0,
+          "h2h_away_price": 3.2,
           "h2h_source": "Betfair"
         }
       ]
