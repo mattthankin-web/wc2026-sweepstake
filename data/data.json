@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-16T00:12:27.491300+00:00",
-    "last_updated_aest": "Thursday 16 Jul 2026, 10:12am AEST",
+    "last_updated": "2026-07-16T01:07:10.295299+00:00",
+    "last_updated_aest": "Thursday 16 Jul 2026, 11:07am AEST",
     "edition": 50,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "16 Jul 2026 10:12am AEST",
+    "odds_last_updated": "16 Jul 2026 11:07am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-15T10:30:17.130767+00:00",
-    "last_score_refresh": "16 Jul 2026 10:12am AEST",
+    "last_score_refresh": "16 Jul 2026 11:07am AEST",
     "last_commentary_participants": [
       "Galbraith",
       "Silk"
@@ -134,24 +134,9 @@
       "gd": -9,
       "rank": 1,
       "left": 10,
-      "win_pct": 58.14,
+      "win_pct": 58.82,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
-      "eliminated": false
-    },
-    {
-      "name": "Silk",
-      "pld": 19,
-      "w": 9,
-      "d": 3,
-      "l": 7,
-      "pts": 30,
-      "gd": -3,
-      "rank": 2,
-      "left": 6,
-      "win_pct": 32.26,
-      "move": "up",
-      "move_note": "USA through, England tomorrow",
       "eliminated": false
     },
     {
@@ -162,9 +147,9 @@
       "l": 5,
       "pts": 41,
       "gd": 13,
-      "rank": 3,
+      "rank": 2,
       "left": 4,
-      "win_pct": 10.87,
+      "win_pct": 41.67,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -177,11 +162,26 @@
       "l": 6,
       "pts": 32,
       "gd": 6,
-      "rank": 4,
+      "rank": 3,
       "left": 5,
       "win_pct": 0.0,
       "move": "down",
       "move_note": "Saudi eliminated",
+      "eliminated": true
+    },
+    {
+      "name": "Silk",
+      "pld": 19,
+      "w": 9,
+      "d": 3,
+      "l": 7,
+      "pts": 30,
+      "gd": -3,
+      "rank": 4,
+      "left": 6,
+      "win_pct": 0.0,
+      "move": "up",
+      "move_note": "USA through, England tomorrow",
       "eliminated": true
     },
     {
@@ -336,10 +336,10 @@
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$9.2",
+      "prev": "$2.4",
       "now": "$2.4",
       "now_decimal": 2.4,
-      "direction": "shortened",
+      "direction": "unchanged",
       "source": "Betfair"
     }
   ],
