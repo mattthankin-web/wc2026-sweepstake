@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-16T01:07:10.295299+00:00",
-    "last_updated_aest": "Thursday 16 Jul 2026, 11:07am AEST",
+    "last_updated": "2026-07-16T07:48:43.582473+00:00",
+    "last_updated_aest": "Thursday 16 Jul 2026, 5:48pm AEST",
     "edition": 51,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "16 Jul 2026 11:07am AEST",
+    "odds_last_updated": "16 Jul 2026 5:48am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-16T01:07:50.367991+00:00",
-    "last_score_refresh": "16 Jul 2026 11:07am AEST",
+    "last_score_refresh": "16 Jul 2026 5:48pm AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -322,7 +322,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.7,
+      "now_decimal": 1.71,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -2926,13 +2926,17 @@
           "home": "Spain",
           "home_owner": "Kenna",
           "home_score": null,
-          "away": null,
-          "away_owner": null,
+          "away": "Argentina",
+          "away_owner": "Galbraith",
           "away_score": null,
           "score_note": "",
           "status": "TIMED",
           "winner": null,
-          "venue": ""
+          "venue": "",
+          "h2h_home_price": 2.4,
+          "h2h_draw_price": 3.05,
+          "h2h_away_price": 3.85,
+          "h2h_source": "Betr"
         }
       ]
     }
