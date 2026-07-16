@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-16T13:05:40.033857+00:00",
-    "last_updated_aest": "Thursday 16 Jul 2026, 11:05pm AEST",
+    "last_updated": "2026-07-16T17:48:51.934892+00:00",
+    "last_updated_aest": "Friday 17 Jul 2026, 3:48am AEST",
     "edition": 52,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "16 Jul 2026 11:05am AEST",
+    "odds_last_updated": "17 Jul 2026 3:48am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-16T11:14:16.941777+00:00",
-    "last_score_refresh": "16 Jul 2026 11:05pm AEST",
+    "last_score_refresh": "17 Jul 2026 3:48am AEST",
     "last_commentary_participants": [
       "Galbraith"
     ],
@@ -322,7 +322,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.71,
+      "now_decimal": 1.7,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -2933,10 +2933,10 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.38,
+          "h2h_home_price": 2.4,
           "h2h_draw_price": 3.1,
           "h2h_away_price": 3.8,
-          "h2h_source": "Betfair"
+          "h2h_source": "Betr"
         }
       ]
     }
