@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-17T07:45:56.408476+00:00",
-    "last_updated_aest": "Friday 17 Jul 2026, 5:45pm AEST",
+    "last_updated": "2026-07-17T12:02:55.756600+00:00",
+    "last_updated_aest": "Friday 17 Jul 2026, 10:02pm AEST",
     "edition": 53,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "17 Jul 2026 5:45am AEST",
+    "odds_last_updated": "17 Jul 2026 10:02am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-17T10:26:44.445946+00:00",
-    "last_score_refresh": "17 Jul 2026 5:45pm AEST",
+    "last_score_refresh": "17 Jul 2026 10:02pm AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -148,7 +148,7 @@
       "gd": 13,
       "rank": 2,
       "left": 4,
-      "win_pct": 41.67,
+      "win_pct": 41.32,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -2931,7 +2931,7 @@
           "winner": null,
           "venue": "",
           "h2h_home_price": 2.36,
-          "h2h_draw_price": 3.1,
+          "h2h_draw_price": 3.15,
           "h2h_away_price": 3.8,
           "h2h_source": "Betfair"
         }
