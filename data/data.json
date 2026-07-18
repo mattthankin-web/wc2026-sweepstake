@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T07:10:34.913986+00:00",
-    "last_updated_aest": "Saturday 18 Jul 2026, 5:10pm AEST",
+    "last_updated": "2026-07-18T11:18:33.085751+00:00",
+    "last_updated_aest": "Saturday 18 Jul 2026, 9:18pm AEST",
     "edition": 54,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "18 Jul 2026 5:10am AEST",
+    "odds_last_updated": "18 Jul 2026 9:18am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-18T09:11:59.735860+00:00",
-    "last_score_refresh": "18 Jul 2026 5:10pm AEST",
+    "last_score_refresh": "18 Jul 2026 9:18pm AEST",
     "last_commentary_participants": [
       "Galbraith"
     ],
@@ -148,7 +148,7 @@
       "gd": 13,
       "rank": 2,
       "left": 4,
-      "win_pct": 41.32,
+      "win_pct": 40.98,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
