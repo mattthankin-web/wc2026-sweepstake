@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T18:08:18.536044+00:00",
-    "last_updated_aest": "Sunday 19 Jul 2026, 4:08am AEST",
+    "last_updated": "2026-07-18T21:09:33.366930+00:00",
+    "last_updated_aest": "Sunday 19 Jul 2026, 7:09am AEST",
     "edition": 54,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "19 Jul 2026 4:08am AEST",
+    "odds_last_updated": "19 Jul 2026 7:09am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-18T09:11:59.735860+00:00",
-    "last_score_refresh": "19 Jul 2026 4:08am AEST",
+    "last_score_refresh": "19 Jul 2026 7:09am AEST",
     "last_commentary_participants": [
       "Galbraith"
     ],
@@ -133,7 +133,7 @@
       "gd": -9,
       "rank": 1,
       "left": 10,
-      "win_pct": 59.17,
+      "win_pct": 58.82,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -148,7 +148,7 @@
       "gd": 13,
       "rank": 2,
       "left": 4,
-      "win_pct": 40.98,
+      "win_pct": 41.32,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -289,20 +289,38 @@
       "eliminated": true
     }
   ],
-  "recent_results": [],
-  "upcoming_fixtures": [
+  "recent_results": [
     {
+      "date": "19 Jul",
       "aest_time": "Sun 7:00am",
       "group": "THIRD PLACE",
       "home": "France",
       "home_owner": "Cronan",
       "away": "England",
       "away_owner": "Silk",
-      "status": "TIMED",
+      "home_score": 0,
+      "away_score": 1,
+      "status": "LIVE",
+      "match_minute": "9'",
+      "badge": "LIVE",
+      "sweepstake_relevant": true,
+      "sort_key": "0_live"
+    }
+  ],
+  "upcoming_fixtures": [
+    {
+      "aest_time": "🔴 LIVE",
+      "group": "THIRD PLACE",
+      "home": "France",
+      "home_owner": "Cronan",
+      "away": "England",
+      "away_owner": "Silk",
+      "status": "IN_PLAY",
       "context": "",
-      "h2h_home_price": 1.9,
-      "h2h_draw_price": 4.2,
-      "h2h_away_price": 4.1
+      "live_score": "None–1",
+      "h2h_home_price": 2.74,
+      "h2h_draw_price": 4.3,
+      "h2h_away_price": 4.5
     },
     {
       "aest_time": "Mon 5:00am",
@@ -313,8 +331,8 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.38,
-      "h2h_draw_price": 3.1,
+      "h2h_home_price": 2.36,
+      "h2h_draw_price": 3.15,
       "h2h_away_price": 3.8
     }
   ],
@@ -332,7 +350,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.7,
+      "now_decimal": 1.68,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -340,8 +358,8 @@
       "team": "Argentina",
       "owner": "Galbraith",
       "prev": "$2.4",
-      "now": "$2.4",
-      "now_decimal": 2.42,
+      "now": "$2.5",
+      "now_decimal": 2.46,
       "direction": "unchanged",
       "source": "Betfair"
     }
@@ -2943,8 +2961,8 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.38,
-          "h2h_draw_price": 3.1,
+          "h2h_home_price": 2.36,
+          "h2h_draw_price": 3.15,
           "h2h_away_price": 3.8,
           "h2h_source": "Betfair"
         }
