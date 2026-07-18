@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T11:18:33.085751+00:00",
-    "last_updated_aest": "Saturday 18 Jul 2026, 9:18pm AEST",
+    "last_updated": "2026-07-18T14:41:49.418261+00:00",
+    "last_updated_aest": "Sunday 19 Jul 2026, 12:41am AEST",
     "edition": 54,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "18 Jul 2026 9:18am AEST",
+    "odds_last_updated": "19 Jul 2026 12:41am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-18T09:11:59.735860+00:00",
-    "last_score_refresh": "18 Jul 2026 9:18pm AEST",
+    "last_score_refresh": "19 Jul 2026 12:41am AEST",
     "last_commentary_participants": [
       "Galbraith"
     ],
@@ -300,7 +300,7 @@
       "away_owner": "Silk",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.93,
+      "h2h_home_price": 1.92,
       "h2h_draw_price": 4.2,
       "h2h_away_price": 4.0
     },
