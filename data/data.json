@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-18T14:41:49.418261+00:00",
-    "last_updated_aest": "Sunday 19 Jul 2026, 12:41am AEST",
+    "last_updated": "2026-07-18T18:08:18.536044+00:00",
+    "last_updated_aest": "Sunday 19 Jul 2026, 4:08am AEST",
     "edition": 54,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "19 Jul 2026 12:41am AEST",
+    "odds_last_updated": "19 Jul 2026 4:08am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-18T09:11:59.735860+00:00",
-    "last_score_refresh": "19 Jul 2026 12:41am AEST",
+    "last_score_refresh": "19 Jul 2026 4:08am AEST",
     "last_commentary_participants": [
       "Galbraith"
     ],
@@ -300,9 +300,9 @@
       "away_owner": "Silk",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 1.92,
+      "h2h_home_price": 1.9,
       "h2h_draw_price": 4.2,
-      "h2h_away_price": 4.0
+      "h2h_away_price": 4.1
     },
     {
       "aest_time": "Mon 5:00am",
@@ -313,8 +313,8 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.36,
-      "h2h_draw_price": 3.15,
+      "h2h_home_price": 2.38,
+      "h2h_draw_price": 3.1,
       "h2h_away_price": 3.8
     }
   ],
@@ -332,7 +332,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.69,
+      "now_decimal": 1.7,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -341,7 +341,7 @@
       "owner": "Galbraith",
       "prev": "$2.4",
       "now": "$2.4",
-      "now_decimal": 2.44,
+      "now_decimal": 2.42,
       "direction": "unchanged",
       "source": "Betfair"
     }
@@ -2943,8 +2943,8 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.36,
-          "h2h_draw_price": 3.15,
+          "h2h_home_price": 2.38,
+          "h2h_draw_price": 3.1,
           "h2h_away_price": 3.8,
           "h2h_source": "Betfair"
         }
