@@ -2,19 +2,19 @@
   "meta": {
     "last_updated": "2026-07-18T07:10:34.913986+00:00",
     "last_updated_aest": "Saturday 18 Jul 2026, 5:10pm AEST",
-    "edition": 53,
+    "edition": 54,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "18 Jul 2026 5:10am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-17T10:26:44.445946+00:00",
+    "trivia_schedule_generated": "2026-07-18T09:11:59.735860+00:00",
     "last_score_refresh": "18 Jul 2026 5:10pm AEST",
     "last_commentary_participants": [
-      "Kenna"
+      "Galbraith"
     ],
-    "last_commentary_generated": "2026-07-17T10:26:44.445839+00:00",
+    "last_commentary_generated": "2026-07-18T09:11:59.735715+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -320,10 +320,10 @@
   ],
   "commentary": [
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: La Roja, La Final, La Whole Enchilada",
-      "body": "Spain are in the semi-finals, priced at $1.7, and at this point treating the tournament less like a competition and more like a guided tour they have organised themselves. Kenna, who has watched most of this sweepstake from a position that could charitably be described as 'chaotic', now finds herself with a legitimate world champion on her hands. The audacity of it. Spain are the better team on paper, the better team on grass, and at $1.7, the market has largely made its peace with that. Kenna need only not jinx it."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: The Last Man Standing With Something to Fear",
+      "body": "Argentina are in the semi-final, which is either a source of quiet confidence or creeping dread, depending on your constitution. As the only participant with a living team and a realistic claim on the pot, Galbraith now carries the full psychological weight of actually winning this thing. Odds of $2.4 suggest the market agrees that this is very much Argentina's tournament to lose — a sentence that will either age beautifully or catastrophically.\n\nThey have ground through the knockout rounds with the grim efficiency of a side that has done this before, recently, and intends to do it again. One semi-final stands between Galbraith and a final. Two games between Galbraith and the money. The sweepstake has, through a process of elimination, become a private drama with a cast of one."
     }
   ],
   "odds": [
@@ -347,9 +347,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "Eleven entered. Nine are watching. Two men stand between glory and a very awkward group chat.",
-    "paragraph_1": "The semi-finals have reduced this sweepstake to its bare essentials. Kenna's Spain dismantled Cronan's France to reach the final, while Galbraith's Argentina ended Silk's England in the other tie, a result that simultaneously eliminated two participants with some of the more emotionally invested stakes in the competition. Morris, Hankin, Same, P Rankin, T Rankin, Varcoe, Crowle, Cronan, and Silk are all now spectators. The field has been ruthlessly culled to two.",
-    "paragraph_2": "Kenna holds Spain at $1.7 — the shorter price, the better tournament record, and a team that has eliminated Portugal, Belgium, and France in succession. Galbraith counters with Argentina at $2.4, who have accounted for Egypt, Switzerland, and England to reach the final. Both participants came through the semi-finals with their nerve intact. One of them wins everything. The other watches Kenna or Galbraith collect from the sofa. There are no other realistic paths to the pot, because there are no other participants."
+    "pull_quote": "Nine participants have been eliminated. Two remain. One gets everything.",
+    "paragraph_1": "The semifinal stage has reduced a field of eleven to two, with considerable collateral damage along the way. Kenna dispatched Cronan's France to reach the final, while Galbraith put paid to Silk's England. Earlier rounds were equally unsparing: Morris, Hankin, Same, Crowle, Varcoe, P Rankin, T Rankin, and Silk all saw their interests extinguished at various stages. The sweepstake has arrived at its logical, brutal endpoint — a straight two-horse race with no consolation prizes and no partial credit for getting this far.",
+    "paragraph_2": "Two participants remain. Kenna holds Spain at $1.7, the favourite, having already eliminated Portugal, Belgium, and France on the road to Monday's final. Galbraith holds Argentina at $2.4, the longer price, having removed Egypt, Morocco, Switzerland, and England in succession — a run that is difficult to dismiss as fortunate. The entire pot transfers to whichever of the two prevails on Monday morning. There is no third place, no runners-up share, and no mechanism by which any of the nine eliminated participants recovers a penny."
   },
   "trivia_schedule": {
     "2026-06-24": [
