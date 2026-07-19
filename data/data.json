@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-19T11:20:28.417624+00:00",
-    "last_updated_aest": "Sunday 19 Jul 2026, 9:20pm AEST",
+    "last_updated": "2026-07-19T14:43:23.734608+00:00",
+    "last_updated_aest": "Monday 20 Jul 2026, 12:43am AEST",
     "edition": 55,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "19 Jul 2026 9:20am AEST",
+    "odds_last_updated": "20 Jul 2026 12:43am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-19T10:08:15.310807+00:00",
-    "last_score_refresh": "19 Jul 2026 9:20pm AEST",
+    "last_score_refresh": "20 Jul 2026 12:43am AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -148,7 +148,7 @@
       "gd": 13,
       "rank": 2,
       "left": 4,
-      "win_pct": 41.32,
+      "win_pct": 40.98,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -317,9 +317,9 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.38,
+      "h2h_home_price": 2.4,
       "h2h_draw_price": 3.1,
-      "h2h_away_price": 3.8
+      "h2h_away_price": 3.85
     }
   ],
   "commentary": [
@@ -336,7 +336,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.69,
+      "now_decimal": 1.68,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -2947,10 +2947,10 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.38,
+          "h2h_home_price": 2.4,
           "h2h_draw_price": 3.1,
-          "h2h_away_price": 3.8,
-          "h2h_source": "Betfair"
+          "h2h_away_price": 3.85,
+          "h2h_source": "Betr"
         }
       ]
     }
