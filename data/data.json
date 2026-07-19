@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-19T14:43:23.734608+00:00",
-    "last_updated_aest": "Monday 20 Jul 2026, 12:43am AEST",
+    "last_updated": "2026-07-19T18:09:22.723536+00:00",
+    "last_updated_aest": "Monday 20 Jul 2026, 4:09am AEST",
     "edition": 55,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "20 Jul 2026 12:43am AEST",
+    "odds_last_updated": "20 Jul 2026 4:09am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-19T10:08:15.310807+00:00",
-    "last_score_refresh": "20 Jul 2026 12:43am AEST",
+    "last_score_refresh": "20 Jul 2026 4:09am AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -133,7 +133,7 @@
       "gd": -9,
       "rank": 1,
       "left": 10,
-      "win_pct": 59.17,
+      "win_pct": 59.52,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -317,7 +317,7 @@
       "away_owner": "Galbraith",
       "status": "TIMED",
       "context": "",
-      "h2h_home_price": 2.4,
+      "h2h_home_price": 2.36,
       "h2h_draw_price": 3.1,
       "h2h_away_price": 3.85
     }
@@ -336,7 +336,7 @@
       "owner": "Kenna",
       "prev": "$1.7",
       "now": "$1.7",
-      "now_decimal": 1.68,
+      "now_decimal": 1.69,
       "direction": "unchanged",
       "source": "Betfair"
     },
@@ -345,7 +345,7 @@
       "owner": "Galbraith",
       "prev": "$2.4",
       "now": "$2.4",
-      "now_decimal": 2.44,
+      "now_decimal": 2.42,
       "direction": "unchanged",
       "source": "Betfair"
     }
@@ -2947,10 +2947,10 @@
           "status": "TIMED",
           "winner": null,
           "venue": "",
-          "h2h_home_price": 2.4,
+          "h2h_home_price": 2.36,
           "h2h_draw_price": 3.1,
           "h2h_away_price": 3.85,
-          "h2h_source": "Betr"
+          "h2h_source": "Betfair"
         }
       ]
     }
