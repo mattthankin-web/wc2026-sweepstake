@@ -1,16 +1,16 @@
 {
   "meta": {
-    "last_updated": "2026-07-19T21:11:19.370267+00:00",
-    "last_updated_aest": "Monday 20 Jul 2026, 7:11am AEST",
+    "last_updated": "2026-07-19T22:42:40.703658+00:00",
+    "last_updated_aest": "Monday 20 Jul 2026, 8:42am AEST",
     "edition": 55,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
-    "odds_last_updated": "20 Jul 2026 7:11am AEST",
+    "odds_last_updated": "20 Jul 2026 8:42am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-19T10:08:15.310807+00:00",
-    "last_score_refresh": "20 Jul 2026 7:11am AEST",
+    "last_score_refresh": "20 Jul 2026 8:42am AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -125,30 +125,30 @@
   "standings": [
     {
       "name": "Kenna",
-      "pld": 28,
-      "w": 9,
+      "pld": 29,
+      "w": 10,
       "d": 5,
       "l": 14,
-      "pts": 32,
-      "gd": -9,
+      "pts": 35,
+      "gd": -8,
       "rank": 1,
       "left": 10,
-      "win_pct": 59.17,
+      "win_pct": 62.89,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
     },
     {
       "name": "Galbraith",
-      "pld": 20,
+      "pld": 21,
       "w": 13,
       "d": 2,
-      "l": 5,
+      "l": 6,
       "pts": 41,
-      "gd": 13,
+      "gd": 12,
       "rank": 2,
       "left": 4,
-      "win_pct": 41.32,
+      "win_pct": 38.46,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
@@ -298,31 +298,16 @@
       "home_owner": "Kenna",
       "away": "Argentina",
       "away_owner": "Galbraith",
-      "home_score": 0,
+      "home_score": 1,
       "away_score": 0,
-      "status": "LIVE",
-      "match_minute": "90+'",
-      "badge": "LIVE",
+      "status": "FT",
+      "match_minute": "",
+      "badge": "SHOCK RESULT",
       "sweepstake_relevant": true,
-      "sort_key": "0_live"
+      "sort_key": "1_2026-07-19T19:00:00Z"
     }
   ],
-  "upcoming_fixtures": [
-    {
-      "aest_time": "🔴 LIVE",
-      "group": "F",
-      "home": "Spain",
-      "home_owner": "Kenna",
-      "away": "Argentina",
-      "away_owner": "Galbraith",
-      "status": "IN_PLAY",
-      "context": "",
-      "live_score": "0–0",
-      "h2h_home_price": 16.5,
-      "h2h_draw_price": 1.12,
-      "h2h_away_price": 41.0
-    }
-  ],
+  "upcoming_fixtures": [],
   "commentary": [
     {
       "participant": "Kenna",
@@ -335,20 +320,20 @@
     {
       "team": "Spain",
       "owner": "Kenna",
-      "prev": "$1.7",
-      "now": "$1.6",
-      "now_decimal": 1.59,
+      "prev": "$1.6",
+      "now": "$1.3",
+      "now_decimal": 1.3,
       "direction": "shortened",
-      "source": "Betfair"
+      "source": "Unibet"
     },
     {
       "team": "Argentina",
       "owner": "Galbraith",
-      "prev": "$2.4",
-      "now": "$2.6",
-      "now_decimal": 2.6,
+      "prev": "$2.6",
+      "now": "$110.0",
+      "now_decimal": 110.0,
       "direction": "drifted",
-      "source": "Unibet"
+      "source": "Betfair"
     }
   ],
   "exec_summary": {
@@ -2940,18 +2925,14 @@
           "date_iso": "2026-07-20",
           "home": "Spain",
           "home_owner": "Kenna",
-          "home_score": 0,
+          "home_score": 1,
           "away": "Argentina",
           "away_owner": "Galbraith",
           "away_score": 0,
-          "score_note": "",
-          "status": "LIVE",
-          "winner": null,
-          "venue": "",
-          "h2h_home_price": 16.5,
-          "h2h_draw_price": 1.12,
-          "h2h_away_price": 41.0,
-          "h2h_source": "Betfair"
+          "score_note": "(aet)",
+          "status": "FINISHED",
+          "winner": "home",
+          "venue": ""
         }
       ]
     }
