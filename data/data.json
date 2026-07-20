@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-07-19T22:42:40.703658+00:00",
-    "last_updated_aest": "Monday 20 Jul 2026, 8:42am AEST",
+    "last_updated": "2026-07-20T04:13:56.709345+00:00",
+    "last_updated_aest": "Monday 20 Jul 2026, 2:13pm AEST",
     "edition": 55,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
@@ -10,7 +10,7 @@
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-19T10:08:15.310807+00:00",
-    "last_score_refresh": "20 Jul 2026 8:42am AEST",
+    "last_score_refresh": "20 Jul 2026 2:13pm AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -133,7 +133,7 @@
       "gd": -8,
       "rank": 1,
       "left": 10,
-      "win_pct": 62.89,
+      "win_pct": 76.92,
       "move": "up",
       "move_note": "Spain 4-0 Saudi, Yamal back",
       "eliminated": false
@@ -148,7 +148,7 @@
       "gd": 12,
       "rank": 2,
       "left": 4,
-      "win_pct": 38.46,
+      "win_pct": 0.91,
       "move": "same",
       "move_note": "Morocco through, Arg. tonight",
       "eliminated": false
