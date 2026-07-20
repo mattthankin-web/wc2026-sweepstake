@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-07-20T15:31:36.158542+00:00",
-    "last_updated_aest": "Tuesday 21 Jul 2026, 1:31am AEST",
+    "last_updated": "2026-07-20T20:49:10.660440+00:00",
+    "last_updated_aest": "Tuesday 21 Jul 2026, 6:49am AEST",
     "edition": 57,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
@@ -10,7 +10,7 @@
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
     "trivia_schedule_generated": "2026-07-20T12:26:24.533018+00:00",
-    "last_score_refresh": "21 Jul 2026 1:31am AEST",
+    "last_score_refresh": "21 Jul 2026 6:49am AEST",
     "last_commentary_participants": [
       "Kenna"
     ],
@@ -289,24 +289,7 @@
       "eliminated": true
     }
   ],
-  "recent_results": [
-    {
-      "date": "20 Jul",
-      "aest_time": "Mon 5:00am",
-      "group": "Final",
-      "home": "Spain",
-      "home_owner": "Kenna",
-      "away": "Argentina",
-      "away_owner": "Galbraith",
-      "home_score": 1,
-      "away_score": 0,
-      "status": "FT",
-      "match_minute": "",
-      "badge": "SHOCK RESULT",
-      "sweepstake_relevant": true,
-      "sort_key": "1_2026-07-19T19:00:00Z"
-    }
-  ],
+  "recent_results": [],
   "upcoming_fixtures": [],
   "commentary": [
     {
