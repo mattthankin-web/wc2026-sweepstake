@@ -2,19 +2,19 @@
   "meta": {
     "last_updated": "2026-07-21T09:42:36.998029+00:00",
     "last_updated_aest": "Tuesday 21 Jul 2026, 7:42pm AEST",
-    "edition": 57,
+    "edition": 58,
     "coverage_from": "2026-06-19",
     "coverage_to": "2026-06-22",
     "next_update": "2026-06-23T04:00:00Z",
     "odds_last_updated": "20 Jul 2026 8:42am AEST",
     "odds_format": "decimal (Australian)",
     "odds_source": "The Odds API — Unibet, TAB, Betfair AU",
-    "trivia_schedule_generated": "2026-07-20T12:26:24.533018+00:00",
+    "trivia_schedule_generated": "2026-07-21T11:21:57.118572+00:00",
     "last_score_refresh": "21 Jul 2026 7:42pm AEST",
     "last_commentary_participants": [
-      "Kenna"
+      "Galbraith"
     ],
-    "last_commentary_generated": "2026-07-20T12:26:24.532875+00:00",
+    "last_commentary_generated": "2026-07-21T11:21:57.118416+00:00",
     "knockout_note": "Knockout stage data will populate automatically when the API provides match stage data"
   },
   "participants": {
@@ -293,10 +293,10 @@
   "upcoming_fixtures": [],
   "commentary": [
     {
-      "participant": "Kenna",
-      "color": "#EA580C",
-      "title": "Kenna: The Last Conquistador Standing",
-      "body": "Spain dispatched Argentina in the group stage finale with the kind of composed, inevitable 1-0 that suggests a team that has decided it is simply going to win the World Cup and would appreciate it if everyone else got out of the way. They are, at this point, the most credible team left in the tournament — technically precise, tactically mature, and priced accordingly at $1.3. Kenna holds the sweepstake's only meaningful asset. Spain, on current evidence, appears unbothered by genuine tests."
+      "participant": "Galbraith",
+      "color": "#7C3AED",
+      "title": "Galbraith: One Team, One Dream, One Deeply Uncomfortable Odds Conversion",
+      "body": "Argentina have reached the semi-final. Galbraith, whose sweepstake win probability sits at a figure that rounds to zero on most calculators, now finds themselves in the peculiar position of being mathematically alive and narratively compelling. The world champions — defending, purposeful, and apparently unbothered by the chaos around them — are one win from the final. At $110, the market is sceptical. Galbraith should not be.\n\nThe path to the pot is narrow but it exists, which is more than can be said for everyone else in this sweepstake. A semi-final, then a final, then the sort of ending that justifies whatever Galbraith paid in. Argentina have done this before. So, quietly, has hope."
     }
   ],
   "odds": [
@@ -320,9 +320,9 @@
     }
   ],
   "exec_summary": {
-    "pull_quote": "The sweepstake has resolved itself into a formality: Kenna holds Spain, and Spain won.",
-    "paragraph_1": "The tournament is over. Spain defeated Argentina in the final, a result that completes a remarkable run of attrition through this sweepstake. Along the way, Kenna's Spain eliminated Same's Portugal in the last sixteen, Crowle's Belgium in the quarter-finals, Cronan's France in the semi-finals, and finally Galbraith's Argentina in the final itself. Galbraith, for his part, had dispatched Kenna's own Egypt, Varcoe's Switzerland, and Silk's England before meeting his end at the last hurdle. The field is clear.",
-    "paragraph_2": "Two participants remain relevant to the prize. Kenna holds Spain at $1.3 — a figure that, in retrospect, represented extraordinary value and is now academic, as Spain are world champions. Galbraith holds Argentina at $110.0, a price that reflected genuine underdog status and nearly paid off handsomely; the final proved one step too far. Every other participant — Cronan, Silk, Same, Morris, P Rankin, T Rankin, Hankin, Varcoe, and Crowle — is eliminated. The pot goes to Kenna. There is nothing further to analyse."
+    "pull_quote": "Nine friends watch two strangers divide the spoils between them.",
+    "paragraph_1": "The dust has settled on a brutal knockout run that eliminated nine of the eleven participants. Cronan's France fell to Kenna's Spain in the semi-finals, while Silk's England were dispatched by Galbraith's Argentina in the other tie. The final then produced the cleanest possible resolution: Argentina eliminated, Spain triumphant. Galbraith, who had watched Morocco go early in the quarters before Argentina carried him to the final, leaves with nothing. The other nine participants were long since furniture.",
+    "paragraph_2": "Two participants remain. Kenna holds Spain at $1.3 — a price that now reads less like odds and more like a receipt, given that Spain have just won the tournament. Galbraith holds Argentina at $110.0, a figure that reflected long-shot optimism and proved partially justified; Argentina reached the final before falling to Spain. The pot belongs to Kenna. There is no remaining field, no upcoming fixtures, and no realistic path for anyone else, because there is no one else."
   },
   "trivia_schedule": {
     "2026-06-24": [
